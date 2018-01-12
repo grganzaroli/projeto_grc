@@ -1,0 +1,22 @@
+<block>
+  <name>Ldpc decoder hard atsc</name>
+  <key>mack_sdr_rossi_LDPC_decoder_hard_ATSC</key>
+  <category>[MACK_SDR_ROSSI]</category>
+  <import>import mack_sdr_rossi</import>
+  <make>mack_sdr_rossi.LDPC_decoder_hard_ATSC($N)</make>
+  <param>
+    <name>N</name>
+    <key>N</key>
+    <type>raw</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+    <vlen>$N</vlen>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+    <vlen>10800</vlen>
+  </source>
+</block>

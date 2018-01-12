@@ -1,0 +1,7 @@
+/*!
+ * \defgroup block GNU Radio MACK_SDR_ROSSI C++ Signal Processing Blocks
+ * \brief All C++ blocks that can be used from the MACK_SDR_ROSSI GNU Radio
+ *        module are listed here or in the subcategories below.
+ *
+ */
+
