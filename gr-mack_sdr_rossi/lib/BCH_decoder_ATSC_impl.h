@@ -45,7 +45,6 @@ namespace gr {
 
 	//Funções
   void decoder_BCH(const char *in, char *out);
-  int tab_mult(int multi1, int multi2);
 
 	//Variaveis
 	int N_size;
