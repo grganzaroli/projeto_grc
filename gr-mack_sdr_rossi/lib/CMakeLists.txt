@@ -24,12 +24,12 @@ include(GrPlatform) #define LIB_SUFFIX
 
 include_directories(${Boost_INCLUDE_DIR})
 link_directories(${Boost_LIBRARY_DIRS})
-
 list(APPEND mack_sdr_rossi_sources
     LDPC_decoder_ATSC_impl.cc
-    BCH_decoder_ATSC_impl.cc
     str_to_vec_impl.cc
     LDPC_decoder_hard_ATSC_impl.cc
+    BCH_decoder_ATSC_impl.cc
+    bch.cpp
 )
 
 set(mack_sdr_rossi_sources "${mack_sdr_rossi_sources}" PARENT_SCOPE)
