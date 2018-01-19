@@ -38,10 +38,10 @@
 #define k 10632	
 #define n_extension 5583  //numero de zeroas a acrescntar em n
 #define t 12
-int pol_gerador[n-k+1] = {1,0,1,0,0,0,0,0,0,0,1,1,0,0,0,1,0,1,1,0,1,1,0,1,1,1,1,1,0,1,0,1,0,1,0,0,1,1,0,0,0,0,1,1,0,1,0,0,1,1,0,1,1,
+unsigned char pol_gerador[n-k+1] = {1,0,1,0,0,0,0,0,0,0,1,1,0,0,0,1,0,1,1,0,1,1,0,1,1,1,1,1,0,1,0,1,0,1,0,0,1,1,0,0,0,0,1,1,0,1,0,0,1,1,0,1,1,
 0,0,1,0,0,1,1,0,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,0,0,0,1,1,1,0,1,0,0,0,1,1,1,0,0,1,0,0,0,0,0,1,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,0,1,1,
 1,1,1,1,1,0,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,0,0,1,0,0,0,1,1,0,0,1,0,0,0,0,0,1,0,1,1,0,1,0,0,1,0,1}; //(norma)
-int pol_primitivo[m+1] = {1,1,0,1,0,1,0,0,0,0,0,0,0,0,1};
+unsigned char pol_primitivo[m+1] = {1,1,0,1,0,1,0,0,0,0,0,0,0,0,1};
 
 //BCH 10/15 normal_frame (43200,43008,12) - 192 bits de paridade
 /*
@@ -50,12 +50,12 @@ int pol_primitivo[m+1] = {1,1,0,1,0,1,0,0,0,0,0,0,0,0,1};
 #define k 43008	
 #define n_extension 22335  //numero de zeroas a acrescntar em n
 #define t 12
-int pol_gerador[n-k+1] = {1,0,1,0,0,1,1,1,0,0,0,1,0,0,1,1,0,0,0,0,0,1,1,1,0,1,0,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,1,0,1,1,1,0,0,0,1,0,1,
+unsigned char pol_gerador[n-k+1] = {1,0,1,0,0,1,1,1,0,0,0,1,0,0,1,1,0,0,0,0,0,1,1,1,0,1,0,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,1,0,1,1,1,0,0,0,1,0,1,
 0,0,0,1,0,0,0,1,1,1,0,0,0,1,0,1,0,0,0,0,1,1,0,0,1,1,1,1,0,0,1,0,1,1,0,0,1,1,0,1,1,0,0,0,1,1,0,1,1,1,0,0,0,0,1,1,0,1,0,1,0,0,0,0,1,0,
 0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,1,1,0,1,0,0,0,1,1,1,1,0,0,0,0,1,0,1,1,1,1,1,0,1,1,1,0,1,1,0,0,1,1,0,0,0,0,0,0,0,1,0,0,1,0,1,0,1,0,1,
 1,1,1,0,0,1,1,1}; //(norma)
 //int pol_primitivo[m+1] = {1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,1}; // NAO RECONHECEU
-int pol_primitivo[m+1] = {1,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1}; // NAO RECONHECEU (MATLAB)
+unsigned char pol_primitivo[m+1] = {1,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1}; // NAO RECONHECEU (MATLAB)
 //int pol_primitivo[m+1] = {1,0,0,1,1,1,0,0,0,1,1,0,0,1,0,1,1}; // NAO RECONHECEU
 //int pol_primitivo[m+1] = {1,1,0,1,0,0,1,1,0,0,0,1,1,1,0,0,1}; // NAO RECONHECEU
 //int pol_primitivo[m+1] = {1,0,0,1,1,0,1,1,0,1,1,0,0,0,0,1,1};	// NAO RECONHECEU		
@@ -102,6 +102,7 @@ namespace gr {
           //ESSA PARTE RODA SÓ UMA VEZ
 
           decoder.init(n, k, t, m);
+          decoder.set_pol_prim(pol_primitivo);
           decoder.calc_gf();
           decoder.calc_tab_inv();
         }
@@ -125,10 +126,10 @@ namespace gr {
     int n_err;
     unsigned char r[n];
     for(int i = 0; i < n; i++)
-      r[i] = in[i];
+      r[n-1-i] = in[i];
     bool decoding_ok = decoder.decode(r, n_err);
     for(int i = 0; i < n; i++)
-      out[i] = r[i];
+      out[n-1-i] = r[i];
 	}
 
 

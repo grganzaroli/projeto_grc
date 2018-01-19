@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespacegr_1_1mack__sdr__rossi" kind="namespace">
+    <compoundname>gr::mack_sdr_rossi</compoundname>
+    <innerclass refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC" prot="public">gr::mack_sdr_rossi::BCH_decoder_ATSC</innerclass>
+    <innerclass refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC" prot="public">gr::mack_sdr_rossi::LDPC_decoder_ATSC</innerclass>
+    <innerclass refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC" prot="public">gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC</innerclass>
+    <innerclass refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec" prot="public">gr::mack_sdr_rossi::str_to_vec</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/BCH_decoder_ATSC.h" line="29" column="1"/>
+  </compounddef>
+</doxygen>

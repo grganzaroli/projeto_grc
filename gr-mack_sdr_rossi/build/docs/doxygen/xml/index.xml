@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="classbch" kind="class"><name>bch</name>
+    <member refid="classbch_1ac61b3411b27472e6f60372e60e891b33" kind="variable"><name>n</name></member>
+    <member refid="classbch_1ac459316fcfad460f1dff8e772869903c" kind="variable"><name>k</name></member>
+    <member refid="classbch_1a3ed1b240d1428ea2a1b1788bb2a0039e" kind="variable"><name>t</name></member>
+    <member refid="classbch_1a6e4414f6f1ad46677960a66bf3ceef7a" kind="variable"><name>m</name></member>
+    <member refid="classbch_1a3e7a87799a60277d9e39e16fda653f34" kind="variable"><name>n_extension</name></member>
+    <member refid="classbch_1a5511225649c4a8b53c0baa9388502b75" kind="variable"><name>pol_primitivo</name></member>
+    <member refid="classbch_1a9f2174fe8037d6752adba302cdf354a4" kind="variable"><name>pol_gerador</name></member>
+    <member refid="classbch_1a63dc361e6f4c656d1e8ced2412294ceb" kind="variable"><name>GF</name></member>
+    <member refid="classbch_1a0f969db8d9a58a1b1f7e9835f35cb26e" kind="variable"><name>inv_GF</name></member>
+    <member refid="classbch_1a7afa14248eaa3b0a3033944ce953fc71" kind="variable"><name>tab_inv_alpha</name></member>
+    <member refid="classbch_1a7230e6bede6f750997f9da456599bd80" kind="variable"><name>tab_inv_dec</name></member>
+    <member refid="classbch_1ab8ea35cee2bbe6ff1d79aca01ad5fd1f" kind="variable"><name>p_erros</name></member>
+    <member refid="classbch_1a64fb3d92fb4666a1af5db913426e5300" kind="function"><name>init</name></member>
+    <member refid="classbch_1a536ef1ba37921f3a29776e5a8a43ccd8" kind="function"><name>set_pol_prim</name></member>
+    <member refid="classbch_1a82f75ce75ca22c3447b8b75900e9fa34" kind="function"><name>set_pol_ger</name></member>
+    <member refid="classbch_1abbb56f91e3153f1ff9fb1137cd950886" kind="function"><name>calc_gf</name></member>
+    <member refid="classbch_1a527e44b67fd36c511aa10c04a6eec375" kind="function"><name>calc_tab_inv</name></member>
+    <member refid="classbch_1a155974b364651c47b3b7e6b33fdf1e90" kind="function"><name>encode</name></member>
+    <member refid="classbch_1a32a740263dea90c6996e697105467293" kind="function"><name>decode</name></member>
+    <member refid="classbch_1a4ce993751f305c1bd56da194028cf6b5" kind="function"><name>tab_mult</name></member>
+    <member refid="classbch_1a0a6c69671af01a8f35f4a56c237ecf48" kind="function"><name>det_gf</name></member>
+    <member refid="classbch_1a585b514a8eb123f005907a51397e4e24" kind="function"><name>det</name></member>
+  </compound>
+  <compound refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC" kind="class"><name>gr::mack_sdr_rossi::BCH_decoder_ATSC</name>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC_1a773fe2bf4efbdafb65e22f23e05ad06b" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC_1a008da597b1ac998888cd142e5f4bddd7" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl" kind="class"><name>gr::mack_sdr_rossi::BCH_decoder_ATSC_impl</name>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1a3e8fc5ce35aad4cf5bef593ffcab8cac" kind="variable"><name>N_size</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1ab13eae9b50c45191131d68821d97fb51" kind="function"><name>BCH_decoder_ATSC_impl</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1a49861a61aefe4b7164af2a56a9b89656" kind="function"><name>~BCH_decoder_ATSC_impl</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1a28ee06ec5ee611746d7172380e405c8c" kind="function"><name>forecast</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1a7fcf5f179379bb38bdf56138a06da167" kind="function"><name>general_work</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1abc746a9eecf9d90ed0b46dc5b3bb9389" kind="function"><name>decoder_BCH</name></member>
+  </compound>
+  <compound refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC" kind="class"><name>gr::mack_sdr_rossi::LDPC_decoder_ATSC</name>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC_1add89571f705bd1ac1b40d11b1383007e" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC_1a188f8c503fc52692f1b355683c3b3c6c" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl" kind="class"><name>gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl</name>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a951cce13795166e1493593582f2b92b5" kind="variable"><name>N_size</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a6407e4fc61edfacd6ffc09ff3d43197a" kind="function"><name>LDPC_decoder_ATSC_impl</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1ab9b9685631e806d92433135fea44306d" kind="function"><name>~LDPC_decoder_ATSC_impl</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a55246c653fc0d4a4725c9ad49bfbb290" kind="function"><name>forecast</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1abf53dd815395566af0727d6650a870ac" kind="function"><name>general_work</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a3dbe42f2351d3e797c02ac26b10474fe" kind="function"><name>decoder_LDPC</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1aca81f8584f71dfc542059721e27a8ba8" kind="function"><name>aTanh</name></member>
+  </compound>
+  <compound refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC" kind="class"><name>gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC</name>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC_1aff06fbc021aa987fd545dd64e1190ff3" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC_1a11e7636030232e35285217fbb122ae53" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl" kind="class"><name>gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC_impl</name>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_1ac704dd8e4132dc7b314a0a91cc04439c" kind="variable"><name>N_size</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_1af17eec03a4ace94b0d8f1bd5d61955c3" kind="function"><name>LDPC_decoder_hard_ATSC_impl</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_1a8c1ce0a879cf17b22683fc1e06248b2e" kind="function"><name>~LDPC_decoder_hard_ATSC_impl</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_1a432b268b0a3b05f34835247491b4c480" kind="function"><name>forecast</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_1a78051e35aeaa371bfe1a2f127d252fb9" kind="function"><name>general_work</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_1ad313d2519d590bc40da87173808b9866" kind="function"><name>decoder_LDPC_hard</name></member>
+  </compound>
+  <compound refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec" kind="class"><name>gr::mack_sdr_rossi::str_to_vec</name>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec_1af05874a8ece7b9f7272218269ac618ba" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec_1a6914fb18112a553ba4252784e4a37c3a" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec__impl" kind="class"><name>gr::mack_sdr_rossi::str_to_vec_impl</name>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec__impl_1ad363663ae29ffdb1d4e4ccc6404bef86" kind="variable"><name>count</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec__impl_1aeaa45ae4a71f84af4032f37dd1ce2b39" kind="variable"><name>op</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec__impl_1af1605697b8620263eef9d4671cf46010" kind="variable"><name>n_out</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec__impl_1a80c818a410a223235560dc2f6883be62" kind="variable"><name>c</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec__impl_1a7d69002559783bd89e7df856ff74d08d" kind="variable"><name>C</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec__impl_1a07b5cb98e4f21981a0362292772adbb8" kind="variable"><name>buf_size</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec__impl_1a0a78806e9af5477fc4182d2c4d5a5459" kind="variable"><name>aux_buf</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec__impl_1afd67146c7b95af4e692faf4ad0e7bca5" kind="variable"><name>buf</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec__impl_1af80c94617966f2c4be4328510f02799d" kind="variable"><name>p_pass</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec__impl_1a29f352614d8327d4d8876af904162d91" kind="function"><name>str_to_vec_impl</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec__impl_1a176b44888a58591182a498adb6aee9ce" kind="function"><name>~str_to_vec_impl</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec__impl_1a850e5e2ffdbf08c038680a8f7827ac23" kind="function"><name>forecast</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec__impl_1afb4578b804e38c32dc9cb96397ee0162" kind="function"><name>general_work</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec__impl_1ab5d415b0bdc8ef702ade62245f92fbb4" kind="function"><name>str_to_vector</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1mack__sdr__rossi" kind="namespace"><name>gr::mack_sdr_rossi</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a858861863d6e35e810ea2ad701294ab2" kind="define"><name>MACK_SDR_ROSSI_API</name></member>
+  </compound>
+  <compound refid="bch_8h" kind="file"><name>bch.h</name>
+  </compound>
+  <compound refid="BCH__decoder__ATSC_8h" kind="file"><name>BCH_decoder_ATSC.h</name>
+  </compound>
+  <compound refid="BCH__decoder__ATSC__impl_8h" kind="file"><name>BCH_decoder_ATSC_impl.h</name>
+  </compound>
+  <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
+  </compound>
+  <compound refid="LDPC__decoder__ATSC_8h" kind="file"><name>LDPC_decoder_ATSC.h</name>
+  </compound>
+  <compound refid="LDPC__decoder__ATSC__impl_8h" kind="file"><name>LDPC_decoder_ATSC_impl.h</name>
+  </compound>
+  <compound refid="LDPC__decoder__hard__ATSC_8h" kind="file"><name>LDPC_decoder_hard_ATSC.h</name>
+  </compound>
+  <compound refid="LDPC__decoder__hard__ATSC__impl_8h" kind="file"><name>LDPC_decoder_hard_ATSC_impl.h</name>
+  </compound>
+  <compound refid="main__page_8dox" kind="file"><name>main_page.dox</name>
+  </compound>
+  <compound refid="str__to__vec_8h" kind="file"><name>str_to_vec.h</name>
+  </compound>
+  <compound refid="str__to__vec__impl_8h" kind="file"><name>str_to_vec_impl.h</name>
+  </compound>
+  <compound refid="group__block" kind="group"><name>block</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>lib</name>
+  </compound>
+  <compound refid="dir_ba4e2cfdfdb92d307bf07bbbe3b3e4ef" kind="dir"><name>mack_sdr_rossi</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

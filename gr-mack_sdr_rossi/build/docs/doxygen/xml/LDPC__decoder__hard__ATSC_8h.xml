@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="LDPC__decoder__hard__ATSC_8h" kind="file">
+    <compoundname>LDPC_decoder_hard_ATSC.h</compoundname>
+    <includes refid="api_8h" local="no">mack_sdr_rossi/api.h</includes>
+    <includes local="no">gnuradio/block.h</includes>
+    <includedby refid="LDPC__decoder__hard__ATSC__impl_8h" local="no">LDPC_decoder_hard_ATSC_impl.h</includedby>
+    <incdepgraph>
+      <node id="40">
+        <label>mack_sdr_rossi/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="42">
+        <label>gnuradio/block.h</label>
+      </node>
+      <node id="39">
+        <label>LDPC_decoder_hard_ATSC.h</label>
+        <link refid="LDPC_decoder_hard_ATSC.h"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="44">
+        <label>LDPC_decoder_hard_ATSC_impl.h</label>
+        <link refid="LDPC__decoder__hard__ATSC__impl_8h"/>
+      </node>
+      <node id="43">
+        <label>LDPC_decoder_hard_ATSC.h</label>
+        <link refid="LDPC_decoder_hard_ATSC.h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC" prot="public">gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1mack__sdr__rossi">gr::mack_sdr_rossi</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/LDPC_decoder_hard_ATSC.h"/>
+  </compounddef>
+</doxygen>

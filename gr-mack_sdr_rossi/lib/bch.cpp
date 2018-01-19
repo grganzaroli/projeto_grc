@@ -148,11 +148,15 @@ void bch::calc_gf()
 		}
 
 		if(i < m)
+		{
 			aux_GF[0][i] = 1;
+		}
 		else if(i == m)
 		{
 			for(int j = 0; j < m; j++)
+			{
 				aux_GF[0][j] = pol_primitivo[j];
+			}
 		}
 		else
 		{

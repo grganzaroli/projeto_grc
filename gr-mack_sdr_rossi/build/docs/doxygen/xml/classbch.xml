@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classbch" kind="class" prot="public">
+    <compoundname>bch</compoundname>
+    <includes refid="bch_8h" local="no">bch.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classbch_1ac61b3411b27472e6f60372e60e891b33" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int bch::n</definition>
+        <argsstring></argsstring>
+        <name>n</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="7" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbch_1ac459316fcfad460f1dff8e772869903c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int bch::k</definition>
+        <argsstring></argsstring>
+        <name>k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="8" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbch_1a3ed1b240d1428ea2a1b1788bb2a0039e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int bch::t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="9" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbch_1a6e4414f6f1ad46677960a66bf3ceef7a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int bch::m</definition>
+        <argsstring></argsstring>
+        <name>m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="10" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbch_1a3e7a87799a60277d9e39e16fda653f34" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int bch::n_extension</definition>
+        <argsstring></argsstring>
+        <name>n_extension</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="11" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbch_1a5511225649c4a8b53c0baa9388502b75" prot="private" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* bch::pol_primitivo</definition>
+        <argsstring></argsstring>
+        <name>pol_primitivo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="12" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbch_1a9f2174fe8037d6752adba302cdf354a4" prot="private" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* bch::pol_gerador</definition>
+        <argsstring></argsstring>
+        <name>pol_gerador</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="13" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbch_1a63dc361e6f4c656d1e8ced2412294ceb" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* bch::GF</definition>
+        <argsstring></argsstring>
+        <name>GF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="15" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbch_1a0f969db8d9a58a1b1f7e9835f35cb26e" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* bch::inv_GF</definition>
+        <argsstring></argsstring>
+        <name>inv_GF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="16" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbch_1a7afa14248eaa3b0a3033944ce953fc71" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* bch::tab_inv_alpha</definition>
+        <argsstring></argsstring>
+        <name>tab_inv_alpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="17" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbch_1a7230e6bede6f750997f9da456599bd80" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* bch::tab_inv_dec</definition>
+        <argsstring></argsstring>
+        <name>tab_inv_dec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="18" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classbch_1ab8ea35cee2bbe6ff1d79aca01ad5fd1f" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* bch::p_erros</definition>
+        <argsstring></argsstring>
+        <name>p_erros</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="20" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classbch_1a64fb3d92fb4666a1af5db913426e5300" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bch::init</definition>
+        <argsstring>(int n, int k, int t, int m)</argsstring>
+        <name>init</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classbch_1a536ef1ba37921f3a29776e5a8a43ccd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bch::set_pol_prim</definition>
+        <argsstring>(unsigned char *p_prim)</argsstring>
+        <name>set_pol_prim</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>p_prim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classbch_1a82f75ce75ca22c3447b8b75900e9fa34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bch::set_pol_ger</definition>
+        <argsstring>(unsigned char *p_ger)</argsstring>
+        <name>set_pol_ger</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>p_ger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classbch_1abbb56f91e3153f1ff9fb1137cd950886" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bch::calc_gf</definition>
+        <argsstring>()</argsstring>
+        <name>calc_gf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classbch_1a527e44b67fd36c511aa10c04a6eec375" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bch::calc_tab_inv</definition>
+        <argsstring>()</argsstring>
+        <name>calc_tab_inv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classbch_1a155974b364651c47b3b7e6b33fdf1e90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bch::encode</definition>
+        <argsstring>(unsigned char *u, unsigned char *v)</argsstring>
+        <name>encode</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="29" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classbch_1a32a740263dea90c6996e697105467293" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool bch::decode</definition>
+        <argsstring>(unsigned char *rr, int &amp;n_err)</argsstring>
+        <name>decode</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>rr</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>n_err</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classbch_1a4ce993751f305c1bd56da194028cf6b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int bch::tab_mult</definition>
+        <argsstring>(int multi1, int multi2)</argsstring>
+        <name>tab_mult</name>
+        <param>
+          <type>int</type>
+          <declname>multi1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>multi2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classbch_1a0a6c69671af01a8f35f4a56c237ecf48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int bch::det_gf</definition>
+        <argsstring>(int **MAT, int size)</argsstring>
+        <name>det_gf</name>
+        <param>
+          <type>int **</type>
+          <declname>MAT</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classbch_1a585b514a8eb123f005907a51397e4e24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int bch::det</definition>
+        <argsstring>(int **MAT, int size)</argsstring>
+        <name>det</name>
+        <param>
+          <type>int **</type>
+          <declname>MAT</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="34" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="5" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="4" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classbch_1abbb56f91e3153f1ff9fb1137cd950886" prot="public" virt="non-virtual"><scope>bch</scope><name>calc_gf</name></member>
+      <member refid="classbch_1a527e44b67fd36c511aa10c04a6eec375" prot="public" virt="non-virtual"><scope>bch</scope><name>calc_tab_inv</name></member>
+      <member refid="classbch_1a32a740263dea90c6996e697105467293" prot="public" virt="non-virtual"><scope>bch</scope><name>decode</name></member>
+      <member refid="classbch_1a585b514a8eb123f005907a51397e4e24" prot="public" virt="non-virtual"><scope>bch</scope><name>det</name></member>
+      <member refid="classbch_1a0a6c69671af01a8f35f4a56c237ecf48" prot="public" virt="non-virtual"><scope>bch</scope><name>det_gf</name></member>
+      <member refid="classbch_1a155974b364651c47b3b7e6b33fdf1e90" prot="public" virt="non-virtual"><scope>bch</scope><name>encode</name></member>
+      <member refid="classbch_1a63dc361e6f4c656d1e8ced2412294ceb" prot="private" virt="non-virtual"><scope>bch</scope><name>GF</name></member>
+      <member refid="classbch_1a64fb3d92fb4666a1af5db913426e5300" prot="public" virt="non-virtual"><scope>bch</scope><name>init</name></member>
+      <member refid="classbch_1a0f969db8d9a58a1b1f7e9835f35cb26e" prot="private" virt="non-virtual"><scope>bch</scope><name>inv_GF</name></member>
+      <member refid="classbch_1ac459316fcfad460f1dff8e772869903c" prot="private" virt="non-virtual"><scope>bch</scope><name>k</name></member>
+      <member refid="classbch_1a6e4414f6f1ad46677960a66bf3ceef7a" prot="private" virt="non-virtual"><scope>bch</scope><name>m</name></member>
+      <member refid="classbch_1ac61b3411b27472e6f60372e60e891b33" prot="private" virt="non-virtual"><scope>bch</scope><name>n</name></member>
+      <member refid="classbch_1a3e7a87799a60277d9e39e16fda653f34" prot="private" virt="non-virtual"><scope>bch</scope><name>n_extension</name></member>
+      <member refid="classbch_1ab8ea35cee2bbe6ff1d79aca01ad5fd1f" prot="private" virt="non-virtual"><scope>bch</scope><name>p_erros</name></member>
+      <member refid="classbch_1a9f2174fe8037d6752adba302cdf354a4" prot="private" virt="non-virtual"><scope>bch</scope><name>pol_gerador</name></member>
+      <member refid="classbch_1a5511225649c4a8b53c0baa9388502b75" prot="private" virt="non-virtual"><scope>bch</scope><name>pol_primitivo</name></member>
+      <member refid="classbch_1a82f75ce75ca22c3447b8b75900e9fa34" prot="public" virt="non-virtual"><scope>bch</scope><name>set_pol_ger</name></member>
+      <member refid="classbch_1a536ef1ba37921f3a29776e5a8a43ccd8" prot="public" virt="non-virtual"><scope>bch</scope><name>set_pol_prim</name></member>
+      <member refid="classbch_1a3ed1b240d1428ea2a1b1788bb2a0039e" prot="private" virt="non-virtual"><scope>bch</scope><name>t</name></member>
+      <member refid="classbch_1a7afa14248eaa3b0a3033944ce953fc71" prot="private" virt="non-virtual"><scope>bch</scope><name>tab_inv_alpha</name></member>
+      <member refid="classbch_1a7230e6bede6f750997f9da456599bd80" prot="private" virt="non-virtual"><scope>bch</scope><name>tab_inv_dec</name></member>
+      <member refid="classbch_1a4ce993751f305c1bd56da194028cf6b5" prot="public" virt="non-virtual"><scope>bch</scope><name>tab_mult</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

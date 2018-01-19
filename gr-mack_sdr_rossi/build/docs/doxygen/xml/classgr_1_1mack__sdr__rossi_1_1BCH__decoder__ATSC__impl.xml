@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl" kind="class" prot="public">
+    <compoundname>gr::mack_sdr_rossi::BCH_decoder_ATSC_impl</compoundname>
+    <basecompoundref refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC" prot="public" virt="non-virtual">gr::mack_sdr_rossi::BCH_decoder_ATSC</basecompoundref>
+    <includes refid="BCH__decoder__ATSC__impl_8h" local="no">BCH_decoder_ATSC_impl.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1a3e8fc5ce35aad4cf5bef593ffcab8cac" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::mack_sdr_rossi::BCH_decoder_ATSC_impl::N_size</definition>
+        <argsstring></argsstring>
+        <name>N_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_decoder_ATSC_impl.h" line="50" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_decoder_ATSC_impl.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1ab13eae9b50c45191131d68821d97fb51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::mack_sdr_rossi::BCH_decoder_ATSC_impl::BCH_decoder_ATSC_impl</definition>
+        <argsstring>(size_t N)</argsstring>
+        <name>BCH_decoder_ATSC_impl</name>
+        <param>
+          <type>size_t</type>
+          <declname>N</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_decoder_ATSC_impl.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1a49861a61aefe4b7164af2a56a9b89656" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::mack_sdr_rossi::BCH_decoder_ATSC_impl::~BCH_decoder_ATSC_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~BCH_decoder_ATSC_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_decoder_ATSC_impl.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1a28ee06ec5ee611746d7172380e405c8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::mack_sdr_rossi::BCH_decoder_ATSC_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_decoder_ATSC_impl.h" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1a7fcf5f179379bb38bdf56138a06da167" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::mack_sdr_rossi::BCH_decoder_ATSC_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_decoder_ATSC_impl.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1abc746a9eecf9d90ed0b46dc5b3bb9389" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::mack_sdr_rossi::BCH_decoder_ATSC_impl::decoder_BCH</definition>
+        <argsstring>(const char *in, char *out)</argsstring>
+        <name>decoder_BCH</name>
+        <param>
+          <type>const char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_decoder_ATSC_impl.h" line="47" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="9">
+        <label>block</label>
+      </node>
+      <node id="8">
+        <label>gr::mack_sdr_rossi::BCH_decoder_ATSC</label>
+        <link refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>gr::mack_sdr_rossi::BCH_decoder_ATSC_impl</label>
+        <link refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="12">
+        <label>block</label>
+      </node>
+      <node id="11">
+        <label>gr::mack_sdr_rossi::BCH_decoder_ATSC</label>
+        <link refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>gr::mack_sdr_rossi::BCH_decoder_ATSC_impl</label>
+        <link refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_decoder_ATSC_impl.h" line="30" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_decoder_ATSC_impl.h" bodystart="29" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1ab13eae9b50c45191131d68821d97fb51" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::BCH_decoder_ATSC_impl</scope><name>BCH_decoder_ATSC_impl</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1abc746a9eecf9d90ed0b46dc5b3bb9389" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::BCH_decoder_ATSC_impl</scope><name>decoder_BCH</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1a28ee06ec5ee611746d7172380e405c8c" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::BCH_decoder_ATSC_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1a7fcf5f179379bb38bdf56138a06da167" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::BCH_decoder_ATSC_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC_1a008da597b1ac998888cd142e5f4bddd7" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::BCH_decoder_ATSC_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1a3e8fc5ce35aad4cf5bef593ffcab8cac" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::BCH_decoder_ATSC_impl</scope><name>N_size</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC_1a773fe2bf4efbdafb65e22f23e05ad06b" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::BCH_decoder_ATSC_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1a49861a61aefe4b7164af2a56a9b89656" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::BCH_decoder_ATSC_impl</scope><name>~BCH_decoder_ATSC_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
