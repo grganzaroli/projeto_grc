@@ -175,7 +175,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -203,7 +203,7 @@
     </param>
     <param>
       <key>num_items</key>
-      <value>n-168</value>
+      <value>n-192</value>
     </param>
     <param>
       <key>vlen</key>
@@ -293,7 +293,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>10800</value>
+      <value>43200</value>
     </param>
   </block>
   <block>

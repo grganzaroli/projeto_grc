@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Top Block
-# Generated: Fri Jan 19 11:43:15 2018
+# Generated: Sat Jan 20 10:45:34 2018
 ##################################################
 
 if __name__ == '__main__':
@@ -22,9 +22,9 @@ sys.path.append(os.environ.get('GRC_HIER_PATH', os.path.expanduser('~/.grc_gnura
 
 from PyQt4 import Qt
 from bch_dec import bch_dec  # grc-generated hier_block
-from bch_enc import bch_enc  # grc-generated hier_block
 from gnuradio import analog
 from gnuradio import blocks
+from gnuradio import dtv
 from gnuradio import eng_notation
 from gnuradio import gr
 from gnuradio import qtgui
@@ -67,7 +67,7 @@ class top_block(gr.top_block, Qt.QWidget):
         # Variables
         ##################################################
         self.samp_rate = samp_rate = 32000
-        self.n = n = 10800
+        self.n = n = 43200
         self.SNR = SNR = 20
 
         ##################################################
@@ -202,6 +202,7 @@ class top_block(gr.top_block, Qt.QWidget):
         self._qtgui_number_sink_0_win = sip.wrapinstance(self.qtgui_number_sink_0.pyqwidget(), Qt.QWidget)
         self.top_layout.addWidget(self._qtgui_number_sink_0_win)
         self.mapper_prbs_source_b_0 = mapper.prbs_source_b("PRBS31", 648000)
+        self.dtv_dvb_bch_bb_0 = dtv.dvb_bch_bb(dtv.STANDARD_DVBT2, dtv.FECFRAME_NORMAL, dtv.C2_3, )
         self.blocks_threshold_ff_0 = blocks.threshold_ff(0.50, 0.50, 0)
         self.blocks_float_to_char_0 = blocks.float_to_char(1, 1)
         self.blocks_char_to_float_0_1 = blocks.char_to_float(1, 1)
@@ -213,11 +214,8 @@ class top_block(gr.top_block, Qt.QWidget):
         	win_size=1000000,
         	bits_per_symbol=1,
         )
-        self.bch_enc_0 = bch_enc(
-            n=10800,
-        )
         self.bch_dec_0 = bch_dec(
-            n=10800,
+            n=n,
         )
         self.analog_noise_source_x_0 = analog.noise_source_f(analog.GR_GAUSSIAN, math.pow(10.0,-(SNR-1.25)/20.0)/math.sqrt(2.0), 0)
 
@@ -227,7 +225,6 @@ class top_block(gr.top_block, Qt.QWidget):
         self.connect((self.analog_noise_source_x_0, 0), (self.blocks_add_xx_0, 0))    
         self.connect((self.bch_dec_0, 0), (self.blks2_error_rate_0, 1))    
         self.connect((self.bch_dec_0, 0), (self.blocks_char_to_float_0_0, 0))    
-        self.connect((self.bch_enc_0, 0), (self.blocks_char_to_float_0_1, 0))    
         self.connect((self.blks2_error_rate_0, 0), (self.qtgui_number_sink_0, 0))    
         self.connect((self.blocks_add_xx_0, 0), (self.blocks_threshold_ff_0, 0))    
         self.connect((self.blocks_char_to_float_0, 0), (self.qtgui_time_sink_x_0, 0))    
@@ -236,8 +233,9 @@ class top_block(gr.top_block, Qt.QWidget):
         self.connect((self.blocks_float_to_char_0, 0), (self.bch_dec_0, 0))    
         self.connect((self.blocks_float_to_char_0, 0), (self.blocks_char_to_float_0, 0))    
         self.connect((self.blocks_threshold_ff_0, 0), (self.blocks_float_to_char_0, 0))    
-        self.connect((self.mapper_prbs_source_b_0, 0), (self.bch_enc_0, 0))    
+        self.connect((self.dtv_dvb_bch_bb_0, 0), (self.blocks_char_to_float_0_1, 0))    
         self.connect((self.mapper_prbs_source_b_0, 0), (self.blks2_error_rate_0, 0))    
+        self.connect((self.mapper_prbs_source_b_0, 0), (self.dtv_dvb_bch_bb_0, 0))    
 
     def closeEvent(self, event):
         self.settings = Qt.QSettings("GNU Radio", "top_block")
@@ -257,6 +255,7 @@ class top_block(gr.top_block, Qt.QWidget):
 
     def set_n(self, n):
         self.n = n
+        self.bch_dec_0.set_n(self.n)
 
     def get_SNR(self):
         return self.SNR
