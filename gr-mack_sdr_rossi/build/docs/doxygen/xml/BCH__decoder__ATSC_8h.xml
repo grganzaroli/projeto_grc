@@ -6,11 +6,17 @@
     <includes local="no">gnuradio/block.h</includes>
     <includedby refid="BCH__decoder__ATSC__impl_8h" local="no">BCH_decoder_ATSC_impl.h</includedby>
     <incdepgraph>
+      <node id="15">
+        <label>gnuradio/attributes.h</label>
+      </node>
       <node id="14">
         <label>mack_sdr_rossi/api.h</label>
         <link refid="api_8h"/>
         <childnode refid="15" relation="include">
         </childnode>
+      </node>
+      <node id="16">
+        <label>gnuradio/block.h</label>
       </node>
       <node id="13">
         <label>BCH_decoder_ATSC.h</label>
@@ -19,12 +25,6 @@
         </childnode>
         <childnode refid="16" relation="include">
         </childnode>
-      </node>
-      <node id="15">
-        <label>gnuradio/attributes.h</label>
-      </node>
-      <node id="16">
-        <label>gnuradio/block.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
@@ -46,6 +46,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/BCH_decoder_ATSC.h"/>
+    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/BCH_decoder_ATSC.h"/>
   </compounddef>
 </doxygen>

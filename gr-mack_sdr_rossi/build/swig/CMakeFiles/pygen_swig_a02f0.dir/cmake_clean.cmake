@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "mack_sdr_rossi_swigPYTHON_wrap.cxx"
   "mack_sdr_rossi_swig.py"
-  "CMakeFiles/pygen_swig_aca4d"
+  "CMakeFiles/pygen_swig_a02f0"
   "mack_sdr_rossi_swig.pyc"
   "mack_sdr_rossi_swig.pyo"
   "mack_sdr_rossi_swig.py"
@@ -9,5 +9,5 @@ FILE(REMOVE_RECURSE
 
 # Per-language clean rules from dependency scanning.
 FOREACH(lang)
-  INCLUDE(CMakeFiles/pygen_swig_aca4d.dir/cmake_clean_${lang}.cmake OPTIONAL)
+  INCLUDE(CMakeFiles/pygen_swig_a02f0.dir/cmake_clean_${lang}.cmake OPTIONAL)
 ENDFOREACH(lang)

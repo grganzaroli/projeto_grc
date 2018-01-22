@@ -6,11 +6,17 @@
     <includes local="no">gnuradio/block.h</includes>
     <includedby refid="str__to__vec__impl_8h" local="no">str_to_vec_impl.h</includedby>
     <incdepgraph>
+      <node id="55">
+        <label>gnuradio/attributes.h</label>
+      </node>
       <node id="54">
         <label>mack_sdr_rossi/api.h</label>
         <link refid="api_8h"/>
         <childnode refid="55" relation="include">
         </childnode>
+      </node>
+      <node id="56">
+        <label>gnuradio/block.h</label>
       </node>
       <node id="53">
         <label>str_to_vec.h</label>
@@ -19,12 +25,6 @@
         </childnode>
         <childnode refid="56" relation="include">
         </childnode>
-      </node>
-      <node id="55">
-        <label>gnuradio/attributes.h</label>
-      </node>
-      <node id="56">
-        <label>gnuradio/block.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
@@ -46,6 +46,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/str_to_vec.h"/>
+    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/str_to_vec.h"/>
   </compounddef>
 </doxygen>

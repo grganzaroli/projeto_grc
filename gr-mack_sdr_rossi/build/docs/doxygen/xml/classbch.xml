@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="7" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="7" bodyend="-1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="7" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="7" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classbch_1ac459316fcfad460f1dff8e772869903c" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="8" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="8" bodyend="-1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="8" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="8" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classbch_1a3ed1b240d1428ea2a1b1788bb2a0039e" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="9" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="9" bodyend="-1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="9" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="9" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classbch_1a6e4414f6f1ad46677960a66bf3ceef7a" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="10" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="10" bodyend="-1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="10" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="10" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classbch_1a3e7a87799a60277d9e39e16fda653f34" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="11" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="11" bodyend="-1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="11" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="11" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classbch_1a5511225649c4a8b53c0baa9388502b75" prot="private" static="no" mutable="no">
         <type>unsigned char *</type>
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="12" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="12" bodyend="-1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="12" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="12" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classbch_1a9f2174fe8037d6752adba302cdf354a4" prot="private" static="no" mutable="no">
         <type>unsigned char *</type>
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="13" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="13" bodyend="-1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="13" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="13" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classbch_1a63dc361e6f4c656d1e8ced2412294ceb" prot="private" static="no" mutable="no">
         <type>int *</type>
@@ -106,7 +106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="15" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="15" bodyend="-1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="15" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classbch_1a0f969db8d9a58a1b1f7e9835f35cb26e" prot="private" static="no" mutable="no">
         <type>int *</type>
@@ -119,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="16" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="16" bodyend="-1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="16" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classbch_1a7afa14248eaa3b0a3033944ce953fc71" prot="private" static="no" mutable="no">
         <type>int *</type>
@@ -132,7 +132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="17" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="17" bodyend="-1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="17" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classbch_1a7230e6bede6f750997f9da456599bd80" prot="private" static="no" mutable="no">
         <type>int *</type>
@@ -145,7 +145,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="18" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="18" bodyend="-1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="18" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classbch_1ab8ea35cee2bbe6ff1d79aca01ad5fd1f" prot="private" static="no" mutable="no">
         <type>int *</type>
@@ -158,7 +158,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="20" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="20" bodyend="-1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="20" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="20" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -189,7 +189,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="23" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="23" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classbch_1a536ef1ba37921f3a29776e5a8a43ccd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -206,7 +206,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="24" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="24" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classbch_1a82f75ce75ca22c3447b8b75900e9fa34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -223,7 +223,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="25" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="25" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classbch_1abbb56f91e3153f1ff9fb1137cd950886" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -236,7 +236,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="26" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="26" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classbch_1a527e44b67fd36c511aa10c04a6eec375" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -249,7 +249,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="27" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="27" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classbch_1a155974b364651c47b3b7e6b33fdf1e90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -270,7 +270,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="29" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="29" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classbch_1a32a740263dea90c6996e697105467293" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -291,7 +291,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="30" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="30" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classbch_1a4ce993751f305c1bd56da194028cf6b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -312,7 +312,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="32" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="32" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classbch_1a0a6c69671af01a8f35f4a56c237ecf48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -333,7 +333,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="33" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="33" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classbch_1a585b514a8eb123f005907a51397e4e24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -354,14 +354,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="34" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="34" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="5" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="4" bodyend="35"/>
+    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" line="5" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h" bodystart="4" bodyend="35"/>
     <listofallmembers>
       <member refid="classbch_1abbb56f91e3153f1ff9fb1137cd950886" prot="public" virt="non-virtual"><scope>bch</scope><name>calc_gf</name></member>
       <member refid="classbch_1a527e44b67fd36c511aa10c04a6eec375" prot="public" virt="non-virtual"><scope>bch</scope><name>calc_tab_inv</name></member>

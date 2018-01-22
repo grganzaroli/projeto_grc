@@ -1,8 +1,9 @@
-﻿#include <iostream>
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <string.h>
 #include <cmath>
 #include "bch.h"
+
+#pragma warning	(disable: 4996)
 
 using namespace std;
 
@@ -128,12 +129,10 @@ void bch::calc_gf()
 	int index = m;
 
 	GF = new int[n+n_extension];
-	for(int i = 0; i < n+n_extension; i++)
-		GF[i] = 0;
+	memset (GF, 0, sizeof(GF[0])*(n+n_extension));
 
 	inv_GF = new int[n+n_extension+1];
-	for(int i = 0; i < n+n_extension+1; i++)
-		inv_GF[i] = 0;
+	memset (inv_GF, 0, sizeof(inv_GF[0])*(n+n_extension+1));
 
 	int **aux_GF = new int*[2]; //auxiliar para calcular o valor decimal
 	for(int i = 0; i < (2); i++)
@@ -148,15 +147,11 @@ void bch::calc_gf()
 		}
 
 		if(i < m)
-		{
 			aux_GF[0][i] = 1;
-		}
 		else if(i == m)
 		{
 			for(int j = 0; j < m; j++)
-			{
 				aux_GF[0][j] = pol_primitivo[j];
-			}
 		}
 		else
 		{

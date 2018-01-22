@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/BCH_decoder_ATSC.h" line="39" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/BCH_decoder_ATSC.h" bodystart="39" bodyend="-1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/BCH_decoder_ATSC.h" line="39" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/BCH_decoder_ATSC.h" bodystart="39" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -36,7 +36,7 @@
 <para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC" kindref="compound">mack_sdr_rossi::BCH_decoder_ATSC</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC_1a008da597b1ac998888cd142e5f4bddd7" kindref="member">mack_sdr_rossi::BCH_decoder_ATSC::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/BCH_decoder_ATSC.h" line="49" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/BCH_decoder_ATSC.h" line="49" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -71,7 +71,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/BCH_decoder_ATSC.h" line="37" column="1" bodyfile="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/BCH_decoder_ATSC.h" bodystart="36" bodyend="50"/>
+    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/BCH_decoder_ATSC.h" line="37" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/BCH_decoder_ATSC.h" bodystart="36" bodyend="50"/>
     <listofallmembers>
       <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC_1a008da597b1ac998888cd142e5f4bddd7" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::BCH_decoder_ATSC</scope><name>make</name></member>
       <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC_1a773fe2bf4efbdafb65e22f23e05ad06b" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::BCH_decoder_ATSC</scope><name>sptr</name></member>

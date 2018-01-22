@@ -1,4 +1,4 @@
-# Install script for directory: /home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/grc
+# Install script for directory: /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/grc
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -42,10 +42,10 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   ENDIF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
 FILE(INSTALL DESTINATION "/usr/local/share/gnuradio/grc/blocks" TYPE FILE FILES
-    "/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/grc/mack_sdr_rossi_LDPC_decoder_ATSC.xml"
-    "/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/grc/mack_sdr_rossi_BCH_decoder_ATSC.xml"
-    "/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/grc/mack_sdr_rossi_str_to_vec.xml"
-    "/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/grc/mack_sdr_rossi_LDPC_decoder_hard_ATSC.xml"
+    "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/grc/mack_sdr_rossi_LDPC_decoder_ATSC.xml"
+    "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/grc/mack_sdr_rossi_BCH_decoder_ATSC.xml"
+    "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/grc/mack_sdr_rossi_str_to_vec.xml"
+    "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/grc/mack_sdr_rossi_LDPC_decoder_hard_ATSC.xml"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

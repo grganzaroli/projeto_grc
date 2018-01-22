@@ -7,7 +7,7 @@ swig/CMakeFiles/_mack_sdr_rossi_swig.dir/mack_sdr_rossi_swigPYTHON_wrap.cxx.o
  ../include/mack_sdr_rossi/LDPC_decoder_hard_ATSC.h
  ../include/mack_sdr_rossi/api.h
  ../include/mack_sdr_rossi/str_to_vec.h
- /home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi_swigPYTHON_wrap.cxx
+ /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi_swigPYTHON_wrap.cxx
  /usr/include/python2.7/Python.h
  /usr/include/python2.7/abstract.h
  /usr/include/python2.7/boolobject.h

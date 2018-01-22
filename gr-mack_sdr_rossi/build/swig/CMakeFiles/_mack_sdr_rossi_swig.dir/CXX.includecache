@@ -34,7 +34,7 @@ mack_sdr_rossi/api.h
 gnuradio/block.h
 -
 
-/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi_swigPYTHON_wrap.cxx
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi_swigPYTHON_wrap.cxx
 Python.h
 -
 Python.h
@@ -46,7 +46,7 @@ stdexcept
 string
 -
 gnuradio_swig_bug_workaround.h
-/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/build/swig/gnuradio_swig_bug_workaround.h
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig/gnuradio_swig_bug_workaround.h
 cstddef
 -
 stdexcept
@@ -78,13 +78,13 @@ gnuradio/high_res_timer.h
 limits.h
 -
 mack_sdr_rossi/LDPC_decoder_ATSC.h
-/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi/LDPC_decoder_ATSC.h
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi/LDPC_decoder_ATSC.h
 mack_sdr_rossi/BCH_decoder_ATSC.h
-/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi/BCH_decoder_ATSC.h
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi/BCH_decoder_ATSC.h
 mack_sdr_rossi/str_to_vec.h
-/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi/str_to_vec.h
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi/str_to_vec.h
 mack_sdr_rossi/LDPC_decoder_hard_ATSC.h
-/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi/LDPC_decoder_hard_ATSC.h
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi/LDPC_decoder_hard_ATSC.h
 float.h
 -
 math.h

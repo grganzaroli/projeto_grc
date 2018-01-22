@@ -1,4 +1,4 @@
-# Install script for directory: /home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/swig
+# Install script for directory: /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/swig
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/mack_sdr_rossi/_mack_sdr_rossi_swig.so"
          RPATH "")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/mack_sdr_rossi" TYPE MODULE FILES "/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/build/swig/_mack_sdr_rossi_swig.so")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/mack_sdr_rossi" TYPE MODULE FILES "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig/_mack_sdr_rossi_swig.so")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/mack_sdr_rossi/_mack_sdr_rossi_swig.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/mack_sdr_rossi/_mack_sdr_rossi_swig.so")
     FILE(RPATH_REMOVE
@@ -51,20 +51,20 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/mack_sdr_rossi" TYPE FILE FILES "/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi_swig.py")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/mack_sdr_rossi" TYPE FILE FILES "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi_swig.py")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/mack_sdr_rossi" TYPE FILE FILES
-    "/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi_swig.pyc"
-    "/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi_swig.pyo"
+    "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi_swig.pyc"
+    "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi_swig.pyo"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/mack_sdr_rossi/mack_sdr_rossi/swig" TYPE FILE FILES
-    "/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/swig/mack_sdr_rossi_swig.i"
-    "/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi_swig_doc.i"
+    "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/swig/mack_sdr_rossi_swig.i"
+    "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi_swig_doc.i"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

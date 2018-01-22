@@ -1,4 +1,4 @@
-# Install script for directory: /home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/apps
+# Install script for directory: /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/apps
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)

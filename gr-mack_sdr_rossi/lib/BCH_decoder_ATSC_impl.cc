@@ -115,6 +115,7 @@ namespace gr {
     BCH_decoder_ATSC_impl::BCH_decoder_ATSC_impl(size_t N)
       : gr::block("BCH_decoder_ATSC",
               gr::io_signature::make(1, 1, sizeof(unsigned char)*N),
+              //gr::io_signature::make(1, 1, sizeof(unsigned char)*(10632)))
               gr::io_signature::make(1, 1, sizeof(unsigned char)*(43008)))
         {
           N_size = N;
@@ -163,6 +164,13 @@ namespace gr {
       bool decoding_ok = decoder.decode(r, n_err);
       for(int i = 0; i < n_s; i++)
         out[n_s-1-i] = r[i];
+      /*
+      FILE *F = fopen ("in_bch_short.txt", "a+");
+      for(int i = 0; i < n_s; i++)
+        fprintf(F, "%i", r[i]);
+      fprintf(F,"\n");
+      pclose(F);
+      */
     }
     else if(N_size == 43200)
     {
@@ -173,22 +181,13 @@ namespace gr {
       bool decoding_ok = decoder.decode(r, n_err);
       for(int i = 0; i < n_n; i++)
         out[n_n-1-i] = r[i];
-    
-
-
-
-    
-    printf("r[%i] = %i\n", 0, r[0]);
-    printf("r[%i] = %i\n", 1, r[1]);
-    printf("r[%i] = %i\n", 2, r[2]);
-
-    printf("r[%i] = %i\n", n_n-3, r[n_n-3]);
-    printf("r[%i] = %i\n", n_n-2, r[n_n-2]);
-    printf("r[%i] = %i\n", n_n-1, r[n_n-1]);
-
-    
-    
-    
+      /*
+      FILE *F = fopen ("in_bch_normal.txt", "a+");
+      for(int i = 0; i < n_n; i++)
+        fprintf(F, "%i", r[i]);
+      fprintf(F,"\n");
+      pclose(F);
+      */
     }
 	}
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/lib
+# Install script for directory: /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,8 +45,8 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "mack_sd
     ENDIF()
   ENDFOREACH()
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/build/lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0"
-    "/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/build/lib/libgnuradio-mack_sdr_rossi-1.0.0git.so"
+    "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0"
+    "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib/libgnuradio-mack_sdr_rossi-1.0.0git.so"
     )
   FOREACH(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0"
@@ -65,8 +65,8 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "mack
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "mack_sdr_rossi_runtime")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES
-    "/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/build/lib/libgnuradio-mack_sdr_rossi.so"
-    "/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/build/lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0"
+    "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib/libgnuradio-mack_sdr_rossi.so"
+    "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "mack_sdr_rossi_runtime")
 

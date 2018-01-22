@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
   <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
-    <compoundname>/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/include</compoundname>
-    <innerdir refid="dir_ba4e2cfdfdb92d307bf07bbbe3b3e4ef">/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi</innerdir>
+    <compoundname>/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include</compoundname>
+    <innerdir refid="dir_ba4e2cfdfdb92d307bf07bbbe3b3e4ef">/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi</innerdir>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/rossi/Desktop/Git_Hub/projeto_grc/gr-mack_sdr_rossi/include/"/>
+    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/"/>
   </compounddef>
 </doxygen>
