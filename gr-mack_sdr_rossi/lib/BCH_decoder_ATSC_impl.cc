@@ -55,41 +55,8 @@ unsigned char pol_gerador_n[n_n-k_n+1] = {1,0,1,0,0,1,1,1,0,0,0,1,0,0,1,1,0,0,0,
 0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,1,1,0,1,0,0,0,1,1,1,1,0,0,0,0,1,0,1,1,1,1,1,0,1,1,1,0,1,1,0,0,1,1,0,0,0,0,0,0,0,1,0,0,1,0,1,0,1,0,1,
 1,1,1,0,0,1,1,1}; //(meu calculo - matlab, victor)
 
-/*
-unsigned char pol_gerador_n[n_n-k_n+1] = {1,1,1,0,0,1,1,1,1,0,1,0,1,0,1,0,0,1,0,0,0,0,0,0,0,1,1,0,0,1,1,0,1,1,1,0,1,1,1,1,1,0,1,0,0,0,0,1,1,1,1,0,0,
-0,1,0,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,1,0,1,0,1,1,0,0,0,0,1,1,1,0,1,1,0,0,0,1,1,0,1,1,0,0,1,1,0,1,0,0,1,1,1,1,0,0,1,
-1,0,0,0,0,1,0,1,0,0,0,1,1,1,0,0,0,1,0,0,0,1,0,1,0,0,0,1,1,1,0,1,0,0,0,1,0,0,0,0,1,1,1,0,0,0,0,0,1,0,1,1,1,0,0,0,0,0,1,1,0,0,1,0,0,0,
-1,1,1,0,0,1,0,1}; // victor invertido
-*/
-/*
-unsigned char pol_gerador_n[n_n-k_n+1] = {1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,1,1,1,1,1,0,0,0,1,1,0,0,
-0,1,1,0,1,1,1,0,1,0,1,1,0,0,1,0,0,0,0,1,1,1,0,1,1,1,0,1,0,1,0,1,0,0,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1,0,1,0,1,1,1,1,1,1,1,1,0,0,0,
-0,0,0,0,0,1,1,1,1,0,0,0,0,0,1,0,1,0,1,1,0,1,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,0,1,0,1,0,1,1,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,1,0,
-1,1,1,1,1,1,0,1}; //(dvbt2 encoder grc)
-*/
-//unsigned char pol_primitivo_n[m_n+1] = {1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,1}; // NAO RECONHECEU
-unsigned char pol_primitivo_n[m_n+1] = {1,1,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1}; // NAO RECONHECEU (MATLAB)
-//unsigned char pol_primitivo_n[m_n+1] = {1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,1}; // NAO RECONHECEU (MATLAB invertido)
-//unsigned char pol_primitivo_n[m_n+1] = {1,0,0,1,1,1,0,0,0,1,1,0,0,1,0,1,1}; // NAO RECONHECEU
-//unsigned char pol_primitivo_n[m_n+1] = {1,1,0,1,0,0,1,1,0,0,0,1,1,1,0,0,1}; // NAO RECONHECEU
-//unsigned char pol_primitivo_n[m_n+1] = {1,0,0,1,1,0,1,1,0,1,1,0,0,0,0,1,1};	// NAO RECONHECEU		
-//unsigned char pol_primitivo_n[m_n+1] = {1,1,0,0,0,0,1,1,0,1,1,0,1,1,0,0,1}; // NAO RECONHECEU
-//unsigned char pol_primitivo_n[m_n+1] = {1,1,0,0,0,1,1,1,0,0,1,0,0,0,1,1,1};	// NAO RECONHECEU	
-//unsigned char pol_primitivo_n[m_n+1] = {1,1,1,0,0,0,1,0,0,1,1,1,0,0,0,1,1}; // NAO RECONHECEU
-//unsigned char pol_primitivo_n[m_n+1] = {1,1,0,0,0,1,1,1,1,0,1,0,1,0,1,1,1};	// NAO RECONHECEU		
-//unsigned char pol_primitivo_n[m_n+1] = {1,1,1,0,1,0,1,0,1,1,1,1,0,0,0,1,1}; // NAO RECONHECEU
-//unsigned char pol_primitivo_n[m_n+1] = {1,1,0,0,0,1,1,0,0,1,1,1,0,1,1,1,1};	// NAO RECONHECEU		
-//unsigned char pol_primitivo_n[m_n+1] = {1,1,1,1,0,1,1,1,0,0,1,1,0,0,0,1,1}; // NAO RECONHECEU
-//unsigned char pol_primitivo_n[m_n+1] = {1,0,0,0,0,0,0,1,1,1,1,0,1,1,1,0,1};	// NAO RECONHECEU
-//unsigned char pol_primitivo_n[m_n+1] = {1,0,1,1,1,0,1,1,1,1,0,0,0,0,0,0,1}; // NAO RECONHECEU
-//unsigned char pol_primitivo_n[m_n+1] = {1,0,1,1,1,0,1,0,0,1,0,0,0,0,0,0,1};	// NAO RECONHECEU			
-//unsigned char pol_primitivo_n[m_n+1] = {1,0,0,0,0,0,0,1,0,0,1,0,1,1,1,0,1}; // NAO RECONHECEU
-//unsigned char pol_primitivo_n[m_n+1] = {1,0,1,0,0,0,1,0,1,0,0,0,0,1,0,1,1};	// NAO RECONHECEU			
-//unsigned char pol_primitivo_n[m_n+1] = {1,1,0,1,0,0,0,0,1,0,1,0,0,0,1,0,1}; // NAO RECONHECEU
-//unsigned char pol_primitivo_n[m_n+1] = {1,0,1,1,1,0,0,0,0,0,1,1,0,1,1,0,1};	// NAO RECONHECEU			
-//unsigned char pol_primitivo_n[m_n+1] = {1,0,1,1,0,1,1,0,0,0,0,0,1,1,1,0,1}; // NAO RECONHECEU
-//unsigned char pol_primitivo_n[m_n+1] = {1,1,0,0,0,0,1,0,0,0,1,1,0,1,1,1,1};	// NAO RECONHECEU			
-//unsigned char pol_primitivo_n[m_n+1] = {1,1,1,1,0,1,1,0,0,0,1,0,0,0,0,1,1}; // NAO RECONHECEU
+unsigned char pol_primitivo_n[m_n+1] = {1,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1};
+
 
 #if N == 10800
   #define parity 168

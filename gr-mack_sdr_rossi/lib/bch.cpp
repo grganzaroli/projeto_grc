@@ -1,4 +1,5 @@
-﻿#include <stdio.h>
+﻿#include <iostream>
+#include <stdio.h>
 #include <string.h>
 #include <cmath>
 #include "bch.h"
@@ -112,6 +113,8 @@ void bch::init(int N, int K, int T, int M)
 	m = M;
 
 	n_extension = pow(2, m) - 1 - n;
+
+	printf("");
 }
 
 void bch::set_pol_prim(unsigned char *p_prim)
@@ -322,11 +325,11 @@ bool bch::decode(unsigned char *rr, int &n_err)
 
 	//setar variáveis
 
-	for(int i = 0; i < n_extension; i++)
+	for(int i = 0; i < n+n_extension; i++)
 		r[i] = 0;
 
-	for(int i = n_extension; i < n+n_extension; i++)
-		r[i] = rr[i-n_extension];
+	for(int i = 0; i < n; i++)
+		r[i] = rr[i];
 
 	for(int i = 0; i < (2*t+1); i++)
 		sindrome[i] = 0;
@@ -395,7 +398,7 @@ bool bch::decode(unsigned char *rr, int &n_err)
 		delete [] err;
 
 		for(int i = 0; i < n; i++)
-			rr[i] = r[i+n_extension];
+			rr[i] = r[i];
 
 		n_err = 0;
 
@@ -684,7 +687,7 @@ bool bch::decode(unsigned char *rr, int &n_err)
 		delete [] err;
 
 		for(int i = 0; i < n; i++)
-			rr[i] = r[i+n_extension];
+			rr[i] = r[i];
 
 		for(int i = 0; i < t; i++)
 		{
