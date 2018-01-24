@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi
+CMAKE_SOURCE_DIR = /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build
+CMAKE_BINARY_DIR = /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -120,14 +120,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib/CMakeFiles/progress.marks
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f CMakeFiles/Makefile2 lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles 0
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib/CMakeFiles/progress.marks
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f CMakeFiles/Makefile2 lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f CMakeFiles/Makefile2 lib/clean
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f CMakeFiles/Makefile2 lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -136,22 +136,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/rule:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/rule
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/rule
 .PHONY : lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/rule
 
 # Convenience name for target.
@@ -160,12 +160,12 @@ gnuradio-mack_sdr_rossi: lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/rule
 
 # fast build rule for target.
 gnuradio-mack_sdr_rossi/fast:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build
 .PHONY : gnuradio-mack_sdr_rossi/fast
 
 # Convenience name for target.
 lib/CMakeFiles/test-mack_sdr_rossi.dir/rule:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/test-mack_sdr_rossi.dir/rule
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/test-mack_sdr_rossi.dir/rule
 .PHONY : lib/CMakeFiles/test-mack_sdr_rossi.dir/rule
 
 # Convenience name for target.
@@ -174,7 +174,7 @@ test-mack_sdr_rossi: lib/CMakeFiles/test-mack_sdr_rossi.dir/rule
 
 # fast build rule for target.
 test-mack_sdr_rossi/fast:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/test-mack_sdr_rossi.dir/build.make lib/CMakeFiles/test-mack_sdr_rossi.dir/build
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/test-mack_sdr_rossi.dir/build.make lib/CMakeFiles/test-mack_sdr_rossi.dir/build
 .PHONY : test-mack_sdr_rossi/fast
 
 BCH_decoder_ATSC_impl.o: BCH_decoder_ATSC_impl.cc.o
@@ -182,7 +182,7 @@ BCH_decoder_ATSC_impl.o: BCH_decoder_ATSC_impl.cc.o
 
 # target to build an object file
 BCH_decoder_ATSC_impl.cc.o:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o
 .PHONY : BCH_decoder_ATSC_impl.cc.o
 
 BCH_decoder_ATSC_impl.i: BCH_decoder_ATSC_impl.cc.i
@@ -190,7 +190,7 @@ BCH_decoder_ATSC_impl.i: BCH_decoder_ATSC_impl.cc.i
 
 # target to preprocess a source file
 BCH_decoder_ATSC_impl.cc.i:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.i
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.i
 .PHONY : BCH_decoder_ATSC_impl.cc.i
 
 BCH_decoder_ATSC_impl.s: BCH_decoder_ATSC_impl.cc.s
@@ -198,7 +198,7 @@ BCH_decoder_ATSC_impl.s: BCH_decoder_ATSC_impl.cc.s
 
 # target to generate assembly for a file
 BCH_decoder_ATSC_impl.cc.s:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.s
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.s
 .PHONY : BCH_decoder_ATSC_impl.cc.s
 
 LDPC_decoder_ATSC_impl.o: LDPC_decoder_ATSC_impl.cc.o
@@ -206,7 +206,7 @@ LDPC_decoder_ATSC_impl.o: LDPC_decoder_ATSC_impl.cc.o
 
 # target to build an object file
 LDPC_decoder_ATSC_impl.cc.o:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.o
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.o
 .PHONY : LDPC_decoder_ATSC_impl.cc.o
 
 LDPC_decoder_ATSC_impl.i: LDPC_decoder_ATSC_impl.cc.i
@@ -214,7 +214,7 @@ LDPC_decoder_ATSC_impl.i: LDPC_decoder_ATSC_impl.cc.i
 
 # target to preprocess a source file
 LDPC_decoder_ATSC_impl.cc.i:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.i
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.i
 .PHONY : LDPC_decoder_ATSC_impl.cc.i
 
 LDPC_decoder_ATSC_impl.s: LDPC_decoder_ATSC_impl.cc.s
@@ -222,7 +222,7 @@ LDPC_decoder_ATSC_impl.s: LDPC_decoder_ATSC_impl.cc.s
 
 # target to generate assembly for a file
 LDPC_decoder_ATSC_impl.cc.s:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.s
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.s
 .PHONY : LDPC_decoder_ATSC_impl.cc.s
 
 LDPC_decoder_hard_ATSC_impl.o: LDPC_decoder_hard_ATSC_impl.cc.o
@@ -230,7 +230,7 @@ LDPC_decoder_hard_ATSC_impl.o: LDPC_decoder_hard_ATSC_impl.cc.o
 
 # target to build an object file
 LDPC_decoder_hard_ATSC_impl.cc.o:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.o
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.o
 .PHONY : LDPC_decoder_hard_ATSC_impl.cc.o
 
 LDPC_decoder_hard_ATSC_impl.i: LDPC_decoder_hard_ATSC_impl.cc.i
@@ -238,7 +238,7 @@ LDPC_decoder_hard_ATSC_impl.i: LDPC_decoder_hard_ATSC_impl.cc.i
 
 # target to preprocess a source file
 LDPC_decoder_hard_ATSC_impl.cc.i:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.i
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.i
 .PHONY : LDPC_decoder_hard_ATSC_impl.cc.i
 
 LDPC_decoder_hard_ATSC_impl.s: LDPC_decoder_hard_ATSC_impl.cc.s
@@ -246,7 +246,7 @@ LDPC_decoder_hard_ATSC_impl.s: LDPC_decoder_hard_ATSC_impl.cc.s
 
 # target to generate assembly for a file
 LDPC_decoder_hard_ATSC_impl.cc.s:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.s
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.s
 .PHONY : LDPC_decoder_hard_ATSC_impl.cc.s
 
 bch.o: bch.cpp.o
@@ -254,7 +254,7 @@ bch.o: bch.cpp.o
 
 # target to build an object file
 bch.cpp.o:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.o
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.o
 .PHONY : bch.cpp.o
 
 bch.i: bch.cpp.i
@@ -262,7 +262,7 @@ bch.i: bch.cpp.i
 
 # target to preprocess a source file
 bch.cpp.i:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.i
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.i
 .PHONY : bch.cpp.i
 
 bch.s: bch.cpp.s
@@ -270,7 +270,7 @@ bch.s: bch.cpp.s
 
 # target to generate assembly for a file
 bch.cpp.s:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.s
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.s
 .PHONY : bch.cpp.s
 
 qa_mack_sdr_rossi.o: qa_mack_sdr_rossi.cc.o
@@ -278,7 +278,7 @@ qa_mack_sdr_rossi.o: qa_mack_sdr_rossi.cc.o
 
 # target to build an object file
 qa_mack_sdr_rossi.cc.o:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/test-mack_sdr_rossi.dir/build.make lib/CMakeFiles/test-mack_sdr_rossi.dir/qa_mack_sdr_rossi.cc.o
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/test-mack_sdr_rossi.dir/build.make lib/CMakeFiles/test-mack_sdr_rossi.dir/qa_mack_sdr_rossi.cc.o
 .PHONY : qa_mack_sdr_rossi.cc.o
 
 qa_mack_sdr_rossi.i: qa_mack_sdr_rossi.cc.i
@@ -286,7 +286,7 @@ qa_mack_sdr_rossi.i: qa_mack_sdr_rossi.cc.i
 
 # target to preprocess a source file
 qa_mack_sdr_rossi.cc.i:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/test-mack_sdr_rossi.dir/build.make lib/CMakeFiles/test-mack_sdr_rossi.dir/qa_mack_sdr_rossi.cc.i
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/test-mack_sdr_rossi.dir/build.make lib/CMakeFiles/test-mack_sdr_rossi.dir/qa_mack_sdr_rossi.cc.i
 .PHONY : qa_mack_sdr_rossi.cc.i
 
 qa_mack_sdr_rossi.s: qa_mack_sdr_rossi.cc.s
@@ -294,7 +294,7 @@ qa_mack_sdr_rossi.s: qa_mack_sdr_rossi.cc.s
 
 # target to generate assembly for a file
 qa_mack_sdr_rossi.cc.s:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/test-mack_sdr_rossi.dir/build.make lib/CMakeFiles/test-mack_sdr_rossi.dir/qa_mack_sdr_rossi.cc.s
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/test-mack_sdr_rossi.dir/build.make lib/CMakeFiles/test-mack_sdr_rossi.dir/qa_mack_sdr_rossi.cc.s
 .PHONY : qa_mack_sdr_rossi.cc.s
 
 str_to_vec_impl.o: str_to_vec_impl.cc.o
@@ -302,7 +302,7 @@ str_to_vec_impl.o: str_to_vec_impl.cc.o
 
 # target to build an object file
 str_to_vec_impl.cc.o:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.o
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.o
 .PHONY : str_to_vec_impl.cc.o
 
 str_to_vec_impl.i: str_to_vec_impl.cc.i
@@ -310,7 +310,7 @@ str_to_vec_impl.i: str_to_vec_impl.cc.i
 
 # target to preprocess a source file
 str_to_vec_impl.cc.i:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.i
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.i
 .PHONY : str_to_vec_impl.cc.i
 
 str_to_vec_impl.s: str_to_vec_impl.cc.s
@@ -318,7 +318,7 @@ str_to_vec_impl.s: str_to_vec_impl.cc.s
 
 # target to generate assembly for a file
 str_to_vec_impl.cc.s:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.s
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.s
 .PHONY : str_to_vec_impl.cc.s
 
 test_mack_sdr_rossi.o: test_mack_sdr_rossi.cc.o
@@ -326,7 +326,7 @@ test_mack_sdr_rossi.o: test_mack_sdr_rossi.cc.o
 
 # target to build an object file
 test_mack_sdr_rossi.cc.o:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/test-mack_sdr_rossi.dir/build.make lib/CMakeFiles/test-mack_sdr_rossi.dir/test_mack_sdr_rossi.cc.o
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/test-mack_sdr_rossi.dir/build.make lib/CMakeFiles/test-mack_sdr_rossi.dir/test_mack_sdr_rossi.cc.o
 .PHONY : test_mack_sdr_rossi.cc.o
 
 test_mack_sdr_rossi.i: test_mack_sdr_rossi.cc.i
@@ -334,7 +334,7 @@ test_mack_sdr_rossi.i: test_mack_sdr_rossi.cc.i
 
 # target to preprocess a source file
 test_mack_sdr_rossi.cc.i:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/test-mack_sdr_rossi.dir/build.make lib/CMakeFiles/test-mack_sdr_rossi.dir/test_mack_sdr_rossi.cc.i
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/test-mack_sdr_rossi.dir/build.make lib/CMakeFiles/test-mack_sdr_rossi.dir/test_mack_sdr_rossi.cc.i
 .PHONY : test_mack_sdr_rossi.cc.i
 
 test_mack_sdr_rossi.s: test_mack_sdr_rossi.cc.s
@@ -342,7 +342,7 @@ test_mack_sdr_rossi.s: test_mack_sdr_rossi.cc.s
 
 # target to generate assembly for a file
 test_mack_sdr_rossi.cc.s:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/test-mack_sdr_rossi.dir/build.make lib/CMakeFiles/test-mack_sdr_rossi.dir/test_mack_sdr_rossi.cc.s
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/test-mack_sdr_rossi.dir/build.make lib/CMakeFiles/test-mack_sdr_rossi.dir/test_mack_sdr_rossi.cc.s
 .PHONY : test_mack_sdr_rossi.cc.s
 
 # Help Target
@@ -392,6 +392,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

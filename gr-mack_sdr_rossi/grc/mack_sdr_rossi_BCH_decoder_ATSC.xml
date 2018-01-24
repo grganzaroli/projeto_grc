@@ -3,10 +3,15 @@
   <key>mack_sdr_rossi_BCH_decoder_ATSC</key>
   <category>[MACK_SDR_ROSSI]</category>
   <import>import mack_sdr_rossi</import>
-  <make>mack_sdr_rossi.BCH_decoder_ATSC($N)</make>
+  <make>mack_sdr_rossi.BCH_decoder_ATSC($N, $K)</make>
   <param>
     <name>N</name>
     <key>N</key>
+    <type>raw</type>
+  </param>
+  <param>
+    <name>K</name>
+    <key>K</key>
     <type>raw</type>
   </param>
   <sink>
@@ -17,6 +22,6 @@
   <source>
     <name>out</name>
     <type>byte</type>
-    <vlen>$(43008)</vlen>
+    <vlen>$K</vlen>
   </source>
 </block>

@@ -17,6 +17,6 @@
   <source>
     <name>out</name>
     <type>byte</type>
-    <vlen>$(43008)</vlen>
+    <vlen>$K</vlen>
   </source>
 </block>

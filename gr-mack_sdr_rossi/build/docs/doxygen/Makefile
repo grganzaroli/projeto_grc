@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi
+CMAKE_SOURCE_DIR = /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build
+CMAKE_BINARY_DIR = /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -120,14 +120,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/docs/doxygen/CMakeFiles/progress.marks
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f CMakeFiles/Makefile2 docs/doxygen/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles 0
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/docs/doxygen/CMakeFiles/progress.marks
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f CMakeFiles/Makefile2 docs/doxygen/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f CMakeFiles/Makefile2 docs/doxygen/clean
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f CMakeFiles/Makefile2 docs/doxygen/clean
 .PHONY : clean
 
 # The main clean target
@@ -136,22 +136,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f CMakeFiles/Makefile2 docs/doxygen/preinstall
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f CMakeFiles/Makefile2 docs/doxygen/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f CMakeFiles/Makefile2 docs/doxygen/preinstall
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f CMakeFiles/Makefile2 docs/doxygen/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 docs/doxygen/CMakeFiles/doxygen_target.dir/rule:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f CMakeFiles/Makefile2 docs/doxygen/CMakeFiles/doxygen_target.dir/rule
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f CMakeFiles/Makefile2 docs/doxygen/CMakeFiles/doxygen_target.dir/rule
 .PHONY : docs/doxygen/CMakeFiles/doxygen_target.dir/rule
 
 # Convenience name for target.
@@ -160,7 +160,7 @@ doxygen_target: docs/doxygen/CMakeFiles/doxygen_target.dir/rule
 
 # fast build rule for target.
 doxygen_target/fast:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f docs/doxygen/CMakeFiles/doxygen_target.dir/build.make docs/doxygen/CMakeFiles/doxygen_target.dir/build
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f docs/doxygen/CMakeFiles/doxygen_target.dir/build.make docs/doxygen/CMakeFiles/doxygen_target.dir/build
 .PHONY : doxygen_target/fast
 
 # Help Target
@@ -188,6 +188,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

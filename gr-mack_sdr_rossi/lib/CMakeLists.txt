@@ -28,9 +28,8 @@ list(APPEND mack_sdr_rossi_sources
     LDPC_decoder_ATSC_impl.cc
     str_to_vec_impl.cc
     LDPC_decoder_hard_ATSC_impl.cc
-    BCH_decoder_ATSC_impl.cc
     bch.cpp
-)
+    BCH_decoder_ATSC_impl.cc )
 
 set(mack_sdr_rossi_sources "${mack_sdr_rossi_sources}" PARENT_SCOPE)
 if(NOT mack_sdr_rossi_sources)

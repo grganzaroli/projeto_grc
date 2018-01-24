@@ -1,6 +1,6 @@
 /* -*- c++ -*- */
 /* 
- * Copyright 2017 <+YOU OR YOUR COMPANY+>.
+ * Copyright 2018 <+YOU OR YOUR COMPANY+>.
  * 
  * This is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -32,7 +32,7 @@ namespace gr {
       // Nothing to declare in this block.
 
      public:
-      BCH_decoder_ATSC_impl(size_t N);
+      BCH_decoder_ATSC_impl(size_t N, size_t K);
       ~BCH_decoder_ATSC_impl();
 
       // Where all the action really happens
@@ -43,11 +43,12 @@ namespace gr {
            gr_vector_const_void_star &input_items,
            gr_vector_void_star &output_items);
 
-	//Funções
-  void decoder_BCH(const char *in, char *out);
+      //Funções
+      void decoder_BCH(const unsigned char *in, unsigned char *out);
 
-	//Variaveis
-	int N_size;
+      //Variaveis
+      int N_size;
+
     };
 
   } // namespace mack_sdr_rossi

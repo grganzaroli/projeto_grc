@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi
+CMAKE_SOURCE_DIR = /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build
+CMAKE_BINARY_DIR = /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build
 
 # Utility rule file for mack_sdr_rossi_swig_swig_doc.
 
@@ -48,15 +48,15 @@ include swig/CMakeFiles/mack_sdr_rossi_swig_swig_doc.dir/progress.make
 swig/CMakeFiles/mack_sdr_rossi_swig_swig_doc: swig/mack_sdr_rossi_swig_doc.i
 
 swig/mack_sdr_rossi_swig_doc.i: swig/mack_sdr_rossi_swig_doc_swig_docs/xml/index.xml
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating python docstrings for mack_sdr_rossi_swig_doc"
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/docs/doxygen && /usr/bin/python2 -B /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/docs/doxygen/swig_doc.py /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi_swig_doc_swig_docs/xml /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi_swig_doc.i
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/docs/doxygen && /usr/bin/python2 -B /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/docs/doxygen/swig_doc.py /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi_swig_doc_swig_docs/xml /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi_swig_doc.i
 
 swig/mack_sdr_rossi_swig_doc_swig_docs/xml/index.xml: swig/_mack_sdr_rossi_swig_doc_tag
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating doxygen xml for mack_sdr_rossi_swig_doc docs"
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig && ./_mack_sdr_rossi_swig_doc_tag
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig && /usr/bin/doxygen /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi_swig_doc_swig_docs/Doxyfile
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig && ./_mack_sdr_rossi_swig_doc_tag
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig && /usr/bin/doxygen /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi_swig_doc_swig_docs/Doxyfile
 
 mack_sdr_rossi_swig_swig_doc: swig/CMakeFiles/mack_sdr_rossi_swig_swig_doc
 mack_sdr_rossi_swig_swig_doc: swig/mack_sdr_rossi_swig_doc.i
@@ -69,10 +69,10 @@ swig/CMakeFiles/mack_sdr_rossi_swig_swig_doc.dir/build: mack_sdr_rossi_swig_swig
 .PHONY : swig/CMakeFiles/mack_sdr_rossi_swig_swig_doc.dir/build
 
 swig/CMakeFiles/mack_sdr_rossi_swig_swig_doc.dir/clean:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig && $(CMAKE_COMMAND) -P CMakeFiles/mack_sdr_rossi_swig_swig_doc.dir/cmake_clean.cmake
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig && $(CMAKE_COMMAND) -P CMakeFiles/mack_sdr_rossi_swig_swig_doc.dir/cmake_clean.cmake
 .PHONY : swig/CMakeFiles/mack_sdr_rossi_swig_swig_doc.dir/clean
 
 swig/CMakeFiles/mack_sdr_rossi_swig_swig_doc.dir/depend:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/swig /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig/CMakeFiles/mack_sdr_rossi_swig_swig_doc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/swig /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig/CMakeFiles/mack_sdr_rossi_swig_swig_doc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : swig/CMakeFiles/mack_sdr_rossi_swig_swig_doc.dir/depend
 

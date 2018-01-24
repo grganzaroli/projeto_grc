@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi
+CMAKE_SOURCE_DIR = /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build
+CMAKE_BINARY_DIR = /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build
 
 # Include any dependencies generated for this target.
 include lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/depend.make
@@ -51,17 +51,17 @@ include lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/flags.make
 
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.o: lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/flags.make
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.o: ../lib/LDPC_decoder_ATSC_impl.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.o"
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.o -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.cc
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.o -c /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.cc
 
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.i"
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.cc > CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.i
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.cc > CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.i
 
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.s"
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.cc -o CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.s
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.cc -o CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.s
 
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.o.requires:
 .PHONY : lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.o.requires
@@ -74,17 +74,17 @@ lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.o.provides.
 
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.o: lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/flags.make
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.o: ../lib/str_to_vec_impl.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.o"
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.o -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/str_to_vec_impl.cc
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.o -c /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/str_to_vec_impl.cc
 
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.i"
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/str_to_vec_impl.cc > CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.i
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/str_to_vec_impl.cc > CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.i
 
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.s"
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/str_to_vec_impl.cc -o CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.s
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/str_to_vec_impl.cc -o CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.s
 
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.o.requires:
 .PHONY : lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.o.requires
@@ -97,17 +97,17 @@ lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.o.provides.build: 
 
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.o: lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/flags.make
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.o: ../lib/LDPC_decoder_hard_ATSC_impl.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.o"
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.o -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_hard_ATSC_impl.cc
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.o -c /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_hard_ATSC_impl.cc
 
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.i"
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_hard_ATSC_impl.cc > CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.i
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_hard_ATSC_impl.cc > CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.i
 
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.s"
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_hard_ATSC_impl.cc -o CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.s
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_hard_ATSC_impl.cc -o CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.s
 
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.o.requires:
 .PHONY : lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.o.requires
@@ -118,42 +118,19 @@ lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.o.prov
 
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.o.provides.build: lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.o
 
-lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o: lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/flags.make
-lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o: ../lib/BCH_decoder_ATSC_impl.cc
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o"
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_decoder_ATSC_impl.cc
-
-lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.i"
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_decoder_ATSC_impl.cc > CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.i
-
-lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.s"
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_decoder_ATSC_impl.cc -o CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.s
-
-lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o.requires:
-.PHONY : lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o.requires
-
-lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o.provides: lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o.requires
-	$(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o.provides.build
-.PHONY : lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o.provides
-
-lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o.provides.build: lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o
-
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.o: lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/flags.make
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.o: ../lib/bch.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.o"
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.o -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.cpp
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.o -c /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.cpp
 
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.i"
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.cpp > CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.i
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.cpp > CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.i
 
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.s"
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.cpp -o CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.s
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.cpp -o CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.s
 
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.o.requires:
 .PHONY : lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.o.requires
@@ -164,13 +141,36 @@ lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.o.provides: lib/CMakeFiles/gn
 
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.o.provides.build: lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.o
 
+lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o: lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/flags.make
+lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o: ../lib/BCH_decoder_ATSC_impl.cc
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o"
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o -c /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_decoder_ATSC_impl.cc
+
+lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.i"
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_decoder_ATSC_impl.cc > CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.i
+
+lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.s"
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_decoder_ATSC_impl.cc -o CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.s
+
+lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o.requires:
+.PHONY : lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o.requires
+
+lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o.provides: lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o.requires
+	$(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o.provides.build
+.PHONY : lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o.provides
+
+lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o.provides.build: lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o
+
 # Object files for target gnuradio-mack_sdr_rossi
 gnuradio__mack_sdr_rossi_OBJECTS = \
 "CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.o" \
 "CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.o" \
 "CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.o" \
-"CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o" \
-"CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.o"
+"CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.o" \
+"CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o"
 
 # External object files for target gnuradio-mack_sdr_rossi
 gnuradio__mack_sdr_rossi_EXTERNAL_OBJECTS =
@@ -178,8 +178,8 @@ gnuradio__mack_sdr_rossi_EXTERNAL_OBJECTS =
 lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.o
 lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.o
 lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.o
-lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o
 lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.o
+lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o
 lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make
 lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
 lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0: /usr/lib/x86_64-linux-gnu/libboost_system.so
@@ -187,11 +187,11 @@ lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0: /usr/local/lib/libgnuradio-run
 lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0: /usr/local/lib/libgnuradio-pmt.so
 lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0: lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library libgnuradio-mack_sdr_rossi-1.0.0git.so"
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gnuradio-mack_sdr_rossi.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && $(CMAKE_COMMAND) -E cmake_symlink_library libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0 libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0 libgnuradio-mack_sdr_rossi-1.0.0git.so
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/cmake -E create_symlink libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0 /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib/libgnuradio-mack_sdr_rossi.so
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/cmake -E create_symlink libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0 /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/cmake -E touch libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gnuradio-mack_sdr_rossi.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && $(CMAKE_COMMAND) -E cmake_symlink_library libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0 libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0 libgnuradio-mack_sdr_rossi-1.0.0git.so
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/cmake -E create_symlink libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0 /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib/libgnuradio-mack_sdr_rossi.so
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/cmake -E create_symlink libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0 /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && /usr/bin/cmake -E touch libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0
 
 lib/libgnuradio-mack_sdr_rossi-1.0.0git.so: lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0
 
@@ -202,15 +202,15 @@ lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build: lib/libgnuradio-mack_sdr_rossi
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/requires: lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.o.requires
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/requires: lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.o.requires
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/requires: lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.o.requires
-lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/requires: lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o.requires
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/requires: lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.o.requires
+lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/requires: lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.o.requires
 .PHONY : lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/requires
 
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/clean:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && $(CMAKE_COMMAND) -P CMakeFiles/gnuradio-mack_sdr_rossi.dir/cmake_clean.cmake
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib && $(CMAKE_COMMAND) -P CMakeFiles/gnuradio-mack_sdr_rossi.dir/cmake_clean.cmake
 .PHONY : lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/clean
 
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/depend:
-	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/depend
 

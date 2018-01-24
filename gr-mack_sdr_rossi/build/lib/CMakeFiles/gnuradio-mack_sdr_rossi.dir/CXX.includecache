@@ -16,15 +16,15 @@ gnuradio/block.h
 gnuradio/attributes.h
 -
 
-/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_decoder_ATSC_impl.cc
+/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_decoder_ATSC_impl.cc
 config.h
-/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/config.h
+/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/config.h
 gnuradio/io_signature.h
 -
 BCH_decoder_ATSC_impl.h
-/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_decoder_ATSC_impl.h
+/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_decoder_ATSC_impl.h
 bch.h
-/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h
+/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h
 stdio.h
 -
 string.h
@@ -34,11 +34,11 @@ cmath
 volk/volk.h
 -
 
-/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_decoder_ATSC_impl.h
+/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_decoder_ATSC_impl.h
 mack_sdr_rossi/BCH_decoder_ATSC.h
 -
 
-/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h
+/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h
 
 /usr/local/include/gnuradio/api.h
 gnuradio/attributes.h

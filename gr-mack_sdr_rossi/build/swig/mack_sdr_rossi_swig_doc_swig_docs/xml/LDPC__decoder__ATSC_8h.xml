@@ -8,14 +8,6 @@
       <node id="14">
         <label>gnuradio/attributes.h</label>
       </node>
-      <node id="12">
-        <label>/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/LDPC_decoder_ATSC.h</label>
-        <link refid="LDPC_decoder_ATSC.h"/>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-      </node>
       <node id="13">
         <label>mack_sdr_rossi/api.h</label>
         <link refid="api_8h"/>
@@ -24,6 +16,14 @@
       </node>
       <node id="15">
         <label>gnuradio/block.h</label>
+      </node>
+      <node id="12">
+        <label>/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/LDPC_decoder_ATSC.h</label>
+        <link refid="LDPC_decoder_ATSC.h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <innerclass refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC" prot="public">gr::mack_sdr_rossi::LDPC_decoder_ATSC</innerclass>
@@ -78,6 +78,6 @@
 <codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDED_MACK_SDR_ROSSI_LDPC_DECODER_ATSC_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
 <codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/LDPC_decoder_ATSC.h"/>
+    <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/LDPC_decoder_ATSC.h"/>
   </compounddef>
 </doxygen>

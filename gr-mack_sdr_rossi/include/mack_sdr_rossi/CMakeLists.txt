@@ -23,7 +23,7 @@
 install(FILES
     api.h
     LDPC_decoder_ATSC.h
-    BCH_decoder_ATSC.h
     str_to_vec.h
-    LDPC_decoder_hard_ATSC.h DESTINATION include/mack_sdr_rossi
+    LDPC_decoder_hard_ATSC.h
+    BCH_decoder_ATSC.h DESTINATION include/mack_sdr_rossi
 )
