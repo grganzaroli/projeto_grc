@@ -48,6 +48,7 @@ namespace gr {
 
       //Variaveis
       int N_size;
+      int K_size;
 
     };
 

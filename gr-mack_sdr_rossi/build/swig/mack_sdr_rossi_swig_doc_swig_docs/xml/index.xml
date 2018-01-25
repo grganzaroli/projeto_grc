@@ -2,7 +2,7 @@
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
   <compound refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC" kind="class"><name>gr::mack_sdr_rossi::BCH_decoder_ATSC</name>
     <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC_1a773fe2bf4efbdafb65e22f23e05ad06b" kind="typedef"><name>sptr</name></member>
-    <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC_1a008da597b1ac998888cd142e5f4bddd7" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC_1a21d2d18d16377485c4627da452b6030b" kind="function"><name>make</name></member>
   </compound>
   <compound refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC" kind="class"><name>gr::mack_sdr_rossi::LDPC_decoder_ATSC</name>
     <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC_1add89571f705bd1ac1b40d11b1383007e" kind="typedef"><name>sptr</name></member>
@@ -33,8 +33,8 @@
   </compound>
   <compound refid="str__to__vec_8h" kind="file"><name>str_to_vec.h</name>
   </compound>
-  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include</name>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include</name>
   </compound>
-  <compound refid="dir_ba4e2cfdfdb92d307bf07bbbe3b3e4ef" kind="dir"><name>/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi</name>
+  <compound refid="dir_ba4e2cfdfdb92d307bf07bbbe3b3e4ef" kind="dir"><name>/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi</name>
   </compound>
 </doxygenindex>

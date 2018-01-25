@@ -113,8 +113,6 @@ void bch::init(int N, int K, int T, int M)
 	m = M;
 
 	n_extension = pow(2, m) - 1 - n;
-
-	printf("");
 }
 
 void bch::set_pol_prim(unsigned char *p_prim)
@@ -379,7 +377,7 @@ bool bch::decode(unsigned char *rr, int &n_err)
 
 	if(aux_s == 1)
 	{
-		printf("SINAL RECEBIDO OK\n"); // ------------ FIM ------------
+		//printf("SINAL RECEBIDO OK\n"); // ------------ FIM ------------
 
 		delete [] sindrome;
 

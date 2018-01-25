@@ -1,4 +1,4 @@
-# Install script for directory: /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/docs/doxygen
+# Install script for directory: /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/docs/doxygen
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,8 +34,8 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/gr-mack_sdr_rossi" TYPE DIRECTORY FILES
-    "/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/docs/doxygen/xml"
-    "/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/docs/doxygen/html"
+    "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/docs/doxygen/xml"
+    "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/docs/doxygen/html"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

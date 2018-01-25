@@ -97,7 +97,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(376, 20)</value>
+      <value>(488, 20)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -168,7 +168,34 @@
     </param>
     <param>
       <key>value</key>
-      <value>43200</value>
+      <value>64800</value>
+    </param>
+  </block>
+  <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(296, 20)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>rate</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>6</value>
     </param>
   </block>
   <block>
@@ -292,7 +319,11 @@
       <value>0</value>
     </param>
     <param>
-      <key>n</key>
+      <key>fec</key>
+      <value>rate</value>
+    </param>
+    <param>
+      <key>size</key>
       <value>n</value>
     </param>
   </block>
@@ -779,7 +810,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(280, 20)</value>
+      <value>(392, 20)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -834,11 +865,11 @@
     </param>
     <param>
       <key>rate</key>
-      <value>10</value>
+      <value>rate</value>
     </param>
     <param>
       <key>size</key>
-      <value>n*3/2</value>
+      <value>n</value>
     </param>
   </block>
   <block>
@@ -861,7 +892,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(884, 216)</value>
+      <value>(892, 216)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1466,7 +1497,7 @@
     </param>
     <param>
       <key>size</key>
-      <value>n</value>
+      <value>n*rate/15</value>
     </param>
     <param>
       <key>srate</key>
@@ -1829,7 +1860,7 @@
     </param>
     <param>
       <key>size</key>
-      <value>n-192</value>
+      <value>n*rate/15-192</value>
     </param>
     <param>
       <key>srate</key>

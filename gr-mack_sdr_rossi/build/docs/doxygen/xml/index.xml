@@ -26,15 +26,15 @@
   </compound>
   <compound refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC" kind="class"><name>gr::mack_sdr_rossi::BCH_decoder_ATSC</name>
     <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC_1a773fe2bf4efbdafb65e22f23e05ad06b" kind="typedef"><name>sptr</name></member>
-    <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC_1a008da597b1ac998888cd142e5f4bddd7" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC_1a21d2d18d16377485c4627da452b6030b" kind="function"><name>make</name></member>
   </compound>
   <compound refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl" kind="class"><name>gr::mack_sdr_rossi::BCH_decoder_ATSC_impl</name>
     <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1a3e8fc5ce35aad4cf5bef593ffcab8cac" kind="variable"><name>N_size</name></member>
-    <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1ab13eae9b50c45191131d68821d97fb51" kind="function"><name>BCH_decoder_ATSC_impl</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1a6879e2ad24520b4753fbb2d22579f417" kind="function"><name>BCH_decoder_ATSC_impl</name></member>
     <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1a49861a61aefe4b7164af2a56a9b89656" kind="function"><name>~BCH_decoder_ATSC_impl</name></member>
     <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1a28ee06ec5ee611746d7172380e405c8c" kind="function"><name>forecast</name></member>
     <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1a7fcf5f179379bb38bdf56138a06da167" kind="function"><name>general_work</name></member>
-    <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1abc746a9eecf9d90ed0b46dc5b3bb9389" kind="function"><name>decoder_BCH</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1a397413220d2eac27e44f4fcba7136d85" kind="function"><name>decoder_BCH</name></member>
   </compound>
   <compound refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC" kind="class"><name>gr::mack_sdr_rossi::LDPC_decoder_ATSC</name>
     <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC_1add89571f705bd1ac1b40d11b1383007e" kind="typedef"><name>sptr</name></member>

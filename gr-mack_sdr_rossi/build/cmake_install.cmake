@@ -1,4 +1,4 @@
-# Install script for directory: /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi
+# Install script for directory: /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,18 +33,18 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/mack_sdr_rossi" TYPE FILE FILES "/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/cmake/Modules/mack_sdr_rossiConfig.cmake")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/mack_sdr_rossi" TYPE FILE FILES "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/cmake/Modules/mack_sdr_rossiConfig.cmake")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/include/mack_sdr_rossi/cmake_install.cmake")
-  INCLUDE("/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib/cmake_install.cmake")
-  INCLUDE("/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig/cmake_install.cmake")
-  INCLUDE("/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/python/cmake_install.cmake")
-  INCLUDE("/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/grc/cmake_install.cmake")
-  INCLUDE("/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/apps/cmake_install.cmake")
-  INCLUDE("/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/docs/cmake_install.cmake")
+  INCLUDE("/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/include/mack_sdr_rossi/cmake_install.cmake")
+  INCLUDE("/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib/cmake_install.cmake")
+  INCLUDE("/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig/cmake_install.cmake")
+  INCLUDE("/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/python/cmake_install.cmake")
+  INCLUDE("/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/grc/cmake_install.cmake")
+  INCLUDE("/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/apps/cmake_install.cmake")
+  INCLUDE("/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/docs/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 
@@ -54,7 +54,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

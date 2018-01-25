@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi
+CMAKE_SOURCE_DIR = /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build
+CMAKE_BINARY_DIR = /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build
 
 # Utility rule file for doxygen_target.
 
@@ -49,9 +49,9 @@ docs/doxygen/CMakeFiles/doxygen_target: docs/doxygen/xml
 docs/doxygen/CMakeFiles/doxygen_target: docs/doxygen/html
 
 docs/doxygen/xml:
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating documentation with doxygen"
-	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/docs/doxygen && /usr/bin/doxygen /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/docs/doxygen/Doxyfile
+	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/docs/doxygen && /usr/bin/doxygen /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/docs/doxygen/Doxyfile
 
 docs/doxygen/html: docs/doxygen/xml
 
@@ -66,10 +66,10 @@ docs/doxygen/CMakeFiles/doxygen_target.dir/build: doxygen_target
 .PHONY : docs/doxygen/CMakeFiles/doxygen_target.dir/build
 
 docs/doxygen/CMakeFiles/doxygen_target.dir/clean:
-	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/docs/doxygen && $(CMAKE_COMMAND) -P CMakeFiles/doxygen_target.dir/cmake_clean.cmake
+	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/docs/doxygen && $(CMAKE_COMMAND) -P CMakeFiles/doxygen_target.dir/cmake_clean.cmake
 .PHONY : docs/doxygen/CMakeFiles/doxygen_target.dir/clean
 
 docs/doxygen/CMakeFiles/doxygen_target.dir/depend:
-	cd /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/docs/doxygen /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/docs/doxygen /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/docs/doxygen/CMakeFiles/doxygen_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/docs/doxygen /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/docs/doxygen /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/docs/doxygen/CMakeFiles/doxygen_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : docs/doxygen/CMakeFiles/doxygen_target.dir/depend
 

@@ -14,7 +14,7 @@
 
 To avoid accidental use of raw pointers, mack_sdr_rossi::BCH_decoder_ATSC's constructor is in a private implementation class. mack_sdr_rossi::BCH_decoder_ATSC::make is the public interface for creating new instances.
 
-Params: (N)"
+Params: (N, K)"
 
 %feature("docstring") gr::mack_sdr_rossi::LDPC_decoder_ATSC "<+description of block+>"
 

@@ -17955,7 +17955,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		"To avoid accidental use of raw pointers, mack_sdr_rossi::BCH_decoder_ATSC's constructor is in a private implementation class. mack_sdr_rossi::BCH_decoder_ATSC::make is the public interface for creating new instances.\n"
 		"\n"
-		"Params: (N)\n"
+		"Params: (N, K)\n"
 		""},
 	 { (char *)"delete_BCH_decoder_ATSC", _wrap_delete_BCH_decoder_ATSC, METH_VARARGS, (char *)"delete_BCH_decoder_ATSC(BCH_decoder_ATSC self)"},
 	 { (char *)"BCH_decoder_ATSC_swigregister", BCH_decoder_ATSC_swigregister, METH_VARARGS, NULL},
@@ -17972,7 +17972,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		"To avoid accidental use of raw pointers, mack_sdr_rossi::BCH_decoder_ATSC's constructor is in a private implementation class. mack_sdr_rossi::BCH_decoder_ATSC::make is the public interface for creating new instances.\n"
 		"\n"
-		"Params: (N)\n"
+		"Params: (N, K)\n"
 		""},
 	 { (char *)"BCH_decoder_ATSC_sptr_history", _wrap_BCH_decoder_ATSC_sptr_history, METH_VARARGS, (char *)"BCH_decoder_ATSC_sptr_history(BCH_decoder_ATSC_sptr self) -> unsigned int"},
 	 { (char *)"BCH_decoder_ATSC_sptr_declare_sample_delay", _wrap_BCH_decoder_ATSC_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"

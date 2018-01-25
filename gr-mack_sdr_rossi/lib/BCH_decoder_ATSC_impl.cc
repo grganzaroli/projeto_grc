@@ -37,7 +37,7 @@
 #define n_s 10800 //acrescentar n_extension zeros no comeco do vetor recebido ate atingir 16383 amostras
 #define k_s 10632	
 #define t_s 12
-unsigned char pol_gerador_s[n_s-k_s+1] = {1,0,1,0,0,0,0,0,0,0,1,1,0,0,0,1,0,1,1,0,1,1,0,1,1,1,1,1,0,1,0,1,0,1,0,0,1,1,0,0,0,0,1,1,0,1,0,0,1,1,0,1,1,
+unsigned char pol_gerador_s[169] = {1,0,1,0,0,0,0,0,0,0,1,1,0,0,0,1,0,1,1,0,1,1,0,1,1,1,1,1,0,1,0,1,0,1,0,0,1,1,0,0,0,0,1,1,0,1,0,0,1,1,0,1,1,
 0,0,1,0,0,1,1,0,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,0,0,0,1,1,1,0,1,0,0,0,1,1,1,0,0,1,0,0,0,0,0,1,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,0,1,1,
 1,1,1,1,1,0,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,0,0,1,0,0,0,1,1,0,0,1,0,0,0,0,0,1,0,1,1,0,1,0,0,1,0,1}; //(norma, dvbt2 encoder grc)
 
@@ -50,7 +50,7 @@ unsigned char pol_primitivo_s[m_s+1] = {1,1,0,1,0,1,0,0,0,0,0,0,0,0,1}; // MATLA
 #define k_n 43008	
 #define t_n 12
 
-unsigned char pol_gerador_n[n_n-k_n+1] = {1,0,1,0,0,1,1,1,0,0,0,1,0,0,1,1,0,0,0,0,0,1,1,1,0,1,0,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,1,0,1,1,1,0,0,0,1,0,1,
+unsigned char pol_gerador_n[193] = {1,0,1,0,0,1,1,1,0,0,0,1,0,0,1,1,0,0,0,0,0,1,1,1,0,1,0,0,0,0,0,1,1,1,0,0,0,0,1,0,0,0,1,0,1,1,1,0,0,0,1,0,1,
 0,0,0,1,0,0,0,1,1,1,0,0,0,1,0,1,0,0,0,0,1,1,0,0,1,1,1,1,0,0,1,0,1,1,0,0,1,1,0,1,1,0,0,0,1,1,0,1,1,1,0,0,0,0,1,1,0,1,0,1,0,0,0,0,1,0,
 0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,1,1,0,1,0,0,0,1,1,1,1,0,0,0,0,1,0,1,1,1,1,1,0,1,1,1,0,1,1,0,0,1,1,0,0,0,0,0,0,0,1,0,0,1,0,1,0,1,0,1,
 1,1,1,0,0,1,1,1}; //(meu calculo - matlab, victor)
@@ -78,24 +78,26 @@ namespace gr {
               gr::io_signature::make(1, 1, sizeof(unsigned char)*K))
     {
       N_size = N;
-          
-          //ESSA PARTE RODA SÓ UMA VEZ
-          if(N_size == 10800)
-          {
-            decoder.init(n_s, k_s, t_s, m_s);
-            decoder.set_pol_prim(pol_primitivo_s);
-            decoder.calc_gf();
-            decoder.calc_tab_inv();
-          }
-          else if(N_size == 43200)
-          {
-            decoder.init(n_n, k_n, t_n, m_n);
-            decoder.set_pol_prim(pol_primitivo_n);
-            decoder.calc_gf();
-            decoder.calc_tab_inv();
-          }
-          else
-            printf("Tamanho do frame invalido. Este deve ser 10800 (short) ou 43200 (normal).\n");
+      K_size = K;
+
+      int parity_size = N-K;
+      int M;
+
+      if(parity_size == 168)
+      {
+        M = 14;
+        decoder.set_pol_prim(pol_primitivo_s);
+         }
+      else if(parity_size == 192)
+      {
+        M = 16;
+        decoder.set_pol_prim(pol_primitivo_n);
+      }
+
+      decoder.init(N, K, 12, M);
+      decoder.calc_gf();
+      decoder.calc_tab_inv();
+
     }
 
     /*
@@ -115,40 +117,15 @@ namespace gr {
     //ESCREVER FUNÇÃO AQUI
     void BCH_decoder_ATSC_impl::decoder_BCH(const unsigned char *in, unsigned char *out)
     {	
-      if(N_size == 10800)
-      {
-        int n_err;
-        unsigned char r[n_s];
-        for(int i = 0; i < n_s; i++)
-          r[n_s-1-i] = in[i];
-        bool decoding_ok = decoder.decode(r, n_err);
-        for(int i = 0; i < n_s; i++)
-          out[n_s-1-i] = r[i];
-        /*
-        FILE *F = fopen ("in_bch_short.txt", "a+");
-        for(int i = 0; i < n_s; i++)
-          fprintf(F, "%i", r[i]);
-        fprintf(F,"\n");
-        pclose(F);
-        */
-      }
-      else if(N_size == 43200)
-      {
-        int n_err;
-        unsigned char r[n_n];
-        for(int i = 0; i < n_n; i++)
-          r[n_n-1-i] = in[i];
-        bool decoding_ok = decoder.decode(r, n_err);
-        for(int i = 0; i < n_n; i++)
-          out[n_n-1-i] = r[i];
-        /*
-        FILE *F = fopen ("in_bch_normal.txt", "a+");
-        for(int i = 0; i < n_n; i++)
-          fprintf(F, "%i", r[i]);
-        fprintf(F,"\n");
-        pclose(F);
-        */
-      }
+
+      int n_err;
+      unsigned char r[N_size];
+      for(int i = 0; i < N_size; i++)
+        r[N_size-1-i] = in[i];
+      bool decoding_ok = decoder.decode(r, n_err);
+      for(int i = 0; i < N_size; i++)
+        out[N_size-1-i] = r[i];
+
     }
 
     int
@@ -169,16 +146,8 @@ namespace gr {
       decoder_BCH(in, &*out);
       
       //Incremento dos ponteiros para o GRC
-      if(N_size == 10800)
-      {
-        in += n_n;
-        out += k_s;
-      }
-      else if(N_size == 43200)
-      {
-        in += n_n;
-        out += k_n;
-      }
+      in += N_size;
+      out += K_size;
     }
 	  
       // Tell runtime system how many input items we consumed on

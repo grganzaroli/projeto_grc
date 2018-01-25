@@ -1062,7 +1062,7 @@ class BCH_decoder_ATSC(object):
 
         To avoid accidental use of raw pointers, mack_sdr_rossi::BCH_decoder_ATSC's constructor is in a private implementation class. mack_sdr_rossi::BCH_decoder_ATSC::make is the public interface for creating new instances.
 
-        Params: (N)
+        Params: (N, K)
         """
         return _mack_sdr_rossi_swig.BCH_decoder_ATSC_make(*args, **kwargs)
 
@@ -1080,7 +1080,7 @@ def BCH_decoder_ATSC_make(*args, **kwargs):
 
     To avoid accidental use of raw pointers, mack_sdr_rossi::BCH_decoder_ATSC's constructor is in a private implementation class. mack_sdr_rossi::BCH_decoder_ATSC::make is the public interface for creating new instances.
 
-    Params: (N)
+    Params: (N, K)
     """
   return _mack_sdr_rossi_swig.BCH_decoder_ATSC_make(*args, **kwargs)
 
@@ -1110,7 +1110,7 @@ class BCH_decoder_ATSC_sptr(object):
 
         To avoid accidental use of raw pointers, mack_sdr_rossi::BCH_decoder_ATSC's constructor is in a private implementation class. mack_sdr_rossi::BCH_decoder_ATSC::make is the public interface for creating new instances.
 
-        Params: (N)
+        Params: (N, K)
         """
         return _mack_sdr_rossi_swig.BCH_decoder_ATSC_sptr_make(self, *args, **kwargs)
 

@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Top Block
-# Generated: Wed Jan 24 13:50:45 2018
+# Generated: Thu Jan 25 10:57:35 2018
 ##################################################
 
 if __name__ == '__main__':
@@ -21,17 +21,20 @@ import sys
 sys.path.append(os.environ.get('GRC_HIER_PATH', os.path.expanduser('~/.grc_gnuradio')))
 
 from PyQt4 import Qt
+from bch_dec import bch_dec  # grc-generated hier_block
 from gnuradio import analog
 from gnuradio import blocks
-from gnuradio import dtv
 from gnuradio import eng_notation
 from gnuradio import gr
 from gnuradio import qtgui
 from gnuradio.eng_option import eng_option
 from gnuradio.filter import firdes
-from ldpc_dec_soft import ldpc_dec_soft  # grc-generated hier_block
+from gnuradio.qtgui import Range, RangeWidget
+from grc_gnuradio import blks2 as grc_blks2
 from optparse import OptionParser
+import mack_sdr
 import mapper
+import math
 import sip
 
 
@@ -64,19 +67,24 @@ class top_block(gr.top_block, Qt.QWidget):
         # Variables
         ##################################################
         self.samp_rate = samp_rate = 32000
-        self.mult = mult = 1
+        self.rate = rate = 6
+        self.n = n = 64800
+        self.SNR = SNR = 20
 
         ##################################################
         # Blocks
         ##################################################
+        self._SNR_range = Range(-50, 50, 1, 20, 200)
+        self._SNR_win = RangeWidget(self._SNR_range, self.set_SNR, "SNR", "counter_slider", float)
+        self.top_layout.addWidget(self._SNR_win)
         self.qtgui_time_sink_x_0_0 = qtgui.time_sink_f(
-        	16200, #size
+        	n*rate/15-192, #size
         	samp_rate, #samp_rate
-        	'LDPC IN', #name
+        	'BCH OUT', #name
         	1 #number of inputs
         )
         self.qtgui_time_sink_x_0_0.set_update_time(0.10)
-        self.qtgui_time_sink_x_0_0.set_y_axis(-mult-0.1, mult+0.1)
+        self.qtgui_time_sink_x_0_0.set_y_axis(-0.1, 1.1)
         
         self.qtgui_time_sink_x_0_0.set_y_label('Amplitude', "")
         
@@ -117,9 +125,9 @@ class top_block(gr.top_block, Qt.QWidget):
         self._qtgui_time_sink_x_0_0_win = sip.wrapinstance(self.qtgui_time_sink_x_0_0.pyqwidget(), Qt.QWidget)
         self.top_layout.addWidget(self._qtgui_time_sink_x_0_0_win)
         self.qtgui_time_sink_x_0 = qtgui.time_sink_f(
-        	10800, #size
+        	n*rate/15, #size
         	samp_rate, #samp_rate
-        	'LDPC OUT', #name
+        	'BCH IN', #name
         	1 #number of inputs
         )
         self.qtgui_time_sink_x_0.set_update_time(0.10)
@@ -163,42 +171,73 @@ class top_block(gr.top_block, Qt.QWidget):
         
         self._qtgui_time_sink_x_0_win = sip.wrapinstance(self.qtgui_time_sink_x_0.pyqwidget(), Qt.QWidget)
         self.top_layout.addWidget(self._qtgui_time_sink_x_0_win)
-        self.mapper_prbs_source_b_0 = mapper.prbs_source_b("PRBS7", 108000)
-        self.mapper_prbs_sink_b_0 = mapper.prbs_sink_b("PRBS7", 108000)
-        self.ldpc_dec_soft_0 = ldpc_dec_soft(
-            n=16200,
-            r=10,
+        self.qtgui_number_sink_0 = qtgui.number_sink(
+            gr.sizeof_float,
+            0.5,
+            qtgui.NUM_GRAPH_NONE,
+            1
         )
-        self.dtv_dvb_ldpc_bb_0 = dtv.dvb_ldpc_bb(dtv.STANDARD_DVBT2, dtv.FECFRAME_SHORT, dtv.C2_3, dtv.MOD_OTHER)
-        self.blocks_multiply_const_vxx_0_0 = blocks.multiply_const_vff((2, ))
-        self.blocks_multiply_const_vxx_0 = blocks.multiply_const_vff((mult, ))
-        self.blocks_file_sink_0_0 = blocks.file_sink(gr.sizeof_char*1, 'out.bin', False)
-        self.blocks_file_sink_0_0.set_unbuffered(False)
-        self.blocks_file_sink_0 = blocks.file_sink(gr.sizeof_char*1, 'in.bin', False)
-        self.blocks_file_sink_0.set_unbuffered(False)
+        self.qtgui_number_sink_0.set_update_time(0.10)
+        self.qtgui_number_sink_0.set_title("")
+        
+        labels = ['BER', '', '', '', '',
+                  '', '', '', '', '']
+        units = ['x10-6', '', '', '', '',
+                 '', '', '', '', '']
+        colors = [("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"),
+                  ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black")]
+        factor = [1e6, 1, 1, 1, 1,
+                  1, 1, 1, 1, 1]
+        for i in xrange(1):
+            self.qtgui_number_sink_0.set_min(i, -1)
+            self.qtgui_number_sink_0.set_max(i, 1)
+            self.qtgui_number_sink_0.set_color(i, colors[i][0], colors[i][1])
+            if len(labels[i]) == 0:
+                self.qtgui_number_sink_0.set_label(i, "Data {0}".format(i))
+            else:
+                self.qtgui_number_sink_0.set_label(i, labels[i])
+            self.qtgui_number_sink_0.set_unit(i, units[i])
+            self.qtgui_number_sink_0.set_factor(i, factor[i])
+        
+        self.qtgui_number_sink_0.enable_autoscale(False)
+        self._qtgui_number_sink_0_win = sip.wrapinstance(self.qtgui_number_sink_0.pyqwidget(), Qt.QWidget)
+        self.top_layout.addWidget(self._qtgui_number_sink_0_win)
+        self.mapper_prbs_source_b_0 = mapper.prbs_source_b("PRBS31", 648000)
+        self.mack_sdr_bch_encoder_0 = mack_sdr.bch_encoder(n, rate)
+        self.blocks_threshold_ff_0 = blocks.threshold_ff(0.50, 0.50, 0)
+        self.blocks_float_to_char_0 = blocks.float_to_char(1, 1)
+        self.blocks_char_to_float_0_1 = blocks.char_to_float(1, 1)
         self.blocks_char_to_float_0_0 = blocks.char_to_float(1, 1)
         self.blocks_char_to_float_0 = blocks.char_to_float(1, 1)
         self.blocks_add_xx_0 = blocks.add_vff(1)
-        self.blocks_add_const_vxx_0 = blocks.add_const_vff((-1, ))
-        self.analog_noise_source_x_0 = analog.noise_source_f(analog.GR_GAUSSIAN, 0.5, 0)
+        self.blks2_error_rate_0 = grc_blks2.error_rate(
+        	type='BER',
+        	win_size=1000000,
+        	bits_per_symbol=1,
+        )
+        self.bch_dec_0 = bch_dec(
+            size=n,
+            fec=rate,
+        )
+        self.analog_noise_source_x_0 = analog.noise_source_f(analog.GR_GAUSSIAN, math.pow(10.0,-(SNR-1.25)/20.0)/math.sqrt(2.0), 0)
 
         ##################################################
         # Connections
         ##################################################
         self.connect((self.analog_noise_source_x_0, 0), (self.blocks_add_xx_0, 0))    
-        self.connect((self.blocks_add_const_vxx_0, 0), (self.blocks_multiply_const_vxx_0, 0))    
-        self.connect((self.blocks_add_xx_0, 0), (self.ldpc_dec_soft_0, 0))    
-        self.connect((self.blocks_add_xx_0, 0), (self.qtgui_time_sink_x_0_0, 0))    
-        self.connect((self.blocks_char_to_float_0, 0), (self.blocks_multiply_const_vxx_0_0, 0))    
-        self.connect((self.blocks_char_to_float_0_0, 0), (self.qtgui_time_sink_x_0, 0))    
-        self.connect((self.blocks_multiply_const_vxx_0, 0), (self.blocks_add_xx_0, 1))    
-        self.connect((self.blocks_multiply_const_vxx_0_0, 0), (self.blocks_add_const_vxx_0, 0))    
-        self.connect((self.dtv_dvb_ldpc_bb_0, 0), (self.blocks_char_to_float_0, 0))    
-        self.connect((self.ldpc_dec_soft_0, 0), (self.blocks_char_to_float_0_0, 0))    
-        self.connect((self.ldpc_dec_soft_0, 0), (self.blocks_file_sink_0_0, 0))    
-        self.connect((self.ldpc_dec_soft_0, 0), (self.mapper_prbs_sink_b_0, 0))    
-        self.connect((self.mapper_prbs_source_b_0, 0), (self.blocks_file_sink_0, 0))    
-        self.connect((self.mapper_prbs_source_b_0, 0), (self.dtv_dvb_ldpc_bb_0, 0))    
+        self.connect((self.bch_dec_0, 0), (self.blks2_error_rate_0, 1))    
+        self.connect((self.bch_dec_0, 0), (self.blocks_char_to_float_0_0, 0))    
+        self.connect((self.blks2_error_rate_0, 0), (self.qtgui_number_sink_0, 0))    
+        self.connect((self.blocks_add_xx_0, 0), (self.blocks_threshold_ff_0, 0))    
+        self.connect((self.blocks_char_to_float_0, 0), (self.qtgui_time_sink_x_0, 0))    
+        self.connect((self.blocks_char_to_float_0_0, 0), (self.qtgui_time_sink_x_0_0, 0))    
+        self.connect((self.blocks_char_to_float_0_1, 0), (self.blocks_add_xx_0, 1))    
+        self.connect((self.blocks_float_to_char_0, 0), (self.bch_dec_0, 0))    
+        self.connect((self.blocks_float_to_char_0, 0), (self.blocks_char_to_float_0, 0))    
+        self.connect((self.blocks_threshold_ff_0, 0), (self.blocks_float_to_char_0, 0))    
+        self.connect((self.mack_sdr_bch_encoder_0, 0), (self.blocks_char_to_float_0_1, 0))    
+        self.connect((self.mapper_prbs_source_b_0, 0), (self.blks2_error_rate_0, 0))    
+        self.connect((self.mapper_prbs_source_b_0, 0), (self.mack_sdr_bch_encoder_0, 0))    
 
     def closeEvent(self, event):
         self.settings = Qt.QSettings("GNU Radio", "top_block")
@@ -213,13 +252,26 @@ class top_block(gr.top_block, Qt.QWidget):
         self.qtgui_time_sink_x_0_0.set_samp_rate(self.samp_rate)
         self.qtgui_time_sink_x_0.set_samp_rate(self.samp_rate)
 
-    def get_mult(self):
-        return self.mult
+    def get_rate(self):
+        return self.rate
 
-    def set_mult(self, mult):
-        self.mult = mult
-        self.qtgui_time_sink_x_0_0.set_y_axis(-self.mult-0.1, self.mult+0.1)
-        self.blocks_multiply_const_vxx_0.set_k((self.mult, ))
+    def set_rate(self, rate):
+        self.rate = rate
+        self.bch_dec_0.set_fec(self.rate)
+
+    def get_n(self):
+        return self.n
+
+    def set_n(self, n):
+        self.n = n
+        self.bch_dec_0.set_size(self.n)
+
+    def get_SNR(self):
+        return self.SNR
+
+    def set_SNR(self, SNR):
+        self.SNR = SNR
+        self.analog_noise_source_x_0.set_amplitude(math.pow(10.0,-(self.SNR-1.25)/20.0)/math.sqrt(2.0))
 
 
 def main(top_block_cls=top_block, options=None):
