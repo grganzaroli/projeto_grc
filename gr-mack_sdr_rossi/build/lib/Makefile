@@ -201,6 +201,30 @@ BCH_decoder_ATSC_impl.cc.s:
 	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.s
 .PHONY : BCH_decoder_ATSC_impl.cc.s
 
+Demapper_ATSC_impl.o: Demapper_ATSC_impl.cc.o
+.PHONY : Demapper_ATSC_impl.o
+
+# target to build an object file
+Demapper_ATSC_impl.cc.o:
+	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/Demapper_ATSC_impl.cc.o
+.PHONY : Demapper_ATSC_impl.cc.o
+
+Demapper_ATSC_impl.i: Demapper_ATSC_impl.cc.i
+.PHONY : Demapper_ATSC_impl.i
+
+# target to preprocess a source file
+Demapper_ATSC_impl.cc.i:
+	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/Demapper_ATSC_impl.cc.i
+.PHONY : Demapper_ATSC_impl.cc.i
+
+Demapper_ATSC_impl.s: Demapper_ATSC_impl.cc.s
+.PHONY : Demapper_ATSC_impl.s
+
+# target to generate assembly for a file
+Demapper_ATSC_impl.cc.s:
+	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/Demapper_ATSC_impl.cc.s
+.PHONY : Demapper_ATSC_impl.cc.s
+
 LDPC_decoder_ATSC_impl.o: LDPC_decoder_ATSC_impl.cc.o
 .PHONY : LDPC_decoder_ATSC_impl.o
 
@@ -272,6 +296,30 @@ bch.s: bch.cpp.s
 bch.cpp.s:
 	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/bch.cpp.s
 .PHONY : bch.cpp.s
+
+demap.o: demap.cpp.o
+.PHONY : demap.o
+
+# target to build an object file
+demap.cpp.o:
+	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/demap.cpp.o
+.PHONY : demap.cpp.o
+
+demap.i: demap.cpp.i
+.PHONY : demap.i
+
+# target to preprocess a source file
+demap.cpp.i:
+	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/demap.cpp.i
+.PHONY : demap.cpp.i
+
+demap.s: demap.cpp.s
+.PHONY : demap.s
+
+# target to generate assembly for a file
+demap.cpp.s:
+	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/demap.cpp.s
+.PHONY : demap.cpp.s
 
 qa_mack_sdr_rossi.o: qa_mack_sdr_rossi.cc.o
 .PHONY : qa_mack_sdr_rossi.o
@@ -363,6 +411,9 @@ help:
 	@echo "... BCH_decoder_ATSC_impl.o"
 	@echo "... BCH_decoder_ATSC_impl.i"
 	@echo "... BCH_decoder_ATSC_impl.s"
+	@echo "... Demapper_ATSC_impl.o"
+	@echo "... Demapper_ATSC_impl.i"
+	@echo "... Demapper_ATSC_impl.s"
 	@echo "... LDPC_decoder_ATSC_impl.o"
 	@echo "... LDPC_decoder_ATSC_impl.i"
 	@echo "... LDPC_decoder_ATSC_impl.s"
@@ -372,6 +423,9 @@ help:
 	@echo "... bch.o"
 	@echo "... bch.i"
 	@echo "... bch.s"
+	@echo "... demap.o"
+	@echo "... demap.i"
+	@echo "... demap.s"
 	@echo "... qa_mack_sdr_rossi.o"
 	@echo "... qa_mack_sdr_rossi.i"
 	@echo "... qa_mack_sdr_rossi.s"

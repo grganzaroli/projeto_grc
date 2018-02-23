@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Top Block
-# Generated: Thu Jan 25 10:57:35 2018
+# Generated: Fri Feb 23 16:41:38 2018
 ##################################################
 
 if __name__ == '__main__':
@@ -21,7 +21,7 @@ import sys
 sys.path.append(os.environ.get('GRC_HIER_PATH', os.path.expanduser('~/.grc_gnuradio')))
 
 from PyQt4 import Qt
-from bch_dec import bch_dec  # grc-generated hier_block
+from demapper_atsc import demapper_atsc  # grc-generated hier_block
 from gnuradio import analog
 from gnuradio import blocks
 from gnuradio import eng_notation
@@ -29,7 +29,6 @@ from gnuradio import gr
 from gnuradio import qtgui
 from gnuradio.eng_option import eng_option
 from gnuradio.filter import firdes
-from gnuradio.qtgui import Range, RangeWidget
 from grc_gnuradio import blks2 as grc_blks2
 from optparse import OptionParser
 import mack_sdr
@@ -66,21 +65,18 @@ class top_block(gr.top_block, Qt.QWidget):
         ##################################################
         # Variables
         ##################################################
+        self.size = size = 64800
         self.samp_rate = samp_rate = 32000
         self.rate = rate = 6
-        self.n = n = 64800
-        self.SNR = SNR = 20
+        self.mod = mod = 16
 
         ##################################################
         # Blocks
         ##################################################
-        self._SNR_range = Range(-50, 50, 1, 20, 200)
-        self._SNR_win = RangeWidget(self._SNR_range, self.set_SNR, "SNR", "counter_slider", float)
-        self.top_layout.addWidget(self._SNR_win)
         self.qtgui_time_sink_x_0_0 = qtgui.time_sink_f(
-        	n*rate/15-192, #size
+        	1024, #size
         	samp_rate, #samp_rate
-        	'BCH OUT', #name
+        	"", #name
         	1 #number of inputs
         )
         self.qtgui_time_sink_x_0_0.set_update_time(0.10)
@@ -125,19 +121,19 @@ class top_block(gr.top_block, Qt.QWidget):
         self._qtgui_time_sink_x_0_0_win = sip.wrapinstance(self.qtgui_time_sink_x_0_0.pyqwidget(), Qt.QWidget)
         self.top_layout.addWidget(self._qtgui_time_sink_x_0_0_win)
         self.qtgui_time_sink_x_0 = qtgui.time_sink_f(
-        	n*rate/15, #size
+        	1024, #size
         	samp_rate, #samp_rate
-        	'BCH IN', #name
+        	"", #name
         	1 #number of inputs
         )
         self.qtgui_time_sink_x_0.set_update_time(0.10)
-        self.qtgui_time_sink_x_0.set_y_axis(-0.1, 1.1)
+        self.qtgui_time_sink_x_0.set_y_axis(-1, 1)
         
         self.qtgui_time_sink_x_0.set_y_label('Amplitude', "")
         
         self.qtgui_time_sink_x_0.enable_tags(-1, True)
         self.qtgui_time_sink_x_0.set_trigger_mode(qtgui.TRIG_MODE_FREE, qtgui.TRIG_SLOPE_POS, 0.0, 0, 0, "")
-        self.qtgui_time_sink_x_0.enable_autoscale(False)
+        self.qtgui_time_sink_x_0.enable_autoscale(True)
         self.qtgui_time_sink_x_0.enable_grid(False)
         self.qtgui_time_sink_x_0.enable_axis_labels(True)
         self.qtgui_time_sink_x_0.enable_control_panel(False)
@@ -202,47 +198,54 @@ class top_block(gr.top_block, Qt.QWidget):
         self.qtgui_number_sink_0.enable_autoscale(False)
         self._qtgui_number_sink_0_win = sip.wrapinstance(self.qtgui_number_sink_0.pyqwidget(), Qt.QWidget)
         self.top_layout.addWidget(self._qtgui_number_sink_0_win)
-        self.mapper_prbs_source_b_0 = mapper.prbs_source_b("PRBS31", 648000)
-        self.mack_sdr_bch_encoder_0 = mack_sdr.bch_encoder(n, rate)
-        self.blocks_threshold_ff_0 = blocks.threshold_ff(0.50, 0.50, 0)
+        self.mapper_prbs_source_b_0 = mapper.prbs_source_b("PRBS31", 1000000)
+        self.mapper_prbs_sink_b_0 = mapper.prbs_sink_b("PRBS31", 1000000)
+        self.mack_sdr_mapper_atsc_0 = mack_sdr.mapper_atsc(size, rate, mod)
+        self.demapper_atsc_0 = demapper_atsc(
+            m=mod,
+            r=rate,
+            size_in=1,
+        )
+        self.blocks_throttle_0 = blocks.throttle(gr.sizeof_char*1, samp_rate,True)
+        self.blocks_threshold_ff_0 = blocks.threshold_ff(0, 0, 0)
+        self.blocks_pack_k_bits_bb_0 = blocks.pack_k_bits_bb(int(math.sqrt(mod)))
         self.blocks_float_to_char_0 = blocks.float_to_char(1, 1)
-        self.blocks_char_to_float_0_1 = blocks.char_to_float(1, 1)
-        self.blocks_char_to_float_0_0 = blocks.char_to_float(1, 1)
-        self.blocks_char_to_float_0 = blocks.char_to_float(1, 1)
-        self.blocks_add_xx_0 = blocks.add_vff(1)
+        self.blocks_add_xx_0 = blocks.add_vcc(1)
         self.blks2_error_rate_0 = grc_blks2.error_rate(
         	type='BER',
         	win_size=1000000,
         	bits_per_symbol=1,
         )
-        self.bch_dec_0 = bch_dec(
-            size=n,
-            fec=rate,
-        )
-        self.analog_noise_source_x_0 = analog.noise_source_f(analog.GR_GAUSSIAN, math.pow(10.0,-(SNR-1.25)/20.0)/math.sqrt(2.0), 0)
+        self.analog_noise_source_x_0 = analog.noise_source_c(analog.GR_GAUSSIAN, 0.06, 0)
 
         ##################################################
         # Connections
         ##################################################
         self.connect((self.analog_noise_source_x_0, 0), (self.blocks_add_xx_0, 0))    
-        self.connect((self.bch_dec_0, 0), (self.blks2_error_rate_0, 1))    
-        self.connect((self.bch_dec_0, 0), (self.blocks_char_to_float_0_0, 0))    
         self.connect((self.blks2_error_rate_0, 0), (self.qtgui_number_sink_0, 0))    
-        self.connect((self.blocks_add_xx_0, 0), (self.blocks_threshold_ff_0, 0))    
-        self.connect((self.blocks_char_to_float_0, 0), (self.qtgui_time_sink_x_0, 0))    
-        self.connect((self.blocks_char_to_float_0_0, 0), (self.qtgui_time_sink_x_0_0, 0))    
-        self.connect((self.blocks_char_to_float_0_1, 0), (self.blocks_add_xx_0, 1))    
-        self.connect((self.blocks_float_to_char_0, 0), (self.bch_dec_0, 0))    
-        self.connect((self.blocks_float_to_char_0, 0), (self.blocks_char_to_float_0, 0))    
+        self.connect((self.blocks_add_xx_0, 0), (self.demapper_atsc_0, 0))    
+        self.connect((self.blocks_float_to_char_0, 0), (self.blks2_error_rate_0, 1))    
+        self.connect((self.blocks_float_to_char_0, 0), (self.mapper_prbs_sink_b_0, 0))    
+        self.connect((self.blocks_pack_k_bits_bb_0, 0), (self.blocks_throttle_0, 0))    
         self.connect((self.blocks_threshold_ff_0, 0), (self.blocks_float_to_char_0, 0))    
-        self.connect((self.mack_sdr_bch_encoder_0, 0), (self.blocks_char_to_float_0_1, 0))    
+        self.connect((self.blocks_threshold_ff_0, 0), (self.qtgui_time_sink_x_0_0, 0))    
+        self.connect((self.blocks_throttle_0, 0), (self.mack_sdr_mapper_atsc_0, 0))    
+        self.connect((self.demapper_atsc_0, 0), (self.blocks_threshold_ff_0, 0))    
+        self.connect((self.demapper_atsc_0, 0), (self.qtgui_time_sink_x_0, 0))    
+        self.connect((self.mack_sdr_mapper_atsc_0, 0), (self.blocks_add_xx_0, 1))    
         self.connect((self.mapper_prbs_source_b_0, 0), (self.blks2_error_rate_0, 0))    
-        self.connect((self.mapper_prbs_source_b_0, 0), (self.mack_sdr_bch_encoder_0, 0))    
+        self.connect((self.mapper_prbs_source_b_0, 0), (self.blocks_pack_k_bits_bb_0, 0))    
 
     def closeEvent(self, event):
         self.settings = Qt.QSettings("GNU Radio", "top_block")
         self.settings.setValue("geometry", self.saveGeometry())
         event.accept()
+
+    def get_size(self):
+        return self.size
+
+    def set_size(self, size):
+        self.size = size
 
     def get_samp_rate(self):
         return self.samp_rate
@@ -251,27 +254,21 @@ class top_block(gr.top_block, Qt.QWidget):
         self.samp_rate = samp_rate
         self.qtgui_time_sink_x_0_0.set_samp_rate(self.samp_rate)
         self.qtgui_time_sink_x_0.set_samp_rate(self.samp_rate)
+        self.blocks_throttle_0.set_sample_rate(self.samp_rate)
 
     def get_rate(self):
         return self.rate
 
     def set_rate(self, rate):
         self.rate = rate
-        self.bch_dec_0.set_fec(self.rate)
+        self.demapper_atsc_0.set_r(self.rate)
 
-    def get_n(self):
-        return self.n
+    def get_mod(self):
+        return self.mod
 
-    def set_n(self, n):
-        self.n = n
-        self.bch_dec_0.set_size(self.n)
-
-    def get_SNR(self):
-        return self.SNR
-
-    def set_SNR(self, SNR):
-        self.SNR = SNR
-        self.analog_noise_source_x_0.set_amplitude(math.pow(10.0,-(self.SNR-1.25)/20.0)/math.sqrt(2.0))
+    def set_mod(self, mod):
+        self.mod = mod
+        self.demapper_atsc_0.set_m(self.mod)
 
 
 def main(top_block_cls=top_block, options=None):

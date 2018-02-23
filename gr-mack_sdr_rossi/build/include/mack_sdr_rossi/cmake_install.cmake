@@ -39,6 +39,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/str_to_vec.h"
     "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/LDPC_decoder_hard_ATSC.h"
     "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/BCH_decoder_ATSC.h"
+    "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/Demapper_ATSC.h"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

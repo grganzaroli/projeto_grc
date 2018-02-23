@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="Demapper__ATSC_8h" kind="file">
+    <compoundname>Demapper_ATSC.h</compoundname>
+    <includes refid="api_8h" local="no">mack_sdr_rossi/api.h</includes>
+    <includes local="no">gnuradio/block.h</includes>
+    <includedby refid="Demapper__ATSC__impl_8h" local="no">Demapper_ATSC_impl.h</includedby>
+    <incdepgraph>
+      <node id="32">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="31">
+        <label>mack_sdr_rossi/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>gnuradio/block.h</label>
+      </node>
+      <node id="30">
+        <label>Demapper_ATSC.h</label>
+        <link refid="Demapper_ATSC.h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="35">
+        <label>Demapper_ATSC_impl.h</label>
+        <link refid="Demapper__ATSC__impl_8h"/>
+      </node>
+      <node id="34">
+        <label>Demapper_ATSC.h</label>
+        <link refid="Demapper_ATSC.h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC" prot="public">gr::mack_sdr_rossi::Demapper_ATSC</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1mack__sdr__rossi">gr::mack_sdr_rossi</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/Demapper_ATSC.h"/>
+  </compounddef>
+</doxygen>

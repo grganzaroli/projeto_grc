@@ -141,14 +141,14 @@ namespace gr {
       //FUNÇÃO RODA AQUI
     
 
-    for (int nnn = 0; nnn < noutput_items; nnn++ )
-    {
-      decoder_BCH(in, &*out);
-      
-      //Incremento dos ponteiros para o GRC
-      in += N_size;
-      out += K_size;
-    }
+      for (int nnn = 0; nnn < noutput_items; nnn++ )
+      {
+        decoder_BCH(in, &*out);
+        
+        //Incremento dos ponteiros para o GRC
+        in += N_size;
+        out += K_size;
+      }
 	  
       // Tell runtime system how many input items we consumed on
       // each input stream.

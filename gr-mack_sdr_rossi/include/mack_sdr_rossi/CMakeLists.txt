@@ -25,5 +25,6 @@ install(FILES
     LDPC_decoder_ATSC.h
     str_to_vec.h
     LDPC_decoder_hard_ATSC.h
-    BCH_decoder_ATSC.h DESTINATION include/mack_sdr_rossi
+    BCH_decoder_ATSC.h
+    Demapper_ATSC.h DESTINATION include/mack_sdr_rossi
 )

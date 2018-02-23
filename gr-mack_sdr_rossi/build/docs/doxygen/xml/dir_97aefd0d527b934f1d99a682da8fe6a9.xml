@@ -4,6 +4,8 @@
     <compoundname>lib</compoundname>
     <innerfile refid="bch_8h">bch.h</innerfile>
     <innerfile refid="BCH__decoder__ATSC__impl_8h">BCH_decoder_ATSC_impl.h</innerfile>
+    <innerfile refid="demap_8h">demap.h</innerfile>
+    <innerfile refid="Demapper__ATSC__impl_8h">Demapper_ATSC_impl.h</innerfile>
     <innerfile refid="LDPC__decoder__ATSC__impl_8h">LDPC_decoder_ATSC_impl.h</innerfile>
     <innerfile refid="LDPC__decoder__hard__ATSC__impl_8h">LDPC_decoder_hard_ATSC_impl.h</innerfile>
     <innerfile refid="str__to__vec__impl_8h">str_to_vec_impl.h</innerfile>

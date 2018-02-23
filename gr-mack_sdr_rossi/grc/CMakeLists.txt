@@ -20,5 +20,6 @@ install(FILES
     mack_sdr_rossi_LDPC_decoder_ATSC.xml
     mack_sdr_rossi_str_to_vec.xml
     mack_sdr_rossi_LDPC_decoder_hard_ATSC.xml
-    mack_sdr_rossi_BCH_decoder_ATSC.xml DESTINATION /usr/local/share/gnuradio/grc/blocks
+    mack_sdr_rossi_BCH_decoder_ATSC.xml
+    mack_sdr_rossi_Demapper_ATSC.xml DESTINATION /usr/local/share/gnuradio/grc/blocks
 )

@@ -16,6 +16,14 @@ To avoid accidental use of raw pointers, mack_sdr_rossi::BCH_decoder_ATSC's cons
 
 Params: (N, K)"
 
+%feature("docstring") gr::mack_sdr_rossi::Demapper_ATSC "<+description of block+>"
+
+%feature("docstring") gr::mack_sdr_rossi::Demapper_ATSC::make "Return a shared_ptr to a new instance of mack_sdr_rossi::Demapper_ATSC.
+
+To avoid accidental use of raw pointers, mack_sdr_rossi::Demapper_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Demapper_ATSC::make is the public interface for creating new instances.
+
+Params: (size_in, size_out, rate, var)"
+
 %feature("docstring") gr::mack_sdr_rossi::LDPC_decoder_ATSC "<+description of block+>"
 
 %feature("docstring") gr::mack_sdr_rossi::LDPC_decoder_ATSC::make "Return a shared_ptr to a new instance of mack_sdr_rossi::LDPC_decoder_ATSC.

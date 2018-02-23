@@ -227,36 +227,36 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="42">
+      <node id="55">
         <label>block</label>
       </node>
-      <node id="40">
+      <node id="53">
         <label>gr::mack_sdr_rossi::str_to_vec_impl</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec__impl"/>
-        <childnode refid="41" relation="public-inheritance">
+        <childnode refid="54" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="41">
+      <node id="54">
         <label>gr::mack_sdr_rossi::str_to_vec</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec"/>
-        <childnode refid="42" relation="public-inheritance">
+        <childnode refid="55" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="45">
+      <node id="58">
         <label>block</label>
       </node>
-      <node id="43">
+      <node id="56">
         <label>gr::mack_sdr_rossi::str_to_vec_impl</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec__impl"/>
-        <childnode refid="44" relation="public-inheritance">
+        <childnode refid="57" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="44">
+      <node id="57">
         <label>gr::mack_sdr_rossi::str_to_vec</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec"/>
-        <childnode refid="45" relation="public-inheritance">
+        <childnode refid="58" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

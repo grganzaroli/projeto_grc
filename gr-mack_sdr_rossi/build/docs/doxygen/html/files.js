@@ -10,6 +10,15 @@ var files =
     [ "BCH_decoder_ATSC_impl.h", "BCH__decoder__ATSC__impl_8h.html", [
       [ "BCH_decoder_ATSC_impl", "classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl.html", "classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl" ]
     ] ],
+    [ "demap.h", "demap_8h.html", [
+      [ "demap", "classdemap.html", "classdemap" ]
+    ] ],
+    [ "Demapper_ATSC.h", "Demapper__ATSC_8h.html", [
+      [ "Demapper_ATSC", "classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC.html", "classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC" ]
+    ] ],
+    [ "Demapper_ATSC_impl.h", "Demapper__ATSC__impl_8h.html", [
+      [ "Demapper_ATSC_impl", "classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html", "classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl" ]
+    ] ],
     [ "LDPC_decoder_ATSC.h", "LDPC__decoder__ATSC_8h.html", [
       [ "LDPC_decoder_ATSC", "classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC.html", "classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC" ]
     ] ],

@@ -34,7 +34,7 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_LDPC_decoder_ATSC.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_str_to_vec.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_LDPC_decoder_hard_ATSC.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_BCH_decoder_ATSC.xml")
+   "/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_LDPC_decoder_ATSC.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_str_to_vec.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_LDPC_decoder_hard_ATSC.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_BCH_decoder_ATSC.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_Demapper_ATSC.xml")
   IF (CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   ENDIF (CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
@@ -46,6 +46,7 @@ FILE(INSTALL DESTINATION "/usr/local/share/gnuradio/grc/blocks" TYPE FILE FILES
     "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/grc/mack_sdr_rossi_str_to_vec.xml"
     "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/grc/mack_sdr_rossi_LDPC_decoder_hard_ATSC.xml"
     "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/grc/mack_sdr_rossi_BCH_decoder_ATSC.xml"
+    "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/grc/mack_sdr_rossi_Demapper_ATSC.xml"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

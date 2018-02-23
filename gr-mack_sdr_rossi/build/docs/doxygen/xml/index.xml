@@ -30,11 +30,37 @@
   </compound>
   <compound refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl" kind="class"><name>gr::mack_sdr_rossi::BCH_decoder_ATSC_impl</name>
     <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1a3e8fc5ce35aad4cf5bef593ffcab8cac" kind="variable"><name>N_size</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1a7b051d6ef57f33e0a98374179c3171aa" kind="variable"><name>K_size</name></member>
     <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1a6879e2ad24520b4753fbb2d22579f417" kind="function"><name>BCH_decoder_ATSC_impl</name></member>
     <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1a49861a61aefe4b7164af2a56a9b89656" kind="function"><name>~BCH_decoder_ATSC_impl</name></member>
     <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1a28ee06ec5ee611746d7172380e405c8c" kind="function"><name>forecast</name></member>
     <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1a7fcf5f179379bb38bdf56138a06da167" kind="function"><name>general_work</name></member>
     <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl_1a397413220d2eac27e44f4fcba7136d85" kind="function"><name>decoder_BCH</name></member>
+  </compound>
+  <compound refid="classdemap" kind="class"><name>demap</name>
+    <member refid="classdemap_1a811008a38493e4f999c7f753fe1a0e35" kind="variable"><name>size</name></member>
+    <member refid="classdemap_1af6b3963e28c3a0c0f1255e510d9c1cb7" kind="variable"><name>mod_size</name></member>
+    <member refid="classdemap_1ae343922c57d2af560914a66ef9a318ed" kind="variable"><name>rate</name></member>
+    <member refid="classdemap_1ac15baf28caae079a72113d443b1b1e22" kind="variable"><name>M</name></member>
+    <member refid="classdemap_1ab130e0cd7722b18c5071ed9ffc237ae5" kind="variable"><name>D</name></member>
+    <member refid="classdemap_1a111ebb3b0c7e5d31b7e9def5cfb7b74d" kind="variable"><name>tab</name></member>
+    <member refid="classdemap_1a15079c81e4723e18df6564bcc7f10c81" kind="variable"><name>var</name></member>
+    <member refid="classdemap_1a4ba737fe913e83b0d9fbc346857fdd92" kind="variable"><name>aux_r</name></member>
+    <member refid="classdemap_1abd49c740ff0304bfdd7b33592a8d2f30" kind="variable"><name>aux_i</name></member>
+    <member refid="classdemap_1a537174563c69e22780cf27f083b14591" kind="variable"><name>aux</name></member>
+    <member refid="classdemap_1a9d90e2fe9f35b50776bd9ea408b7c059" kind="function"><name>init</name></member>
+    <member refid="classdemap_1a103330323ac6f1ae63a2593ac0706839" kind="function"><name>demapper_soft</name></member>
+    <member refid="classdemap_1a0f9db30799258cd1674d2cd066759696" kind="function"><name>demapper_hard</name></member>
+  </compound>
+  <compound refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC" kind="class"><name>gr::mack_sdr_rossi::Demapper_ATSC</name>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC_1a6cc8c7bf5066e7506d7b4bd7f55759d9" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC_1a49b53927cc636e1d14192ca81e1bf792" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl" kind="class"><name>gr::mack_sdr_rossi::Demapper_ATSC_impl</name>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1aad5a8f4c6ef77b8428d366e28727a569" kind="function"><name>Demapper_ATSC_impl</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1a09d137c312f3717963f5a6da6d0359d3" kind="function"><name>~Demapper_ATSC_impl</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1a88c82e2035ee30653b2f491b866ae6df" kind="function"><name>forecast</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1a92cfb9a08482c5fba21dfd7718aba0b7" kind="function"><name>general_work</name></member>
   </compound>
   <compound refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC" kind="class"><name>gr::mack_sdr_rossi::LDPC_decoder_ATSC</name>
     <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC_1add89571f705bd1ac1b40d11b1383007e" kind="typedef"><name>sptr</name></member>
@@ -95,6 +121,12 @@
   <compound refid="BCH__decoder__ATSC_8h" kind="file"><name>BCH_decoder_ATSC.h</name>
   </compound>
   <compound refid="BCH__decoder__ATSC__impl_8h" kind="file"><name>BCH_decoder_ATSC_impl.h</name>
+  </compound>
+  <compound refid="demap_8h" kind="file"><name>demap.h</name>
+  </compound>
+  <compound refid="Demapper__ATSC_8h" kind="file"><name>Demapper_ATSC.h</name>
+  </compound>
+  <compound refid="Demapper__ATSC__impl_8h" kind="file"><name>Demapper_ATSC_impl.h</name>
   </compound>
   <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
   </compound>

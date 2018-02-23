@@ -4,6 +4,7 @@
     <compoundname>api.h</compoundname>
     <includes local="no">gnuradio/attributes.h</includes>
     <includedby refid="BCH__decoder__ATSC_8h" local="no">BCH_decoder_ATSC.h</includedby>
+    <includedby refid="Demapper__ATSC_8h" local="no">Demapper_ATSC.h</includedby>
     <includedby refid="LDPC__decoder__ATSC_8h" local="no">LDPC_decoder_ATSC.h</includedby>
     <includedby refid="LDPC__decoder__hard__ATSC_8h" local="no">LDPC_decoder_hard_ATSC.h</includedby>
     <includedby refid="str__to__vec_8h" local="no">str_to_vec.h</includedby>
@@ -20,19 +21,23 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="6">
+        <label>Demapper_ATSC_impl.h</label>
+        <link refid="Demapper__ATSC__impl_8h"/>
+      </node>
+      <node id="8">
         <label>LDPC_decoder_ATSC_impl.h</label>
         <link refid="LDPC__decoder__ATSC__impl_8h"/>
       </node>
-      <node id="7">
+      <node id="9">
         <label>LDPC_decoder_hard_ATSC.h</label>
         <link refid="LDPC__decoder__hard__ATSC_8h"/>
-        <childnode refid="8" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="5">
+      <node id="7">
         <label>LDPC_decoder_ATSC.h</label>
         <link refid="LDPC__decoder__ATSC_8h"/>
-        <childnode refid="6" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
       </node>
       <node id="2">
@@ -46,15 +51,17 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
       </node>
-      <node id="8">
+      <node id="10">
         <label>LDPC_decoder_hard_ATSC_impl.h</label>
         <link refid="LDPC__decoder__hard__ATSC__impl_8h"/>
       </node>
-      <node id="9">
+      <node id="11">
         <label>str_to_vec.h</label>
         <link refid="str__to__vec_8h"/>
-        <childnode refid="10" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -63,7 +70,13 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="10">
+      <node id="5">
+        <label>Demapper_ATSC.h</label>
+        <link refid="Demapper__ATSC_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
         <label>str_to_vec_impl.h</label>
         <link refid="str__to__vec__impl_8h"/>
       </node>

@@ -127,36 +127,36 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="30">
+      <node id="44">
+        <label>block</label>
+      </node>
+      <node id="43">
         <label>gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC"/>
-        <childnode refid="31" relation="public-inheritance">
+        <childnode refid="44" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="31">
-        <label>gr::block</label>
-      </node>
-      <node id="29">
+      <node id="42">
         <label>gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC_impl</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl"/>
-        <childnode refid="30" relation="public-inheritance">
+        <childnode refid="43" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="33">
+      <node id="47">
+        <label>block</label>
+      </node>
+      <node id="46">
         <label>gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC"/>
-        <childnode refid="34" relation="public-inheritance">
+        <childnode refid="47" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="34">
-        <label>gr::block</label>
-      </node>
-      <node id="32">
+      <node id="45">
         <label>gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC_impl</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl"/>
-        <childnode refid="33" relation="public-inheritance">
+        <childnode refid="46" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

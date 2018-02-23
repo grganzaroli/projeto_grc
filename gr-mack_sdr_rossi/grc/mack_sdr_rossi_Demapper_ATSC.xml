@@ -1,0 +1,42 @@
+<block>
+  <name>Demapper atsc</name>
+  <key>mack_sdr_rossi_Demapper_ATSC</key>
+  <category>[MACK_SDR_ROSSI]</category>
+  <import>import mack_sdr_rossi</import>
+  <make>mack_sdr_rossi.Demapper_ATSC($size_in, $size_out, $rate, $mod_size, $var)</make>
+  <param>
+    <name>Size_in</name>
+    <key>size_in</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Size_out</name>
+    <key>size_out</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Rate</name>
+    <key>rate</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Mod_size</name>
+    <key>mod_size</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Var</name>
+    <key>var</key>
+    <type>float</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <vlen>$size_in</vlen>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>float</type>
+    <vlen>$size_out</vlen>
+  </source>
+</block>

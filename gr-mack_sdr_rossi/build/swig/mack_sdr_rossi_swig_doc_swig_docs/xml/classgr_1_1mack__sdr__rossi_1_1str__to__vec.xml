@@ -43,24 +43,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="13">
+      <node id="17">
         <label>block</label>
       </node>
-      <node id="12">
+      <node id="16">
         <label>gr::mack_sdr_rossi::str_to_vec</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec"/>
-        <childnode refid="13" relation="public-inheritance">
+        <childnode refid="17" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="15">
+      <node id="19">
         <label>block</label>
       </node>
-      <node id="14">
+      <node id="18">
         <label>gr::mack_sdr_rossi::str_to_vec</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec"/>
-        <childnode refid="15" relation="public-inheritance">
+        <childnode refid="19" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

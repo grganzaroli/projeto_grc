@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="demap_8h" kind="file">
+    <compoundname>demap.h</compoundname>
+    <includes local="no">gnuradio/io_signature.h</includes>
+    <incdepgraph>
+      <node id="28">
+        <label>gnuradio/io_signature.h</label>
+      </node>
+      <node id="27">
+        <label>demap.h</label>
+        <link refid="demap.h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classdemap" prot="public">demap</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h"/>
+  </compounddef>
+</doxygen>
