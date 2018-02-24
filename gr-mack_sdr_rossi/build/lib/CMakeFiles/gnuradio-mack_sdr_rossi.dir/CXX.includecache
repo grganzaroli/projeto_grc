@@ -34,14 +34,6 @@ demap.h
 stdio.h
 -
 
-/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.cpp
-iostream
--
-cmath
--
-demap.h
-/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h
-
 /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h
 gnuradio/io_signature.h
 -

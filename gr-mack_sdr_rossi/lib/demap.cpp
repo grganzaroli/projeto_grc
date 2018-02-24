@@ -29,24 +29,24 @@ void demap::init(int s, int ms, int r, gr_complex *t, float v)
 
 	for(int i = 1; i < 4; i++) //quadrantes
 	{
-		for(int j = 0; j < M; j++) //pontos
+		for(int j = 0; j < mod_size/4; j++) //pontos
 		{
 			if(i == 1)
 			{
-				tab[j+M].real() = -t[j].real();
-				tab[j+M].imag() = t[j].imag();
+				tab[j+(mod_size/4)].real() = -t[j].real();
+				tab[j+(mod_size/4)].imag() = t[j].imag();
 			}
 			else if(i == 2)
 			{
-				tab[j+2*M].real() = t[j].real();
-				tab[j+2*M].imag() = -t[j].imag();
+				tab[j+2*(mod_size/4)].real() = t[j].real();
+				tab[j+2*(mod_size/4)].imag() = -t[j].imag();
 			}
 			else if(i == 3)
 			{
-				tab[j+3*M].real() = -t[j].real();
-				tab[j+3*M].imag() = -t[j].imag();
+				tab[j+3*(mod_size/4)].real() = -t[j].real();
+				tab[j+3*(mod_size/4)].imag() = -t[j].imag();
 			}
-			//printf("%i - tab.real = %lf, tab.imag = %lf\n", j+i*M, tab[j+i*M].real(), tab[j+i*M].imag());
+			//printf("%i - tab.real = %lf, tab.imag = %lf\n", j+i*(mod_size/4), tab[j+i*(mod_size/4)].real(), tab[j+i*(mod_size/4)].imag());
 		}
 	}
 
