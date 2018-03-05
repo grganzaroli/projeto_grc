@@ -30,8 +30,12 @@ list(APPEND mack_sdr_rossi_sources
     LDPC_decoder_hard_ATSC_impl.cc
     bch.cpp
 	demap.cpp
+	atsc_interleaver.cpp
     BCH_decoder_ATSC_impl.cc
-    Demapper_ATSC_impl.cc )
+    Demapper_ATSC_impl.cc
+    Parity_deinterleaver_ATSC_impl.cc
+    Block_deinterleaver_ATSC_impl.cc
+    Group_deinterleaver_ATSC_impl.cc )
 
 set(mack_sdr_rossi_sources "${mack_sdr_rossi_sources}" PARENT_SCOPE)
 if(NOT mack_sdr_rossi_sources)

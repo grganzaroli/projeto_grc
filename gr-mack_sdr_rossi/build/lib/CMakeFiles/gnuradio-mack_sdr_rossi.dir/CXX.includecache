@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../include/mack_sdr_rossi/Demapper_ATSC.h
+../include/mack_sdr_rossi/Parity_deinterleaver_ATSC.h
 mack_sdr_rossi/api.h
 -
 gnuradio/block.h
@@ -16,29 +16,21 @@ gnuradio/block.h
 gnuradio/attributes.h
 -
 
-/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Demapper_ATSC_impl.cc
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Parity_deinterleaver_ATSC_impl.cc
 config.h
 /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/config.h
-stdio.h
--
 gnuradio/io_signature.h
 -
-Demapper_ATSC_impl.h
-/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Demapper_ATSC_impl.h
+Parity_deinterleaver_ATSC_impl.h
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Parity_deinterleaver_ATSC_impl.h
 
-/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Demapper_ATSC_impl.h
-mack_sdr_rossi/Demapper_ATSC.h
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Parity_deinterleaver_ATSC_impl.h
+mack_sdr_rossi/Parity_deinterleaver_ATSC.h
 -
-demap.h
-/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h
-stdio.h
--
+atsc_interleaver.h
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h
 
-/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h
-gnuradio/io_signature.h
--
-stdio.h
--
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h
 
 /usr/local/include/gnuradio/api.h
 gnuradio/attributes.h

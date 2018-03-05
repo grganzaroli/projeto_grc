@@ -1685,5 +1685,887 @@ Demapper_ATSC_sptr_swigregister(Demapper_ATSC_sptr)
 Demapper_ATSC_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id())
 Demapper_ATSC = Demapper_ATSC.make;
 
+class Parity_deinterleaver_ATSC(object):
+    """Proxy of C++ gr::mack_sdr_rossi::Parity_deinterleaver_ATSC class"""
+    thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
+    __repr__ = _swig_repr
+    def make(*args, **kwargs):
+        """make(int Nldpc, int Rate) -> Parity_deinterleaver_ATSC_sptr"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_make(*args, **kwargs)
+
+    make = staticmethod(make)
+    __swig_destroy__ = _mack_sdr_rossi_swig.delete_Parity_deinterleaver_ATSC
+    __del__ = lambda self : None;
+Parity_deinterleaver_ATSC_swigregister = _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_swigregister
+Parity_deinterleaver_ATSC_swigregister(Parity_deinterleaver_ATSC)
+
+def Parity_deinterleaver_ATSC_make(*args, **kwargs):
+  """Parity_deinterleaver_ATSC_make(int Nldpc, int Rate) -> Parity_deinterleaver_ATSC_sptr"""
+  return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_make(*args, **kwargs)
+
+class Parity_deinterleaver_ATSC_sptr(object):
+    """Proxy of C++ boost::shared_ptr<(gr::mack_sdr_rossi::Parity_deinterleaver_ATSC)> class"""
+    thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    __repr__ = _swig_repr
+    def __init__(self, *args): 
+        """
+        __init__(boost::shared_ptr<(gr::mack_sdr_rossi::Parity_deinterleaver_ATSC)> self) -> Parity_deinterleaver_ATSC_sptr
+        __init__(boost::shared_ptr<(gr::mack_sdr_rossi::Parity_deinterleaver_ATSC)> self, Parity_deinterleaver_ATSC p) -> Parity_deinterleaver_ATSC_sptr
+        """
+        this = _mack_sdr_rossi_swig.new_Parity_deinterleaver_ATSC_sptr(*args)
+        try: self.this.append(this)
+        except: self.this = this
+    def __deref__(self):
+        """__deref__(Parity_deinterleaver_ATSC_sptr self) -> Parity_deinterleaver_ATSC"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr___deref__(self)
+
+    __swig_destroy__ = _mack_sdr_rossi_swig.delete_Parity_deinterleaver_ATSC_sptr
+    __del__ = lambda self : None;
+    def make(self, *args, **kwargs):
+        """make(Parity_deinterleaver_ATSC_sptr self, int Nldpc, int Rate) -> Parity_deinterleaver_ATSC_sptr"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_make(self, *args, **kwargs)
+
+    def history(self):
+        """history(Parity_deinterleaver_ATSC_sptr self) -> unsigned int"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_history(self)
+
+    def declare_sample_delay(self, *args):
+        """
+        declare_sample_delay(Parity_deinterleaver_ATSC_sptr self, int which, int delay)
+        declare_sample_delay(Parity_deinterleaver_ATSC_sptr self, unsigned int delay)
+        """
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_declare_sample_delay(self, *args)
+
+    def sample_delay(self, *args, **kwargs):
+        """sample_delay(Parity_deinterleaver_ATSC_sptr self, int which) -> unsigned int"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_sample_delay(self, *args, **kwargs)
+
+    def output_multiple(self):
+        """output_multiple(Parity_deinterleaver_ATSC_sptr self) -> int"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_output_multiple(self)
+
+    def relative_rate(self):
+        """relative_rate(Parity_deinterleaver_ATSC_sptr self) -> double"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_relative_rate(self)
+
+    def start(self):
+        """start(Parity_deinterleaver_ATSC_sptr self) -> bool"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_start(self)
+
+    def stop(self):
+        """stop(Parity_deinterleaver_ATSC_sptr self) -> bool"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_stop(self)
+
+    def nitems_read(self, *args, **kwargs):
+        """nitems_read(Parity_deinterleaver_ATSC_sptr self, unsigned int which_input) -> uint64_t"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_nitems_read(self, *args, **kwargs)
+
+    def nitems_written(self, *args, **kwargs):
+        """nitems_written(Parity_deinterleaver_ATSC_sptr self, unsigned int which_output) -> uint64_t"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_nitems_written(self, *args, **kwargs)
+
+    def max_noutput_items(self):
+        """max_noutput_items(Parity_deinterleaver_ATSC_sptr self) -> int"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_max_noutput_items(self)
+
+    def set_max_noutput_items(self, *args, **kwargs):
+        """set_max_noutput_items(Parity_deinterleaver_ATSC_sptr self, int m)"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_set_max_noutput_items(self, *args, **kwargs)
+
+    def unset_max_noutput_items(self):
+        """unset_max_noutput_items(Parity_deinterleaver_ATSC_sptr self)"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_unset_max_noutput_items(self)
+
+    def is_set_max_noutput_items(self):
+        """is_set_max_noutput_items(Parity_deinterleaver_ATSC_sptr self) -> bool"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_is_set_max_noutput_items(self)
+
+    def set_min_noutput_items(self, *args, **kwargs):
+        """set_min_noutput_items(Parity_deinterleaver_ATSC_sptr self, int m)"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_set_min_noutput_items(self, *args, **kwargs)
+
+    def min_noutput_items(self):
+        """min_noutput_items(Parity_deinterleaver_ATSC_sptr self) -> int"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_min_noutput_items(self)
+
+    def max_output_buffer(self, *args, **kwargs):
+        """max_output_buffer(Parity_deinterleaver_ATSC_sptr self, int i) -> long"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_max_output_buffer(self, *args, **kwargs)
+
+    def set_max_output_buffer(self, *args):
+        """
+        set_max_output_buffer(Parity_deinterleaver_ATSC_sptr self, long max_output_buffer)
+        set_max_output_buffer(Parity_deinterleaver_ATSC_sptr self, int port, long max_output_buffer)
+        """
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_set_max_output_buffer(self, *args)
+
+    def min_output_buffer(self, *args, **kwargs):
+        """min_output_buffer(Parity_deinterleaver_ATSC_sptr self, int i) -> long"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_min_output_buffer(self, *args, **kwargs)
+
+    def set_min_output_buffer(self, *args):
+        """
+        set_min_output_buffer(Parity_deinterleaver_ATSC_sptr self, long min_output_buffer)
+        set_min_output_buffer(Parity_deinterleaver_ATSC_sptr self, int port, long min_output_buffer)
+        """
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_set_min_output_buffer(self, *args)
+
+    def pc_noutput_items(self):
+        """pc_noutput_items(Parity_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_pc_noutput_items(self)
+
+    def pc_noutput_items_avg(self):
+        """pc_noutput_items_avg(Parity_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_pc_noutput_items_avg(self)
+
+    def pc_noutput_items_var(self):
+        """pc_noutput_items_var(Parity_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_pc_noutput_items_var(self)
+
+    def pc_nproduced(self):
+        """pc_nproduced(Parity_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_pc_nproduced(self)
+
+    def pc_nproduced_avg(self):
+        """pc_nproduced_avg(Parity_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_pc_nproduced_avg(self)
+
+    def pc_nproduced_var(self):
+        """pc_nproduced_var(Parity_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_pc_nproduced_var(self)
+
+    def pc_input_buffers_full(self, *args):
+        """
+        pc_input_buffers_full(Parity_deinterleaver_ATSC_sptr self, int which) -> float
+        pc_input_buffers_full(Parity_deinterleaver_ATSC_sptr self) -> pmt_vector_float
+        """
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_pc_input_buffers_full(self, *args)
+
+    def pc_input_buffers_full_avg(self, *args):
+        """
+        pc_input_buffers_full_avg(Parity_deinterleaver_ATSC_sptr self, int which) -> float
+        pc_input_buffers_full_avg(Parity_deinterleaver_ATSC_sptr self) -> pmt_vector_float
+        """
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_pc_input_buffers_full_avg(self, *args)
+
+    def pc_input_buffers_full_var(self, *args):
+        """
+        pc_input_buffers_full_var(Parity_deinterleaver_ATSC_sptr self, int which) -> float
+        pc_input_buffers_full_var(Parity_deinterleaver_ATSC_sptr self) -> pmt_vector_float
+        """
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_pc_input_buffers_full_var(self, *args)
+
+    def pc_output_buffers_full(self, *args):
+        """
+        pc_output_buffers_full(Parity_deinterleaver_ATSC_sptr self, int which) -> float
+        pc_output_buffers_full(Parity_deinterleaver_ATSC_sptr self) -> pmt_vector_float
+        """
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_pc_output_buffers_full(self, *args)
+
+    def pc_output_buffers_full_avg(self, *args):
+        """
+        pc_output_buffers_full_avg(Parity_deinterleaver_ATSC_sptr self, int which) -> float
+        pc_output_buffers_full_avg(Parity_deinterleaver_ATSC_sptr self) -> pmt_vector_float
+        """
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_pc_output_buffers_full_avg(self, *args)
+
+    def pc_output_buffers_full_var(self, *args):
+        """
+        pc_output_buffers_full_var(Parity_deinterleaver_ATSC_sptr self, int which) -> float
+        pc_output_buffers_full_var(Parity_deinterleaver_ATSC_sptr self) -> pmt_vector_float
+        """
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_pc_output_buffers_full_var(self, *args)
+
+    def pc_work_time(self):
+        """pc_work_time(Parity_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_pc_work_time(self)
+
+    def pc_work_time_avg(self):
+        """pc_work_time_avg(Parity_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_pc_work_time_avg(self)
+
+    def pc_work_time_var(self):
+        """pc_work_time_var(Parity_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_pc_work_time_var(self)
+
+    def pc_work_time_total(self):
+        """pc_work_time_total(Parity_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_pc_work_time_total(self)
+
+    def pc_throughput_avg(self):
+        """pc_throughput_avg(Parity_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_pc_throughput_avg(self)
+
+    def set_processor_affinity(self, *args, **kwargs):
+        """set_processor_affinity(Parity_deinterleaver_ATSC_sptr self, std::vector< int,std::allocator< int > > const & mask)"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_set_processor_affinity(self, *args, **kwargs)
+
+    def unset_processor_affinity(self):
+        """unset_processor_affinity(Parity_deinterleaver_ATSC_sptr self)"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_unset_processor_affinity(self)
+
+    def processor_affinity(self):
+        """processor_affinity(Parity_deinterleaver_ATSC_sptr self) -> std::vector< int,std::allocator< int > >"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_processor_affinity(self)
+
+    def active_thread_priority(self):
+        """active_thread_priority(Parity_deinterleaver_ATSC_sptr self) -> int"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_active_thread_priority(self)
+
+    def thread_priority(self):
+        """thread_priority(Parity_deinterleaver_ATSC_sptr self) -> int"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_thread_priority(self)
+
+    def set_thread_priority(self, *args, **kwargs):
+        """set_thread_priority(Parity_deinterleaver_ATSC_sptr self, int priority) -> int"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_set_thread_priority(self, *args, **kwargs)
+
+    def name(self):
+        """name(Parity_deinterleaver_ATSC_sptr self) -> std::string"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_name(self)
+
+    def symbol_name(self):
+        """symbol_name(Parity_deinterleaver_ATSC_sptr self) -> std::string"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_symbol_name(self)
+
+    def input_signature(self):
+        """input_signature(Parity_deinterleaver_ATSC_sptr self) -> io_signature_sptr"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_input_signature(self)
+
+    def output_signature(self):
+        """output_signature(Parity_deinterleaver_ATSC_sptr self) -> io_signature_sptr"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_output_signature(self)
+
+    def unique_id(self):
+        """unique_id(Parity_deinterleaver_ATSC_sptr self) -> long"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_unique_id(self)
+
+    def to_basic_block(self):
+        """to_basic_block(Parity_deinterleaver_ATSC_sptr self) -> basic_block_sptr"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_to_basic_block(self)
+
+    def check_topology(self, *args, **kwargs):
+        """check_topology(Parity_deinterleaver_ATSC_sptr self, int ninputs, int noutputs) -> bool"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_check_topology(self, *args, **kwargs)
+
+    def alias(self):
+        """alias(Parity_deinterleaver_ATSC_sptr self) -> std::string"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_alias(self)
+
+    def set_block_alias(self, *args, **kwargs):
+        """set_block_alias(Parity_deinterleaver_ATSC_sptr self, std::string name)"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_set_block_alias(self, *args, **kwargs)
+
+    def _post(self, *args, **kwargs):
+        """_post(Parity_deinterleaver_ATSC_sptr self, swig_int_ptr which_port, swig_int_ptr msg)"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr__post(self, *args, **kwargs)
+
+    def message_ports_in(self):
+        """message_ports_in(Parity_deinterleaver_ATSC_sptr self) -> swig_int_ptr"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_message_ports_in(self)
+
+    def message_ports_out(self):
+        """message_ports_out(Parity_deinterleaver_ATSC_sptr self) -> swig_int_ptr"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_message_ports_out(self)
+
+    def message_subscribers(self, *args, **kwargs):
+        """message_subscribers(Parity_deinterleaver_ATSC_sptr self, swig_int_ptr which_port) -> swig_int_ptr"""
+        return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_message_subscribers(self, *args, **kwargs)
+
+Parity_deinterleaver_ATSC_sptr_swigregister = _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_swigregister
+Parity_deinterleaver_ATSC_sptr_swigregister(Parity_deinterleaver_ATSC_sptr)
+
+Parity_deinterleaver_ATSC_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id())
+Parity_deinterleaver_ATSC = Parity_deinterleaver_ATSC.make;
+
+class Block_deinterleaver_ATSC(object):
+    """Proxy of C++ gr::mack_sdr_rossi::Block_deinterleaver_ATSC class"""
+    thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
+    __repr__ = _swig_repr
+    def make(*args, **kwargs):
+        """make(int Nldpc, int Rate, int Mod_size) -> Block_deinterleaver_ATSC_sptr"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_make(*args, **kwargs)
+
+    make = staticmethod(make)
+    __swig_destroy__ = _mack_sdr_rossi_swig.delete_Block_deinterleaver_ATSC
+    __del__ = lambda self : None;
+Block_deinterleaver_ATSC_swigregister = _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_swigregister
+Block_deinterleaver_ATSC_swigregister(Block_deinterleaver_ATSC)
+
+def Block_deinterleaver_ATSC_make(*args, **kwargs):
+  """Block_deinterleaver_ATSC_make(int Nldpc, int Rate, int Mod_size) -> Block_deinterleaver_ATSC_sptr"""
+  return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_make(*args, **kwargs)
+
+class Block_deinterleaver_ATSC_sptr(object):
+    """Proxy of C++ boost::shared_ptr<(gr::mack_sdr_rossi::Block_deinterleaver_ATSC)> class"""
+    thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    __repr__ = _swig_repr
+    def __init__(self, *args): 
+        """
+        __init__(boost::shared_ptr<(gr::mack_sdr_rossi::Block_deinterleaver_ATSC)> self) -> Block_deinterleaver_ATSC_sptr
+        __init__(boost::shared_ptr<(gr::mack_sdr_rossi::Block_deinterleaver_ATSC)> self, Block_deinterleaver_ATSC p) -> Block_deinterleaver_ATSC_sptr
+        """
+        this = _mack_sdr_rossi_swig.new_Block_deinterleaver_ATSC_sptr(*args)
+        try: self.this.append(this)
+        except: self.this = this
+    def __deref__(self):
+        """__deref__(Block_deinterleaver_ATSC_sptr self) -> Block_deinterleaver_ATSC"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr___deref__(self)
+
+    __swig_destroy__ = _mack_sdr_rossi_swig.delete_Block_deinterleaver_ATSC_sptr
+    __del__ = lambda self : None;
+    def make(self, *args, **kwargs):
+        """make(Block_deinterleaver_ATSC_sptr self, int Nldpc, int Rate, int Mod_size) -> Block_deinterleaver_ATSC_sptr"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_make(self, *args, **kwargs)
+
+    def history(self):
+        """history(Block_deinterleaver_ATSC_sptr self) -> unsigned int"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_history(self)
+
+    def declare_sample_delay(self, *args):
+        """
+        declare_sample_delay(Block_deinterleaver_ATSC_sptr self, int which, int delay)
+        declare_sample_delay(Block_deinterleaver_ATSC_sptr self, unsigned int delay)
+        """
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_declare_sample_delay(self, *args)
+
+    def sample_delay(self, *args, **kwargs):
+        """sample_delay(Block_deinterleaver_ATSC_sptr self, int which) -> unsigned int"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_sample_delay(self, *args, **kwargs)
+
+    def output_multiple(self):
+        """output_multiple(Block_deinterleaver_ATSC_sptr self) -> int"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_output_multiple(self)
+
+    def relative_rate(self):
+        """relative_rate(Block_deinterleaver_ATSC_sptr self) -> double"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_relative_rate(self)
+
+    def start(self):
+        """start(Block_deinterleaver_ATSC_sptr self) -> bool"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_start(self)
+
+    def stop(self):
+        """stop(Block_deinterleaver_ATSC_sptr self) -> bool"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_stop(self)
+
+    def nitems_read(self, *args, **kwargs):
+        """nitems_read(Block_deinterleaver_ATSC_sptr self, unsigned int which_input) -> uint64_t"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_nitems_read(self, *args, **kwargs)
+
+    def nitems_written(self, *args, **kwargs):
+        """nitems_written(Block_deinterleaver_ATSC_sptr self, unsigned int which_output) -> uint64_t"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_nitems_written(self, *args, **kwargs)
+
+    def max_noutput_items(self):
+        """max_noutput_items(Block_deinterleaver_ATSC_sptr self) -> int"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_max_noutput_items(self)
+
+    def set_max_noutput_items(self, *args, **kwargs):
+        """set_max_noutput_items(Block_deinterleaver_ATSC_sptr self, int m)"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_set_max_noutput_items(self, *args, **kwargs)
+
+    def unset_max_noutput_items(self):
+        """unset_max_noutput_items(Block_deinterleaver_ATSC_sptr self)"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_unset_max_noutput_items(self)
+
+    def is_set_max_noutput_items(self):
+        """is_set_max_noutput_items(Block_deinterleaver_ATSC_sptr self) -> bool"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_is_set_max_noutput_items(self)
+
+    def set_min_noutput_items(self, *args, **kwargs):
+        """set_min_noutput_items(Block_deinterleaver_ATSC_sptr self, int m)"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_set_min_noutput_items(self, *args, **kwargs)
+
+    def min_noutput_items(self):
+        """min_noutput_items(Block_deinterleaver_ATSC_sptr self) -> int"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_min_noutput_items(self)
+
+    def max_output_buffer(self, *args, **kwargs):
+        """max_output_buffer(Block_deinterleaver_ATSC_sptr self, int i) -> long"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_max_output_buffer(self, *args, **kwargs)
+
+    def set_max_output_buffer(self, *args):
+        """
+        set_max_output_buffer(Block_deinterleaver_ATSC_sptr self, long max_output_buffer)
+        set_max_output_buffer(Block_deinterleaver_ATSC_sptr self, int port, long max_output_buffer)
+        """
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_set_max_output_buffer(self, *args)
+
+    def min_output_buffer(self, *args, **kwargs):
+        """min_output_buffer(Block_deinterleaver_ATSC_sptr self, int i) -> long"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_min_output_buffer(self, *args, **kwargs)
+
+    def set_min_output_buffer(self, *args):
+        """
+        set_min_output_buffer(Block_deinterleaver_ATSC_sptr self, long min_output_buffer)
+        set_min_output_buffer(Block_deinterleaver_ATSC_sptr self, int port, long min_output_buffer)
+        """
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_set_min_output_buffer(self, *args)
+
+    def pc_noutput_items(self):
+        """pc_noutput_items(Block_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_pc_noutput_items(self)
+
+    def pc_noutput_items_avg(self):
+        """pc_noutput_items_avg(Block_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_pc_noutput_items_avg(self)
+
+    def pc_noutput_items_var(self):
+        """pc_noutput_items_var(Block_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_pc_noutput_items_var(self)
+
+    def pc_nproduced(self):
+        """pc_nproduced(Block_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_pc_nproduced(self)
+
+    def pc_nproduced_avg(self):
+        """pc_nproduced_avg(Block_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_pc_nproduced_avg(self)
+
+    def pc_nproduced_var(self):
+        """pc_nproduced_var(Block_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_pc_nproduced_var(self)
+
+    def pc_input_buffers_full(self, *args):
+        """
+        pc_input_buffers_full(Block_deinterleaver_ATSC_sptr self, int which) -> float
+        pc_input_buffers_full(Block_deinterleaver_ATSC_sptr self) -> pmt_vector_float
+        """
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_pc_input_buffers_full(self, *args)
+
+    def pc_input_buffers_full_avg(self, *args):
+        """
+        pc_input_buffers_full_avg(Block_deinterleaver_ATSC_sptr self, int which) -> float
+        pc_input_buffers_full_avg(Block_deinterleaver_ATSC_sptr self) -> pmt_vector_float
+        """
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_pc_input_buffers_full_avg(self, *args)
+
+    def pc_input_buffers_full_var(self, *args):
+        """
+        pc_input_buffers_full_var(Block_deinterleaver_ATSC_sptr self, int which) -> float
+        pc_input_buffers_full_var(Block_deinterleaver_ATSC_sptr self) -> pmt_vector_float
+        """
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_pc_input_buffers_full_var(self, *args)
+
+    def pc_output_buffers_full(self, *args):
+        """
+        pc_output_buffers_full(Block_deinterleaver_ATSC_sptr self, int which) -> float
+        pc_output_buffers_full(Block_deinterleaver_ATSC_sptr self) -> pmt_vector_float
+        """
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_pc_output_buffers_full(self, *args)
+
+    def pc_output_buffers_full_avg(self, *args):
+        """
+        pc_output_buffers_full_avg(Block_deinterleaver_ATSC_sptr self, int which) -> float
+        pc_output_buffers_full_avg(Block_deinterleaver_ATSC_sptr self) -> pmt_vector_float
+        """
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_pc_output_buffers_full_avg(self, *args)
+
+    def pc_output_buffers_full_var(self, *args):
+        """
+        pc_output_buffers_full_var(Block_deinterleaver_ATSC_sptr self, int which) -> float
+        pc_output_buffers_full_var(Block_deinterleaver_ATSC_sptr self) -> pmt_vector_float
+        """
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_pc_output_buffers_full_var(self, *args)
+
+    def pc_work_time(self):
+        """pc_work_time(Block_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_pc_work_time(self)
+
+    def pc_work_time_avg(self):
+        """pc_work_time_avg(Block_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_pc_work_time_avg(self)
+
+    def pc_work_time_var(self):
+        """pc_work_time_var(Block_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_pc_work_time_var(self)
+
+    def pc_work_time_total(self):
+        """pc_work_time_total(Block_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_pc_work_time_total(self)
+
+    def pc_throughput_avg(self):
+        """pc_throughput_avg(Block_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_pc_throughput_avg(self)
+
+    def set_processor_affinity(self, *args, **kwargs):
+        """set_processor_affinity(Block_deinterleaver_ATSC_sptr self, std::vector< int,std::allocator< int > > const & mask)"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_set_processor_affinity(self, *args, **kwargs)
+
+    def unset_processor_affinity(self):
+        """unset_processor_affinity(Block_deinterleaver_ATSC_sptr self)"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_unset_processor_affinity(self)
+
+    def processor_affinity(self):
+        """processor_affinity(Block_deinterleaver_ATSC_sptr self) -> std::vector< int,std::allocator< int > >"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_processor_affinity(self)
+
+    def active_thread_priority(self):
+        """active_thread_priority(Block_deinterleaver_ATSC_sptr self) -> int"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_active_thread_priority(self)
+
+    def thread_priority(self):
+        """thread_priority(Block_deinterleaver_ATSC_sptr self) -> int"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_thread_priority(self)
+
+    def set_thread_priority(self, *args, **kwargs):
+        """set_thread_priority(Block_deinterleaver_ATSC_sptr self, int priority) -> int"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_set_thread_priority(self, *args, **kwargs)
+
+    def name(self):
+        """name(Block_deinterleaver_ATSC_sptr self) -> std::string"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_name(self)
+
+    def symbol_name(self):
+        """symbol_name(Block_deinterleaver_ATSC_sptr self) -> std::string"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_symbol_name(self)
+
+    def input_signature(self):
+        """input_signature(Block_deinterleaver_ATSC_sptr self) -> io_signature_sptr"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_input_signature(self)
+
+    def output_signature(self):
+        """output_signature(Block_deinterleaver_ATSC_sptr self) -> io_signature_sptr"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_output_signature(self)
+
+    def unique_id(self):
+        """unique_id(Block_deinterleaver_ATSC_sptr self) -> long"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_unique_id(self)
+
+    def to_basic_block(self):
+        """to_basic_block(Block_deinterleaver_ATSC_sptr self) -> basic_block_sptr"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_to_basic_block(self)
+
+    def check_topology(self, *args, **kwargs):
+        """check_topology(Block_deinterleaver_ATSC_sptr self, int ninputs, int noutputs) -> bool"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_check_topology(self, *args, **kwargs)
+
+    def alias(self):
+        """alias(Block_deinterleaver_ATSC_sptr self) -> std::string"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_alias(self)
+
+    def set_block_alias(self, *args, **kwargs):
+        """set_block_alias(Block_deinterleaver_ATSC_sptr self, std::string name)"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_set_block_alias(self, *args, **kwargs)
+
+    def _post(self, *args, **kwargs):
+        """_post(Block_deinterleaver_ATSC_sptr self, swig_int_ptr which_port, swig_int_ptr msg)"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr__post(self, *args, **kwargs)
+
+    def message_ports_in(self):
+        """message_ports_in(Block_deinterleaver_ATSC_sptr self) -> swig_int_ptr"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_message_ports_in(self)
+
+    def message_ports_out(self):
+        """message_ports_out(Block_deinterleaver_ATSC_sptr self) -> swig_int_ptr"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_message_ports_out(self)
+
+    def message_subscribers(self, *args, **kwargs):
+        """message_subscribers(Block_deinterleaver_ATSC_sptr self, swig_int_ptr which_port) -> swig_int_ptr"""
+        return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_message_subscribers(self, *args, **kwargs)
+
+Block_deinterleaver_ATSC_sptr_swigregister = _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_swigregister
+Block_deinterleaver_ATSC_sptr_swigregister(Block_deinterleaver_ATSC_sptr)
+
+Block_deinterleaver_ATSC_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id())
+Block_deinterleaver_ATSC = Block_deinterleaver_ATSC.make;
+
+class Group_deinterleaver_ATSC(object):
+    """Proxy of C++ gr::mack_sdr_rossi::Group_deinterleaver_ATSC class"""
+    thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
+    __repr__ = _swig_repr
+    def make(*args, **kwargs):
+        """make(int Nldpc, int Rate, int Mod_size) -> Group_deinterleaver_ATSC_sptr"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_make(*args, **kwargs)
+
+    make = staticmethod(make)
+    __swig_destroy__ = _mack_sdr_rossi_swig.delete_Group_deinterleaver_ATSC
+    __del__ = lambda self : None;
+Group_deinterleaver_ATSC_swigregister = _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_swigregister
+Group_deinterleaver_ATSC_swigregister(Group_deinterleaver_ATSC)
+
+def Group_deinterleaver_ATSC_make(*args, **kwargs):
+  """Group_deinterleaver_ATSC_make(int Nldpc, int Rate, int Mod_size) -> Group_deinterleaver_ATSC_sptr"""
+  return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_make(*args, **kwargs)
+
+class Group_deinterleaver_ATSC_sptr(object):
+    """Proxy of C++ boost::shared_ptr<(gr::mack_sdr_rossi::Group_deinterleaver_ATSC)> class"""
+    thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
+    __repr__ = _swig_repr
+    def __init__(self, *args): 
+        """
+        __init__(boost::shared_ptr<(gr::mack_sdr_rossi::Group_deinterleaver_ATSC)> self) -> Group_deinterleaver_ATSC_sptr
+        __init__(boost::shared_ptr<(gr::mack_sdr_rossi::Group_deinterleaver_ATSC)> self, Group_deinterleaver_ATSC p) -> Group_deinterleaver_ATSC_sptr
+        """
+        this = _mack_sdr_rossi_swig.new_Group_deinterleaver_ATSC_sptr(*args)
+        try: self.this.append(this)
+        except: self.this = this
+    def __deref__(self):
+        """__deref__(Group_deinterleaver_ATSC_sptr self) -> Group_deinterleaver_ATSC"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr___deref__(self)
+
+    __swig_destroy__ = _mack_sdr_rossi_swig.delete_Group_deinterleaver_ATSC_sptr
+    __del__ = lambda self : None;
+    def make(self, *args, **kwargs):
+        """make(Group_deinterleaver_ATSC_sptr self, int Nldpc, int Rate, int Mod_size) -> Group_deinterleaver_ATSC_sptr"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_make(self, *args, **kwargs)
+
+    def history(self):
+        """history(Group_deinterleaver_ATSC_sptr self) -> unsigned int"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_history(self)
+
+    def declare_sample_delay(self, *args):
+        """
+        declare_sample_delay(Group_deinterleaver_ATSC_sptr self, int which, int delay)
+        declare_sample_delay(Group_deinterleaver_ATSC_sptr self, unsigned int delay)
+        """
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_declare_sample_delay(self, *args)
+
+    def sample_delay(self, *args, **kwargs):
+        """sample_delay(Group_deinterleaver_ATSC_sptr self, int which) -> unsigned int"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_sample_delay(self, *args, **kwargs)
+
+    def output_multiple(self):
+        """output_multiple(Group_deinterleaver_ATSC_sptr self) -> int"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_output_multiple(self)
+
+    def relative_rate(self):
+        """relative_rate(Group_deinterleaver_ATSC_sptr self) -> double"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_relative_rate(self)
+
+    def start(self):
+        """start(Group_deinterleaver_ATSC_sptr self) -> bool"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_start(self)
+
+    def stop(self):
+        """stop(Group_deinterleaver_ATSC_sptr self) -> bool"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_stop(self)
+
+    def nitems_read(self, *args, **kwargs):
+        """nitems_read(Group_deinterleaver_ATSC_sptr self, unsigned int which_input) -> uint64_t"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_nitems_read(self, *args, **kwargs)
+
+    def nitems_written(self, *args, **kwargs):
+        """nitems_written(Group_deinterleaver_ATSC_sptr self, unsigned int which_output) -> uint64_t"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_nitems_written(self, *args, **kwargs)
+
+    def max_noutput_items(self):
+        """max_noutput_items(Group_deinterleaver_ATSC_sptr self) -> int"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_max_noutput_items(self)
+
+    def set_max_noutput_items(self, *args, **kwargs):
+        """set_max_noutput_items(Group_deinterleaver_ATSC_sptr self, int m)"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_set_max_noutput_items(self, *args, **kwargs)
+
+    def unset_max_noutput_items(self):
+        """unset_max_noutput_items(Group_deinterleaver_ATSC_sptr self)"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_unset_max_noutput_items(self)
+
+    def is_set_max_noutput_items(self):
+        """is_set_max_noutput_items(Group_deinterleaver_ATSC_sptr self) -> bool"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_is_set_max_noutput_items(self)
+
+    def set_min_noutput_items(self, *args, **kwargs):
+        """set_min_noutput_items(Group_deinterleaver_ATSC_sptr self, int m)"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_set_min_noutput_items(self, *args, **kwargs)
+
+    def min_noutput_items(self):
+        """min_noutput_items(Group_deinterleaver_ATSC_sptr self) -> int"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_min_noutput_items(self)
+
+    def max_output_buffer(self, *args, **kwargs):
+        """max_output_buffer(Group_deinterleaver_ATSC_sptr self, int i) -> long"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_max_output_buffer(self, *args, **kwargs)
+
+    def set_max_output_buffer(self, *args):
+        """
+        set_max_output_buffer(Group_deinterleaver_ATSC_sptr self, long max_output_buffer)
+        set_max_output_buffer(Group_deinterleaver_ATSC_sptr self, int port, long max_output_buffer)
+        """
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_set_max_output_buffer(self, *args)
+
+    def min_output_buffer(self, *args, **kwargs):
+        """min_output_buffer(Group_deinterleaver_ATSC_sptr self, int i) -> long"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_min_output_buffer(self, *args, **kwargs)
+
+    def set_min_output_buffer(self, *args):
+        """
+        set_min_output_buffer(Group_deinterleaver_ATSC_sptr self, long min_output_buffer)
+        set_min_output_buffer(Group_deinterleaver_ATSC_sptr self, int port, long min_output_buffer)
+        """
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_set_min_output_buffer(self, *args)
+
+    def pc_noutput_items(self):
+        """pc_noutput_items(Group_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_pc_noutput_items(self)
+
+    def pc_noutput_items_avg(self):
+        """pc_noutput_items_avg(Group_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_pc_noutput_items_avg(self)
+
+    def pc_noutput_items_var(self):
+        """pc_noutput_items_var(Group_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_pc_noutput_items_var(self)
+
+    def pc_nproduced(self):
+        """pc_nproduced(Group_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_pc_nproduced(self)
+
+    def pc_nproduced_avg(self):
+        """pc_nproduced_avg(Group_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_pc_nproduced_avg(self)
+
+    def pc_nproduced_var(self):
+        """pc_nproduced_var(Group_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_pc_nproduced_var(self)
+
+    def pc_input_buffers_full(self, *args):
+        """
+        pc_input_buffers_full(Group_deinterleaver_ATSC_sptr self, int which) -> float
+        pc_input_buffers_full(Group_deinterleaver_ATSC_sptr self) -> pmt_vector_float
+        """
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_pc_input_buffers_full(self, *args)
+
+    def pc_input_buffers_full_avg(self, *args):
+        """
+        pc_input_buffers_full_avg(Group_deinterleaver_ATSC_sptr self, int which) -> float
+        pc_input_buffers_full_avg(Group_deinterleaver_ATSC_sptr self) -> pmt_vector_float
+        """
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_pc_input_buffers_full_avg(self, *args)
+
+    def pc_input_buffers_full_var(self, *args):
+        """
+        pc_input_buffers_full_var(Group_deinterleaver_ATSC_sptr self, int which) -> float
+        pc_input_buffers_full_var(Group_deinterleaver_ATSC_sptr self) -> pmt_vector_float
+        """
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_pc_input_buffers_full_var(self, *args)
+
+    def pc_output_buffers_full(self, *args):
+        """
+        pc_output_buffers_full(Group_deinterleaver_ATSC_sptr self, int which) -> float
+        pc_output_buffers_full(Group_deinterleaver_ATSC_sptr self) -> pmt_vector_float
+        """
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_pc_output_buffers_full(self, *args)
+
+    def pc_output_buffers_full_avg(self, *args):
+        """
+        pc_output_buffers_full_avg(Group_deinterleaver_ATSC_sptr self, int which) -> float
+        pc_output_buffers_full_avg(Group_deinterleaver_ATSC_sptr self) -> pmt_vector_float
+        """
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_pc_output_buffers_full_avg(self, *args)
+
+    def pc_output_buffers_full_var(self, *args):
+        """
+        pc_output_buffers_full_var(Group_deinterleaver_ATSC_sptr self, int which) -> float
+        pc_output_buffers_full_var(Group_deinterleaver_ATSC_sptr self) -> pmt_vector_float
+        """
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_pc_output_buffers_full_var(self, *args)
+
+    def pc_work_time(self):
+        """pc_work_time(Group_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_pc_work_time(self)
+
+    def pc_work_time_avg(self):
+        """pc_work_time_avg(Group_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_pc_work_time_avg(self)
+
+    def pc_work_time_var(self):
+        """pc_work_time_var(Group_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_pc_work_time_var(self)
+
+    def pc_work_time_total(self):
+        """pc_work_time_total(Group_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_pc_work_time_total(self)
+
+    def pc_throughput_avg(self):
+        """pc_throughput_avg(Group_deinterleaver_ATSC_sptr self) -> float"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_pc_throughput_avg(self)
+
+    def set_processor_affinity(self, *args, **kwargs):
+        """set_processor_affinity(Group_deinterleaver_ATSC_sptr self, std::vector< int,std::allocator< int > > const & mask)"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_set_processor_affinity(self, *args, **kwargs)
+
+    def unset_processor_affinity(self):
+        """unset_processor_affinity(Group_deinterleaver_ATSC_sptr self)"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_unset_processor_affinity(self)
+
+    def processor_affinity(self):
+        """processor_affinity(Group_deinterleaver_ATSC_sptr self) -> std::vector< int,std::allocator< int > >"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_processor_affinity(self)
+
+    def active_thread_priority(self):
+        """active_thread_priority(Group_deinterleaver_ATSC_sptr self) -> int"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_active_thread_priority(self)
+
+    def thread_priority(self):
+        """thread_priority(Group_deinterleaver_ATSC_sptr self) -> int"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_thread_priority(self)
+
+    def set_thread_priority(self, *args, **kwargs):
+        """set_thread_priority(Group_deinterleaver_ATSC_sptr self, int priority) -> int"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_set_thread_priority(self, *args, **kwargs)
+
+    def name(self):
+        """name(Group_deinterleaver_ATSC_sptr self) -> std::string"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_name(self)
+
+    def symbol_name(self):
+        """symbol_name(Group_deinterleaver_ATSC_sptr self) -> std::string"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_symbol_name(self)
+
+    def input_signature(self):
+        """input_signature(Group_deinterleaver_ATSC_sptr self) -> io_signature_sptr"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_input_signature(self)
+
+    def output_signature(self):
+        """output_signature(Group_deinterleaver_ATSC_sptr self) -> io_signature_sptr"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_output_signature(self)
+
+    def unique_id(self):
+        """unique_id(Group_deinterleaver_ATSC_sptr self) -> long"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_unique_id(self)
+
+    def to_basic_block(self):
+        """to_basic_block(Group_deinterleaver_ATSC_sptr self) -> basic_block_sptr"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_to_basic_block(self)
+
+    def check_topology(self, *args, **kwargs):
+        """check_topology(Group_deinterleaver_ATSC_sptr self, int ninputs, int noutputs) -> bool"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_check_topology(self, *args, **kwargs)
+
+    def alias(self):
+        """alias(Group_deinterleaver_ATSC_sptr self) -> std::string"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_alias(self)
+
+    def set_block_alias(self, *args, **kwargs):
+        """set_block_alias(Group_deinterleaver_ATSC_sptr self, std::string name)"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_set_block_alias(self, *args, **kwargs)
+
+    def _post(self, *args, **kwargs):
+        """_post(Group_deinterleaver_ATSC_sptr self, swig_int_ptr which_port, swig_int_ptr msg)"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr__post(self, *args, **kwargs)
+
+    def message_ports_in(self):
+        """message_ports_in(Group_deinterleaver_ATSC_sptr self) -> swig_int_ptr"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_message_ports_in(self)
+
+    def message_ports_out(self):
+        """message_ports_out(Group_deinterleaver_ATSC_sptr self) -> swig_int_ptr"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_message_ports_out(self)
+
+    def message_subscribers(self, *args, **kwargs):
+        """message_subscribers(Group_deinterleaver_ATSC_sptr self, swig_int_ptr which_port) -> swig_int_ptr"""
+        return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_message_subscribers(self, *args, **kwargs)
+
+Group_deinterleaver_ATSC_sptr_swigregister = _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_swigregister
+Group_deinterleaver_ATSC_sptr_swigregister(Group_deinterleaver_ATSC_sptr)
+
+Group_deinterleaver_ATSC_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id())
+Group_deinterleaver_ATSC = Group_deinterleaver_ATSC.make;
+
 
 

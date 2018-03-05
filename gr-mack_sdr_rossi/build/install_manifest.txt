@@ -5,6 +5,9 @@
 /usr/local/include/mack_sdr_rossi/LDPC_decoder_hard_ATSC.h
 /usr/local/include/mack_sdr_rossi/BCH_decoder_ATSC.h
 /usr/local/include/mack_sdr_rossi/Demapper_ATSC.h
+/usr/local/include/mack_sdr_rossi/Parity_deinterleaver_ATSC.h
+/usr/local/include/mack_sdr_rossi/Block_deinterleaver_ATSC.h
+/usr/local/include/mack_sdr_rossi/Group_deinterleaver_ATSC.h
 /usr/local/lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0
 /usr/local/lib/libgnuradio-mack_sdr_rossi-1.0.0git.so
 /usr/local/lib/libgnuradio-mack_sdr_rossi.so
@@ -23,6 +26,9 @@
 /usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_LDPC_decoder_hard_ATSC.xml
 /usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_BCH_decoder_ATSC.xml
 /usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_Demapper_ATSC.xml
+/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_Parity_deinterleaver_ATSC.xml
+/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_Block_deinterleaver_ATSC.xml
+/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_Group_deinterleaver_ATSC.xml
 /usr/local/share/doc/gr-mack_sdr_rossi/xml/classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl.xml
 /usr/local/share/doc/gr-mack_sdr_rossi/xml/classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC.xml
 /usr/local/share/doc/gr-mack_sdr_rossi/xml/combine.xslt

@@ -1,0 +1,30 @@
+<block>
+  <name>Group deinterleaver atsc</name>
+  <key>mack_sdr_rossi_Group_deinterleaver_ATSC</key>
+  <category>[MACK_SDR_ROSSI]</category>
+  <import>import mack_sdr_rossi</import>
+  <make>mack_sdr_rossi.Group_deinterleaver_ATSC($Nldpc, $Rate, $Mod_size)</make>
+  <param>
+    <name>Nldpc</name>
+    <key>Nldpc</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Rate</name>
+    <key>Rate</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Mod_size</name>
+    <key>Mod_size</key>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>float</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>float</type>
+  </source>
+</block>
