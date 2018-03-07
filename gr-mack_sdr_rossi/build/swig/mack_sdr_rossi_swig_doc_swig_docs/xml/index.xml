@@ -4,9 +4,17 @@
     <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC_1a773fe2bf4efbdafb65e22f23e05ad06b" kind="typedef"><name>sptr</name></member>
     <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC_1a21d2d18d16377485c4627da452b6030b" kind="function"><name>make</name></member>
   </compound>
+  <compound refid="classgr_1_1mack__sdr__rossi_1_1Block__deinterleaver__ATSC" kind="class"><name>gr::mack_sdr_rossi::Block_deinterleaver_ATSC</name>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1Block__deinterleaver__ATSC_1ac3127644ee74b2ff2678321ae39708ac" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1Block__deinterleaver__ATSC_1a6221baa921a2de1ed58f5d7c5053a042" kind="function"><name>make</name></member>
+  </compound>
   <compound refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC" kind="class"><name>gr::mack_sdr_rossi::Demapper_ATSC</name>
     <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC_1a6cc8c7bf5066e7506d7b4bd7f55759d9" kind="typedef"><name>sptr</name></member>
-    <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC_1a49b53927cc636e1d14192ca81e1bf792" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC_1aa9415bea8acf1baac07d7320b9ab5dad" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1mack__sdr__rossi_1_1Group__deinterleaver__ATSC" kind="class"><name>gr::mack_sdr_rossi::Group_deinterleaver_ATSC</name>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1Group__deinterleaver__ATSC_1aaa1ea4eb127105e875e3297395bc4ef0" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1Group__deinterleaver__ATSC_1a6c94e70d024848697fb21ed47d97a017" kind="function"><name>make</name></member>
   </compound>
   <compound refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC" kind="class"><name>gr::mack_sdr_rossi::LDPC_decoder_ATSC</name>
     <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC_1add89571f705bd1ac1b40d11b1383007e" kind="typedef"><name>sptr</name></member>
@@ -15,6 +23,10 @@
   <compound refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC" kind="class"><name>gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC</name>
     <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC_1aff06fbc021aa987fd545dd64e1190ff3" kind="typedef"><name>sptr</name></member>
     <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC_1a11e7636030232e35285217fbb122ae53" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1mack__sdr__rossi_1_1Parity__deinterleaver__ATSC" kind="class"><name>gr::mack_sdr_rossi::Parity_deinterleaver_ATSC</name>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1Parity__deinterleaver__ATSC_1a05b23ddd6c83a8d329daf64634af24cf" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1Parity__deinterleaver__ATSC_1ae4ac4b22d0e28d712ffe92358e3a9a7d" kind="function"><name>make</name></member>
   </compound>
   <compound refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec" kind="class"><name>gr::mack_sdr_rossi::str_to_vec</name>
     <member refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec_1af05874a8ece7b9f7272218269ac618ba" kind="typedef"><name>sptr</name></member>
@@ -31,11 +43,17 @@
   </compound>
   <compound refid="BCH__decoder__ATSC_8h" kind="file"><name>BCH_decoder_ATSC.h</name>
   </compound>
+  <compound refid="Block__deinterleaver__ATSC_8h" kind="file"><name>Block_deinterleaver_ATSC.h</name>
+  </compound>
   <compound refid="Demapper__ATSC_8h" kind="file"><name>Demapper_ATSC.h</name>
+  </compound>
+  <compound refid="Group__deinterleaver__ATSC_8h" kind="file"><name>Group_deinterleaver_ATSC.h</name>
   </compound>
   <compound refid="LDPC__decoder__ATSC_8h" kind="file"><name>LDPC_decoder_ATSC.h</name>
   </compound>
   <compound refid="LDPC__decoder__hard__ATSC_8h" kind="file"><name>LDPC_decoder_hard_ATSC.h</name>
+  </compound>
+  <compound refid="Parity__deinterleaver__ATSC_8h" kind="file"><name>Parity_deinterleaver_ATSC.h</name>
   </compound>
   <compound refid="str__to__vec_8h" kind="file"><name>str_to_vec.h</name>
   </compound>

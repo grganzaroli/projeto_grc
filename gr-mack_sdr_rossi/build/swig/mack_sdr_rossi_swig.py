@@ -1380,7 +1380,7 @@ class Demapper_ATSC(object):
 
         To avoid accidental use of raw pointers, mack_sdr_rossi::Demapper_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Demapper_ATSC::make is the public interface for creating new instances.
 
-        Params: (size_in, size_out, rate, var)
+        Params: (size_in, size_out, rate, mod_size, var)
         """
         return _mack_sdr_rossi_swig.Demapper_ATSC_make(*args, **kwargs)
 
@@ -1398,7 +1398,7 @@ def Demapper_ATSC_make(*args, **kwargs):
 
     To avoid accidental use of raw pointers, mack_sdr_rossi::Demapper_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Demapper_ATSC::make is the public interface for creating new instances.
 
-    Params: (size_in, size_out, rate, var)
+    Params: (size_in, size_out, rate, mod_size, var)
     """
   return _mack_sdr_rossi_swig.Demapper_ATSC_make(*args, **kwargs)
 
@@ -1428,7 +1428,7 @@ class Demapper_ATSC_sptr(object):
 
         To avoid accidental use of raw pointers, mack_sdr_rossi::Demapper_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Demapper_ATSC::make is the public interface for creating new instances.
 
-        Params: (size_in, size_out, rate, var)
+        Params: (size_in, size_out, rate, mod_size, var)
         """
         return _mack_sdr_rossi_swig.Demapper_ATSC_sptr_make(self, *args, **kwargs)
 
@@ -1686,12 +1686,20 @@ Demapper_ATSC_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), 
 Demapper_ATSC = Demapper_ATSC.make;
 
 class Parity_deinterleaver_ATSC(object):
-    """Proxy of C++ gr::mack_sdr_rossi::Parity_deinterleaver_ATSC class"""
+    """<+description of block+>"""
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
     def make(*args, **kwargs):
-        """make(int Nldpc, int Rate) -> Parity_deinterleaver_ATSC_sptr"""
+        """
+        make(int Nldpc, int Rate) -> Parity_deinterleaver_ATSC_sptr
+
+        Return a shared_ptr to a new instance of mack_sdr_rossi::Parity_deinterleaver_ATSC.
+
+        To avoid accidental use of raw pointers, mack_sdr_rossi::Parity_deinterleaver_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Parity_deinterleaver_ATSC::make is the public interface for creating new instances.
+
+        Params: (Nldpc, Rate)
+        """
         return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_make(*args, **kwargs)
 
     make = staticmethod(make)
@@ -1701,7 +1709,15 @@ Parity_deinterleaver_ATSC_swigregister = _mack_sdr_rossi_swig.Parity_deinterleav
 Parity_deinterleaver_ATSC_swigregister(Parity_deinterleaver_ATSC)
 
 def Parity_deinterleaver_ATSC_make(*args, **kwargs):
-  """Parity_deinterleaver_ATSC_make(int Nldpc, int Rate) -> Parity_deinterleaver_ATSC_sptr"""
+  """
+    Parity_deinterleaver_ATSC_make(int Nldpc, int Rate) -> Parity_deinterleaver_ATSC_sptr
+
+    Return a shared_ptr to a new instance of mack_sdr_rossi::Parity_deinterleaver_ATSC.
+
+    To avoid accidental use of raw pointers, mack_sdr_rossi::Parity_deinterleaver_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Parity_deinterleaver_ATSC::make is the public interface for creating new instances.
+
+    Params: (Nldpc, Rate)
+    """
   return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_make(*args, **kwargs)
 
 class Parity_deinterleaver_ATSC_sptr(object):
@@ -1723,7 +1739,15 @@ class Parity_deinterleaver_ATSC_sptr(object):
     __swig_destroy__ = _mack_sdr_rossi_swig.delete_Parity_deinterleaver_ATSC_sptr
     __del__ = lambda self : None;
     def make(self, *args, **kwargs):
-        """make(Parity_deinterleaver_ATSC_sptr self, int Nldpc, int Rate) -> Parity_deinterleaver_ATSC_sptr"""
+        """
+        make(Parity_deinterleaver_ATSC_sptr self, int Nldpc, int Rate) -> Parity_deinterleaver_ATSC_sptr
+
+        Return a shared_ptr to a new instance of mack_sdr_rossi::Parity_deinterleaver_ATSC.
+
+        To avoid accidental use of raw pointers, mack_sdr_rossi::Parity_deinterleaver_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Parity_deinterleaver_ATSC::make is the public interface for creating new instances.
+
+        Params: (Nldpc, Rate)
+        """
         return _mack_sdr_rossi_swig.Parity_deinterleaver_ATSC_sptr_make(self, *args, **kwargs)
 
     def history(self):
@@ -1980,12 +2004,20 @@ Parity_deinterleaver_ATSC_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (s
 Parity_deinterleaver_ATSC = Parity_deinterleaver_ATSC.make;
 
 class Block_deinterleaver_ATSC(object):
-    """Proxy of C++ gr::mack_sdr_rossi::Block_deinterleaver_ATSC class"""
+    """<+description of block+>"""
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
     def make(*args, **kwargs):
-        """make(int Nldpc, int Rate, int Mod_size) -> Block_deinterleaver_ATSC_sptr"""
+        """
+        make(int Nldpc, int Rate, int Mod_size) -> Block_deinterleaver_ATSC_sptr
+
+        Return a shared_ptr to a new instance of mack_sdr_rossi::Block_deinterleaver_ATSC.
+
+        To avoid accidental use of raw pointers, mack_sdr_rossi::Block_deinterleaver_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Block_deinterleaver_ATSC::make is the public interface for creating new instances.
+
+        Params: (Nldpc, Rate, Mod_size)
+        """
         return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_make(*args, **kwargs)
 
     make = staticmethod(make)
@@ -1995,7 +2027,15 @@ Block_deinterleaver_ATSC_swigregister = _mack_sdr_rossi_swig.Block_deinterleaver
 Block_deinterleaver_ATSC_swigregister(Block_deinterleaver_ATSC)
 
 def Block_deinterleaver_ATSC_make(*args, **kwargs):
-  """Block_deinterleaver_ATSC_make(int Nldpc, int Rate, int Mod_size) -> Block_deinterleaver_ATSC_sptr"""
+  """
+    Block_deinterleaver_ATSC_make(int Nldpc, int Rate, int Mod_size) -> Block_deinterleaver_ATSC_sptr
+
+    Return a shared_ptr to a new instance of mack_sdr_rossi::Block_deinterleaver_ATSC.
+
+    To avoid accidental use of raw pointers, mack_sdr_rossi::Block_deinterleaver_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Block_deinterleaver_ATSC::make is the public interface for creating new instances.
+
+    Params: (Nldpc, Rate, Mod_size)
+    """
   return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_make(*args, **kwargs)
 
 class Block_deinterleaver_ATSC_sptr(object):
@@ -2017,7 +2057,15 @@ class Block_deinterleaver_ATSC_sptr(object):
     __swig_destroy__ = _mack_sdr_rossi_swig.delete_Block_deinterleaver_ATSC_sptr
     __del__ = lambda self : None;
     def make(self, *args, **kwargs):
-        """make(Block_deinterleaver_ATSC_sptr self, int Nldpc, int Rate, int Mod_size) -> Block_deinterleaver_ATSC_sptr"""
+        """
+        make(Block_deinterleaver_ATSC_sptr self, int Nldpc, int Rate, int Mod_size) -> Block_deinterleaver_ATSC_sptr
+
+        Return a shared_ptr to a new instance of mack_sdr_rossi::Block_deinterleaver_ATSC.
+
+        To avoid accidental use of raw pointers, mack_sdr_rossi::Block_deinterleaver_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Block_deinterleaver_ATSC::make is the public interface for creating new instances.
+
+        Params: (Nldpc, Rate, Mod_size)
+        """
         return _mack_sdr_rossi_swig.Block_deinterleaver_ATSC_sptr_make(self, *args, **kwargs)
 
     def history(self):
@@ -2274,12 +2322,20 @@ Block_deinterleaver_ATSC_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (se
 Block_deinterleaver_ATSC = Block_deinterleaver_ATSC.make;
 
 class Group_deinterleaver_ATSC(object):
-    """Proxy of C++ gr::mack_sdr_rossi::Group_deinterleaver_ATSC class"""
+    """<+description of block+>"""
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
     def make(*args, **kwargs):
-        """make(int Nldpc, int Rate, int Mod_size) -> Group_deinterleaver_ATSC_sptr"""
+        """
+        make(int Nldpc, int Rate, int Mod_size) -> Group_deinterleaver_ATSC_sptr
+
+        Return a shared_ptr to a new instance of mack_sdr_rossi::Group_deinterleaver_ATSC.
+
+        To avoid accidental use of raw pointers, mack_sdr_rossi::Group_deinterleaver_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Group_deinterleaver_ATSC::make is the public interface for creating new instances.
+
+        Params: (Nldpc, Rate, Mod_size)
+        """
         return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_make(*args, **kwargs)
 
     make = staticmethod(make)
@@ -2289,7 +2345,15 @@ Group_deinterleaver_ATSC_swigregister = _mack_sdr_rossi_swig.Group_deinterleaver
 Group_deinterleaver_ATSC_swigregister(Group_deinterleaver_ATSC)
 
 def Group_deinterleaver_ATSC_make(*args, **kwargs):
-  """Group_deinterleaver_ATSC_make(int Nldpc, int Rate, int Mod_size) -> Group_deinterleaver_ATSC_sptr"""
+  """
+    Group_deinterleaver_ATSC_make(int Nldpc, int Rate, int Mod_size) -> Group_deinterleaver_ATSC_sptr
+
+    Return a shared_ptr to a new instance of mack_sdr_rossi::Group_deinterleaver_ATSC.
+
+    To avoid accidental use of raw pointers, mack_sdr_rossi::Group_deinterleaver_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Group_deinterleaver_ATSC::make is the public interface for creating new instances.
+
+    Params: (Nldpc, Rate, Mod_size)
+    """
   return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_make(*args, **kwargs)
 
 class Group_deinterleaver_ATSC_sptr(object):
@@ -2311,7 +2375,15 @@ class Group_deinterleaver_ATSC_sptr(object):
     __swig_destroy__ = _mack_sdr_rossi_swig.delete_Group_deinterleaver_ATSC_sptr
     __del__ = lambda self : None;
     def make(self, *args, **kwargs):
-        """make(Group_deinterleaver_ATSC_sptr self, int Nldpc, int Rate, int Mod_size) -> Group_deinterleaver_ATSC_sptr"""
+        """
+        make(Group_deinterleaver_ATSC_sptr self, int Nldpc, int Rate, int Mod_size) -> Group_deinterleaver_ATSC_sptr
+
+        Return a shared_ptr to a new instance of mack_sdr_rossi::Group_deinterleaver_ATSC.
+
+        To avoid accidental use of raw pointers, mack_sdr_rossi::Group_deinterleaver_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Group_deinterleaver_ATSC::make is the public interface for creating new instances.
+
+        Params: (Nldpc, Rate, Mod_size)
+        """
         return _mack_sdr_rossi_swig.Group_deinterleaver_ATSC_sptr_make(self, *args, **kwargs)
 
     def history(self):

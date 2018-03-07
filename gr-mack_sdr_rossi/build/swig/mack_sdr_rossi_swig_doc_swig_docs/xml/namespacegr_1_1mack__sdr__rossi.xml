@@ -3,9 +3,12 @@
   <compounddef id="namespacegr_1_1mack__sdr__rossi" kind="namespace">
     <compoundname>gr::mack_sdr_rossi</compoundname>
     <innerclass refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC" prot="public">gr::mack_sdr_rossi::BCH_decoder_ATSC</innerclass>
+    <innerclass refid="classgr_1_1mack__sdr__rossi_1_1Block__deinterleaver__ATSC" prot="public">gr::mack_sdr_rossi::Block_deinterleaver_ATSC</innerclass>
     <innerclass refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC" prot="public">gr::mack_sdr_rossi::Demapper_ATSC</innerclass>
+    <innerclass refid="classgr_1_1mack__sdr__rossi_1_1Group__deinterleaver__ATSC" prot="public">gr::mack_sdr_rossi::Group_deinterleaver_ATSC</innerclass>
     <innerclass refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC" prot="public">gr::mack_sdr_rossi::LDPC_decoder_ATSC</innerclass>
     <innerclass refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC" prot="public">gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC</innerclass>
+    <innerclass refid="classgr_1_1mack__sdr__rossi_1_1Parity__deinterleaver__ATSC" prot="public">gr::mack_sdr_rossi::Parity_deinterleaver_ATSC</innerclass>
     <innerclass refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec" prot="public">gr::mack_sdr_rossi::str_to_vec</innerclass>
     <briefdescription>
     </briefdescription>

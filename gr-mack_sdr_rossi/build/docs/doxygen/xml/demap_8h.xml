@@ -3,17 +3,36 @@
   <compounddef id="demap_8h" kind="file">
     <compoundname>demap.h</compoundname>
     <includes local="no">gnuradio/io_signature.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includedby refid="Demapper__ATSC__impl_8h" local="yes">Demapper_ATSC_impl.h</includedby>
     <incdepgraph>
-      <node id="28">
+      <node id="52">
         <label>gnuradio/io_signature.h</label>
       </node>
-      <node id="27">
+      <node id="51">
         <label>demap.h</label>
         <link refid="demap.h"/>
-        <childnode refid="28" relation="include">
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
         </childnode>
       </node>
+      <node id="53">
+        <label>stdio.h</label>
+      </node>
     </incdepgraph>
+    <invincdepgraph>
+      <node id="55">
+        <label>Demapper_ATSC_impl.h</label>
+        <link refid="Demapper__ATSC__impl_8h"/>
+      </node>
+      <node id="54">
+        <label>demap.h</label>
+        <link refid="demap.h"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
     <innerclass refid="classdemap" prot="public">demap</innerclass>
     <briefdescription>
     </briefdescription>

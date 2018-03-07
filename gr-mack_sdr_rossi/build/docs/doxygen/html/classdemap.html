@@ -61,22 +61,22 @@ $(document).ready(function(){initNavTree('classdemap.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9d90e2fe9f35b50776bd9ea408b7c059"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdemap.html#a9d90e2fe9f35b50776bd9ea408b7c059">init</a> (int s, int ms, int r, gr_complex *t)</td></tr>
-<tr class="separator:a9d90e2fe9f35b50776bd9ea408b7c059"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a103330323ac6f1ae63a2593ac0706839"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdemap.html#a103330323ac6f1ae63a2593ac0706839">demapper_soft</a> (gr_complex *i, float *o)</td></tr>
-<tr class="separator:a103330323ac6f1ae63a2593ac0706839"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f9db30799258cd1674d2cd066759696"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdemap.html#a0f9db30799258cd1674d2cd066759696">demapper_hard</a> (gr_complex *i, unsigned char *o)</td></tr>
-<tr class="separator:a0f9db30799258cd1674d2cd066759696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a157e656b6d77c675225afbb2373d7499"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdemap.html#a157e656b6d77c675225afbb2373d7499">init</a> (int s, int ms, int r, gr_complex *t, float v)</td></tr>
+<tr class="separator:a157e656b6d77c675225afbb2373d7499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf35aad64d58d29ccd75bfe4b550b47e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdemap.html#abf35aad64d58d29ccd75bfe4b550b47e">demapper_soft</a> (const gr_complex *i, float *o)</td></tr>
+<tr class="separator:abf35aad64d58d29ccd75bfe4b550b47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eaceaf28bbd76e9e81d38c2c596531d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdemap.html#a3eaceaf28bbd76e9e81d38c2c596531d">demapper_hard</a> (const gr_complex *i, unsigned char *o)</td></tr>
+<tr class="separator:a3eaceaf28bbd76e9e81d38c2c596531d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a0f9db30799258cd1674d2cd066759696"></a>
+<a class="anchor" id="a3eaceaf28bbd76e9e81d38c2c596531d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void demap::demapper_hard </td>
           <td>(</td>
-          <td class="paramtype">gr_complex *&#160;</td>
+          <td class="paramtype">const gr_complex *&#160;</td>
           <td class="paramname"><em>i</em>, </td>
         </tr>
         <tr>
@@ -95,14 +95,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a103330323ac6f1ae63a2593ac0706839"></a>
+<a class="anchor" id="abf35aad64d58d29ccd75bfe4b550b47e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void demap::demapper_soft </td>
           <td>(</td>
-          <td class="paramtype">gr_complex *&#160;</td>
+          <td class="paramtype">const gr_complex *&#160;</td>
           <td class="paramname"><em>i</em>, </td>
         </tr>
         <tr>
@@ -121,7 +121,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9d90e2fe9f35b50776bd9ea408b7c059"></a>
+<a class="anchor" id="a157e656b6d77c675225afbb2373d7499"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -147,7 +147,13 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">gr_complex *&#160;</td>
-          <td class="paramname"><em>t</em>&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -168,7 +174,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classdemap.html">demap</a></li>
-    <li class="footer">Generated on Fri Feb 23 2018 13:29:03 for GNU Radio&#39;s MACK_SDR_ROSSI Package by
+    <li class="footer">Generated on Tue Mar 6 2018 13:08:24 for GNU Radio&#39;s MACK_SDR_ROSSI Package by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

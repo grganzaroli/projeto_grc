@@ -48,30 +48,30 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="3">
+      <node id="5">
         <label>block</label>
       </node>
-      <node id="2">
+      <node id="4">
         <label>gr::mack_sdr_rossi::BCH_decoder_ATSC</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC"/>
-        <childnode refid="3" relation="public-inheritance">
+        <childnode refid="5" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4">
+      <node id="6">
         <label>gr::mack_sdr_rossi::BCH_decoder_ATSC_impl</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl"/>
-        <childnode refid="2" relation="public-inheritance">
+        <childnode refid="4" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="6">
+      <node id="8">
         <label>block</label>
       </node>
-      <node id="5">
+      <node id="7">
         <label>gr::mack_sdr_rossi::BCH_decoder_ATSC</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC"/>
-        <childnode refid="6" relation="public-inheritance">
+        <childnode refid="8" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

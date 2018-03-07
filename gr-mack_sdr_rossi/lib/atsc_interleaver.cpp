@@ -1,11 +1,13 @@
 #include "atsc_interleaver.h"
+#include "stdio.h"
 
 void atsc_interleaver::set(int N_ldpc, int Rate, int Mod_size)
 {
-	n_ldpc = n_ldpc;
+	n_ldpc = N_ldpc;
 	rate = Rate;
 	mod_size = Mod_size;
-
+	n_bch = (n_ldpc*rate)/15;
+	
 	const int permutation_QPSK_64k_02_15[180]=
 	{70,149,136,153,104,110,134,61,129,126,58,150,177,168,78,71,120,60,155,175,9,161,103,
 	123,91,173,57,106,143,151,89,86,35,77,133,31,7,23,51,5,121,83,64,176,119,98,
@@ -922,6 +924,7 @@ void atsc_interleaver::set(int N_ldpc, int Rate, int Mod_size)
 
 	if (n_ldpc == 64800)
 	{
+		tab_size = 180;
 		switch (mod_size) 
 		{
 			case 4:
@@ -929,67 +932,54 @@ void atsc_interleaver::set(int N_ldpc, int Rate, int Mod_size)
 				switch (rate) 
 				{
 					case 2:
-						n_bch = 8640;
 						q_ldpc = 60;
-						tabela = permutation_QPSK_64k_02_15;
+						tab = permutation_QPSK_64k_02_15;
 					break;
 					case 3:
-						n_bch = 12960;
 						q_ldpc = 60;
-						tabela = permutation_QPSK_64k_03_15;
+						tab = permutation_QPSK_64k_03_15;
 					break;
 					case 4:
-						n_bch = 17280;
 						q_ldpc = 60;
-						tabela = permutation_QPSK_64k_04_15;
+						tab = permutation_QPSK_64k_04_15;
 					break;
 					case 5:
-						n_bch = 21600;
 						q_ldpc = 60;
-						tabela = permutation_QPSK_64k_05_15;
+						tab = permutation_QPSK_64k_05_15;
 					break;
 					case 6:
-						n_bch = 25920;
 						q_ldpc = 108;
-						tabela = permutation_QPSK_64k_06_15;
+						tab = permutation_QPSK_64k_06_15;
 					break;
 					case 7:
-						n_bch = 30240;
 						q_ldpc = 60;
-						tabela = permutation_QPSK_64k_07_15;
+						tab = permutation_QPSK_64k_07_15;
 					break;
 					case 8:
-						n_bch = 34560;
 						q_ldpc = 84;
-						tabela = permutation_QPSK_64k_08_15;
+						tab = permutation_QPSK_64k_08_15;
 					break;
 					case 9:
-						n_bch = 38880;
 						q_ldpc = 72;
-						tabela = permutation_QPSK_64k_09_15;
+						tab = permutation_QPSK_64k_09_15;
 					break;
 					case 10:
-						n_bch = 43200;
 						q_ldpc = 60;
-						tabela = permutation_QPSK_64k_10_15;
+						tab = permutation_QPSK_64k_10_15;
 					break;
 					case 11:
-						n_bch = 47520;
 						q_ldpc = 48;
-						tabela = permutation_QPSK_64k_11_15;
+						tab = permutation_QPSK_64k_11_15;
 					break;
 					case 12:
-						n_bch = 51840;
 						q_ldpc = 36;
-						tabela = permutation_QPSK_64k_12_15;
+						tab = permutation_QPSK_64k_12_15;
 					break;
 					case 13:
-						n_bch = 56160;
 						q_ldpc = 24;
-						tabela = permutation_QPSK_64k_13_15;
+						tab = permutation_QPSK_64k_13_15;
 					break;
 					default:
-						n_bch = 0;
 						q_ldpc = 0;
 						break;
 				} // switch rate
@@ -999,68 +989,312 @@ void atsc_interleaver::set(int N_ldpc, int Rate, int Mod_size)
 				switch (rate) 
 				{
 					case 2:
-						n_bch = 8640;
 						q_ldpc = 60;
-						tabela = permutation_16QAM_64k_02_15;
+						tab = permutation_16QAM_64k_02_15;
 					break;
 					case 3:
-						n_bch = 12960;
 						q_ldpc = 60;
-						tabela = permutation_16QAM_64k_03_15;
+						tab = permutation_16QAM_64k_03_15;
 					break;
 					case 4:
-						n_bch = 17280;
 						q_ldpc = 60;
-						tabela = permutation_16QAM_64k_04_15;
+						tab = permutation_16QAM_64k_04_15;
 					break;
 					case 5:
-						n_bch = 21600;
+						interleaver_type = true; // block interleaver type B
 						q_ldpc = 60;
-						tabela = permutation_16QAM_64k_05_15;
+						tab = permutation_16QAM_64k_05_15;
 					break;
 					case 6:
-						n_bch = 25920;
 						q_ldpc = 108;
-						tabela = permutation_16QAM_64k_06_15;
+						tab = permutation_16QAM_64k_06_15;
 					break;
 					case 7:
-						n_bch = 30240;
 						q_ldpc = 60;
-						tabela = permutation_16QAM_64k_07_15;
+						tab = permutation_16QAM_64k_07_15;
 					break;
 					case 8:
-						n_bch = 34560;
 						q_ldpc = 84;
-						tabela = permutation_16QAM_64k_08_15;
+						tab = permutation_16QAM_64k_08_15;
 						interleaver_type = true;
 					break;
 					case 9:
-						n_bch = 38880;
+						interleaver_type = true; // block interleaver type B
 						q_ldpc = 72;
-						tabela = permutation_16QAM_64k_09_15;
+						tab = permutation_16QAM_64k_09_15;
 					break;
 					case 10:
-						n_bch = 43200;
 						q_ldpc = 60;
-						tabela = permutation_16QAM_64k_10_15;
+						tab = permutation_16QAM_64k_10_15;
 					break;
 					case 11:
-						n_bch = 47520;
 						q_ldpc = 48;
-						tabela = permutation_16QAM_64k_11_15;
+						tab = permutation_16QAM_64k_11_15;
 					break;
 					case 12:
-						n_bch = 51840;
 						q_ldpc = 36;
-						tabela = permutation_16QAM_64k_12_15;
+						tab = permutation_16QAM_64k_12_15;
 					break;
 					case 13:
-						n_bch = 56160;
 						q_ldpc = 24;
-						tabela = permutation_16QAM_64k_13_15;
+						tab = permutation_16QAM_64k_13_15;
 					break;
 					default:
-							n_bch = 0;
+						q_ldpc = 0;
+						break;
+				} // switch rate
+			break; // modulation case 16
+			case 64:
+				interleaver_type = false; // block interleaver type A
+				switch (rate) 
+				{
+					case 2:
+						q_ldpc = 60;
+						tab = permutation_64QAM_64k_02_15;
+					break;
+					case 3:
+						q_ldpc = 60;
+						tab = permutation_64QAM_64k_03_15;
+					break;
+					case 4:
+						q_ldpc = 60;
+						tab = permutation_64QAM_64k_04_15;
+					break;
+					case 5:
+						q_ldpc = 60;
+						tab = permutation_64QAM_64k_05_15;
+					break;
+					case 6:
+						q_ldpc = 108;
+						tab = permutation_64QAM_64k_06_15;
+					break;
+					case 7:
+						interleaver_type = true; // block interleaver type B
+						q_ldpc = 60;
+						tab = permutation_64QAM_64k_07_15;
+					break;
+					case 8:
+						q_ldpc = 84;
+						tab = permutation_64QAM_64k_08_15;
+					break;
+					case 9:
+						interleaver_type = true; // block interleaver type B
+						q_ldpc = 72;
+						tab = permutation_64QAM_64k_09_15;
+					break;
+					case 10:
+						interleaver_type = true; // block interleaver type B
+						q_ldpc = 60;
+						tab = permutation_64QAM_64k_10_15;
+					break;
+					case 11:
+						q_ldpc = 48;
+						tab = permutation_64QAM_64k_11_15;
+					break;
+					case 12:
+						q_ldpc = 36;
+						tab = permutation_64QAM_64k_12_15;
+					break;
+					case 13:
+						interleaver_type = true; // block interleaver type B
+						q_ldpc = 24;
+						tab = permutation_64QAM_64k_13_15;
+					break;
+					default:
+						q_ldpc = 0;
+						break;
+				} // switch rate
+			break; // modulation case 64
+			case 256:
+				interleaver_type = false; // block interleaver type A
+				switch (rate) 
+				{
+					case 2:
+						q_ldpc = 60;
+						tab = permutation_256QAM_64k_02_15;
+					break;
+					case 3:
+						q_ldpc = 60;
+						tab = permutation_256QAM_64k_03_15;
+					break;
+					case 4:
+						q_ldpc = 60;
+						tab = permutation_256QAM_64k_04_15;
+					break;
+					case 5:
+						interleaver_type = true; // block interleaver type B
+						q_ldpc = 60;
+						tab = permutation_256QAM_64k_05_15;
+					break;
+					case 6:
+						interleaver_type = true; // block interleaver type B
+						q_ldpc = 108;
+						tab = permutation_256QAM_64k_06_15;
+					break;
+					case 7:
+						interleaver_type = true; // block interleaver type B
+						q_ldpc = 60;
+						tab = permutation_256QAM_64k_07_15;
+					break;
+					case 8:
+						interleaver_type = true; // block interleaver type B
+						q_ldpc = 84;
+						tab = permutation_256QAM_64k_08_15;
+					break;
+					case 9:
+						q_ldpc = 72;
+						tab = permutation_256QAM_64k_09_15;
+					break;
+					case 10:
+						interleaver_type = true; // block interleaver type B
+						q_ldpc = 60;
+						tab = permutation_256QAM_64k_10_15;
+					break;
+					case 11:
+						interleaver_type = true; // block interleaver type B
+						q_ldpc = 48;
+						tab = permutation_256QAM_64k_11_15;
+					break;
+					case 12:
+						q_ldpc = 36;
+						tab = permutation_256QAM_64k_12_15;
+					break;
+					case 13:
+						interleaver_type = true; // block interleaver type B
+						q_ldpc = 24;
+						tab = permutation_256QAM_64k_13_15;
+					break;
+					default:
+						q_ldpc = 0;
+						break;
+				} // switch rate
+				break; // modulation case 256
+			break;
+		}
+	}
+	else if (n_ldpc == 16200)
+	{
+		tab_size = 45;
+		switch (mod_size) 
+		{
+			case 4:
+				interleaver_type = false; // block interleaver type A
+				switch (rate) 
+				{
+					case 2:
+						q_ldpc = 60;
+						tab = permutation_QPSK_16k_02_15;
+					break;
+					case 3:
+						q_ldpc = 60;
+						tab = permutation_QPSK_16k_03_15;
+					break;
+					case 4:
+						q_ldpc = 60;
+						tab = permutation_QPSK_16k_04_15;
+					break;
+					case 5:
+						q_ldpc = 60;
+						tab = permutation_QPSK_16k_05_15;
+					break;
+					case 6:
+						interleaver_type = true; // block interleaver type B
+						q_ldpc = 108;
+						tab = permutation_QPSK_16k_06_15;
+					break;
+					case 7:
+						interleaver_type = true; // block interleaver type B
+						q_ldpc = 60;
+						tab = permutation_QPSK_16k_07_15;
+					break;
+					case 8:
+						q_ldpc = 84;
+						tab = permutation_QPSK_16k_08_15;
+					break;
+					case 9:
+						interleaver_type = true; // block interleaver type B
+						q_ldpc = 72;
+						tab = permutation_QPSK_16k_09_15;
+					break;
+					case 10:
+						q_ldpc = 60;
+						tab = permutation_QPSK_16k_10_15;
+					break;
+					case 11:
+						q_ldpc = 48;
+						tab = permutation_QPSK_16k_11_15;
+					break;
+					case 12:
+						q_ldpc = 36;
+						tab = permutation_QPSK_16k_12_15;
+					break;
+					case 13:
+						q_ldpc = 24;
+						tab = permutation_QPSK_16k_13_15;
+					break;
+					default:
+						q_ldpc = 0;
+						break;
+				} // switch rate
+			break; // modulation case 4
+			case 16:
+				interleaver_type = false; // block interleaver type A
+				switch (rate) 
+				{
+					case 2:
+						q_ldpc = 60;
+						tab = permutation_16QAM_16k_02_15;
+					break;
+					case 3:
+						q_ldpc = 60;
+						tab = permutation_16QAM_16k_03_15;
+					break;
+					case 4:
+						q_ldpc = 60;
+						tab = permutation_16QAM_16k_04_15;
+					break;
+					case 5:
+						q_ldpc = 60;
+						tab = permutation_16QAM_16k_05_15;
+					break;
+					case 6:
+						interleaver_type = true; // block interleaver type B
+						q_ldpc = 108;
+						tab = permutation_16QAM_16k_06_15;
+					break;
+					case 7:
+						interleaver_type = true; // block interleaver type B
+						q_ldpc = 60;
+						tab = permutation_16QAM_16k_07_15;
+					break;
+					case 8:
+						q_ldpc = 84;
+						tab = permutation_16QAM_16k_08_15;
+					break;
+					case 9:
+						interleaver_type = true; // block interleaver type B
+						q_ldpc = 72;
+						tab = permutation_16QAM_16k_09_15;
+					break;
+					case 10:
+						q_ldpc = 60;
+						tab = permutation_16QAM_16k_10_15;
+					break;
+					case 11:
+						interleaver_type = true; // block interleaver type B
+						q_ldpc = 48;
+						tab = permutation_16QAM_16k_11_15;
+					break;
+					case 12:
+						q_ldpc = 36;
+						tab = permutation_16QAM_16k_12_15;
+					break;
+					case 13:
+						interleaver_type = true; // block interleaver type B
+						q_ldpc = 24;
+						tab = permutation_16QAM_16k_13_15;
+					break;
+					default:
 						q_ldpc = 0;
 						break;
 				} // switch rate
@@ -1070,137 +1304,116 @@ void atsc_interleaver::set(int N_ldpc, int Rate, int Mod_size)
 				switch (rate) 
 				{
 					case 2:
-						n_bch = 8640;
 						q_ldpc = 60;
-						tabela = permutation_64QAM_64k_02_15;
+						tab = permutation_64QAM_16k_02_15;
 					break;
 					case 3:
-						n_bch = 12960;
 						q_ldpc = 60;
-						tabela = permutation_64QAM_64k_03_15;
+						tab = permutation_64QAM_16k_03_15;
 					break;
 					case 4:
-						n_bch = 17280;
 						q_ldpc = 60;
-						tabela = permutation_64QAM_64k_04_15;
+						tab = permutation_64QAM_16k_04_15;
 					break;
 					case 5:
-						n_bch = 21600;
 						q_ldpc = 60;
-						tabela = permutation_64QAM_64k_05_15;
+						tab = permutation_64QAM_16k_05_15;
 					break;
 					case 6:
-						n_bch = 25920;
+						interleaver_type = true; // block interleaver type B
 						q_ldpc = 108;
-						tabela = permutation_64QAM_64k_06_15;
+						tab = permutation_64QAM_16k_06_15;
 					break;
 					case 7:
-						n_bch = 30240;
+						interleaver_type = true; // block interleaver type B
 						q_ldpc = 60;
-						tabela = permutation_64QAM_64k_07_15;
+						tab = permutation_64QAM_16k_07_15;
 					break;
 					case 8:
-						n_bch = 34560;
 						q_ldpc = 84;
-						tabela = permutation_64QAM_64k_08_15;
+						tab = permutation_64QAM_16k_08_15;
 					break;
 					case 9:
-						n_bch = 38880;
+						interleaver_type = true; // block interleaver type B
 						q_ldpc = 72;
-						tabela = permutation_64QAM_64k_09_15;
+						tab = permutation_64QAM_16k_09_15;
 					break;
 					case 10:
-						n_bch = 43200;
 						q_ldpc = 60;
-						tabela = permutation_64QAM_64k_10_15;
+						tab = permutation_64QAM_16k_10_15;
 					break;
 					case 11:
-						n_bch = 47520;
 						q_ldpc = 48;
-						tabela = permutation_64QAM_64k_11_15;
+						tab = permutation_64QAM_16k_11_15;
 					break;
 					case 12:
-						n_bch = 51840;
 						q_ldpc = 36;
-						tabela = permutation_64QAM_64k_12_15;
+						tab = permutation_64QAM_16k_12_15;
 					break;
 					case 13:
-						n_bch = 56160;
 						q_ldpc = 24;
-						tabela = permutation_64QAM_64k_13_15;
+						tab = permutation_64QAM_16k_13_15;
 					break;
 					default:
-							n_bch = 0;
 						q_ldpc = 0;
 						break;
 				} // switch rate
 			break; // modulation case 64
 			case 256:
-				interleaver_type = true; // block interleaver type B
+				interleaver_type = false; // block interleaver type A
 				switch (rate) 
 				{
 					case 2:
-						n_bch = 8640;
 						q_ldpc = 60;
-						tabela = permutation_256QAM_64k_02_15;
+						tab = permutation_256QAM_16k_02_15;
 					break;
 					case 3:
-						n_bch = 12960;
 						q_ldpc = 60;
-						tabela = permutation_256QAM_64k_03_15;
+						tab = permutation_256QAM_16k_03_15;
 					break;
 					case 4:
-						n_bch = 17280;
 						q_ldpc = 60;
-						tabela = permutation_256QAM_64k_04_15;
+						tab = permutation_256QAM_16k_04_15;
 					break;
 					case 5:
-						n_bch = 21600;
 						q_ldpc = 60;
-						tabela = permutation_256QAM_64k_05_15;
+						tab = permutation_256QAM_16k_05_15;
 					break;
 					case 6:
-						n_bch = 25920;
+						interleaver_type = true; // block interleaver type B
 						q_ldpc = 108;
-						tabela = permutation_256QAM_64k_06_15;
+						tab = permutation_256QAM_16k_06_15;
 					break;
 					case 7:
-						n_bch = 30240;
 						q_ldpc = 60;
-						tabela = permutation_256QAM_64k_07_15;
+						tab = permutation_256QAM_16k_07_15;
 					break;
 					case 8:
-						n_bch = 34560;
 						q_ldpc = 84;
-						tabela = permutation_256QAM_64k_08_15;
+						tab = permutation_256QAM_16k_08_15;
 					break;
 					case 9:
-						n_bch = 38880;
 						q_ldpc = 72;
-						tabela = permutation_256QAM_64k_09_15;
+						tab = permutation_256QAM_16k_09_15;
 					break;
 					case 10:
-						n_bch = 43200;
 						q_ldpc = 60;
-						tabela = permutation_256QAM_64k_10_15;
+						tab = permutation_256QAM_16k_10_15;
 					break;
 					case 11:
-						n_bch = 47520;
+						interleaver_type = true; // block interleaver type B
 						q_ldpc = 48;
-						tabela = permutation_256QAM_64k_11_15;
+						tab = permutation_256QAM_16k_11_15;
 					break;
 					case 12:
-						n_bch = 51840;
 						q_ldpc = 36;
-						tabela = permutation_256QAM_64k_12_15;
+						tab = permutation_256QAM_16k_12_15;
 					break;
 					case 13:
-						n_bch = 56160;
 						q_ldpc = 24;
-						tabela = permutation_256QAM_64k_13_15;
+						tab = permutation_256QAM_16k_13_15;
 					break;
 					default:
-						n_bch = 0;
 						q_ldpc = 0;
 						break;
 				} // switch rate
@@ -1208,6 +1421,9 @@ void atsc_interleaver::set(int N_ldpc, int Rate, int Mod_size)
 			break;
 		}
 	}
+
+	for(int i = 0; i < tab_size; i++)
+		tabela[i] = tab[i];
 }
 
 void atsc_interleaver::parity_inter(const unsigned char *lambda, unsigned char *U)
@@ -1242,19 +1458,13 @@ void atsc_interleaver::group_inter(const unsigned char *GI_in, unsigned char *GI
 	{
 		for(int j = 0; j < 360; j++)
 		{
-			GI_out[j+360*i] = GI_in[j+360*tabela[i]];
+			GI_out[j+360*i] = GI_in[j+360*tab[i]];
 		}
 	}
 }
 
 void atsc_interleaver::group_deinter(const float *GDI_in, float *GDI_out)
 {
-	int tab_size;
-	if(n_ldpc == 16200)
-		tab_size = 45;
-	else if(n_ldpc == 64800)
-		tab_size = 180;
-
 	for(int i = 0; i < tab_size; i++)
 	{
 		for(int j = 0; j < 360; j++)
@@ -1262,7 +1472,6 @@ void atsc_interleaver::group_deinter(const float *GDI_in, float *GDI_out)
 			GDI_out[j+360*tabela[i]] = GDI_in[j+360*i];
 		}
 	}
-
 }
 
 void atsc_interleaver::block_inter(const unsigned char *BI_in, unsigned char *BI_out)

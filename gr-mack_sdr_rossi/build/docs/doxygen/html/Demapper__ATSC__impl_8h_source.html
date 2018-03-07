@@ -77,39 +77,55 @@ $(document).ready(function(){initNavTree('Demapper__ATSC__impl_8h_source.html','
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define INCLUDED_MACK_SDR_ROSSI_DEMAPPER_ATSC_IMPL_H</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="Demapper__ATSC_8h.html">mack_sdr_rossi/Demapper_ATSC.h</a>&gt;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>gr {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">namespace </span>mack_sdr_rossi {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html">   29</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html">Demapper_ATSC_impl</a> : <span class="keyword">public</span> <a class="code" href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC.html">Demapper_ATSC</a></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;     <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="comment">// Nothing to declare in this block.</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;     <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <a class="code" href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html#aad5a8f4c6ef77b8428d366e28727a569">Demapper_ATSC_impl</a>(<span class="keywordtype">int</span> size_in, <span class="keywordtype">int</span> size_out, <span class="keywordtype">int</span> rate, <span class="keywordtype">float</span> var);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <a class="code" href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html#a09d137c312f3717963f5a6da6d0359d3">~Demapper_ATSC_impl</a>();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="comment">// Where all the action really happens</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html#a88c82e2035ee30653b2f491b866ae6df">forecast</a> (<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items_required);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keywordtype">int</span> <a class="code" href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html#a92cfb9a08482c5fba21dfd7718aba0b7">general_work</a>(<span class="keywordtype">int</span> noutput_items,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;           gr_vector_int &amp;ninput_items,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;           gr_vector_const_void_star &amp;input_items,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;           gr_vector_void_star &amp;output_items);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    };</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  } <span class="comment">// namespace mack_sdr_rossi</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <span class="comment">// namespace gr</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_MACK_SDR_ROSSI_DEMAPPER_ATSC_IMPL_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="demap_8h.html">demap.h</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>gr {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">namespace </span>mack_sdr_rossi {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html">   31</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html">Demapper_ATSC_impl</a> : <span class="keyword">public</span> <a class="code" href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC.html">Demapper_ATSC</a></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;     <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <span class="comment">// Nothing to declare in this block.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;     <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <a class="code" href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html#a845c0ac46e0603821b334b076a835b88">Demapper_ATSC_impl</a>(<span class="keywordtype">int</span> size_in, <span class="keywordtype">int</span> size_out, <span class="keywordtype">int</span> rate, <span class="keywordtype">int</span> mod_size, <span class="keywordtype">float</span> var);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <a class="code" href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html#a09d137c312f3717963f5a6da6d0359d3">~Demapper_ATSC_impl</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="comment">// Where all the action really happens</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html#a88c82e2035ee30653b2f491b866ae6df">forecast</a> (<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items_required);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keywordtype">int</span> <a class="code" href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html#a92cfb9a08482c5fba21dfd7718aba0b7">general_work</a>(<span class="keywordtype">int</span> noutput_items,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;           gr_vector_int &amp;ninput_items,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;           gr_vector_const_void_star &amp;input_items,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;           gr_vector_void_star &amp;output_items);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html#a8c9167117fbc20069748bdc18f27bf46">   48</a></span>&#160;           <a class="code" href="classdemap.html">demap</a> <a class="code" href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html#a8c9167117fbc20069748bdc18f27bf46">demapper</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html#ae0153abb06b24ecfa0fcad7d3ef58ebe">   49</a></span>&#160;           gr_complex *<a class="code" href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html#ae0153abb06b24ecfa0fcad7d3ef58ebe">tab</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html#a5ba39ffe6801f176cb0f3b6ccd88e9a5">   51</a></span>&#160;           <span class="keywordtype">int</span> <a class="code" href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html#a23c74c7aa1dfeced7ae26373f4599254">s_in</a>, <a class="code" href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html#a5ba39ffe6801f176cb0f3b6ccd88e9a5">s_out</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;           <span class="keywordtype">void</span> <a class="code" href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html#acec348e987794c1a238eadc378867951">DEMAPPER</a>(<span class="keyword">const</span> gr_complex *in, <span class="keywordtype">float</span> *out);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    };</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  } <span class="comment">// namespace mack_sdr_rossi</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;} <span class="comment">// namespace gr</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_MACK_SDR_ROSSI_DEMAPPER_ATSC_IMPL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor"></span></div>
+<div class="ttc" id="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_html_a8c9167117fbc20069748bdc18f27bf46"><div class="ttname"><a href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html#a8c9167117fbc20069748bdc18f27bf46">gr::mack_sdr_rossi::Demapper_ATSC_impl::demapper</a></div><div class="ttdeci">demap demapper</div><div class="ttdef"><b>Definition:</b> Demapper_ATSC_impl.h:48</div></div>
+<div class="ttc" id="demap_8h_html"><div class="ttname"><a href="demap_8h.html">demap.h</a></div></div>
 <div class="ttc" id="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_html_a88c82e2035ee30653b2f491b866ae6df"><div class="ttname"><a href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html#a88c82e2035ee30653b2f491b866ae6df">gr::mack_sdr_rossi::Demapper_ATSC_impl::forecast</a></div><div class="ttdeci">void forecast(int noutput_items, gr_vector_int &amp;ninput_items_required)</div></div>
 <div class="ttc" id="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_html_a09d137c312f3717963f5a6da6d0359d3"><div class="ttname"><a href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html#a09d137c312f3717963f5a6da6d0359d3">gr::mack_sdr_rossi::Demapper_ATSC_impl::~Demapper_ATSC_impl</a></div><div class="ttdeci">~Demapper_ATSC_impl()</div></div>
-<div class="ttc" id="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_html"><div class="ttname"><a href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html">gr::mack_sdr_rossi::Demapper_ATSC_impl</a></div><div class="ttdef"><b>Definition:</b> Demapper_ATSC_impl.h:29</div></div>
+<div class="ttc" id="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_html_a23c74c7aa1dfeced7ae26373f4599254"><div class="ttname"><a href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html#a23c74c7aa1dfeced7ae26373f4599254">gr::mack_sdr_rossi::Demapper_ATSC_impl::s_in</a></div><div class="ttdeci">int s_in</div><div class="ttdef"><b>Definition:</b> Demapper_ATSC_impl.h:51</div></div>
+<div class="ttc" id="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_html_a845c0ac46e0603821b334b076a835b88"><div class="ttname"><a href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html#a845c0ac46e0603821b334b076a835b88">gr::mack_sdr_rossi::Demapper_ATSC_impl::Demapper_ATSC_impl</a></div><div class="ttdeci">Demapper_ATSC_impl(int size_in, int size_out, int rate, int mod_size, float var)</div></div>
+<div class="ttc" id="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_html"><div class="ttname"><a href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html">gr::mack_sdr_rossi::Demapper_ATSC_impl</a></div><div class="ttdef"><b>Definition:</b> Demapper_ATSC_impl.h:31</div></div>
+<div class="ttc" id="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_html_acec348e987794c1a238eadc378867951"><div class="ttname"><a href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html#acec348e987794c1a238eadc378867951">gr::mack_sdr_rossi::Demapper_ATSC_impl::DEMAPPER</a></div><div class="ttdeci">void DEMAPPER(const gr_complex *in, float *out)</div></div>
+<div class="ttc" id="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_html_a5ba39ffe6801f176cb0f3b6ccd88e9a5"><div class="ttname"><a href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html#a5ba39ffe6801f176cb0f3b6ccd88e9a5">gr::mack_sdr_rossi::Demapper_ATSC_impl::s_out</a></div><div class="ttdeci">int s_out</div><div class="ttdef"><b>Definition:</b> Demapper_ATSC_impl.h:51</div></div>
 <div class="ttc" id="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC_html"><div class="ttname"><a href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC.html">gr::mack_sdr_rossi::Demapper_ATSC</a></div><div class="ttdoc">&lt;+description of block+&gt; </div><div class="ttdef"><b>Definition:</b> Demapper_ATSC.h:36</div></div>
+<div class="ttc" id="classdemap_html"><div class="ttname"><a href="classdemap.html">demap</a></div><div class="ttdef"><b>Definition:</b> demap.h:7</div></div>
 <div class="ttc" id="Demapper__ATSC_8h_html"><div class="ttname"><a href="Demapper__ATSC_8h.html">Demapper_ATSC.h</a></div></div>
-<div class="ttc" id="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_html_aad5a8f4c6ef77b8428d366e28727a569"><div class="ttname"><a href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html#aad5a8f4c6ef77b8428d366e28727a569">gr::mack_sdr_rossi::Demapper_ATSC_impl::Demapper_ATSC_impl</a></div><div class="ttdeci">Demapper_ATSC_impl(int size_in, int size_out, int rate, float var)</div></div>
+<div class="ttc" id="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_html_ae0153abb06b24ecfa0fcad7d3ef58ebe"><div class="ttname"><a href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html#ae0153abb06b24ecfa0fcad7d3ef58ebe">gr::mack_sdr_rossi::Demapper_ATSC_impl::tab</a></div><div class="ttdeci">gr_complex * tab</div><div class="ttdef"><b>Definition:</b> Demapper_ATSC_impl.h:49</div></div>
 <div class="ttc" id="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_html_a92cfb9a08482c5fba21dfd7718aba0b7"><div class="ttname"><a href="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html#a92cfb9a08482c5fba21dfd7718aba0b7">gr::mack_sdr_rossi::Demapper_ATSC_impl::general_work</a></div><div class="ttdeci">int general_work(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -117,7 +133,7 @@ $(document).ready(function(){initNavTree('Demapper__ATSC__impl_8h_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="Demapper__ATSC__impl_8h.html">Demapper_ATSC_impl.h</a></li>
-    <li class="footer">Generated on Fri Feb 23 2018 13:29:03 for GNU Radio&#39;s MACK_SDR_ROSSI Package by
+    <li class="footer">Generated on Tue Mar 6 2018 13:08:24 for GNU Radio&#39;s MACK_SDR_ROSSI Package by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

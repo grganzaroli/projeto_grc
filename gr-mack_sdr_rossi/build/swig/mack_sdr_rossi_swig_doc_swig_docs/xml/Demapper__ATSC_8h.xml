@@ -5,24 +5,24 @@
     <includes refid="api_8h" local="no">mack_sdr_rossi/api.h</includes>
     <includes local="no">gnuradio/block.h</includes>
     <incdepgraph>
-      <node id="15">
+      <node id="23">
         <label>gnuradio/attributes.h</label>
       </node>
-      <node id="14">
+      <node id="22">
         <label>mack_sdr_rossi/api.h</label>
         <link refid="api_8h"/>
-        <childnode refid="15" relation="include">
+        <childnode refid="23" relation="include">
         </childnode>
       </node>
-      <node id="16">
+      <node id="24">
         <label>gnuradio/block.h</label>
       </node>
-      <node id="13">
+      <node id="21">
         <label>/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/Demapper_ATSC.h</label>
         <link refid="Demapper_ATSC.h"/>
-        <childnode refid="14" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -69,7 +69,7 @@
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="39" refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC_1a6cc8c7bf5066e7506d7b4bd7f55759d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>boost::shared_ptr&lt;Demapper_ATSC&gt;<sp/><ref refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC_1a6cc8c7bf5066e7506d7b4bd7f55759d9" kindref="member">sptr</ref>;</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC_1a6cc8c7bf5066e7506d7b4bd7f55759d9" kindref="member">sptr</ref><sp/>make(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size_in,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size_out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rate,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>var);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC_1a6cc8c7bf5066e7506d7b4bd7f55759d9" kindref="member">sptr</ref><sp/>make(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size_in,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size_out,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rate,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mod_size,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>var);</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>mack_sdr_rossi</highlight><highlight class="normal"></highlight></codeline>

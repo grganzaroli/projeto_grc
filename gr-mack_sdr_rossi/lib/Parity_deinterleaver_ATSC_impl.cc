@@ -24,6 +24,7 @@
 
 #include <gnuradio/io_signature.h>
 #include "Parity_deinterleaver_ATSC_impl.h"
+#include "stdio.h"
 
 namespace gr {
   namespace mack_sdr_rossi {
@@ -47,6 +48,10 @@ namespace gr {
       rate = Rate;
 
       deinterleaver.set(nldpc, rate, 16); //mod_size nao importa
+
+      printf("n = %i\n", nldpc);
+      printf("r = %i\n", rate);
+      printf("OK\n");
     }
 
     /*
@@ -84,7 +89,7 @@ namespace gr {
 
       for (int nnn = 0; nnn < noutput_items; nnn++ )
       {
-        PDI(in, &*out);
+        PDI(in, out);
         
         //Incremento dos ponteiros para o GRC
         in += nldpc;

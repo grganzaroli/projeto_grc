@@ -4,10 +4,10 @@
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
-SUBDIRS(include/mack_sdr_rossi)
-SUBDIRS(lib)
-SUBDIRS(swig)
-SUBDIRS(python)
-SUBDIRS(grc)
-SUBDIRS(apps)
-SUBDIRS(docs)
+subdirs("include/mack_sdr_rossi")
+subdirs("lib")
+subdirs("swig")
+subdirs("python")
+subdirs("grc")
+subdirs("apps")
+subdirs("docs")

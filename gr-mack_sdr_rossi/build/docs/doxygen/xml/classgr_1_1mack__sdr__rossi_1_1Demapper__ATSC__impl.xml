@@ -4,11 +4,65 @@
     <compoundname>gr::mack_sdr_rossi::Demapper_ATSC_impl</compoundname>
     <basecompoundref refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC" prot="public" virt="non-virtual">gr::mack_sdr_rossi::Demapper_ATSC</basecompoundref>
     <includes refid="Demapper__ATSC__impl_8h" local="no">Demapper_ATSC_impl.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1a8c9167117fbc20069748bdc18f27bf46" prot="public" static="no" mutable="no">
+        <type><ref refid="classdemap" kindref="compound">demap</ref></type>
+        <definition>demap gr::mack_sdr_rossi::Demapper_ATSC_impl::demapper</definition>
+        <argsstring></argsstring>
+        <name>demapper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Demapper_ATSC_impl.h" line="48" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Demapper_ATSC_impl.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1ae0153abb06b24ecfa0fcad7d3ef58ebe" prot="public" static="no" mutable="no">
+        <type>gr_complex *</type>
+        <definition>gr_complex* gr::mack_sdr_rossi::Demapper_ATSC_impl::tab</definition>
+        <argsstring></argsstring>
+        <name>tab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Demapper_ATSC_impl.h" line="49" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Demapper_ATSC_impl.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1a23c74c7aa1dfeced7ae26373f4599254" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::mack_sdr_rossi::Demapper_ATSC_impl::s_in</definition>
+        <argsstring></argsstring>
+        <name>s_in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Demapper_ATSC_impl.h" line="51" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Demapper_ATSC_impl.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1a5ba39ffe6801f176cb0f3b6ccd88e9a5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::mack_sdr_rossi::Demapper_ATSC_impl::s_out</definition>
+        <argsstring></argsstring>
+        <name>s_out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Demapper_ATSC_impl.h" line="51" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Demapper_ATSC_impl.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1aad5a8f4c6ef77b8428d366e28727a569" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1a845c0ac46e0603821b334b076a835b88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>gr::mack_sdr_rossi::Demapper_ATSC_impl::Demapper_ATSC_impl</definition>
-        <argsstring>(int size_in, int size_out, int rate, float var)</argsstring>
+        <argsstring>(int size_in, int size_out, int rate, int mod_size, float var)</argsstring>
         <name>Demapper_ATSC_impl</name>
         <param>
           <type>int</type>
@@ -23,6 +77,10 @@
           <declname>rate</declname>
         </param>
         <param>
+          <type>int</type>
+          <declname>mod_size</declname>
+        </param>
+        <param>
           <type>float</type>
           <declname>var</declname>
         </param>
@@ -32,7 +90,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Demapper_ATSC_impl.h" line="35" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Demapper_ATSC_impl.h" line="37" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1a09d137c312f3717963f5a6da6d0359d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -45,7 +103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Demapper_ATSC_impl.h" line="36" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Demapper_ATSC_impl.h" line="38" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1a88c82e2035ee30653b2f491b866ae6df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -66,7 +124,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Demapper_ATSC_impl.h" line="39" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Demapper_ATSC_impl.h" line="41" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1a92cfb9a08482c5fba21dfd7718aba0b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -95,7 +153,28 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Demapper_ATSC_impl.h" line="41" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Demapper_ATSC_impl.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1acec348e987794c1a238eadc378867951" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::mack_sdr_rossi::Demapper_ATSC_impl::DEMAPPER</definition>
+        <argsstring>(const gr_complex *in, float *out)</argsstring>
+        <name>DEMAPPER</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Demapper_ATSC_impl.h" line="53" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -103,46 +182,58 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="20">
+      <node id="34">
         <label>gr::mack_sdr_rossi::Demapper_ATSC_impl</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl"/>
-        <childnode refid="21" relation="public-inheritance">
+        <childnode refid="35" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="21">
+      <node id="35">
         <label>gr::mack_sdr_rossi::Demapper_ATSC</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC"/>
-        <childnode refid="22" relation="public-inheritance">
+        <childnode refid="36" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="22">
-        <label>gr::block</label>
+      <node id="36">
+        <label>block</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="23">
+      <node id="37">
         <label>gr::mack_sdr_rossi::Demapper_ATSC_impl</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl"/>
-        <childnode refid="24" relation="public-inheritance">
+        <childnode refid="38" relation="public-inheritance">
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>demapper</edgelabel>
         </childnode>
       </node>
-      <node id="24">
+      <node id="38">
         <label>gr::mack_sdr_rossi::Demapper_ATSC</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC"/>
-        <childnode refid="25" relation="public-inheritance">
+        <childnode refid="39" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="25">
-        <label>gr::block</label>
+      <node id="40">
+        <label>demap</label>
+        <link refid="classdemap"/>
+      </node>
+      <node id="39">
+        <label>block</label>
       </node>
     </collaborationgraph>
-    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Demapper_ATSC_impl.h" line="30" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Demapper_ATSC_impl.h" bodystart="29" bodyend="45"/>
+    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Demapper_ATSC_impl.h" line="32" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Demapper_ATSC_impl.h" bodystart="31" bodyend="54"/>
     <listofallmembers>
-      <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1aad5a8f4c6ef77b8428d366e28727a569" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Demapper_ATSC_impl</scope><name>Demapper_ATSC_impl</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1a8c9167117fbc20069748bdc18f27bf46" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Demapper_ATSC_impl</scope><name>demapper</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1acec348e987794c1a238eadc378867951" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Demapper_ATSC_impl</scope><name>DEMAPPER</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1a845c0ac46e0603821b334b076a835b88" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Demapper_ATSC_impl</scope><name>Demapper_ATSC_impl</name></member>
       <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1a88c82e2035ee30653b2f491b866ae6df" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Demapper_ATSC_impl</scope><name>forecast</name></member>
       <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1a92cfb9a08482c5fba21dfd7718aba0b7" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Demapper_ATSC_impl</scope><name>general_work</name></member>
-      <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC_1a49b53927cc636e1d14192ca81e1bf792" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Demapper_ATSC_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC_1aa9415bea8acf1baac07d7320b9ab5dad" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Demapper_ATSC_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1a23c74c7aa1dfeced7ae26373f4599254" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Demapper_ATSC_impl</scope><name>s_in</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1a5ba39ffe6801f176cb0f3b6ccd88e9a5" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Demapper_ATSC_impl</scope><name>s_out</name></member>
       <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC_1a6cc8c7bf5066e7506d7b4bd7f55759d9" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Demapper_ATSC_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1ae0153abb06b24ecfa0fcad7d3ef58ebe" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Demapper_ATSC_impl</scope><name>tab</name></member>
       <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1a09d137c312f3717963f5a6da6d0359d3" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Demapper_ATSC_impl</scope><name>~Demapper_ATSC_impl</name></member>
     </listofallmembers>
   </compounddef>

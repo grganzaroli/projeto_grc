@@ -30850,7 +30850,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		"To avoid accidental use of raw pointers, mack_sdr_rossi::Demapper_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Demapper_ATSC::make is the public interface for creating new instances.\n"
 		"\n"
-		"Params: (size_in, size_out, rate, var)\n"
+		"Params: (size_in, size_out, rate, mod_size, var)\n"
 		""},
 	 { (char *)"delete_Demapper_ATSC", _wrap_delete_Demapper_ATSC, METH_VARARGS, (char *)"delete_Demapper_ATSC(Demapper_ATSC self)"},
 	 { (char *)"Demapper_ATSC_swigregister", Demapper_ATSC_swigregister, METH_VARARGS, NULL},
@@ -30867,7 +30867,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		"To avoid accidental use of raw pointers, mack_sdr_rossi::Demapper_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Demapper_ATSC::make is the public interface for creating new instances.\n"
 		"\n"
-		"Params: (size_in, size_out, rate, var)\n"
+		"Params: (size_in, size_out, rate, mod_size, var)\n"
 		""},
 	 { (char *)"Demapper_ATSC_sptr_history", _wrap_Demapper_ATSC_sptr_history, METH_VARARGS, (char *)"Demapper_ATSC_sptr_history(Demapper_ATSC_sptr self) -> unsigned int"},
 	 { (char *)"Demapper_ATSC_sptr_declare_sample_delay", _wrap_Demapper_ATSC_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"
@@ -30952,7 +30952,15 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"Demapper_ATSC_sptr_message_ports_out", _wrap_Demapper_ATSC_sptr_message_ports_out, METH_VARARGS, (char *)"Demapper_ATSC_sptr_message_ports_out(Demapper_ATSC_sptr self) -> swig_int_ptr"},
 	 { (char *)"Demapper_ATSC_sptr_message_subscribers", (PyCFunction) _wrap_Demapper_ATSC_sptr_message_subscribers, METH_VARARGS | METH_KEYWORDS, (char *)"Demapper_ATSC_sptr_message_subscribers(Demapper_ATSC_sptr self, swig_int_ptr which_port) -> swig_int_ptr"},
 	 { (char *)"Demapper_ATSC_sptr_swigregister", Demapper_ATSC_sptr_swigregister, METH_VARARGS, NULL},
-	 { (char *)"Parity_deinterleaver_ATSC_make", (PyCFunction) _wrap_Parity_deinterleaver_ATSC_make, METH_VARARGS | METH_KEYWORDS, (char *)"Parity_deinterleaver_ATSC_make(int Nldpc, int Rate) -> Parity_deinterleaver_ATSC_sptr"},
+	 { (char *)"Parity_deinterleaver_ATSC_make", (PyCFunction) _wrap_Parity_deinterleaver_ATSC_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"Parity_deinterleaver_ATSC_make(int Nldpc, int Rate) -> Parity_deinterleaver_ATSC_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of mack_sdr_rossi::Parity_deinterleaver_ATSC.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, mack_sdr_rossi::Parity_deinterleaver_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Parity_deinterleaver_ATSC::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (Nldpc, Rate)\n"
+		""},
 	 { (char *)"delete_Parity_deinterleaver_ATSC", _wrap_delete_Parity_deinterleaver_ATSC, METH_VARARGS, (char *)"delete_Parity_deinterleaver_ATSC(Parity_deinterleaver_ATSC self)"},
 	 { (char *)"Parity_deinterleaver_ATSC_swigregister", Parity_deinterleaver_ATSC_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_Parity_deinterleaver_ATSC_sptr", _wrap_new_Parity_deinterleaver_ATSC_sptr, METH_VARARGS, (char *)"\n"
@@ -30961,7 +30969,15 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { (char *)"Parity_deinterleaver_ATSC_sptr___deref__", _wrap_Parity_deinterleaver_ATSC_sptr___deref__, METH_VARARGS, (char *)"Parity_deinterleaver_ATSC_sptr___deref__(Parity_deinterleaver_ATSC_sptr self) -> Parity_deinterleaver_ATSC"},
 	 { (char *)"delete_Parity_deinterleaver_ATSC_sptr", _wrap_delete_Parity_deinterleaver_ATSC_sptr, METH_VARARGS, (char *)"delete_Parity_deinterleaver_ATSC_sptr(Parity_deinterleaver_ATSC_sptr self)"},
-	 { (char *)"Parity_deinterleaver_ATSC_sptr_make", (PyCFunction) _wrap_Parity_deinterleaver_ATSC_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"Parity_deinterleaver_ATSC_sptr_make(Parity_deinterleaver_ATSC_sptr self, int Nldpc, int Rate) -> Parity_deinterleaver_ATSC_sptr"},
+	 { (char *)"Parity_deinterleaver_ATSC_sptr_make", (PyCFunction) _wrap_Parity_deinterleaver_ATSC_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"Parity_deinterleaver_ATSC_sptr_make(Parity_deinterleaver_ATSC_sptr self, int Nldpc, int Rate) -> Parity_deinterleaver_ATSC_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of mack_sdr_rossi::Parity_deinterleaver_ATSC.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, mack_sdr_rossi::Parity_deinterleaver_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Parity_deinterleaver_ATSC::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (Nldpc, Rate)\n"
+		""},
 	 { (char *)"Parity_deinterleaver_ATSC_sptr_history", _wrap_Parity_deinterleaver_ATSC_sptr_history, METH_VARARGS, (char *)"Parity_deinterleaver_ATSC_sptr_history(Parity_deinterleaver_ATSC_sptr self) -> unsigned int"},
 	 { (char *)"Parity_deinterleaver_ATSC_sptr_declare_sample_delay", _wrap_Parity_deinterleaver_ATSC_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"
 		"declare_sample_delay(int which, int delay)\n"
@@ -31045,7 +31061,15 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"Parity_deinterleaver_ATSC_sptr_message_ports_out", _wrap_Parity_deinterleaver_ATSC_sptr_message_ports_out, METH_VARARGS, (char *)"Parity_deinterleaver_ATSC_sptr_message_ports_out(Parity_deinterleaver_ATSC_sptr self) -> swig_int_ptr"},
 	 { (char *)"Parity_deinterleaver_ATSC_sptr_message_subscribers", (PyCFunction) _wrap_Parity_deinterleaver_ATSC_sptr_message_subscribers, METH_VARARGS | METH_KEYWORDS, (char *)"Parity_deinterleaver_ATSC_sptr_message_subscribers(Parity_deinterleaver_ATSC_sptr self, swig_int_ptr which_port) -> swig_int_ptr"},
 	 { (char *)"Parity_deinterleaver_ATSC_sptr_swigregister", Parity_deinterleaver_ATSC_sptr_swigregister, METH_VARARGS, NULL},
-	 { (char *)"Block_deinterleaver_ATSC_make", (PyCFunction) _wrap_Block_deinterleaver_ATSC_make, METH_VARARGS | METH_KEYWORDS, (char *)"Block_deinterleaver_ATSC_make(int Nldpc, int Rate, int Mod_size) -> Block_deinterleaver_ATSC_sptr"},
+	 { (char *)"Block_deinterleaver_ATSC_make", (PyCFunction) _wrap_Block_deinterleaver_ATSC_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"Block_deinterleaver_ATSC_make(int Nldpc, int Rate, int Mod_size) -> Block_deinterleaver_ATSC_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of mack_sdr_rossi::Block_deinterleaver_ATSC.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, mack_sdr_rossi::Block_deinterleaver_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Block_deinterleaver_ATSC::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (Nldpc, Rate, Mod_size)\n"
+		""},
 	 { (char *)"delete_Block_deinterleaver_ATSC", _wrap_delete_Block_deinterleaver_ATSC, METH_VARARGS, (char *)"delete_Block_deinterleaver_ATSC(Block_deinterleaver_ATSC self)"},
 	 { (char *)"Block_deinterleaver_ATSC_swigregister", Block_deinterleaver_ATSC_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_Block_deinterleaver_ATSC_sptr", _wrap_new_Block_deinterleaver_ATSC_sptr, METH_VARARGS, (char *)"\n"
@@ -31054,7 +31078,15 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { (char *)"Block_deinterleaver_ATSC_sptr___deref__", _wrap_Block_deinterleaver_ATSC_sptr___deref__, METH_VARARGS, (char *)"Block_deinterleaver_ATSC_sptr___deref__(Block_deinterleaver_ATSC_sptr self) -> Block_deinterleaver_ATSC"},
 	 { (char *)"delete_Block_deinterleaver_ATSC_sptr", _wrap_delete_Block_deinterleaver_ATSC_sptr, METH_VARARGS, (char *)"delete_Block_deinterleaver_ATSC_sptr(Block_deinterleaver_ATSC_sptr self)"},
-	 { (char *)"Block_deinterleaver_ATSC_sptr_make", (PyCFunction) _wrap_Block_deinterleaver_ATSC_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"Block_deinterleaver_ATSC_sptr_make(Block_deinterleaver_ATSC_sptr self, int Nldpc, int Rate, int Mod_size) -> Block_deinterleaver_ATSC_sptr"},
+	 { (char *)"Block_deinterleaver_ATSC_sptr_make", (PyCFunction) _wrap_Block_deinterleaver_ATSC_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"Block_deinterleaver_ATSC_sptr_make(Block_deinterleaver_ATSC_sptr self, int Nldpc, int Rate, int Mod_size) -> Block_deinterleaver_ATSC_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of mack_sdr_rossi::Block_deinterleaver_ATSC.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, mack_sdr_rossi::Block_deinterleaver_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Block_deinterleaver_ATSC::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (Nldpc, Rate, Mod_size)\n"
+		""},
 	 { (char *)"Block_deinterleaver_ATSC_sptr_history", _wrap_Block_deinterleaver_ATSC_sptr_history, METH_VARARGS, (char *)"Block_deinterleaver_ATSC_sptr_history(Block_deinterleaver_ATSC_sptr self) -> unsigned int"},
 	 { (char *)"Block_deinterleaver_ATSC_sptr_declare_sample_delay", _wrap_Block_deinterleaver_ATSC_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"
 		"declare_sample_delay(int which, int delay)\n"
@@ -31138,7 +31170,15 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"Block_deinterleaver_ATSC_sptr_message_ports_out", _wrap_Block_deinterleaver_ATSC_sptr_message_ports_out, METH_VARARGS, (char *)"Block_deinterleaver_ATSC_sptr_message_ports_out(Block_deinterleaver_ATSC_sptr self) -> swig_int_ptr"},
 	 { (char *)"Block_deinterleaver_ATSC_sptr_message_subscribers", (PyCFunction) _wrap_Block_deinterleaver_ATSC_sptr_message_subscribers, METH_VARARGS | METH_KEYWORDS, (char *)"Block_deinterleaver_ATSC_sptr_message_subscribers(Block_deinterleaver_ATSC_sptr self, swig_int_ptr which_port) -> swig_int_ptr"},
 	 { (char *)"Block_deinterleaver_ATSC_sptr_swigregister", Block_deinterleaver_ATSC_sptr_swigregister, METH_VARARGS, NULL},
-	 { (char *)"Group_deinterleaver_ATSC_make", (PyCFunction) _wrap_Group_deinterleaver_ATSC_make, METH_VARARGS | METH_KEYWORDS, (char *)"Group_deinterleaver_ATSC_make(int Nldpc, int Rate, int Mod_size) -> Group_deinterleaver_ATSC_sptr"},
+	 { (char *)"Group_deinterleaver_ATSC_make", (PyCFunction) _wrap_Group_deinterleaver_ATSC_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"Group_deinterleaver_ATSC_make(int Nldpc, int Rate, int Mod_size) -> Group_deinterleaver_ATSC_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of mack_sdr_rossi::Group_deinterleaver_ATSC.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, mack_sdr_rossi::Group_deinterleaver_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Group_deinterleaver_ATSC::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (Nldpc, Rate, Mod_size)\n"
+		""},
 	 { (char *)"delete_Group_deinterleaver_ATSC", _wrap_delete_Group_deinterleaver_ATSC, METH_VARARGS, (char *)"delete_Group_deinterleaver_ATSC(Group_deinterleaver_ATSC self)"},
 	 { (char *)"Group_deinterleaver_ATSC_swigregister", Group_deinterleaver_ATSC_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_Group_deinterleaver_ATSC_sptr", _wrap_new_Group_deinterleaver_ATSC_sptr, METH_VARARGS, (char *)"\n"
@@ -31147,7 +31187,15 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { (char *)"Group_deinterleaver_ATSC_sptr___deref__", _wrap_Group_deinterleaver_ATSC_sptr___deref__, METH_VARARGS, (char *)"Group_deinterleaver_ATSC_sptr___deref__(Group_deinterleaver_ATSC_sptr self) -> Group_deinterleaver_ATSC"},
 	 { (char *)"delete_Group_deinterleaver_ATSC_sptr", _wrap_delete_Group_deinterleaver_ATSC_sptr, METH_VARARGS, (char *)"delete_Group_deinterleaver_ATSC_sptr(Group_deinterleaver_ATSC_sptr self)"},
-	 { (char *)"Group_deinterleaver_ATSC_sptr_make", (PyCFunction) _wrap_Group_deinterleaver_ATSC_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"Group_deinterleaver_ATSC_sptr_make(Group_deinterleaver_ATSC_sptr self, int Nldpc, int Rate, int Mod_size) -> Group_deinterleaver_ATSC_sptr"},
+	 { (char *)"Group_deinterleaver_ATSC_sptr_make", (PyCFunction) _wrap_Group_deinterleaver_ATSC_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"Group_deinterleaver_ATSC_sptr_make(Group_deinterleaver_ATSC_sptr self, int Nldpc, int Rate, int Mod_size) -> Group_deinterleaver_ATSC_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of mack_sdr_rossi::Group_deinterleaver_ATSC.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, mack_sdr_rossi::Group_deinterleaver_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Group_deinterleaver_ATSC::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (Nldpc, Rate, Mod_size)\n"
+		""},
 	 { (char *)"Group_deinterleaver_ATSC_sptr_history", _wrap_Group_deinterleaver_ATSC_sptr_history, METH_VARARGS, (char *)"Group_deinterleaver_ATSC_sptr_history(Group_deinterleaver_ATSC_sptr self) -> unsigned int"},
 	 { (char *)"Group_deinterleaver_ATSC_sptr_declare_sample_delay", _wrap_Group_deinterleaver_ATSC_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"
 		"declare_sample_delay(int which, int delay)\n"

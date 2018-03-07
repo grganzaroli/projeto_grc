@@ -10,7 +10,9 @@ private:
 	int q_ldpc; //Q_ldpc
 	int mod_size; //modulação
 	bool interleaver_type; // false = Tipo A, true = Tipo B
-	const int *tabela; //tabela de permutação group-deinterleaver
+	int tab_size; //tamanho da tabela
+	const int *tab; //tabela de permutação group-deinterleaver
+	int tabela[180];
 
 public:
 	void set(int N_ldpc, int Rate, int Mod_size);
