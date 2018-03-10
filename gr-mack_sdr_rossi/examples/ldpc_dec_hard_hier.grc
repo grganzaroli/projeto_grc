@@ -109,6 +109,53 @@
     </param>
   </block>
   <block>
+    <key>blocks_float_to_char</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(440, 236)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_float_to_char_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>scale</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>vlen</key>
+      <value>1</value>
+    </param>
+  </block>
+  <block>
     <key>blocks_stream_to_vector</key>
     <param>
       <key>alias</key>
@@ -128,7 +175,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(312, 228)</value>
+      <value>(592, 236)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -160,6 +207,57 @@
     </param>
   </block>
   <block>
+    <key>blocks_threshold_ff</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(280, 220)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>high</key>
+      <value>0.5</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_threshold_ff_0</value>
+    </param>
+    <param>
+      <key>init</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>low</key>
+      <value>0.5</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+  </block>
+  <block>
     <key>blocks_vector_to_stream</key>
     <param>
       <key>alias</key>
@@ -179,7 +277,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(736, 228)</value>
+      <value>(984, 236)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -230,7 +328,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(512, 228)</value>
+      <value>(776, 236)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -308,7 +406,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(936, 228)</value>
+      <value>(1160, 236)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -351,7 +449,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(152, 228)</value>
+      <value>(144, 236)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -375,7 +473,7 @@
     </param>
     <param>
       <key>type</key>
-      <value>bit</value>
+      <value>float</value>
     </param>
     <param>
       <key>vlen</key>
@@ -426,8 +524,20 @@
     </param>
   </block>
   <connection>
+    <source_block_id>blocks_float_to_char_0</source_block_id>
+    <sink_block_id>blocks_stream_to_vector_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
     <source_block_id>blocks_stream_to_vector_0</source_block_id>
     <sink_block_id>mack_sdr_rossi_LDPC_decoder_hard_ATSC_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_threshold_ff_0</source_block_id>
+    <sink_block_id>blocks_float_to_char_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -445,7 +555,7 @@
   </connection>
   <connection>
     <source_block_id>pad_source_0</source_block_id>
-    <sink_block_id>blocks_stream_to_vector_0</sink_block_id>
+    <sink_block_id>blocks_threshold_ff_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>

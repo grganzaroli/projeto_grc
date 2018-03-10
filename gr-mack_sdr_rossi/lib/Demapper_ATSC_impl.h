@@ -46,11 +46,10 @@ namespace gr {
            gr_vector_void_star &output_items);
 
            demap demapper;
-           gr_complex *tab;
 
            int s_in, s_out;
 
-           void DEMAPPER(const gr_complex *in, float *out);
+           void DEMAP(const gr_complex *in, float *out);
     };
 
   } // namespace mack_sdr_rossi

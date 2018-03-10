@@ -103,6 +103,8 @@ gnuradio/io_signature.h
 -
 Demapper_ATSC_impl.h
 /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Demapper_ATSC_impl.h
+stdio.h
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/stdio.h
 
 /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Demapper_ATSC_impl.h
 mack_sdr_rossi/Demapper_ATSC.h

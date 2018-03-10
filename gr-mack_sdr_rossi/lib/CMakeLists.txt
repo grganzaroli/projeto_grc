@@ -29,6 +29,7 @@ list(APPEND mack_sdr_rossi_sources
     str_to_vec_impl.cc
     LDPC_decoder_hard_ATSC_impl.cc
     bch.cpp
+	ldpc.cpp
 	demap.cpp
 	atsc_interleaver.cpp
     BCH_decoder_ATSC_impl.cc

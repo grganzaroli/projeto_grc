@@ -48,10 +48,6 @@ namespace gr {
       rate = Rate;
 
       deinterleaver.set(nldpc, rate, 16); //mod_size nao importa
-
-      printf("n = %i\n", nldpc);
-      printf("r = %i\n", rate);
-      printf("OK\n");
     }
 
     /*
