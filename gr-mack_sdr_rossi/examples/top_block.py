@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Top Block
-# Generated: Sat Mar 10 21:10:22 2018
+# Generated: Sun Mar 11 14:43:46 2018
 ##################################################
 
 if __name__ == '__main__':
@@ -164,8 +164,8 @@ class top_block(gr.top_block, Qt.QWidget):
         
         self._qtgui_time_sink_x_0_win = sip.wrapinstance(self.qtgui_time_sink_x_0.pyqwidget(), Qt.QWidget)
         self.top_layout.addWidget(self._qtgui_time_sink_x_0_win)
-        self.mapper_prbs_source_b_0 = mapper.prbs_source_b("PRBS7", 108000)
-        self.mapper_prbs_sink_b_0 = mapper.prbs_sink_b("PRBS7", 108000)
+        self.mapper_prbs_source_b_0 = mapper.prbs_source_b("PRBS7", n*100)
+        self.mapper_prbs_sink_b_0 = mapper.prbs_sink_b("PRBS7", n*100)
         self.ldpc_enc_0 = ldpc_enc(
             n=n,
             r=r,

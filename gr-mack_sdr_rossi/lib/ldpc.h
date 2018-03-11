@@ -4,27 +4,27 @@
 class ldpc
 {
 private:
-	int n; //quantidade de bits de entrada
-	int k; //quantidade de bits de saída
-	int r; //code rate
-	int max_it; //numero de iterações
-	int Q_ldpc; //constante que vem da norma
+	unsigned short n; //quantidade de bits de entrada
+	unsigned short k; //quantidade de bits de saída
+	unsigned short r; //code rate
+	unsigned short max_it; //numero de iterações
+	unsigned short Q_ldpc; //constante que vem da norma
 	bool tipo; //false = tipo A, true = tipo B
 
-	int **C; // matriz de check nodes
-	int *INDX; // indices para calcular a matriz C, numero de 1s por linha
+	unsigned short **C; // matriz de check nodes
+	unsigned short *INDX; // indices para calcular a matriz C, numero de 1s por linha
 
-	int **err; //contagem de 1s e 0s no hard-decision
+	unsigned short **err; //contagem de 1s e 0s no hard-decision
 	unsigned char *r_aux; //in para eu manipular
 	double *LLR_aux; //in em formato LLR pra eu manipular
-	int *SIN; //sindrome
+	unsigned char *SIN; //sindrome
 
-	int *p_erros; //posicao dos erros
+	unsigned short *p_erros; //posicao dos erros
 	double** R; //matriz R
 	double** Q; //matriz Q
 
 public:
-	void init(int N, int K); //inicializa variavais
+	void init(unsigned short N, unsigned short K); //inicializa variavais
 
 	double aTanh(double x); //arco tangente hiperbólico
 
