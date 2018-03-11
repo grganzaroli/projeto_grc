@@ -22,9 +22,11 @@
   <sink>
     <name>in</name>
     <type>float</type>
+    <vlen>$Nldpc</vlen>
   </sink>
   <source>
     <name>out</name>
     <type>float</type>
+    <vlen>$Nldpc</vlen>
   </source>
 </block>

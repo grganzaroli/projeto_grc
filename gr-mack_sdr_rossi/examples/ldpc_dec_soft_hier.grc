@@ -249,8 +249,12 @@
       <value>0</value>
     </param>
     <param>
-      <key>N</key>
+      <key>N_in</key>
       <value>n</value>
+    </param>
+    <param>
+      <key>N_out</key>
+      <value>n*r/15</value>
     </param>
   </block>
   <block>
@@ -293,7 +297,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>16200</value>
+      <value>64800</value>
     </param>
   </block>
   <block>

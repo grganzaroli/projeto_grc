@@ -143,6 +143,8 @@ stdio.h
 /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.h
 mack_sdr_rossi/LDPC_decoder_ATSC.h
 -
+ldpc.h
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h
 
 /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_hard_ATSC_impl.cc
 config.h
@@ -159,6 +161,8 @@ stdio.h
 /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_hard_ATSC_impl.h
 mack_sdr_rossi/LDPC_decoder_hard_ATSC.h
 -
+ldpc.h
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h
 
 /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Parity_deinterleaver_ATSC_impl.cc
 config.h
@@ -211,6 +215,20 @@ gnuradio/io_signature.h
 -
 stdio.h
 -
+
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.cpp
+iostream
+-
+stdio.h
+-
+string.h
+-
+cmath
+-
+ldpc.h
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h
+
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h
 
 /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/str_to_vec_impl.cc
 config.h

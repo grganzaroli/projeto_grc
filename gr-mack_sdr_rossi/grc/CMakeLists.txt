@@ -17,12 +17,12 @@
 # the Free Software Foundation, Inc., 51 Franklin Street,
 # Boston, MA 02110-1301, USA.
 install(FILES
-    mack_sdr_rossi_LDPC_decoder_ATSC.xml
     mack_sdr_rossi_str_to_vec.xml
-    mack_sdr_rossi_LDPC_decoder_hard_ATSC.xml
     mack_sdr_rossi_BCH_decoder_ATSC.xml
     mack_sdr_rossi_Demapper_ATSC.xml
     mack_sdr_rossi_Parity_deinterleaver_ATSC.xml
     mack_sdr_rossi_Block_deinterleaver_ATSC.xml
-    mack_sdr_rossi_Group_deinterleaver_ATSC.xml DESTINATION /usr/local/share/gnuradio/grc/blocks
+    mack_sdr_rossi_Group_deinterleaver_ATSC.xml
+    mack_sdr_rossi_LDPC_decoder_ATSC.xml
+    mack_sdr_rossi_LDPC_decoder_hard_ATSC.xml DESTINATION /usr/local/share/gnuradio/grc/blocks
 )

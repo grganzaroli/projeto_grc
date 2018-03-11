@@ -1,6 +1,6 @@
 /* -*- c++ -*- */
 /* 
- * Copyright 2017 <+YOU OR YOUR COMPANY+>.
+ * Copyright 2018 <+YOU OR YOUR COMPANY+>.
  * 
  * This is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -46,7 +46,7 @@ namespace gr {
        * class. mack_sdr_rossi::LDPC_decoder_ATSC::make is the public interface for
        * creating new instances.
        */
-      static sptr make(size_t N);
+      static sptr make(int N_in, int N_out);
     };
 
   } // namespace mack_sdr_rossi

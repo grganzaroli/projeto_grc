@@ -1,6 +1,6 @@
 /* -*- c++ -*- */
 /* 
- * Copyright 2017 <+YOU OR YOUR COMPANY+>.
+ * Copyright 2018 <+YOU OR YOUR COMPANY+>.
  * 
  * This is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,6 +22,7 @@
 #define INCLUDED_MACK_SDR_ROSSI_LDPC_DECODER_ATSC_IMPL_H
 
 #include <mack_sdr_rossi/LDPC_decoder_ATSC.h>
+#include "ldpc.h"
 
 namespace gr {
   namespace mack_sdr_rossi {
@@ -32,7 +33,7 @@ namespace gr {
       // Nothing to declare in this block.
 
      public:
-      LDPC_decoder_ATSC_impl(size_t N);
+      LDPC_decoder_ATSC_impl(int N_in, int N_out);
       ~LDPC_decoder_ATSC_impl();
 
       // Where all the action really happens
@@ -44,11 +45,13 @@ namespace gr {
            gr_vector_void_star &output_items);
 
       //Funções
-      void decoder_LDPC(const float *in, char *out);
-      double aTanh(double x);
+      void decoder_LDPC(const float *in, unsigned char *out);
 
       //Variaveis
-      int N_size;
+      int N;
+      int K;
+
+      ldpc decoder;
     };
 
   } // namespace mack_sdr_rossi

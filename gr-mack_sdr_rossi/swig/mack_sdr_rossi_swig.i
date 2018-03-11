@@ -8,24 +8,20 @@
 %include "mack_sdr_rossi_swig_doc.i"
 
 %{
-#include "mack_sdr_rossi/LDPC_decoder_ATSC.h"
 #include "mack_sdr_rossi/str_to_vec.h"
-#include "mack_sdr_rossi/LDPC_decoder_hard_ATSC.h"
 #include "mack_sdr_rossi/BCH_decoder_ATSC.h"
 #include "mack_sdr_rossi/Demapper_ATSC.h"
 #include "mack_sdr_rossi/Parity_deinterleaver_ATSC.h"
 #include "mack_sdr_rossi/Block_deinterleaver_ATSC.h"
 #include "mack_sdr_rossi/Group_deinterleaver_ATSC.h"
+#include "mack_sdr_rossi/LDPC_decoder_ATSC.h"
+#include "mack_sdr_rossi/LDPC_decoder_hard_ATSC.h"
 %}
 
 
-%include "mack_sdr_rossi/LDPC_decoder_ATSC.h"
-GR_SWIG_BLOCK_MAGIC2(mack_sdr_rossi, LDPC_decoder_ATSC);
-
 %include "mack_sdr_rossi/str_to_vec.h"
 GR_SWIG_BLOCK_MAGIC2(mack_sdr_rossi, str_to_vec);
-%include "mack_sdr_rossi/LDPC_decoder_hard_ATSC.h"
-GR_SWIG_BLOCK_MAGIC2(mack_sdr_rossi, LDPC_decoder_hard_ATSC);
+
 
 %include "mack_sdr_rossi/BCH_decoder_ATSC.h"
 GR_SWIG_BLOCK_MAGIC2(mack_sdr_rossi, BCH_decoder_ATSC);
@@ -39,3 +35,7 @@ GR_SWIG_BLOCK_MAGIC2(mack_sdr_rossi, Parity_deinterleaver_ATSC);
 GR_SWIG_BLOCK_MAGIC2(mack_sdr_rossi, Block_deinterleaver_ATSC);
 %include "mack_sdr_rossi/Group_deinterleaver_ATSC.h"
 GR_SWIG_BLOCK_MAGIC2(mack_sdr_rossi, Group_deinterleaver_ATSC);
+%include "mack_sdr_rossi/LDPC_decoder_ATSC.h"
+GR_SWIG_BLOCK_MAGIC2(mack_sdr_rossi, LDPC_decoder_ATSC);
+%include "mack_sdr_rossi/LDPC_decoder_hard_ATSC.h"
+GR_SWIG_BLOCK_MAGIC2(mack_sdr_rossi, LDPC_decoder_hard_ATSC);

@@ -93,7 +93,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(584, 28)</value>
+      <value>(912, 28)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -120,7 +120,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(696, 28)</value>
+      <value>(1024, 28)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -166,7 +166,7 @@
     <key>analog_noise_source_x</key>
     <param>
       <key>amp</key>
-      <value>0.12</value>
+      <value>0</value>
     </param>
     <param>
       <key>alias</key>
@@ -288,7 +288,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(728, 132)</value>
+      <value>(728, 124)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -386,6 +386,57 @@
     </param>
     <param>
       <key>file</key>
+      <value>in.bin</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(256, 12)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>180</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_file_sink_0</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>byte</value>
+    </param>
+    <param>
+      <key>unbuffered</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>vlen</key>
+      <value>1</value>
+    </param>
+  </block>
+  <block>
+    <key>blocks_file_sink</key>
+    <param>
+      <key>append</key>
+      <value>False</value>
+    </param>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>file</key>
       <value>out.bin</value>
     </param>
     <param>
@@ -414,7 +465,7 @@
     </param>
   </block>
   <block>
-    <key>blocks_float_to_char</key>
+    <key>blocks_file_source</key>
     <param>
       <key>alias</key>
       <value></value>
@@ -429,11 +480,15 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
+    </param>
+    <param>
+      <key>file</key>
+      <value>in.bin</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(456, 204)</value>
+      <value>(656, 20)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -441,7 +496,7 @@
     </param>
     <param>
       <key>id</key>
-      <value>blocks_float_to_char_0</value>
+      <value>blocks_file_source_0</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -452,8 +507,12 @@
       <value>0</value>
     </param>
     <param>
-      <key>scale</key>
-      <value>1</value>
+      <key>type</key>
+      <value>byte</value>
+    </param>
+    <param>
+      <key>repeat</key>
+      <value>True</value>
     </param>
     <param>
       <key>vlen</key>
@@ -508,57 +567,6 @@
     </param>
   </block>
   <block>
-    <key>blocks_threshold_ff</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(640, 196)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>180</value>
-    </param>
-    <param>
-      <key>high</key>
-      <value>0.50</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>blocks_threshold_ff_0</value>
-    </param>
-    <param>
-      <key>init</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>low</key>
-      <value>0.50</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-  </block>
-  <block>
     <key>blocks_throttle</key>
     <param>
       <key>alias</key>
@@ -578,7 +586,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(552, 132)</value>
+      <value>(552, 124)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -680,7 +688,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(376, 120)</value>
+      <value>(376, 116)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -700,11 +708,11 @@
     </param>
     <param>
       <key>r</key>
-      <value>10</value>
+      <value>r</value>
     </param>
     <param>
       <key>n</key>
-      <value>16200</value>
+      <value>n</value>
     </param>
   </block>
   <block>
@@ -766,7 +774,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(128, 124)</value>
+      <value>(136, 116)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1464,7 +1472,7 @@
     </param>
     <param>
       <key>size</key>
-      <value>16200</value>
+      <value>n</value>
     </param>
     <param>
       <key>srate</key>
@@ -1527,7 +1535,7 @@
   </connection>
   <connection>
     <source_block_id>blocks_add_xx_0</source_block_id>
-    <sink_block_id>blocks_threshold_ff_0</sink_block_id>
+    <sink_block_id>ldpc_dec_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -1556,14 +1564,8 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>blocks_float_to_char_0</source_block_id>
-    <sink_block_id>ldpc_dec_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_threshold_ff_0</source_block_id>
-    <sink_block_id>blocks_float_to_char_0</sink_block_id>
+    <source_block_id>blocks_file_source_0</source_block_id>
+    <sink_block_id>blocks_throttle_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -1588,6 +1590,12 @@
   <connection>
     <source_block_id>ldpc_dec_0</source_block_id>
     <sink_block_id>mapper_prbs_sink_b_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>ldpc_enc_0</source_block_id>
+    <sink_block_id>blocks_file_sink_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>

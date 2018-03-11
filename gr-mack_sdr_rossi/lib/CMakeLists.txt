@@ -25,9 +25,7 @@ include(GrPlatform) #define LIB_SUFFIX
 include_directories(${Boost_INCLUDE_DIR})
 link_directories(${Boost_LIBRARY_DIRS})
 list(APPEND mack_sdr_rossi_sources
-    LDPC_decoder_ATSC_impl.cc
     str_to_vec_impl.cc
-    LDPC_decoder_hard_ATSC_impl.cc
     bch.cpp
 	ldpc.cpp
 	demap.cpp
@@ -36,7 +34,9 @@ list(APPEND mack_sdr_rossi_sources
     Demapper_ATSC_impl.cc
     Parity_deinterleaver_ATSC_impl.cc
     Block_deinterleaver_ATSC_impl.cc
-    Group_deinterleaver_ATSC_impl.cc )
+    Group_deinterleaver_ATSC_impl.cc
+    LDPC_decoder_ATSC_impl.cc
+    LDPC_decoder_hard_ATSC_impl.cc )
 
 set(mack_sdr_rossi_sources "${mack_sdr_rossi_sources}" PARENT_SCOPE)
 if(NOT mack_sdr_rossi_sources)

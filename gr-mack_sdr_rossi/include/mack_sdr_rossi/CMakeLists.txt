@@ -22,12 +22,12 @@
 ########################################################################
 install(FILES
     api.h
-    LDPC_decoder_ATSC.h
     str_to_vec.h
-    LDPC_decoder_hard_ATSC.h
     BCH_decoder_ATSC.h
     Demapper_ATSC.h
     Parity_deinterleaver_ATSC.h
     Block_deinterleaver_ATSC.h
-    Group_deinterleaver_ATSC.h DESTINATION include/mack_sdr_rossi
+    Group_deinterleaver_ATSC.h
+    LDPC_decoder_ATSC.h
+    LDPC_decoder_hard_ATSC.h DESTINATION include/mack_sdr_rossi
 )

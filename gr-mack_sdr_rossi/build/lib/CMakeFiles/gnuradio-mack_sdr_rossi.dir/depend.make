@@ -151,6 +151,7 @@ lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.o: ../inclu
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.o: ../include/mack_sdr_rossi/api.h
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.o: ../lib/LDPC_decoder_ATSC_impl.cc
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.o: ../lib/LDPC_decoder_ATSC_impl.h
+lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.o: ../lib/ldpc.h
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.o: /usr/local/include/gnuradio/api.h
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.o: /usr/local/include/gnuradio/attributes.h
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.o: /usr/local/include/gnuradio/basic_block.h
@@ -185,6 +186,7 @@ lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.o: ../
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.o: ../include/mack_sdr_rossi/api.h
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.o: ../lib/LDPC_decoder_hard_ATSC_impl.cc
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.o: ../lib/LDPC_decoder_hard_ATSC_impl.h
+lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.o: ../lib/ldpc.h
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.o: /usr/local/include/gnuradio/api.h
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.o: /usr/local/include/gnuradio/attributes.h
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.o: /usr/local/include/gnuradio/basic_block.h
@@ -264,6 +266,9 @@ lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/demap.cpp.o: /usr/local/include/gnura
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/demap.cpp.o: /usr/local/include/gnuradio/io_signature.h
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/demap.cpp.o: /usr/local/include/gnuradio/runtime_types.h
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/demap.cpp.o: /usr/local/include/gnuradio/types.h
+
+lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/ldpc.cpp.o: ../lib/ldpc.cpp
+lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/ldpc.cpp.o: ../lib/ldpc.h
 
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.o: ../include/mack_sdr_rossi/api.h
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.o: ../include/mack_sdr_rossi/str_to_vec.h

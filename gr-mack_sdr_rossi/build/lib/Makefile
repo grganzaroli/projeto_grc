@@ -467,6 +467,33 @@ demap.cpp.s:
 	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/demap.cpp.s
 .PHONY : demap.cpp.s
 
+ldpc.o: ldpc.cpp.o
+
+.PHONY : ldpc.o
+
+# target to build an object file
+ldpc.cpp.o:
+	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/ldpc.cpp.o
+.PHONY : ldpc.cpp.o
+
+ldpc.i: ldpc.cpp.i
+
+.PHONY : ldpc.i
+
+# target to preprocess a source file
+ldpc.cpp.i:
+	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/ldpc.cpp.i
+.PHONY : ldpc.cpp.i
+
+ldpc.s: ldpc.cpp.s
+
+.PHONY : ldpc.s
+
+# target to generate assembly for a file
+ldpc.cpp.s:
+	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/ldpc.cpp.s
+.PHONY : ldpc.cpp.s
+
 qa_mack_sdr_rossi.o: qa_mack_sdr_rossi.cc.o
 
 .PHONY : qa_mack_sdr_rossi.o
@@ -593,6 +620,9 @@ help:
 	@echo "... demap.o"
 	@echo "... demap.i"
 	@echo "... demap.s"
+	@echo "... ldpc.o"
+	@echo "... ldpc.i"
+	@echo "... ldpc.s"
 	@echo "... qa_mack_sdr_rossi.o"
 	@echo "... qa_mack_sdr_rossi.i"
 	@echo "... qa_mack_sdr_rossi.s"

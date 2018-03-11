@@ -152,6 +152,7 @@ lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.o
  ../include/mack_sdr_rossi/api.h
  /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.cc
  /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.h
+ /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h
  /usr/local/include/gnuradio/api.h
  /usr/local/include/gnuradio/attributes.h
  /usr/local/include/gnuradio/basic_block.h
@@ -186,6 +187,7 @@ lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.o
  ../include/mack_sdr_rossi/api.h
  /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_hard_ATSC_impl.cc
  /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_hard_ATSC_impl.h
+ /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h
  /usr/local/include/gnuradio/api.h
  /usr/local/include/gnuradio/attributes.h
  /usr/local/include/gnuradio/basic_block.h
@@ -265,6 +267,9 @@ lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/demap.cpp.o
  /usr/local/include/gnuradio/io_signature.h
  /usr/local/include/gnuradio/runtime_types.h
  /usr/local/include/gnuradio/types.h
+lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/ldpc.cpp.o
+ /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.cpp
+ /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h
 lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/str_to_vec_impl.cc.o
  ../include/mack_sdr_rossi/api.h
  ../include/mack_sdr_rossi/str_to_vec.h

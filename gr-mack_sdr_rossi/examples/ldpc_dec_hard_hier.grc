@@ -128,7 +128,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(440, 236)</value>
+      <value>(440, 260)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -175,7 +175,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(592, 236)</value>
+      <value>(592, 264)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -226,7 +226,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(280, 220)</value>
+      <value>(288, 244)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -277,7 +277,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(984, 236)</value>
+      <value>(984, 260)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -301,7 +301,7 @@
     </param>
     <param>
       <key>num_items</key>
-      <value>n*r/15</value>
+      <value>n*r/15 or 1</value>
     </param>
     <param>
       <key>vlen</key>
@@ -328,7 +328,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(776, 236)</value>
+      <value>(768, 252)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -347,8 +347,12 @@
       <value>0</value>
     </param>
     <param>
-      <key>N</key>
+      <key>N_in</key>
       <value>n</value>
+    </param>
+    <param>
+      <key>N_out</key>
+      <value>n*r/15 or 1</value>
     </param>
   </block>
   <block>
@@ -367,7 +371,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(384, 92)</value>
+      <value>(384, 84)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -391,7 +395,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>16200</value>
+      <value>1</value>
     </param>
   </block>
   <block>
@@ -406,7 +410,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1160, 236)</value>
+      <value>(1160, 260)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -449,7 +453,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(144, 236)</value>
+      <value>(144, 260)</value>
     </param>
     <param>
       <key>_rotation</key>
