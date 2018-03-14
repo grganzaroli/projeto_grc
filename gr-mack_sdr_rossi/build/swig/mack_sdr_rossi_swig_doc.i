@@ -46,7 +46,7 @@ Params: (Nldpc, Rate, Mod_size)"
 
 To avoid accidental use of raw pointers, mack_sdr_rossi::LDPC_decoder_ATSC's constructor is in a private implementation class. mack_sdr_rossi::LDPC_decoder_ATSC::make is the public interface for creating new instances.
 
-Params: (N)"
+Params: (N_in, N_out)"
 
 %feature("docstring") gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC "<+description of block+>"
 
@@ -54,7 +54,7 @@ Params: (N)"
 
 To avoid accidental use of raw pointers, mack_sdr_rossi::LDPC_decoder_hard_ATSC's constructor is in a private implementation class. mack_sdr_rossi::LDPC_decoder_hard_ATSC::make is the public interface for creating new instances.
 
-Params: (N)"
+Params: (N_in, N_out)"
 
 %feature("docstring") gr::mack_sdr_rossi::Parity_deinterleaver_ATSC "<+description of block+>"
 

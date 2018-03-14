@@ -1936,7 +1936,7 @@ bool ldpc::decode_hard(const unsigned char *r,unsigned char *u)
 		// mensagem ok
 		if(aux_S == 0) 
 		{
-			printf("MENSAGEM OK. ITERACOES = %i\n", I);
+			//printf("MENSAGEM OK. ITERACOES = %i\n", I);
 			status = true;
 			goto end;
 		}

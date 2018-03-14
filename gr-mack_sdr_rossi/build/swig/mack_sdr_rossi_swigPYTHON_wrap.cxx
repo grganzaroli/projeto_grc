@@ -27268,11 +27268,11 @@ SWIGINTERN PyObject *LDPC_decoder_ATSC_sptr_swigregister(PyObject *SWIGUNUSEDPAR
 
 SWIGINTERN PyObject *_wrap_LDPC_decoder_hard_ATSC_make(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  int arg1 ;
-  int arg2 ;
-  int val1 ;
+  size_t arg1 ;
+  size_t arg2 ;
+  size_t val1 ;
   int ecode1 = 0 ;
-  int val2 ;
+  size_t val2 ;
   int ecode2 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
@@ -27282,16 +27282,16 @@ SWIGINTERN PyObject *_wrap_LDPC_decoder_hard_ATSC_make(PyObject *SWIGUNUSEDPARM(
   gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC::sptr result;
   
   if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:LDPC_decoder_hard_ATSC_make",kwnames,&obj0,&obj1)) SWIG_fail;
-  ecode1 = SWIG_AsVal_int(obj0, &val1);
+  ecode1 = SWIG_AsVal_size_t(obj0, &val1);
   if (!SWIG_IsOK(ecode1)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "LDPC_decoder_hard_ATSC_make" "', argument " "1"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "LDPC_decoder_hard_ATSC_make" "', argument " "1"" of type '" "size_t""'");
   } 
-  arg1 = static_cast< int >(val1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  arg1 = static_cast< size_t >(val1);
+  ecode2 = SWIG_AsVal_size_t(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "LDPC_decoder_hard_ATSC_make" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "LDPC_decoder_hard_ATSC_make" "', argument " "2"" of type '" "size_t""'");
   } 
-  arg2 = static_cast< int >(val2);
+  arg2 = static_cast< size_t >(val2);
   {
     try {
       result = gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC::make(arg1,arg2);
@@ -27506,13 +27506,13 @@ fail:
 SWIGINTERN PyObject *_wrap_LDPC_decoder_hard_ATSC_sptr_make(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
   boost::shared_ptr< gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC > *arg1 = (boost::shared_ptr< gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC > *) 0 ;
-  int arg2 ;
-  int arg3 ;
+  size_t arg2 ;
+  size_t arg3 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  int val2 ;
+  size_t val2 ;
   int ecode2 = 0 ;
-  int val3 ;
+  size_t val3 ;
   int ecode3 = 0 ;
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
@@ -27528,16 +27528,16 @@ SWIGINTERN PyObject *_wrap_LDPC_decoder_hard_ATSC_sptr_make(PyObject *SWIGUNUSED
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "LDPC_decoder_hard_ATSC_sptr_make" "', argument " "1"" of type '" "boost::shared_ptr< gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC > *""'"); 
   }
   arg1 = reinterpret_cast< boost::shared_ptr< gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC > * >(argp1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  ecode2 = SWIG_AsVal_size_t(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "LDPC_decoder_hard_ATSC_sptr_make" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "LDPC_decoder_hard_ATSC_sptr_make" "', argument " "2"" of type '" "size_t""'");
   } 
-  arg2 = static_cast< int >(val2);
-  ecode3 = SWIG_AsVal_int(obj2, &val3);
+  arg2 = static_cast< size_t >(val2);
+  ecode3 = SWIG_AsVal_size_t(obj2, &val3);
   if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "LDPC_decoder_hard_ATSC_sptr_make" "', argument " "3"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "LDPC_decoder_hard_ATSC_sptr_make" "', argument " "3"" of type '" "size_t""'");
   } 
-  arg3 = static_cast< int >(val3);
+  arg3 = static_cast< size_t >(val3);
   {
     try {
       result = (*arg1)->make(arg2,arg3);
@@ -31104,7 +31104,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		"To avoid accidental use of raw pointers, mack_sdr_rossi::LDPC_decoder_ATSC's constructor is in a private implementation class. mack_sdr_rossi::LDPC_decoder_ATSC::make is the public interface for creating new instances.\n"
 		"\n"
-		"Params: (N)\n"
+		"Params: (N_in, N_out)\n"
 		""},
 	 { (char *)"delete_LDPC_decoder_ATSC", _wrap_delete_LDPC_decoder_ATSC, METH_VARARGS, (char *)"delete_LDPC_decoder_ATSC(LDPC_decoder_ATSC self)"},
 	 { (char *)"LDPC_decoder_ATSC_swigregister", LDPC_decoder_ATSC_swigregister, METH_VARARGS, NULL},
@@ -31121,7 +31121,7 @@ static PyMethodDef SwigMethods[] = {
 		"\n"
 		"To avoid accidental use of raw pointers, mack_sdr_rossi::LDPC_decoder_ATSC's constructor is in a private implementation class. mack_sdr_rossi::LDPC_decoder_ATSC::make is the public interface for creating new instances.\n"
 		"\n"
-		"Params: (N)\n"
+		"Params: (N_in, N_out)\n"
 		""},
 	 { (char *)"LDPC_decoder_ATSC_sptr_history", _wrap_LDPC_decoder_ATSC_sptr_history, METH_VARARGS, (char *)"LDPC_decoder_ATSC_sptr_history(LDPC_decoder_ATSC_sptr self) -> unsigned int"},
 	 { (char *)"LDPC_decoder_ATSC_sptr_declare_sample_delay", _wrap_LDPC_decoder_ATSC_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"
@@ -31207,13 +31207,13 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"LDPC_decoder_ATSC_sptr_message_subscribers", (PyCFunction) _wrap_LDPC_decoder_ATSC_sptr_message_subscribers, METH_VARARGS | METH_KEYWORDS, (char *)"LDPC_decoder_ATSC_sptr_message_subscribers(LDPC_decoder_ATSC_sptr self, swig_int_ptr which_port) -> swig_int_ptr"},
 	 { (char *)"LDPC_decoder_ATSC_sptr_swigregister", LDPC_decoder_ATSC_sptr_swigregister, METH_VARARGS, NULL},
 	 { (char *)"LDPC_decoder_hard_ATSC_make", (PyCFunction) _wrap_LDPC_decoder_hard_ATSC_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
-		"LDPC_decoder_hard_ATSC_make(int N_in, int N_out) -> LDPC_decoder_hard_ATSC_sptr\n"
+		"LDPC_decoder_hard_ATSC_make(size_t N_in, size_t N_out) -> LDPC_decoder_hard_ATSC_sptr\n"
 		"\n"
 		"Return a shared_ptr to a new instance of mack_sdr_rossi::LDPC_decoder_hard_ATSC.\n"
 		"\n"
 		"To avoid accidental use of raw pointers, mack_sdr_rossi::LDPC_decoder_hard_ATSC's constructor is in a private implementation class. mack_sdr_rossi::LDPC_decoder_hard_ATSC::make is the public interface for creating new instances.\n"
 		"\n"
-		"Params: (N)\n"
+		"Params: (N_in, N_out)\n"
 		""},
 	 { (char *)"delete_LDPC_decoder_hard_ATSC", _wrap_delete_LDPC_decoder_hard_ATSC, METH_VARARGS, (char *)"delete_LDPC_decoder_hard_ATSC(LDPC_decoder_hard_ATSC self)"},
 	 { (char *)"LDPC_decoder_hard_ATSC_swigregister", LDPC_decoder_hard_ATSC_swigregister, METH_VARARGS, NULL},
@@ -31224,13 +31224,13 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"LDPC_decoder_hard_ATSC_sptr___deref__", _wrap_LDPC_decoder_hard_ATSC_sptr___deref__, METH_VARARGS, (char *)"LDPC_decoder_hard_ATSC_sptr___deref__(LDPC_decoder_hard_ATSC_sptr self) -> LDPC_decoder_hard_ATSC"},
 	 { (char *)"delete_LDPC_decoder_hard_ATSC_sptr", _wrap_delete_LDPC_decoder_hard_ATSC_sptr, METH_VARARGS, (char *)"delete_LDPC_decoder_hard_ATSC_sptr(LDPC_decoder_hard_ATSC_sptr self)"},
 	 { (char *)"LDPC_decoder_hard_ATSC_sptr_make", (PyCFunction) _wrap_LDPC_decoder_hard_ATSC_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
-		"LDPC_decoder_hard_ATSC_sptr_make(LDPC_decoder_hard_ATSC_sptr self, int N_in, int N_out) -> LDPC_decoder_hard_ATSC_sptr\n"
+		"LDPC_decoder_hard_ATSC_sptr_make(LDPC_decoder_hard_ATSC_sptr self, size_t N_in, size_t N_out) -> LDPC_decoder_hard_ATSC_sptr\n"
 		"\n"
 		"Return a shared_ptr to a new instance of mack_sdr_rossi::LDPC_decoder_hard_ATSC.\n"
 		"\n"
 		"To avoid accidental use of raw pointers, mack_sdr_rossi::LDPC_decoder_hard_ATSC's constructor is in a private implementation class. mack_sdr_rossi::LDPC_decoder_hard_ATSC::make is the public interface for creating new instances.\n"
 		"\n"
-		"Params: (N)\n"
+		"Params: (N_in, N_out)\n"
 		""},
 	 { (char *)"LDPC_decoder_hard_ATSC_sptr_history", _wrap_LDPC_decoder_hard_ATSC_sptr_history, METH_VARARGS, (char *)"LDPC_decoder_hard_ATSC_sptr_history(LDPC_decoder_hard_ATSC_sptr self) -> unsigned int"},
 	 { (char *)"LDPC_decoder_hard_ATSC_sptr_declare_sample_delay", _wrap_LDPC_decoder_hard_ATSC_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"

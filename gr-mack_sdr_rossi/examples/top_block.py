@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Top Block
-# Generated: Sun Mar 11 14:43:46 2018
+# Generated: Wed Mar 14 14:10:11 2018
 ##################################################
 
 if __name__ == '__main__':
@@ -65,7 +65,7 @@ class top_block(gr.top_block, Qt.QWidget):
         ##################################################
         self.samp_rate = samp_rate = 32000
         self.r = r = 10
-        self.n = n = 16200
+        self.n = n = 64800
 
         ##################################################
         # Blocks
@@ -174,7 +174,6 @@ class top_block(gr.top_block, Qt.QWidget):
             n=n,
             r=r,
         )
-        self.blocks_throttle_0 = blocks.throttle(gr.sizeof_char*1, samp_rate,True)
         self.blocks_char_to_float_0_0 = blocks.char_to_float(1, 1)
         self.blocks_char_to_float_0 = blocks.char_to_float(1, 1)
         self.blocks_add_xx_0 = blocks.add_vff(1)
@@ -188,10 +187,9 @@ class top_block(gr.top_block, Qt.QWidget):
         self.connect((self.blocks_add_xx_0, 0), (self.qtgui_time_sink_x_0_0, 0))    
         self.connect((self.blocks_char_to_float_0, 0), (self.blocks_add_xx_0, 1))    
         self.connect((self.blocks_char_to_float_0_0, 0), (self.qtgui_time_sink_x_0, 0))    
-        self.connect((self.blocks_throttle_0, 0), (self.blocks_char_to_float_0, 0))    
         self.connect((self.ldpc_dec_0, 0), (self.blocks_char_to_float_0_0, 0))    
         self.connect((self.ldpc_dec_0, 0), (self.mapper_prbs_sink_b_0, 0))    
-        self.connect((self.ldpc_enc_0, 0), (self.blocks_throttle_0, 0))    
+        self.connect((self.ldpc_enc_0, 0), (self.blocks_char_to_float_0, 0))    
         self.connect((self.mapper_prbs_source_b_0, 0), (self.ldpc_enc_0, 0))    
 
     def closeEvent(self, event):
@@ -206,7 +204,6 @@ class top_block(gr.top_block, Qt.QWidget):
         self.samp_rate = samp_rate
         self.qtgui_time_sink_x_0_0.set_samp_rate(self.samp_rate)
         self.qtgui_time_sink_x_0.set_samp_rate(self.samp_rate)
-        self.blocks_throttle_0.set_sample_rate(self.samp_rate)
 
     def get_r(self):
         return self.r

@@ -46,7 +46,7 @@ namespace gr {
        * class. mack_sdr_rossi::LDPC_decoder_hard_ATSC::make is the public interface for
        * creating new instances.
        */
-      static sptr make(int N_in, int N_out);
+      static sptr make(size_t N_in, size_t N_out);
     };
 
   } // namespace mack_sdr_rossi

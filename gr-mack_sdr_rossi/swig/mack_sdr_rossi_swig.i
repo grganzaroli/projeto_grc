@@ -37,5 +37,6 @@ GR_SWIG_BLOCK_MAGIC2(mack_sdr_rossi, Block_deinterleaver_ATSC);
 GR_SWIG_BLOCK_MAGIC2(mack_sdr_rossi, Group_deinterleaver_ATSC);
 %include "mack_sdr_rossi/LDPC_decoder_ATSC.h"
 GR_SWIG_BLOCK_MAGIC2(mack_sdr_rossi, LDPC_decoder_ATSC);
+
 %include "mack_sdr_rossi/LDPC_decoder_hard_ATSC.h"
 GR_SWIG_BLOCK_MAGIC2(mack_sdr_rossi, LDPC_decoder_hard_ATSC);

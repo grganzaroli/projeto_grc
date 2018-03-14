@@ -2016,7 +2016,7 @@ class LDPC_decoder_ATSC(object):
 
         To avoid accidental use of raw pointers, mack_sdr_rossi::LDPC_decoder_ATSC's constructor is in a private implementation class. mack_sdr_rossi::LDPC_decoder_ATSC::make is the public interface for creating new instances.
 
-        Params: (N)
+        Params: (N_in, N_out)
         """
         return _mack_sdr_rossi_swig.LDPC_decoder_ATSC_make(*args, **kwargs)
 
@@ -2034,7 +2034,7 @@ def LDPC_decoder_ATSC_make(*args, **kwargs):
 
     To avoid accidental use of raw pointers, mack_sdr_rossi::LDPC_decoder_ATSC's constructor is in a private implementation class. mack_sdr_rossi::LDPC_decoder_ATSC::make is the public interface for creating new instances.
 
-    Params: (N)
+    Params: (N_in, N_out)
     """
   return _mack_sdr_rossi_swig.LDPC_decoder_ATSC_make(*args, **kwargs)
 
@@ -2064,7 +2064,7 @@ class LDPC_decoder_ATSC_sptr(object):
 
         To avoid accidental use of raw pointers, mack_sdr_rossi::LDPC_decoder_ATSC's constructor is in a private implementation class. mack_sdr_rossi::LDPC_decoder_ATSC::make is the public interface for creating new instances.
 
-        Params: (N)
+        Params: (N_in, N_out)
         """
         return _mack_sdr_rossi_swig.LDPC_decoder_ATSC_sptr_make(self, *args, **kwargs)
 
@@ -2328,13 +2328,13 @@ class LDPC_decoder_hard_ATSC(object):
     __repr__ = _swig_repr
     def make(*args, **kwargs):
         """
-        make(int N_in, int N_out) -> LDPC_decoder_hard_ATSC_sptr
+        make(size_t N_in, size_t N_out) -> LDPC_decoder_hard_ATSC_sptr
 
         Return a shared_ptr to a new instance of mack_sdr_rossi::LDPC_decoder_hard_ATSC.
 
         To avoid accidental use of raw pointers, mack_sdr_rossi::LDPC_decoder_hard_ATSC's constructor is in a private implementation class. mack_sdr_rossi::LDPC_decoder_hard_ATSC::make is the public interface for creating new instances.
 
-        Params: (N)
+        Params: (N_in, N_out)
         """
         return _mack_sdr_rossi_swig.LDPC_decoder_hard_ATSC_make(*args, **kwargs)
 
@@ -2346,13 +2346,13 @@ LDPC_decoder_hard_ATSC_swigregister(LDPC_decoder_hard_ATSC)
 
 def LDPC_decoder_hard_ATSC_make(*args, **kwargs):
   """
-    LDPC_decoder_hard_ATSC_make(int N_in, int N_out) -> LDPC_decoder_hard_ATSC_sptr
+    LDPC_decoder_hard_ATSC_make(size_t N_in, size_t N_out) -> LDPC_decoder_hard_ATSC_sptr
 
     Return a shared_ptr to a new instance of mack_sdr_rossi::LDPC_decoder_hard_ATSC.
 
     To avoid accidental use of raw pointers, mack_sdr_rossi::LDPC_decoder_hard_ATSC's constructor is in a private implementation class. mack_sdr_rossi::LDPC_decoder_hard_ATSC::make is the public interface for creating new instances.
 
-    Params: (N)
+    Params: (N_in, N_out)
     """
   return _mack_sdr_rossi_swig.LDPC_decoder_hard_ATSC_make(*args, **kwargs)
 
@@ -2376,13 +2376,13 @@ class LDPC_decoder_hard_ATSC_sptr(object):
     __del__ = lambda self : None;
     def make(self, *args, **kwargs):
         """
-        make(LDPC_decoder_hard_ATSC_sptr self, int N_in, int N_out) -> LDPC_decoder_hard_ATSC_sptr
+        make(LDPC_decoder_hard_ATSC_sptr self, size_t N_in, size_t N_out) -> LDPC_decoder_hard_ATSC_sptr
 
         Return a shared_ptr to a new instance of mack_sdr_rossi::LDPC_decoder_hard_ATSC.
 
         To avoid accidental use of raw pointers, mack_sdr_rossi::LDPC_decoder_hard_ATSC's constructor is in a private implementation class. mack_sdr_rossi::LDPC_decoder_hard_ATSC::make is the public interface for creating new instances.
 
-        Params: (N)
+        Params: (N_in, N_out)
         """
         return _mack_sdr_rossi_swig.LDPC_decoder_hard_ATSC_sptr_make(self, *args, **kwargs)
 

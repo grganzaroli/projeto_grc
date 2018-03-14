@@ -7,21 +7,21 @@
   <param>
     <name>N_in</name>
     <key>N_in</key>
-    <type>int</type>
+    <type>raw</type>
   </param>
   <param>
     <name>N_out</name>
     <key>N_out</key>
-    <type>int</type>
+    <type>raw</type>
   </param>
   <sink>
     <name>in</name>
     <type>byte</type>
-    <vlen>$N</vlen>
+    <vlen>$N_in</vlen>
   </sink>
   <source>
     <name>out</name>
     <type>byte</type>
-    <vlen>$K</vlen>
+    <vlen>$N_out</vlen>
   </source>
 </block>

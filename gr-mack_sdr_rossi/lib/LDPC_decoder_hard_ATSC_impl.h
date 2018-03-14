@@ -33,7 +33,7 @@ namespace gr {
       // Nothing to declare in this block.
 
      public:
-      LDPC_decoder_hard_ATSC_impl(int N_in, int N_out);
+      LDPC_decoder_hard_ATSC_impl(size_t N_in, size_t N_out);
       ~LDPC_decoder_hard_ATSC_impl();
 
       // Where all the action really happens

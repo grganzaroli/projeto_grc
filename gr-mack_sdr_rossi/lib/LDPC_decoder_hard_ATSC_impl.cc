@@ -31,7 +31,7 @@ namespace gr {
   namespace mack_sdr_rossi {
 
     LDPC_decoder_hard_ATSC::sptr
-    LDPC_decoder_hard_ATSC::make(int N_in, int N_out)
+    LDPC_decoder_hard_ATSC::make(size_t N_in, size_t N_out)
     {
       return gnuradio::get_initial_sptr
         (new LDPC_decoder_hard_ATSC_impl(N_in, N_out));
@@ -40,10 +40,10 @@ namespace gr {
     /*
      * The private constructor
      */
-    LDPC_decoder_hard_ATSC_impl::LDPC_decoder_hard_ATSC_impl(int N_in, int N_out)
+    LDPC_decoder_hard_ATSC_impl::LDPC_decoder_hard_ATSC_impl(size_t N_in, size_t N_out)
       : gr::block("LDPC_decoder_hard_ATSC",
-              gr::io_signature::make(1, 1, sizeof(unsigned char)*N),
-              gr::io_signature::make(1, 1, sizeof(unsigned char)*K))
+              gr::io_signature::make(1, 1, sizeof(unsigned char)*N_in),
+              gr::io_signature::make(1, 1, sizeof(unsigned char)*N_out))
     {
       N = N_in;
       K = N_out;
