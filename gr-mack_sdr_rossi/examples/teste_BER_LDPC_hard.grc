@@ -105,7 +105,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>64800</value>
+      <value>16200</value>
     </param>
   </block>
   <block>
@@ -186,7 +186,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(952, 284)</value>
+      <value>(952, 436)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -237,7 +237,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(800, 272)</value>
+      <value>(800, 424)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -331,11 +331,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(88, 404)</value>
+      <value>(88, 556)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -441,7 +441,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(48, 476)</value>
+      <value>(48, 628)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -543,7 +543,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(264, 480)</value>
+      <value>(264, 632)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -637,11 +637,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(96, 196)</value>
+      <value>(96, 348)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -684,11 +684,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>True</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(376, 116)</value>
+      <value>(352, 116)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -731,11 +731,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(144, 276)</value>
+      <value>(144, 428)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -833,11 +833,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(288, 372)</value>
+      <value>(288, 524)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -1200,7 +1200,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(312, 260)</value>
+      <value>(312, 412)</value>
     </param>
     <param>
       <key>gui_hint</key>

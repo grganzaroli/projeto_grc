@@ -48,30 +48,30 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="75">
+      <node id="79">
         <label>gr::mack_sdr_rossi::Parity_deinterleaver_ATSC</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1Parity__deinterleaver__ATSC"/>
-        <childnode refid="76" relation="public-inheritance">
+        <childnode refid="80" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="76">
+      <node id="80">
         <label>block</label>
       </node>
-      <node id="77">
+      <node id="81">
         <label>gr::mack_sdr_rossi::Parity_deinterleaver_ATSC_impl</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1Parity__deinterleaver__ATSC__impl"/>
-        <childnode refid="75" relation="public-inheritance">
+        <childnode refid="79" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="78">
+      <node id="82">
         <label>gr::mack_sdr_rossi::Parity_deinterleaver_ATSC</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1Parity__deinterleaver__ATSC"/>
-        <childnode refid="79" relation="public-inheritance">
+        <childnode refid="83" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="79">
+      <node id="83">
         <label>block</label>
       </node>
     </collaborationgraph>

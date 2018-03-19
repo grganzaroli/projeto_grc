@@ -1,0 +1,32 @@
+<block>
+  <name>Ldpc encoder atsc</name>
+  <key>mack_sdr_rossi_LDPC_encoder_ATSC</key>
+  <category>[MACK_SDR_ROSSI]</category>
+  <import>import mack_sdr_rossi</import>
+  <make>mack_sdr_rossi.LDPC_encoder_ATSC($K_ldpc, $N_ldpc, $rate)</make>
+  <param>
+    <name>K_ldpc</name>
+    <key>K_ldpc</key>
+    <type>raw</type>
+  </param>
+  <param>
+    <name>N_ldpc</name>
+    <key>N_ldpc</key>
+    <type>raw</type>
+  </param>
+  <param>
+    <name>Rate</name>
+    <key>rate</key>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+    <vlen>$K_ldpc</vlen>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+    <vlen>$N_ldpc</vlen>
+  </source>
+</block>

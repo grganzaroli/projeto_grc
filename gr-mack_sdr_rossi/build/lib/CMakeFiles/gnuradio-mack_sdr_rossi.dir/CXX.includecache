@@ -12,6 +12,12 @@ mack_sdr_rossi/api.h
 gnuradio/block.h
 -
 
+../include/mack_sdr_rossi/BCH_encoder_ATSC.h
+mack_sdr_rossi/api.h
+-
+gnuradio/block.h
+-
+
 ../include/mack_sdr_rossi/Block_deinterleaver_ATSC.h
 mack_sdr_rossi/api.h
 -
@@ -42,6 +48,12 @@ mack_sdr_rossi/api.h
 gnuradio/block.h
 -
 
+../include/mack_sdr_rossi/LDPC_encoder_ATSC.h
+mack_sdr_rossi/api.h
+-
+gnuradio/block.h
+-
+
 ../include/mack_sdr_rossi/Parity_deinterleaver_ATSC.h
 mack_sdr_rossi/api.h
 -
@@ -65,8 +77,6 @@ gnuradio/io_signature.h
 -
 BCH_decoder_ATSC_impl.h
 /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_decoder_ATSC_impl.h
-bch.h
-/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h
 stdio.h
 -
 string.h
@@ -79,6 +89,32 @@ volk/volk.h
 /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_decoder_ATSC_impl.h
 mack_sdr_rossi/BCH_decoder_ATSC.h
 -
+bch.h
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h
+
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_encoder_ATSC_impl.cc
+config.h
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/config.h
+gnuradio/io_signature.h
+-
+BCH_encoder_ATSC_impl.h
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_encoder_ATSC_impl.h
+bch.h
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h
+stdio.h
+-
+string.h
+-
+cmath
+-
+volk/volk.h
+-
+
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_encoder_ATSC_impl.h
+mack_sdr_rossi/BCH_encoder_ATSC.h
+-
+bch.h
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/bch.h
 
 /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Block_deinterleaver_ATSC_impl.cc
 config.h
@@ -160,6 +196,22 @@ stdio.h
 
 /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_hard_ATSC_impl.h
 mack_sdr_rossi/LDPC_decoder_hard_ATSC.h
+-
+ldpc.h
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h
+
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_encoder_ATSC_impl.cc
+config.h
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/config.h
+gnuradio/io_signature.h
+-
+LDPC_encoder_ATSC_impl.h
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_encoder_ATSC_impl.h
+stdio.h
+-
+
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_encoder_ATSC_impl.h
+mack_sdr_rossi/LDPC_encoder_ATSC.h
 -
 ldpc.h
 /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h

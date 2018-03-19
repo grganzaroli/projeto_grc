@@ -3,32 +3,39 @@
   <compounddef id="LDPC__decoder__ATSC__impl_8h" kind="file">
     <compoundname>LDPC_decoder_ATSC_impl.h</compoundname>
     <includes refid="LDPC__decoder__ATSC_8h" local="no">mack_sdr_rossi/LDPC_decoder_ATSC.h</includes>
+    <includes refid="ldpc_8h" local="yes">ldpc.h</includes>
     <incdepgraph>
-      <node id="92">
+      <node id="96">
         <label>LDPC_decoder_ATSC_impl.h</label>
         <link refid="LDPC_decoder_ATSC_impl.h"/>
-        <childnode refid="93" relation="include">
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
         </childnode>
       </node>
-      <node id="95">
+      <node id="99">
         <label>gnuradio/attributes.h</label>
       </node>
-      <node id="93">
+      <node id="97">
         <label>mack_sdr_rossi/LDPC_decoder_ATSC.h</label>
         <link refid="LDPC__decoder__ATSC_8h"/>
-        <childnode refid="94" relation="include">
+        <childnode refid="98" relation="include">
         </childnode>
-        <childnode refid="96" relation="include">
+        <childnode refid="100" relation="include">
         </childnode>
       </node>
-      <node id="94">
+      <node id="98">
         <label>mack_sdr_rossi/api.h</label>
         <link refid="api_8h"/>
-        <childnode refid="95" relation="include">
+        <childnode refid="99" relation="include">
         </childnode>
       </node>
-      <node id="96">
+      <node id="100">
         <label>gnuradio/block.h</label>
+      </node>
+      <node id="101">
+        <label>ldpc.h</label>
+        <link refid="ldpc_8h"/>
       </node>
     </incdepgraph>
     <innerclass refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl" prot="public">gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl</innerclass>

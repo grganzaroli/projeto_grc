@@ -9,6 +9,7 @@
     <innerfile refid="demap_8h">demap.h</innerfile>
     <innerfile refid="Demapper__ATSC__impl_8h">Demapper_ATSC_impl.h</innerfile>
     <innerfile refid="Group__deinterleaver__ATSC__impl_8h">Group_deinterleaver_ATSC_impl.h</innerfile>
+    <innerfile refid="ldpc_8h">ldpc.h</innerfile>
     <innerfile refid="LDPC__decoder__ATSC__impl_8h">LDPC_decoder_ATSC_impl.h</innerfile>
     <innerfile refid="LDPC__decoder__hard__ATSC__impl_8h">LDPC_decoder_hard_ATSC_impl.h</innerfile>
     <innerfile refid="Parity__deinterleaver__ATSC__impl_8h">Parity_deinterleaver_ATSC_impl.h</innerfile>

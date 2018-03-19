@@ -21,19 +21,23 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC_1a188f8c503fc52692f1b355683c3b3c6c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC_1af9ae1a56004f05694ebc71e56bfe7efa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC_1add89571f705bd1ac1b40d11b1383007e" kindref="member">sptr</ref></type>
         <definition>static sptr gr::mack_sdr_rossi::LDPC_decoder_ATSC::make</definition>
-        <argsstring>(size_t N)</argsstring>
+        <argsstring>(int N_in, int N_out)</argsstring>
         <name>make</name>
         <param>
-          <type>size_t</type>
-          <declname>N</declname>
+          <type>int</type>
+          <declname>N_in</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>N_out</declname>
         </param>
         <briefdescription>
 <para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC" kindref="compound">mack_sdr_rossi::LDPC_decoder_ATSC</ref>. </para>        </briefdescription>
         <detaileddescription>
-<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC" kindref="compound">mack_sdr_rossi::LDPC_decoder_ATSC</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC_1a188f8c503fc52692f1b355683c3b3c6c" kindref="member">mack_sdr_rossi::LDPC_decoder_ATSC::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC" kindref="compound">mack_sdr_rossi::LDPC_decoder_ATSC</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC_1af9ae1a56004f05694ebc71e56bfe7efa" kindref="member">mack_sdr_rossi::LDPC_decoder_ATSC::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/LDPC_decoder_ATSC.h" line="49" column="1"/>
@@ -44,36 +48,36 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="54">
+      <node id="56">
         <label>block</label>
       </node>
-      <node id="53">
+      <node id="55">
         <label>gr::mack_sdr_rossi::LDPC_decoder_ATSC</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC"/>
-        <childnode refid="54" relation="public-inheritance">
+        <childnode refid="56" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="55">
+      <node id="57">
         <label>gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl"/>
-        <childnode refid="53" relation="public-inheritance">
+        <childnode refid="55" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="57">
+      <node id="59">
         <label>block</label>
       </node>
-      <node id="56">
+      <node id="58">
         <label>gr::mack_sdr_rossi::LDPC_decoder_ATSC</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC"/>
-        <childnode refid="57" relation="public-inheritance">
+        <childnode refid="59" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
     <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/LDPC_decoder_ATSC.h" line="37" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/LDPC_decoder_ATSC.h" bodystart="36" bodyend="50"/>
     <listofallmembers>
-      <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC_1a188f8c503fc52692f1b355683c3b3c6c" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_decoder_ATSC</scope><name>make</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC_1af9ae1a56004f05694ebc71e56bfe7efa" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_decoder_ATSC</scope><name>make</name></member>
       <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC_1add89571f705bd1ac1b40d11b1383007e" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_decoder_ATSC</scope><name>sptr</name></member>
     </listofallmembers>
   </compounddef>

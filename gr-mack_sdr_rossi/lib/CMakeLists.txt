@@ -36,7 +36,9 @@ list(APPEND mack_sdr_rossi_sources
     Block_deinterleaver_ATSC_impl.cc
     Group_deinterleaver_ATSC_impl.cc
     LDPC_decoder_ATSC_impl.cc
-    LDPC_decoder_hard_ATSC_impl.cc )
+    LDPC_decoder_hard_ATSC_impl.cc
+    BCH_encoder_ATSC_impl.cc
+    LDPC_encoder_ATSC_impl.cc )
 
 set(mack_sdr_rossi_sources "${mack_sdr_rossi_sources}" PARENT_SCOPE)
 if(NOT mack_sdr_rossi_sources)

@@ -7,7 +7,9 @@
     <member refid="classatsc__interleaver_1ae2b5381490f7bb6fcc8a70ecc5c78f15" kind="variable"><name>q_ldpc</name></member>
     <member refid="classatsc__interleaver_1ad8b8b73f5190c829e64db6b74877017c" kind="variable"><name>mod_size</name></member>
     <member refid="classatsc__interleaver_1aab1475a2af8ceb03a14181db6afb2be5" kind="variable"><name>interleaver_type</name></member>
-    <member refid="classatsc__interleaver_1a8235381550421da5daedcacfec3d2f79" kind="variable"><name>tabela</name></member>
+    <member refid="classatsc__interleaver_1ad5d95224764dddbd23588826eb503b76" kind="variable"><name>tab_size</name></member>
+    <member refid="classatsc__interleaver_1ac5ebcefb01d8caf089be215e0f9f142b" kind="variable"><name>tab</name></member>
+    <member refid="classatsc__interleaver_1ac822cfdbf2ae6a873e61abd0420040ea" kind="variable"><name>tabela</name></member>
     <member refid="classatsc__interleaver_1aac788d5a47dd52084f88c85417e064b1" kind="function"><name>set</name></member>
     <member refid="classatsc__interleaver_1acfed302fad416e70bae2cf35837227fa" kind="function"><name>parity_inter</name></member>
     <member refid="classatsc__interleaver_1ad09cd85b1934f5b0b37bdf201b723145" kind="function"><name>parity_deinter</name></member>
@@ -79,11 +81,12 @@
     <member refid="classdemap_1ac15baf28caae079a72113d443b1b1e22" kind="variable"><name>M</name></member>
     <member refid="classdemap_1ab130e0cd7722b18c5071ed9ffc237ae5" kind="variable"><name>D</name></member>
     <member refid="classdemap_1a111ebb3b0c7e5d31b7e9def5cfb7b74d" kind="variable"><name>tab</name></member>
+    <member refid="classdemap_1a83e86bd5b29b68901015070878c072f6" kind="variable"><name>tabela</name></member>
     <member refid="classdemap_1a15079c81e4723e18df6564bcc7f10c81" kind="variable"><name>var</name></member>
     <member refid="classdemap_1a4ba737fe913e83b0d9fbc346857fdd92" kind="variable"><name>aux_r</name></member>
     <member refid="classdemap_1abd49c740ff0304bfdd7b33592a8d2f30" kind="variable"><name>aux_i</name></member>
     <member refid="classdemap_1a537174563c69e22780cf27f083b14591" kind="variable"><name>aux</name></member>
-    <member refid="classdemap_1a157e656b6d77c675225afbb2373d7499" kind="function"><name>init</name></member>
+    <member refid="classdemap_1a27bd2ddd4d9aa7fccbbb1fb0de84b5c9" kind="function"><name>init</name></member>
     <member refid="classdemap_1abf35aad64d58d29ccd75bfe4b550b47e" kind="function"><name>demapper_soft</name></member>
     <member refid="classdemap_1a3eaceaf28bbd76e9e81d38c2c596531d" kind="function"><name>demapper_hard</name></member>
   </compound>
@@ -93,14 +96,13 @@
   </compound>
   <compound refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl" kind="class"><name>gr::mack_sdr_rossi::Demapper_ATSC_impl</name>
     <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1a8c9167117fbc20069748bdc18f27bf46" kind="variable"><name>demapper</name></member>
-    <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1ae0153abb06b24ecfa0fcad7d3ef58ebe" kind="variable"><name>tab</name></member>
     <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1a23c74c7aa1dfeced7ae26373f4599254" kind="variable"><name>s_in</name></member>
     <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1a5ba39ffe6801f176cb0f3b6ccd88e9a5" kind="variable"><name>s_out</name></member>
     <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1a845c0ac46e0603821b334b076a835b88" kind="function"><name>Demapper_ATSC_impl</name></member>
     <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1a09d137c312f3717963f5a6da6d0359d3" kind="function"><name>~Demapper_ATSC_impl</name></member>
     <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1a88c82e2035ee30653b2f491b866ae6df" kind="function"><name>forecast</name></member>
     <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1a92cfb9a08482c5fba21dfd7718aba0b7" kind="function"><name>general_work</name></member>
-    <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1acec348e987794c1a238eadc378867951" kind="function"><name>DEMAPPER</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl_1aba8e321203bc8d5398fbce7bd3283a67" kind="function"><name>DEMAP</name></member>
   </compound>
   <compound refid="classgr_1_1mack__sdr__rossi_1_1Group__deinterleaver__ATSC" kind="class"><name>gr::mack_sdr_rossi::Group_deinterleaver_ATSC</name>
     <member refid="classgr_1_1mack__sdr__rossi_1_1Group__deinterleaver__ATSC_1aaa1ea4eb127105e875e3297395bc4ef0" kind="typedef"><name>sptr</name></member>
@@ -117,30 +119,58 @@
     <member refid="classgr_1_1mack__sdr__rossi_1_1Group__deinterleaver__ATSC__impl_1ae6f0ca078a36d38dd1650ec57514142d" kind="function"><name>general_work</name></member>
     <member refid="classgr_1_1mack__sdr__rossi_1_1Group__deinterleaver__ATSC__impl_1aa7587e2742bf7fc8a35c8e8d016cb824" kind="function"><name>GWDI</name></member>
   </compound>
+  <compound refid="classldpc" kind="class"><name>ldpc</name>
+    <member refid="classldpc_1af51f4e5f37f82404bf081101c3c45fda" kind="variable"><name>n</name></member>
+    <member refid="classldpc_1af5a97c1d02c280cef1a7e8fe1d95d340" kind="variable"><name>k</name></member>
+    <member refid="classldpc_1ac8d72813aa2ca4cbeed3e23c0fb78579" kind="variable"><name>r</name></member>
+    <member refid="classldpc_1a804c2ae201c22ecd5b63f2d55bbcf0a7" kind="variable"><name>max_it</name></member>
+    <member refid="classldpc_1a293e1b6b140ea8f183ff368259ac5d6c" kind="variable"><name>Q_ldpc</name></member>
+    <member refid="classldpc_1a5f73f1273d81b6376b1a5349038b10d9" kind="variable"><name>tipo</name></member>
+    <member refid="classldpc_1a34ca9fc6db1f58f155776f2d35046a28" kind="variable"><name>C</name></member>
+    <member refid="classldpc_1a98791547e407cbfd418f3197b6d4f2b2" kind="variable"><name>INDX</name></member>
+    <member refid="classldpc_1aec87f31d14f4b753aacdc7a161a68bdf" kind="variable"><name>err</name></member>
+    <member refid="classldpc_1a9f8ccbd8b63c2a3b2415d9cca5d37f01" kind="variable"><name>r_aux</name></member>
+    <member refid="classldpc_1ac2c77e5eca11a7fcea5059f852ac4e87" kind="variable"><name>LLR_aux</name></member>
+    <member refid="classldpc_1acad95cfa7eeadf86d6e09b9853fa55a4" kind="variable"><name>SIN</name></member>
+    <member refid="classldpc_1a33bbd20098606a714bec5c7592a38dd7" kind="variable"><name>p_erros</name></member>
+    <member refid="classldpc_1a7efcad72b02daaed8310e4153830a882" kind="variable"><name>R</name></member>
+    <member refid="classldpc_1addd0eb62799370949f46fc1cc1cf1153" kind="variable"><name>Q</name></member>
+    <member refid="classldpc_1afb0df351c480cb869e0aa58945a92e1d" kind="function"><name>init</name></member>
+    <member refid="classldpc_1a81effac3dcd3610d1b5f2e4ad4730b7e" kind="function"><name>aTanh</name></member>
+    <member refid="classldpc_1a489b8b0089beef16e3d6036d3f72166b" kind="function"><name>alocar_hard</name></member>
+    <member refid="classldpc_1a1fc8f9f71d56b7373f79502543c2e97b" kind="function"><name>alocar_soft</name></member>
+    <member refid="classldpc_1adc49a3a62b0d8ea901902a2a3baf3e79" kind="function"><name>free_hard</name></member>
+    <member refid="classldpc_1a83660ea2a18770709784433fff86973f" kind="function"><name>free_soft</name></member>
+    <member refid="classldpc_1ac2f11ab5008c9124e532addd86733e25" kind="function"><name>decode_hard</name></member>
+    <member refid="classldpc_1a4bcfe86356f8c05e5f70369ca8725cb5" kind="function"><name>decode_soft</name></member>
+  </compound>
   <compound refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC" kind="class"><name>gr::mack_sdr_rossi::LDPC_decoder_ATSC</name>
     <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC_1add89571f705bd1ac1b40d11b1383007e" kind="typedef"><name>sptr</name></member>
-    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC_1a188f8c503fc52692f1b355683c3b3c6c" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC_1af9ae1a56004f05694ebc71e56bfe7efa" kind="function"><name>make</name></member>
   </compound>
   <compound refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl" kind="class"><name>gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl</name>
-    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a951cce13795166e1493593582f2b92b5" kind="variable"><name>N_size</name></member>
-    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a6407e4fc61edfacd6ffc09ff3d43197a" kind="function"><name>LDPC_decoder_ATSC_impl</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a7fa0abf918ea875f882799cc227e1d41" kind="variable"><name>N</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1abaa2f4d56d5c07bcd045405eba3e4e6d" kind="variable"><name>K</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a75e4ef3edcc205236534deaf5d1f7c34" kind="variable"><name>decoder</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a09f13a48d7cfb77c1f647a1dd76d35c2" kind="function"><name>LDPC_decoder_ATSC_impl</name></member>
     <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1ab9b9685631e806d92433135fea44306d" kind="function"><name>~LDPC_decoder_ATSC_impl</name></member>
     <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a55246c653fc0d4a4725c9ad49bfbb290" kind="function"><name>forecast</name></member>
     <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1abf53dd815395566af0727d6650a870ac" kind="function"><name>general_work</name></member>
-    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a3dbe42f2351d3e797c02ac26b10474fe" kind="function"><name>decoder_LDPC</name></member>
-    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1aca81f8584f71dfc542059721e27a8ba8" kind="function"><name>aTanh</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a13a653935da90d92de738e48954f093b" kind="function"><name>decoder_LDPC</name></member>
   </compound>
   <compound refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC" kind="class"><name>gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC</name>
     <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC_1aff06fbc021aa987fd545dd64e1190ff3" kind="typedef"><name>sptr</name></member>
-    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC_1a11e7636030232e35285217fbb122ae53" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC_1a33c20f26e34921ba861ac705d66acb87" kind="function"><name>make</name></member>
   </compound>
   <compound refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl" kind="class"><name>gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC_impl</name>
-    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_1ac704dd8e4132dc7b314a0a91cc04439c" kind="variable"><name>N_size</name></member>
-    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_1af17eec03a4ace94b0d8f1bd5d61955c3" kind="function"><name>LDPC_decoder_hard_ATSC_impl</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_1ae5a293585b2e83c145a61c0845efa235" kind="variable"><name>N</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_1a255684c6078cbdae4e40947d1b585f4a" kind="variable"><name>K</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_1a085038015313c2e29f4716227e21847a" kind="variable"><name>decoder</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_1a3924b3e367c7446a76fb2ddc637fde1d" kind="function"><name>LDPC_decoder_hard_ATSC_impl</name></member>
     <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_1a8c1ce0a879cf17b22683fc1e06248b2e" kind="function"><name>~LDPC_decoder_hard_ATSC_impl</name></member>
     <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_1a432b268b0a3b05f34835247491b4c480" kind="function"><name>forecast</name></member>
     <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_1a78051e35aeaa371bfe1a2f127d252fb9" kind="function"><name>general_work</name></member>
-    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_1ad313d2519d590bc40da87173808b9866" kind="function"><name>decoder_LDPC_hard</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_1a2cf67679d4edb058cf0a7ca1fdf7334f" kind="function"><name>decoder_LDPC_hard</name></member>
   </compound>
   <compound refid="classgr_1_1mack__sdr__rossi_1_1Parity__deinterleaver__ATSC" kind="class"><name>gr::mack_sdr_rossi::Parity_deinterleaver_ATSC</name>
     <member refid="classgr_1_1mack__sdr__rossi_1_1Parity__deinterleaver__ATSC_1a05b23ddd6c83a8d329daf64634af24cf" kind="typedef"><name>sptr</name></member>
@@ -208,6 +238,8 @@
   <compound refid="Group__deinterleaver__ATSC_8h" kind="file"><name>Group_deinterleaver_ATSC.h</name>
   </compound>
   <compound refid="Group__deinterleaver__ATSC__impl_8h" kind="file"><name>Group_deinterleaver_ATSC_impl.h</name>
+  </compound>
+  <compound refid="ldpc_8h" kind="file"><name>ldpc.h</name>
   </compound>
   <compound refid="LDPC__decoder__ATSC_8h" kind="file"><name>LDPC_decoder_ATSC.h</name>
   </compound>

@@ -224,6 +224,33 @@ BCH_decoder_ATSC_impl.cc.s:
 	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_decoder_ATSC_impl.cc.s
 .PHONY : BCH_decoder_ATSC_impl.cc.s
 
+BCH_encoder_ATSC_impl.o: BCH_encoder_ATSC_impl.cc.o
+
+.PHONY : BCH_encoder_ATSC_impl.o
+
+# target to build an object file
+BCH_encoder_ATSC_impl.cc.o:
+	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_encoder_ATSC_impl.cc.o
+.PHONY : BCH_encoder_ATSC_impl.cc.o
+
+BCH_encoder_ATSC_impl.i: BCH_encoder_ATSC_impl.cc.i
+
+.PHONY : BCH_encoder_ATSC_impl.i
+
+# target to preprocess a source file
+BCH_encoder_ATSC_impl.cc.i:
+	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_encoder_ATSC_impl.cc.i
+.PHONY : BCH_encoder_ATSC_impl.cc.i
+
+BCH_encoder_ATSC_impl.s: BCH_encoder_ATSC_impl.cc.s
+
+.PHONY : BCH_encoder_ATSC_impl.s
+
+# target to generate assembly for a file
+BCH_encoder_ATSC_impl.cc.s:
+	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_encoder_ATSC_impl.cc.s
+.PHONY : BCH_encoder_ATSC_impl.cc.s
+
 Block_deinterleaver_ATSC_impl.o: Block_deinterleaver_ATSC_impl.cc.o
 
 .PHONY : Block_deinterleaver_ATSC_impl.o
@@ -358,6 +385,33 @@ LDPC_decoder_hard_ATSC_impl.s: LDPC_decoder_hard_ATSC_impl.cc.s
 LDPC_decoder_hard_ATSC_impl.cc.s:
 	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.s
 .PHONY : LDPC_decoder_hard_ATSC_impl.cc.s
+
+LDPC_encoder_ATSC_impl.o: LDPC_encoder_ATSC_impl.cc.o
+
+.PHONY : LDPC_encoder_ATSC_impl.o
+
+# target to build an object file
+LDPC_encoder_ATSC_impl.cc.o:
+	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_encoder_ATSC_impl.cc.o
+.PHONY : LDPC_encoder_ATSC_impl.cc.o
+
+LDPC_encoder_ATSC_impl.i: LDPC_encoder_ATSC_impl.cc.i
+
+.PHONY : LDPC_encoder_ATSC_impl.i
+
+# target to preprocess a source file
+LDPC_encoder_ATSC_impl.cc.i:
+	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_encoder_ATSC_impl.cc.i
+.PHONY : LDPC_encoder_ATSC_impl.cc.i
+
+LDPC_encoder_ATSC_impl.s: LDPC_encoder_ATSC_impl.cc.s
+
+.PHONY : LDPC_encoder_ATSC_impl.s
+
+# target to generate assembly for a file
+LDPC_encoder_ATSC_impl.cc.s:
+	cd /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build && $(MAKE) -f lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/build.make lib/CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_encoder_ATSC_impl.cc.s
+.PHONY : LDPC_encoder_ATSC_impl.cc.s
 
 Parity_deinterleaver_ATSC_impl.o: Parity_deinterleaver_ATSC_impl.cc.o
 
@@ -593,6 +647,9 @@ help:
 	@echo "... BCH_decoder_ATSC_impl.o"
 	@echo "... BCH_decoder_ATSC_impl.i"
 	@echo "... BCH_decoder_ATSC_impl.s"
+	@echo "... BCH_encoder_ATSC_impl.o"
+	@echo "... BCH_encoder_ATSC_impl.i"
+	@echo "... BCH_encoder_ATSC_impl.s"
 	@echo "... Block_deinterleaver_ATSC_impl.o"
 	@echo "... Block_deinterleaver_ATSC_impl.i"
 	@echo "... Block_deinterleaver_ATSC_impl.s"
@@ -608,6 +665,9 @@ help:
 	@echo "... LDPC_decoder_hard_ATSC_impl.o"
 	@echo "... LDPC_decoder_hard_ATSC_impl.i"
 	@echo "... LDPC_decoder_hard_ATSC_impl.s"
+	@echo "... LDPC_encoder_ATSC_impl.o"
+	@echo "... LDPC_encoder_ATSC_impl.i"
+	@echo "... LDPC_encoder_ATSC_impl.s"
 	@echo "... Parity_deinterleaver_ATSC_impl.o"
 	@echo "... Parity_deinterleaver_ATSC_impl.i"
 	@echo "... Parity_deinterleaver_ATSC_impl.s"

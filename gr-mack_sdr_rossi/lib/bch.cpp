@@ -121,7 +121,7 @@ void bch::set_pol_prim(unsigned char *p_prim)
 }
 
 void bch::set_pol_ger(unsigned char *p_ger)
-{
+{	
 	pol_gerador = p_ger;
 }
 
@@ -226,31 +226,38 @@ void bch::calc_tab_inv()
 	printf("BCH - TABELA INVERSA OK\n");
 }
 
-void bch::encode(unsigned char *u, unsigned char *v)
+void bch::encode(const unsigned char *u, unsigned char *v)
 {
+	//[u] size = k
+	//[v] size = n
+
 	int index_i = 0, index;
+	
+	unsigned char aux_v[n];
+	unsigned char p_g[n-k+1];
 
-	unsigned char *aux_v; //v invertido
-	aux_v = new unsigned char[n+n_extension];
-
-	for(int i = 0; i < n+n_extension; i++)
-		aux_v[i] = 0;
-
-	for(int i = 0; i < sizeof(v)/sizeof(v[0]); i++)
+	for(int i = 0; i < n-k+1; i++)
 	{
-		v[i] = 0;
+		p_g[i] = pol_gerador[n-k-i];
 	}
+	
+	for(int i = 0; i < n; i++)
+		aux_v[i] = 0;
+	
+	for(int i = 0; i < n; i++)
+		v[i] = 0;
 
 	//codificando
-
+	
 	for(int i = 0; i < k; i++)
 	{
-		aux_v[n+n_extension-k+i] = u[i];
+		aux_v[k-i+(n-k)-1] = u[i];
 	}
-
+	
 	index = n-k;
 
-	for(int j = (n+n_extension)-1; j >=0; j--) // encontrar o maior grau do dividendo
+
+	for(int j = n-1; j >=0; j--) // encontrar o maior grau do dividendo
 	{
 		if(aux_v[j] > 0)
 		{
@@ -265,10 +272,10 @@ void bch::encode(unsigned char *u, unsigned char *v)
 
 		for(int j = 0; j < (n-k+1); j++) // para cada elemento do pol_gerador 
 		{
-			aux_v[index_i-index+j] = aux_v[index_i-index+j]^pol_gerador[j];
+			aux_v[index_i-index+j] = aux_v[index_i-index+j]^p_g[j];
 		}
 
-		for(int j = (n+n_extension)-1; j >=0; j--) // encontrar o maior grau do polinomo a ser dividido
+		for(int j = n-1; j >=0; j--) // encontrar o maior grau do polinomo a ser dividido
 		{
 			if(aux_v[j] == 1)
 			{
@@ -279,14 +286,14 @@ void bch::encode(unsigned char *u, unsigned char *v)
 
 	}
 
-	for(int i = 0; i < (n+n_extension); i++)
-	{
-		v[i+k+n_extension] = aux_v[i];
-	}
-
 	for(int i = 0; i < k; i++)
 	{
-		v[i+n_extension] = v[i+n_extension]^u[i];
+		aux_v[i+n-k] = aux_v[i+n-k]^u[k-1-i];
+	}
+
+	for(int i = 0; i < n; i++)
+	{
+		v[i] = aux_v[n-1-i];
 	}
 }
 

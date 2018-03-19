@@ -8,6 +8,8 @@
 /usr/local/include/mack_sdr_rossi/Group_deinterleaver_ATSC.h
 /usr/local/include/mack_sdr_rossi/LDPC_decoder_ATSC.h
 /usr/local/include/mack_sdr_rossi/LDPC_decoder_hard_ATSC.h
+/usr/local/include/mack_sdr_rossi/BCH_encoder_ATSC.h
+/usr/local/include/mack_sdr_rossi/LDPC_encoder_ATSC.h
 /usr/local/lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0
 /usr/local/lib/libgnuradio-mack_sdr_rossi-1.0.0git.so
 /usr/local/lib/libgnuradio-mack_sdr_rossi.so
@@ -29,6 +31,8 @@
 /usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_Group_deinterleaver_ATSC.xml
 /usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_LDPC_decoder_ATSC.xml
 /usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_LDPC_decoder_hard_ATSC.xml
+/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_BCH_encoder_ATSC.xml
+/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_LDPC_encoder_ATSC.xml
 /usr/local/share/doc/gr-mack_sdr_rossi/xml/classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl.xml
 /usr/local/share/doc/gr-mack_sdr_rossi/xml/classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC.xml
 /usr/local/share/doc/gr-mack_sdr_rossi/xml/combine.xslt
@@ -40,12 +44,14 @@
 /usr/local/share/doc/gr-mack_sdr_rossi/xml/atsc__interleaver_8h.xml
 /usr/local/share/doc/gr-mack_sdr_rossi/xml/classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.xml
 /usr/local/share/doc/gr-mack_sdr_rossi/xml/bch_8h.xml
+/usr/local/share/doc/gr-mack_sdr_rossi/xml/classldpc.xml
 /usr/local/share/doc/gr-mack_sdr_rossi/xml/Group__deinterleaver__ATSC_8h.xml
 /usr/local/share/doc/gr-mack_sdr_rossi/xml/classgr_1_1mack__sdr__rossi_1_1Group__deinterleaver__ATSC__impl.xml
 /usr/local/share/doc/gr-mack_sdr_rossi/xml/classgr_1_1mack__sdr__rossi_1_1str__to__vec.xml
 /usr/local/share/doc/gr-mack_sdr_rossi/xml/classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl.xml
 /usr/local/share/doc/gr-mack_sdr_rossi/xml/classgr_1_1mack__sdr__rossi_1_1Block__deinterleaver__ATSC__impl.xml
 /usr/local/share/doc/gr-mack_sdr_rossi/xml/api_8h.xml
+/usr/local/share/doc/gr-mack_sdr_rossi/xml/ldpc_8h.xml
 /usr/local/share/doc/gr-mack_sdr_rossi/xml/Block__deinterleaver__ATSC_8h.xml
 /usr/local/share/doc/gr-mack_sdr_rossi/xml/classatsc__interleaver.xml
 /usr/local/share/doc/gr-mack_sdr_rossi/xml/dir_ba4e2cfdfdb92d307bf07bbbe3b3e4ef.xml
@@ -109,6 +115,7 @@
 /usr/local/share/doc/gr-mack_sdr_rossi/html/nav_f.png
 /usr/local/share/doc/gr-mack_sdr_rossi/html/api_8h.js
 /usr/local/share/doc/gr-mack_sdr_rossi/html/Demapper__ATSC__impl_8h.html
+/usr/local/share/doc/gr-mack_sdr_rossi/html/ldpc_8h_source.html
 /usr/local/share/doc/gr-mack_sdr_rossi/html/classgr_1_1mack__sdr__rossi_1_1Block__deinterleaver__ATSC__impl.html
 /usr/local/share/doc/gr-mack_sdr_rossi/html/str__to__vec_8h.html
 /usr/local/share/doc/gr-mack_sdr_rossi/html/doxygen.css
@@ -143,6 +150,7 @@
 /usr/local/share/doc/gr-mack_sdr_rossi/html/classgr_1_1mack__sdr__rossi_1_1Group__deinterleaver__ATSC__impl.html
 /usr/local/share/doc/gr-mack_sdr_rossi/html/Block__deinterleaver__ATSC_8h.html
 /usr/local/share/doc/gr-mack_sdr_rossi/html/LDPC__decoder__ATSC__impl_8h_source.html
+/usr/local/share/doc/gr-mack_sdr_rossi/html/ldpc_8h.html
 /usr/local/share/doc/gr-mack_sdr_rossi/html/globals.html
 /usr/local/share/doc/gr-mack_sdr_rossi/html/Demapper__ATSC__impl_8h_source.html
 /usr/local/share/doc/gr-mack_sdr_rossi/html/classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl-members.html
@@ -152,6 +160,8 @@
 /usr/local/share/doc/gr-mack_sdr_rossi/html/hierarchy.html
 /usr/local/share/doc/gr-mack_sdr_rossi/html/classbch.html
 /usr/local/share/doc/gr-mack_sdr_rossi/html/open.png
+/usr/local/share/doc/gr-mack_sdr_rossi/html/classldpc.html
+/usr/local/share/doc/gr-mack_sdr_rossi/html/classldpc.js
 /usr/local/share/doc/gr-mack_sdr_rossi/html/demap_8h_source.html
 /usr/local/share/doc/gr-mack_sdr_rossi/html/ftv2folderclosed.png
 /usr/local/share/doc/gr-mack_sdr_rossi/html/classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC.js
@@ -251,6 +261,7 @@
 /usr/local/share/doc/gr-mack_sdr_rossi/html/classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC.png
 /usr/local/share/doc/gr-mack_sdr_rossi/html/classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.js
 /usr/local/share/doc/gr-mack_sdr_rossi/html/classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html
+/usr/local/share/doc/gr-mack_sdr_rossi/html/classldpc-members.html
 /usr/local/share/doc/gr-mack_sdr_rossi/html/ftv2splitbar.png
 /usr/local/share/doc/gr-mack_sdr_rossi/html/classes.html
 /usr/local/share/doc/gr-mack_sdr_rossi/html/navtreeindex0.js

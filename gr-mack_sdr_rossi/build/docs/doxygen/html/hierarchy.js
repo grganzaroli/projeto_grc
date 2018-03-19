@@ -28,5 +28,6 @@ var hierarchy =
         [ "gr::mack_sdr_rossi::str_to_vec_impl", "classgr_1_1mack__sdr__rossi_1_1str__to__vec__impl.html", null ]
       ] ]
     ] ],
-    [ "demap", "classdemap.html", null ]
+    [ "demap", "classdemap.html", null ],
+    [ "ldpc", "classldpc.html", null ]
 ];

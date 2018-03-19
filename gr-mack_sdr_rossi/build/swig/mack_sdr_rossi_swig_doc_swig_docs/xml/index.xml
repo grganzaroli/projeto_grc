@@ -22,7 +22,7 @@
   </compound>
   <compound refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC" kind="class"><name>gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC</name>
     <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC_1aff06fbc021aa987fd545dd64e1190ff3" kind="typedef"><name>sptr</name></member>
-    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC_1a23bd559c6d05cc90abcb9c61534403fe" kind="function"><name>make</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC_1a33c20f26e34921ba861ac705d66acb87" kind="function"><name>make</name></member>
   </compound>
   <compound refid="classgr_1_1mack__sdr__rossi_1_1Parity__deinterleaver__ATSC" kind="class"><name>gr::mack_sdr_rossi::Parity_deinterleaver_ATSC</name>
     <member refid="classgr_1_1mack__sdr__rossi_1_1Parity__deinterleaver__ATSC_1a05b23ddd6c83a8d329daf64634af24cf" kind="typedef"><name>sptr</name></member>

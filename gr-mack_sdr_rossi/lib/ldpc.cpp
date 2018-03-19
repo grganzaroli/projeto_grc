@@ -2323,3 +2323,30 @@ void ldpc::free_soft()
 		delete [] Q[i];
 	delete [] Q;
 }
+
+bool ldpc::encode(const unsigned char *u, unsigned char *v)
+{
+	//zerar v
+	for(int i = 0; i < n; i++)
+		v[i] = 0;
+
+	//copiar mensagem
+	for(int i = 0; i < k; i++)
+	{
+		v[i] = u[i];
+	}
+
+	//calcular paridade
+	for(int i = k; i < n; i++)
+	{
+		for(int j = j; j < k+1; j++)
+		{	
+			if(C[i-k][j] != 65535)
+				v[i] = v[i]^u[C[i-k][j]];
+			else
+				break;
+		}
+	}
+
+	return true;
+}

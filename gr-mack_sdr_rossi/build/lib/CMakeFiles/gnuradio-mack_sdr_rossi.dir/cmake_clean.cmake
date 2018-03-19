@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/gnuradio-mack_sdr_rossi.dir/Group_deinterleaver_ATSC_impl.cc.o"
   "CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_ATSC_impl.cc.o"
   "CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_decoder_hard_ATSC_impl.cc.o"
+  "CMakeFiles/gnuradio-mack_sdr_rossi.dir/BCH_encoder_ATSC_impl.cc.o"
+  "CMakeFiles/gnuradio-mack_sdr_rossi.dir/LDPC_encoder_ATSC_impl.cc.o"
   "libgnuradio-mack_sdr_rossi-1.0.0git.pdb"
   "libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0"
   "libgnuradio-mack_sdr_rossi-1.0.0git.so"

@@ -1,0 +1,368 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classldpc" kind="class" prot="public">
+    <compoundname>ldpc</compoundname>
+    <includes refid="ldpc_8h" local="no">ldpc.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classldpc_1af51f4e5f37f82404bf081101c3c45fda" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short ldpc::n</definition>
+        <argsstring></argsstring>
+        <name>n</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="7" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classldpc_1af5a97c1d02c280cef1a7e8fe1d95d340" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short ldpc::k</definition>
+        <argsstring></argsstring>
+        <name>k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="8" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classldpc_1ac8d72813aa2ca4cbeed3e23c0fb78579" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short ldpc::r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="9" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classldpc_1a804c2ae201c22ecd5b63f2d55bbcf0a7" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short ldpc::max_it</definition>
+        <argsstring></argsstring>
+        <name>max_it</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="10" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classldpc_1a293e1b6b140ea8f183ff368259ac5d6c" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short ldpc::Q_ldpc</definition>
+        <argsstring></argsstring>
+        <name>Q_ldpc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="11" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classldpc_1a5f73f1273d81b6376b1a5349038b10d9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ldpc::tipo</definition>
+        <argsstring></argsstring>
+        <name>tipo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="12" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classldpc_1a34ca9fc6db1f58f155776f2d35046a28" prot="private" static="no" mutable="no">
+        <type>unsigned short **</type>
+        <definition>unsigned short** ldpc::C</definition>
+        <argsstring></argsstring>
+        <name>C</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="14" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classldpc_1a98791547e407cbfd418f3197b6d4f2b2" prot="private" static="no" mutable="no">
+        <type>unsigned short *</type>
+        <definition>unsigned short* ldpc::INDX</definition>
+        <argsstring></argsstring>
+        <name>INDX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="15" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classldpc_1aec87f31d14f4b753aacdc7a161a68bdf" prot="private" static="no" mutable="no">
+        <type>unsigned short **</type>
+        <definition>unsigned short** ldpc::err</definition>
+        <argsstring></argsstring>
+        <name>err</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="17" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classldpc_1a9f8ccbd8b63c2a3b2415d9cca5d37f01" prot="private" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* ldpc::r_aux</definition>
+        <argsstring></argsstring>
+        <name>r_aux</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="18" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classldpc_1ac2c77e5eca11a7fcea5059f852ac4e87" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* ldpc::LLR_aux</definition>
+        <argsstring></argsstring>
+        <name>LLR_aux</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="19" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classldpc_1acad95cfa7eeadf86d6e09b9853fa55a4" prot="private" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* ldpc::SIN</definition>
+        <argsstring></argsstring>
+        <name>SIN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="20" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classldpc_1a33bbd20098606a714bec5c7592a38dd7" prot="private" static="no" mutable="no">
+        <type>unsigned short *</type>
+        <definition>unsigned short* ldpc::p_erros</definition>
+        <argsstring></argsstring>
+        <name>p_erros</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="22" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classldpc_1a7efcad72b02daaed8310e4153830a882" prot="private" static="no" mutable="no">
+        <type>double **</type>
+        <definition>double** ldpc::R</definition>
+        <argsstring></argsstring>
+        <name>R</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="23" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classldpc_1addd0eb62799370949f46fc1cc1cf1153" prot="private" static="no" mutable="no">
+        <type>double **</type>
+        <definition>double** ldpc::Q</definition>
+        <argsstring></argsstring>
+        <name>Q</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="24" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classldpc_1afb0df351c480cb869e0aa58945a92e1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ldpc::init</definition>
+        <argsstring>(unsigned short N, unsigned short K)</argsstring>
+        <name>init</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>K</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classldpc_1a81effac3dcd3610d1b5f2e4ad4730b7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ldpc::aTanh</definition>
+        <argsstring>(double x)</argsstring>
+        <name>aTanh</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="29" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classldpc_1a489b8b0089beef16e3d6036d3f72166b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ldpc::alocar_hard</definition>
+        <argsstring>()</argsstring>
+        <name>alocar_hard</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="31" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classldpc_1a1fc8f9f71d56b7373f79502543c2e97b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ldpc::alocar_soft</definition>
+        <argsstring>()</argsstring>
+        <name>alocar_soft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classldpc_1adc49a3a62b0d8ea901902a2a3baf3e79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ldpc::free_hard</definition>
+        <argsstring>()</argsstring>
+        <name>free_hard</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classldpc_1a83660ea2a18770709784433fff86973f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ldpc::free_soft</definition>
+        <argsstring>()</argsstring>
+        <name>free_soft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classldpc_1ac2f11ab5008c9124e532addd86733e25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ldpc::decode_hard</definition>
+        <argsstring>(const unsigned char *r, unsigned char *u)</argsstring>
+        <name>decode_hard</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classldpc_1a4bcfe86356f8c05e5f70369ca8725cb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ldpc::decode_soft</definition>
+        <argsstring>(const float *r, unsigned char *u)</argsstring>
+        <name>decode_soft</name>
+        <param>
+          <type>const float *</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="38" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="5" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="4" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classldpc_1a489b8b0089beef16e3d6036d3f72166b" prot="public" virt="non-virtual"><scope>ldpc</scope><name>alocar_hard</name></member>
+      <member refid="classldpc_1a1fc8f9f71d56b7373f79502543c2e97b" prot="public" virt="non-virtual"><scope>ldpc</scope><name>alocar_soft</name></member>
+      <member refid="classldpc_1a81effac3dcd3610d1b5f2e4ad4730b7e" prot="public" virt="non-virtual"><scope>ldpc</scope><name>aTanh</name></member>
+      <member refid="classldpc_1a34ca9fc6db1f58f155776f2d35046a28" prot="private" virt="non-virtual"><scope>ldpc</scope><name>C</name></member>
+      <member refid="classldpc_1ac2f11ab5008c9124e532addd86733e25" prot="public" virt="non-virtual"><scope>ldpc</scope><name>decode_hard</name></member>
+      <member refid="classldpc_1a4bcfe86356f8c05e5f70369ca8725cb5" prot="public" virt="non-virtual"><scope>ldpc</scope><name>decode_soft</name></member>
+      <member refid="classldpc_1aec87f31d14f4b753aacdc7a161a68bdf" prot="private" virt="non-virtual"><scope>ldpc</scope><name>err</name></member>
+      <member refid="classldpc_1adc49a3a62b0d8ea901902a2a3baf3e79" prot="public" virt="non-virtual"><scope>ldpc</scope><name>free_hard</name></member>
+      <member refid="classldpc_1a83660ea2a18770709784433fff86973f" prot="public" virt="non-virtual"><scope>ldpc</scope><name>free_soft</name></member>
+      <member refid="classldpc_1a98791547e407cbfd418f3197b6d4f2b2" prot="private" virt="non-virtual"><scope>ldpc</scope><name>INDX</name></member>
+      <member refid="classldpc_1afb0df351c480cb869e0aa58945a92e1d" prot="public" virt="non-virtual"><scope>ldpc</scope><name>init</name></member>
+      <member refid="classldpc_1af5a97c1d02c280cef1a7e8fe1d95d340" prot="private" virt="non-virtual"><scope>ldpc</scope><name>k</name></member>
+      <member refid="classldpc_1ac2c77e5eca11a7fcea5059f852ac4e87" prot="private" virt="non-virtual"><scope>ldpc</scope><name>LLR_aux</name></member>
+      <member refid="classldpc_1a804c2ae201c22ecd5b63f2d55bbcf0a7" prot="private" virt="non-virtual"><scope>ldpc</scope><name>max_it</name></member>
+      <member refid="classldpc_1af51f4e5f37f82404bf081101c3c45fda" prot="private" virt="non-virtual"><scope>ldpc</scope><name>n</name></member>
+      <member refid="classldpc_1a33bbd20098606a714bec5c7592a38dd7" prot="private" virt="non-virtual"><scope>ldpc</scope><name>p_erros</name></member>
+      <member refid="classldpc_1addd0eb62799370949f46fc1cc1cf1153" prot="private" virt="non-virtual"><scope>ldpc</scope><name>Q</name></member>
+      <member refid="classldpc_1a293e1b6b140ea8f183ff368259ac5d6c" prot="private" virt="non-virtual"><scope>ldpc</scope><name>Q_ldpc</name></member>
+      <member refid="classldpc_1a7efcad72b02daaed8310e4153830a882" prot="private" virt="non-virtual"><scope>ldpc</scope><name>R</name></member>
+      <member refid="classldpc_1ac8d72813aa2ca4cbeed3e23c0fb78579" prot="private" virt="non-virtual"><scope>ldpc</scope><name>r</name></member>
+      <member refid="classldpc_1a9f8ccbd8b63c2a3b2415d9cca5d37f01" prot="private" virt="non-virtual"><scope>ldpc</scope><name>r_aux</name></member>
+      <member refid="classldpc_1acad95cfa7eeadf86d6e09b9853fa55a4" prot="private" virt="non-virtual"><scope>ldpc</scope><name>SIN</name></member>
+      <member refid="classldpc_1a5f73f1273d81b6376b1a5349038b10d9" prot="private" virt="non-virtual"><scope>ldpc</scope><name>tipo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -37,6 +37,8 @@ public:
 	bool decode_hard(const unsigned char *r, unsigned char *u); //decodifica [r] em [u] -> hard-decision
 	bool decode_soft(const float *r, unsigned char *u); //decodifica [r] em [u] -> soft-decision
 
+	bool encode(const unsigned char *u, unsigned char *v); //codifica [u] em [v]
+
 };
 
 #endif

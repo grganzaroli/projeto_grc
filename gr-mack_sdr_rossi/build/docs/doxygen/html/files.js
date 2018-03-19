@@ -34,6 +34,9 @@ var files =
     [ "Group_deinterleaver_ATSC_impl.h", "Group__deinterleaver__ATSC__impl_8h.html", [
       [ "Group_deinterleaver_ATSC_impl", "classgr_1_1mack__sdr__rossi_1_1Group__deinterleaver__ATSC__impl.html", "classgr_1_1mack__sdr__rossi_1_1Group__deinterleaver__ATSC__impl" ]
     ] ],
+    [ "ldpc.h", "ldpc_8h.html", [
+      [ "ldpc", "classldpc.html", "classldpc" ]
+    ] ],
     [ "LDPC_decoder_ATSC.h", "LDPC__decoder__ATSC_8h.html", [
       [ "LDPC_decoder_ATSC", "classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC.html", "classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC" ]
     ] ],

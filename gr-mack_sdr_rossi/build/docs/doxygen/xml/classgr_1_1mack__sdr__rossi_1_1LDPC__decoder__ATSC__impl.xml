@@ -5,11 +5,11 @@
     <basecompoundref refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC" prot="public" virt="non-virtual">gr::mack_sdr_rossi::LDPC_decoder_ATSC</basecompoundref>
     <includes refid="LDPC__decoder__ATSC__impl_8h" local="no">LDPC_decoder_ATSC_impl.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a951cce13795166e1493593582f2b92b5" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a7fa0abf918ea875f882799cc227e1d41" prot="public" static="no" mutable="no">
         <type>int</type>
-        <definition>int gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl::N_size</definition>
+        <definition>int gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl::N</definition>
         <argsstring></argsstring>
-        <name>N_size</name>
+        <name>N</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -18,16 +18,46 @@
         </inbodydescription>
         <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.h" line="51" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.h" bodystart="51" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1abaa2f4d56d5c07bcd045405eba3e4e6d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl::K</definition>
+        <argsstring></argsstring>
+        <name>K</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.h" line="52" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a75e4ef3edcc205236534deaf5d1f7c34" prot="public" static="no" mutable="no">
+        <type><ref refid="classldpc" kindref="compound">ldpc</ref></type>
+        <definition>ldpc gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl::decoder</definition>
+        <argsstring></argsstring>
+        <name>decoder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.h" line="54" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a6407e4fc61edfacd6ffc09ff3d43197a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a09f13a48d7cfb77c1f647a1dd76d35c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl::LDPC_decoder_ATSC_impl</definition>
-        <argsstring>(size_t N)</argsstring>
+        <argsstring>(int N_in, int N_out)</argsstring>
         <name>LDPC_decoder_ATSC_impl</name>
         <param>
-          <type>size_t</type>
-          <declname>N</declname>
+          <type>int</type>
+          <declname>N_in</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>N_out</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -35,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.h" line="35" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.h" line="36" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1ab9b9685631e806d92433135fea44306d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -48,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.h" line="36" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.h" line="37" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a55246c653fc0d4a4725c9ad49bfbb290" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -69,7 +99,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.h" line="39" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.h" line="40" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1abf53dd815395566af0727d6650a870ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -98,37 +128,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.h" line="41" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.h" line="42" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a3dbe42f2351d3e797c02ac26b10474fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a13a653935da90d92de738e48954f093b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl::decoder_LDPC</definition>
-        <argsstring>(const float *in, char *out)</argsstring>
+        <argsstring>(const float *in, unsigned char *out)</argsstring>
         <name>decoder_LDPC</name>
         <param>
           <type>const float *</type>
           <declname>in</declname>
         </param>
         <param>
-          <type>char *</type>
+          <type>unsigned char *</type>
           <declname>out</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.h" line="47" column="1"/>
-      </memberdef>
-      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1aca81f8584f71dfc542059721e27a8ba8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>double</type>
-        <definition>double gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl::aTanh</definition>
-        <argsstring>(double x)</argsstring>
-        <name>aTanh</name>
-        <param>
-          <type>double</type>
-          <declname>x</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -144,48 +157,56 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="60">
+      <node id="62">
         <label>block</label>
       </node>
-      <node id="59">
+      <node id="61">
         <label>gr::mack_sdr_rossi::LDPC_decoder_ATSC</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC"/>
-        <childnode refid="60" relation="public-inheritance">
+        <childnode refid="62" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="58">
+      <node id="60">
         <label>gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl"/>
-        <childnode refid="59" relation="public-inheritance">
+        <childnode refid="61" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="63">
+      <node id="65">
         <label>block</label>
       </node>
-      <node id="62">
+      <node id="66">
+        <label>ldpc</label>
+        <link refid="classldpc"/>
+      </node>
+      <node id="64">
         <label>gr::mack_sdr_rossi::LDPC_decoder_ATSC</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC"/>
-        <childnode refid="63" relation="public-inheritance">
+        <childnode refid="65" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="61">
+      <node id="63">
         <label>gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl"/>
-        <childnode refid="62" relation="public-inheritance">
+        <childnode refid="64" relation="public-inheritance">
+        </childnode>
+        <childnode refid="66" relation="usage">
+          <edgelabel>decoder</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.h" line="30" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.h" bodystart="29" bodyend="52"/>
+    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.h" line="31" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_decoder_ATSC_impl.h" bodystart="30" bodyend="55"/>
     <listofallmembers>
-      <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1aca81f8584f71dfc542059721e27a8ba8" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl</scope><name>aTanh</name></member>
-      <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a3dbe42f2351d3e797c02ac26b10474fe" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl</scope><name>decoder_LDPC</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a75e4ef3edcc205236534deaf5d1f7c34" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl</scope><name>decoder</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a13a653935da90d92de738e48954f093b" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl</scope><name>decoder_LDPC</name></member>
       <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a55246c653fc0d4a4725c9ad49bfbb290" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl</scope><name>forecast</name></member>
       <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1abf53dd815395566af0727d6650a870ac" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl</scope><name>general_work</name></member>
-      <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a6407e4fc61edfacd6ffc09ff3d43197a" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl</scope><name>LDPC_decoder_ATSC_impl</name></member>
-      <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC_1a188f8c503fc52692f1b355683c3b3c6c" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl</scope><name>make</name></member>
-      <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a951cce13795166e1493593582f2b92b5" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl</scope><name>N_size</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1abaa2f4d56d5c07bcd045405eba3e4e6d" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl</scope><name>K</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a09f13a48d7cfb77c1f647a1dd76d35c2" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl</scope><name>LDPC_decoder_ATSC_impl</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC_1af9ae1a56004f05694ebc71e56bfe7efa" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1a7fa0abf918ea875f882799cc227e1d41" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl</scope><name>N</name></member>
       <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC_1add89571f705bd1ac1b40d11b1383007e" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl</scope><name>sptr</name></member>
       <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__ATSC__impl_1ab9b9685631e806d92433135fea44306d" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_decoder_ATSC_impl</scope><name>~LDPC_decoder_ATSC_impl</name></member>
     </listofallmembers>

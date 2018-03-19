@@ -55,7 +55,7 @@ $(document).ready(function(){initNavTree('LDPC__decoder__hard__ATSC__impl_8h_sou
 <div class="contents">
 <a href="LDPC__decoder__hard__ATSC__impl_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- c++ -*- */</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">/* </span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2017 &lt;+YOU OR YOUR COMPANY+&gt;.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2018 &lt;+YOU OR YOUR COMPANY+&gt;.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * </span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * This is free software; you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * it under the terms of the GNU General Public License as published by</span></div>
@@ -77,55 +77,63 @@ $(document).ready(function(){initNavTree('LDPC__decoder__hard__ATSC__impl_8h_sou
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define INCLUDED_MACK_SDR_ROSSI_LDPC_DECODER_HARD_ATSC_IMPL_H</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="LDPC__decoder__hard__ATSC_8h.html">mack_sdr_rossi/LDPC_decoder_hard_ATSC.h</a>&gt;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>gr {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">namespace </span>mack_sdr_rossi {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html">   29</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html">LDPC_decoder_hard_ATSC_impl</a> : <span class="keyword">public</span> <a class="code" href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC.html">LDPC_decoder_hard_ATSC</a></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;     <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="comment">// Nothing to declare in this block.</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;     <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <a class="code" href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#af17eec03a4ace94b0d8f1bd5d61955c3">LDPC_decoder_hard_ATSC_impl</a>(<span class="keywordtype">size_t</span> N);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <a class="code" href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#a8c1ce0a879cf17b22683fc1e06248b2e">~LDPC_decoder_hard_ATSC_impl</a>();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <span class="comment">// Where all the action really happens</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#a432b268b0a3b05f34835247491b4c480">forecast</a> (<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items_required);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      <span class="keywordtype">int</span> <a class="code" href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#a78051e35aeaa371bfe1a2f127d252fb9">general_work</a>(<span class="keywordtype">int</span> noutput_items,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;           gr_vector_int &amp;ninput_items,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;           gr_vector_const_void_star &amp;input_items,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;           gr_vector_void_star &amp;output_items);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="comment">//Funções</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#ad313d2519d590bc40da87173808b9866">decoder_LDPC_hard</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *in, <span class="keywordtype">char</span> *out);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="comment">//Variaveis</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#ac704dd8e4132dc7b314a0a91cc04439c">   50</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#ac704dd8e4132dc7b314a0a91cc04439c">N_size</a>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    };</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ldpc_8h.html">ldpc.h</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span>gr {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">namespace </span>mack_sdr_rossi {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html">   30</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html">LDPC_decoder_hard_ATSC_impl</a> : <span class="keyword">public</span> <a class="code" href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC.html">LDPC_decoder_hard_ATSC</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;     <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <span class="comment">// Nothing to declare in this block.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;     <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      <a class="code" href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#a3924b3e367c7446a76fb2ddc637fde1d">LDPC_decoder_hard_ATSC_impl</a>(<span class="keywordtype">size_t</span> N_in, <span class="keywordtype">size_t</span> N_out);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <a class="code" href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#a8c1ce0a879cf17b22683fc1e06248b2e">~LDPC_decoder_hard_ATSC_impl</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <span class="comment">// Where all the action really happens</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#a432b268b0a3b05f34835247491b4c480">forecast</a> (<span class="keywordtype">int</span> noutput_items, gr_vector_int &amp;ninput_items_required);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <span class="keywordtype">int</span> <a class="code" href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#a78051e35aeaa371bfe1a2f127d252fb9">general_work</a>(<span class="keywordtype">int</span> noutput_items,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;           gr_vector_int &amp;ninput_items,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;           gr_vector_const_void_star &amp;input_items,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;           gr_vector_void_star &amp;output_items);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="comment">//Funções</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keywordtype">void</span> <a class="code" href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#a2cf67679d4edb058cf0a7ca1fdf7334f">decoder_LDPC_hard</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *in, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *out);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="comment">//Variaveis</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#ae5a293585b2e83c145a61c0845efa235">   51</a></span>&#160;      <span class="keywordtype">int</span> <a class="code" href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#ae5a293585b2e83c145a61c0845efa235">N</a>, <a class="code" href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#a255684c6078cbdae4e40947d1b585f4a">K</a>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  } <span class="comment">// namespace mack_sdr_rossi</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;} <span class="comment">// namespace gr</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_MACK_SDR_ROSSI_LDPC_DECODER_HARD_ATSC_IMPL_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span></div>
-<div class="ttc" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_html_ad313d2519d590bc40da87173808b9866"><div class="ttname"><a href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#ad313d2519d590bc40da87173808b9866">gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC_impl::decoder_LDPC_hard</a></div><div class="ttdeci">void decoder_LDPC_hard(const char *in, char *out)</div></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#a085038015313c2e29f4716227e21847a">   53</a></span>&#160;      <a class="code" href="classldpc.html">ldpc</a> <a class="code" href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#a085038015313c2e29f4716227e21847a">decoder</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    };</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  } <span class="comment">// namespace mack_sdr_rossi</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;} <span class="comment">// namespace gr</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INCLUDED_MACK_SDR_ROSSI_LDPC_DECODER_HARD_ATSC_IMPL_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span></div>
+<div class="ttc" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_html_a3924b3e367c7446a76fb2ddc637fde1d"><div class="ttname"><a href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#a3924b3e367c7446a76fb2ddc637fde1d">gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC_impl::LDPC_decoder_hard_ATSC_impl</a></div><div class="ttdeci">LDPC_decoder_hard_ATSC_impl(size_t N_in, size_t N_out)</div></div>
 <div class="ttc" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_html_a78051e35aeaa371bfe1a2f127d252fb9"><div class="ttname"><a href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#a78051e35aeaa371bfe1a2f127d252fb9">gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC_impl::general_work</a></div><div class="ttdeci">int general_work(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</div></div>
 <div class="ttc" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_html_a8c1ce0a879cf17b22683fc1e06248b2e"><div class="ttname"><a href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#a8c1ce0a879cf17b22683fc1e06248b2e">gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC_impl::~LDPC_decoder_hard_ATSC_impl</a></div><div class="ttdeci">~LDPC_decoder_hard_ATSC_impl()</div></div>
-<div class="ttc" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_html_af17eec03a4ace94b0d8f1bd5d61955c3"><div class="ttname"><a href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#af17eec03a4ace94b0d8f1bd5d61955c3">gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC_impl::LDPC_decoder_hard_ATSC_impl</a></div><div class="ttdeci">LDPC_decoder_hard_ATSC_impl(size_t N)</div></div>
 <div class="ttc" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC_html"><div class="ttname"><a href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC.html">gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC</a></div><div class="ttdoc">&lt;+description of block+&gt; </div><div class="ttdef"><b>Definition:</b> LDPC_decoder_hard_ATSC.h:36</div></div>
 <div class="ttc" id="LDPC__decoder__hard__ATSC_8h_html"><div class="ttname"><a href="LDPC__decoder__hard__ATSC_8h.html">LDPC_decoder_hard_ATSC.h</a></div></div>
-<div class="ttc" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_html_ac704dd8e4132dc7b314a0a91cc04439c"><div class="ttname"><a href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#ac704dd8e4132dc7b314a0a91cc04439c">gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC_impl::N_size</a></div><div class="ttdeci">int N_size</div><div class="ttdef"><b>Definition:</b> LDPC_decoder_hard_ATSC_impl.h:50</div></div>
+<div class="ttc" id="classldpc_html"><div class="ttname"><a href="classldpc.html">ldpc</a></div><div class="ttdef"><b>Definition:</b> ldpc.h:4</div></div>
 <div class="ttc" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_html_a432b268b0a3b05f34835247491b4c480"><div class="ttname"><a href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#a432b268b0a3b05f34835247491b4c480">gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC_impl::forecast</a></div><div class="ttdeci">void forecast(int noutput_items, gr_vector_int &amp;ninput_items_required)</div></div>
-<div class="ttc" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_html"><div class="ttname"><a href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html">gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC_impl</a></div><div class="ttdef"><b>Definition:</b> LDPC_decoder_hard_ATSC_impl.h:29</div></div>
+<div class="ttc" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_html_ae5a293585b2e83c145a61c0845efa235"><div class="ttname"><a href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#ae5a293585b2e83c145a61c0845efa235">gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC_impl::N</a></div><div class="ttdeci">int N</div><div class="ttdef"><b>Definition:</b> LDPC_decoder_hard_ATSC_impl.h:51</div></div>
+<div class="ttc" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_html_a085038015313c2e29f4716227e21847a"><div class="ttname"><a href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#a085038015313c2e29f4716227e21847a">gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC_impl::decoder</a></div><div class="ttdeci">ldpc decoder</div><div class="ttdef"><b>Definition:</b> LDPC_decoder_hard_ATSC_impl.h:53</div></div>
+<div class="ttc" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_html"><div class="ttname"><a href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html">gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC_impl</a></div><div class="ttdef"><b>Definition:</b> LDPC_decoder_hard_ATSC_impl.h:30</div></div>
+<div class="ttc" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_html_a255684c6078cbdae4e40947d1b585f4a"><div class="ttname"><a href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#a255684c6078cbdae4e40947d1b585f4a">gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC_impl::K</a></div><div class="ttdeci">int K</div><div class="ttdef"><b>Definition:</b> LDPC_decoder_hard_ATSC_impl.h:51</div></div>
+<div class="ttc" id="ldpc_8h_html"><div class="ttname"><a href="ldpc_8h.html">ldpc.h</a></div></div>
+<div class="ttc" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl_html_a2cf67679d4edb058cf0a7ca1fdf7334f"><div class="ttname"><a href="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl.html#a2cf67679d4edb058cf0a7ca1fdf7334f">gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC_impl::decoder_LDPC_hard</a></div><div class="ttdeci">void decoder_LDPC_hard(const unsigned char *in, unsigned char *out)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="LDPC__decoder__hard__ATSC__impl_8h.html">LDPC_decoder_hard_ATSC_impl.h</a></li>
-    <li class="footer">Generated on Tue Mar 6 2018 13:08:24 for GNU Radio&#39;s MACK_SDR_ROSSI Package by
+    <li class="footer">Generated on Fri Mar 16 2018 11:30:37 for GNU Radio&#39;s MACK_SDR_ROSSI Package by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

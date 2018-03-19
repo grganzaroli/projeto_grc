@@ -1,0 +1,27 @@
+<block>
+  <name>Bch encoder atsc</name>
+  <key>mack_sdr_rossi_BCH_encoder_ATSC</key>
+  <category>[MACK_SDR_ROSSI]</category>
+  <import>import mack_sdr_rossi</import>
+  <make>mack_sdr_rossi.BCH_encoder_ATSC($K, $N)</make>
+  <param>
+    <name>K</name>
+    <key>K</key>
+    <type>raw</type>
+  </param>
+  <param>
+    <name>N</name>
+    <key>N</key>
+    <type>raw</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+    <vlen>$K</vlen>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+    <vlen>$N</vlen>
+  </source>
+</block>

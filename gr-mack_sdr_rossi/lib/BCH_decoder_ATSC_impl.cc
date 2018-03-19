@@ -24,7 +24,6 @@
 
 #include <gnuradio/io_signature.h>
 #include "BCH_decoder_ATSC_impl.h"
-#include "bch.h"
 #include <stdio.h>
 #include <string.h>
 #include <cmath>
@@ -38,8 +37,8 @@
 #define k_s 10632	
 #define t_s 12
 unsigned char pol_gerador_s[169] = {1,0,1,0,0,0,0,0,0,0,1,1,0,0,0,1,0,1,1,0,1,1,0,1,1,1,1,1,0,1,0,1,0,1,0,0,1,1,0,0,0,0,1,1,0,1,0,0,1,1,0,1,1,
-0,0,1,0,0,1,1,0,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,0,0,0,1,1,1,0,1,0,0,0,1,1,1,0,0,1,0,0,0,0,0,1,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,0,1,1,
-1,1,1,1,1,0,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,0,0,1,0,0,0,1,1,0,0,1,0,0,0,0,0,1,0,1,1,0,1,0,0,1,0,1}; //(norma, dvbt2 encoder grc)
+0,0,1,0,0,1,1,0,0,0,1,0,1,1,0,0,1,1,0,1,0,0,1,0,0,0,1,1,1,0,1,0,0,0,1,1,1,0,0,1,0,0,0,0,0,1,1,0,1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,0,1,1,1,1,1,1,1,
+0,0,1,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,0,0,1,0,0,0,1,1,0,0,1,0,0,0,0,0,1,0,1,1,0,1,0,0,1,0,1}; //(norma, dvbt2 encoder grc)
 
 unsigned char pol_primitivo_s[m_s+1] = {1,1,0,1,0,1,0,0,0,0,0,0,0,0,1}; // MATLAB
 
@@ -56,8 +55,6 @@ unsigned char pol_gerador_n[193] = {1,0,1,0,0,1,1,1,0,0,0,1,0,0,1,1,0,0,0,0,0,1,
 1,1,1,0,0,1,1,1}; //(meu calculo - matlab, victor)
 
 unsigned char pol_primitivo_n[m_n+1] = {1,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1};
-
-bch decoder;
 
 namespace gr {
   namespace mack_sdr_rossi {
@@ -117,7 +114,6 @@ namespace gr {
     //ESCREVER FUNÇÃO AQUI
     void BCH_decoder_ATSC_impl::decoder_BCH(const unsigned char *in, unsigned char *out)
     {	
-
       int n_err;
       unsigned char r[N_size];
       for(int i = 0; i < N_size; i++)

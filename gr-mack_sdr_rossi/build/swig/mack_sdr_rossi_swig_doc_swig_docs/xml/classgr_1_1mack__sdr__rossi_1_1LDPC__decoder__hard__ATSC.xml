@@ -20,23 +20,23 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC_1a23bd559c6d05cc90abcb9c61534403fe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC_1a33c20f26e34921ba861ac705d66acb87" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC_1aff06fbc021aa987fd545dd64e1190ff3" kindref="member">sptr</ref></type>
         <definition>static sptr gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC::make</definition>
-        <argsstring>(int N_in, int N_out)</argsstring>
+        <argsstring>(size_t N_in, size_t N_out)</argsstring>
         <name>make</name>
         <param>
-          <type>int</type>
+          <type>size_t</type>
           <declname>N_in</declname>
         </param>
         <param>
-          <type>int</type>
+          <type>size_t</type>
           <declname>N_out</declname>
         </param>
         <briefdescription>
 <para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC" kindref="compound">mack_sdr_rossi::LDPC_decoder_hard_ATSC</ref>. </para>        </briefdescription>
         <detaileddescription>
-<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC" kindref="compound">mack_sdr_rossi::LDPC_decoder_hard_ATSC</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC_1a23bd559c6d05cc90abcb9c61534403fe" kindref="member">mack_sdr_rossi::LDPC_decoder_hard_ATSC::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC" kindref="compound">mack_sdr_rossi::LDPC_decoder_hard_ATSC</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC_1a33c20f26e34921ba861ac705d66acb87" kindref="member">mack_sdr_rossi::LDPC_decoder_hard_ATSC::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/LDPC_decoder_hard_ATSC.h" line="49" column="1"/>
@@ -70,7 +70,7 @@
     </collaborationgraph>
     <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/LDPC_decoder_hard_ATSC.h" line="37" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/LDPC_decoder_hard_ATSC.h" bodystart="36" bodyend="50"/>
     <listofallmembers>
-      <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC_1a23bd559c6d05cc90abcb9c61534403fe" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC</scope><name>make</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC_1a33c20f26e34921ba861ac705d66acb87" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC</scope><name>make</name></member>
       <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC_1aff06fbc021aa987fd545dd64e1190ff3" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC</scope><name>sptr</name></member>
     </listofallmembers>
   </compounddef>

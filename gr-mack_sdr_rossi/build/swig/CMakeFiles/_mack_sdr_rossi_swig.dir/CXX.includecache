@@ -12,6 +12,12 @@ mack_sdr_rossi/api.h
 gnuradio/block.h
 -
 
+../include/mack_sdr_rossi/BCH_encoder_ATSC.h
+mack_sdr_rossi/api.h
+-
+gnuradio/block.h
+-
+
 ../include/mack_sdr_rossi/Block_deinterleaver_ATSC.h
 mack_sdr_rossi/api.h
 -
@@ -37,6 +43,12 @@ gnuradio/block.h
 -
 
 ../include/mack_sdr_rossi/LDPC_decoder_hard_ATSC.h
+mack_sdr_rossi/api.h
+-
+gnuradio/block.h
+-
+
+../include/mack_sdr_rossi/LDPC_encoder_ATSC.h
 mack_sdr_rossi/api.h
 -
 gnuradio/block.h
@@ -117,6 +129,10 @@ mack_sdr_rossi/LDPC_decoder_ATSC.h
 /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi/LDPC_decoder_ATSC.h
 mack_sdr_rossi/LDPC_decoder_hard_ATSC.h
 /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi/LDPC_decoder_hard_ATSC.h
+mack_sdr_rossi/BCH_encoder_ATSC.h
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi/BCH_encoder_ATSC.h
+mack_sdr_rossi/LDPC_encoder_ATSC.h
+/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/swig/mack_sdr_rossi/LDPC_encoder_ATSC.h
 float.h
 -
 math.h

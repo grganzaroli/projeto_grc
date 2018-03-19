@@ -29,5 +29,7 @@ install(FILES
     Block_deinterleaver_ATSC.h
     Group_deinterleaver_ATSC.h
     LDPC_decoder_ATSC.h
-    LDPC_decoder_hard_ATSC.h DESTINATION include/mack_sdr_rossi
+    LDPC_decoder_hard_ATSC.h
+    BCH_encoder_ATSC.h
+    LDPC_encoder_ATSC.h DESTINATION include/mack_sdr_rossi
 )

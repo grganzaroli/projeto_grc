@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="ldpc_8h" kind="file">
+    <compoundname>ldpc.h</compoundname>
+    <includedby refid="LDPC__decoder__ATSC__impl_8h" local="yes">LDPC_decoder_ATSC_impl.h</includedby>
+    <includedby refid="LDPC__decoder__hard__ATSC__impl_8h" local="yes">LDPC_decoder_hard_ATSC_impl.h</includedby>
+    <invincdepgraph>
+      <node id="88">
+        <label>LDPC_decoder_ATSC_impl.h</label>
+        <link refid="LDPC__decoder__ATSC__impl_8h"/>
+      </node>
+      <node id="89">
+        <label>LDPC_decoder_hard_ATSC_impl.h</label>
+        <link refid="LDPC__decoder__hard__ATSC__impl_8h"/>
+      </node>
+      <node id="87">
+        <label>ldpc.h</label>
+        <link refid="ldpc.h"/>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classldpc" prot="public">ldpc</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h"/>
+  </compounddef>
+</doxygen>

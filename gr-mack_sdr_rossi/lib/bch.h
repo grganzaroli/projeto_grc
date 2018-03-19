@@ -4,8 +4,8 @@
 class bch
 {
 private:
-	int n; //quantidade de bits de entrada
-	int k; //quantidade de bits de saída
+	int n; //quantidade de bits mensagem+paridade
+	int k; //quantidade de bits de mensagem
 	int t; //capacidade de correção de erros
 	int m; //ordem do decodificador
 	int n_extension; //numero de zeros a adicionar ao inicio da palavra-codigo recebida para obter n+n_extension = (2^m)-1
@@ -26,7 +26,7 @@ public:
 	void calc_gf(); // calculo do campo de galois
 	void calc_tab_inv(); // calculo da tabela inversa
 
-	void encode(unsigned char *u, unsigned char *v); // codifica u[k] em v[n+n_extension] (nao funciona direito)
+	void encode(const unsigned char *u, unsigned char *v); // codifica u[k] em v[n+n_extension] 
 	bool decode(unsigned char *rr, int &n_err); //decodifica [r] e retorna sucessso (true) ou fracasso (false) na decodificação
 
 	int tab_mult(int multi1, int multi2);

@@ -22,6 +22,7 @@
 #define INCLUDED_MACK_SDR_ROSSI_BCH_DECODER_ATSC_IMPL_H
 
 #include <mack_sdr_rossi/BCH_decoder_ATSC.h>
+#include "bch.h"
 
 namespace gr {
   namespace mack_sdr_rossi {
@@ -50,6 +51,7 @@ namespace gr {
       int N_size;
       int K_size;
 
+      bch decoder;
     };
 
   } // namespace mack_sdr_rossi
