@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <?grc format='1' created='3.7.10'?>
 <flow_graph>
-  <timestamp>Fri Dec  8 16:51:03 2017</timestamp>
+  <timestamp>Fri Dec  8 16:53:45 2017</timestamp>
   <block>
     <key>options</key>
     <param>
@@ -109,61 +109,6 @@
     </param>
   </block>
   <block>
-    <key>blocks_delay</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>delay</key>
-      <value>int(math.sqrt(mod))-5</value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>2</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(664, 260)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>blocks_delay_0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>num_ports</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>complex</value>
-    </param>
-    <param>
-      <key>vlen</key>
-      <value>1</value>
-    </param>
-  </block>
-  <block>
     <key>blocks_pack_k_bits_bb</key>
     <param>
       <key>alias</key>
@@ -183,7 +128,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(328, 260)</value>
+      <value>(400, 300)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -195,7 +140,7 @@
     </param>
     <param>
       <key>k</key>
-      <value>int(math.sqrt(mod))</value>
+      <value>int(math.sqrt(m))</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -222,7 +167,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(144, 164)</value>
+      <value>(8, 236)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -230,11 +175,54 @@
     </param>
     <param>
       <key>id</key>
-      <value>import_1</value>
+      <value>import_0</value>
     </param>
     <param>
       <key>import</key>
       <value>import math</value>
+    </param>
+  </block>
+  <block>
+    <key>parameter</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(576, 68)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>m</value>
+    </param>
+    <param>
+      <key>label</key>
+      <value>Modulação</value>
+    </param>
+    <param>
+      <key>short_id</key>
+      <value></value>
+    </param>
+    <param>
+      <key>type</key>
+      <value></value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>64</value>
     </param>
   </block>
   <block>
@@ -253,11 +241,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>True</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(520, 244)</value>
+      <value>(552, 284)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -277,7 +265,7 @@
     </param>
     <param>
       <key>Mod_size</key>
-      <value>mod</value>
+      <value>m</value>
     </param>
     <param>
       <key>N_ldpc</key>
@@ -300,54 +288,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(600, 68)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>mod</value>
-    </param>
-    <param>
-      <key>label</key>
-      <value>Mod_size</value>
-    </param>
-    <param>
-      <key>short_id</key>
-      <value></value>
-    </param>
-    <param>
-      <key>type</key>
-      <value></value>
-    </param>
-    <param>
-      <key>value</key>
-      <value>64</value>
-    </param>
-  </block>
-  <block>
-    <key>parameter</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(336, 60)</value>
+      <value>(328, 68)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -371,7 +316,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>10800</value>
+      <value>64800</value>
     </param>
   </block>
   <block>
@@ -386,7 +331,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(792, 260)</value>
+      <value>(888, 300)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -429,7 +374,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(192, 260)</value>
+      <value>(248, 300)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -453,7 +398,7 @@
     </param>
     <param>
       <key>type</key>
-      <value>bit</value>
+      <value>byte</value>
     </param>
     <param>
       <key>vlen</key>
@@ -476,7 +421,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(472, 68)</value>
+      <value>(456, 68)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -504,12 +449,6 @@
     </param>
   </block>
   <connection>
-    <source_block_id>blocks_delay_0</source_block_id>
-    <sink_block_id>pad_sink_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
     <source_block_id>blocks_pack_k_bits_bb_0</source_block_id>
     <sink_block_id>mack_sdr_rossi_Mapper_ATSC_0</sink_block_id>
     <source_key>0</source_key>
@@ -517,7 +456,7 @@
   </connection>
   <connection>
     <source_block_id>mack_sdr_rossi_Mapper_ATSC_0</source_block_id>
-    <sink_block_id>blocks_delay_0</sink_block_id>
+    <sink_block_id>pad_sink_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>

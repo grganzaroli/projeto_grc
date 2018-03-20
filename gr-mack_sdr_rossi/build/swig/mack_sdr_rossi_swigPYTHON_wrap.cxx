@@ -46366,10 +46366,10 @@ SWIGINTERN PyObject *Parity_interleaver_ATSC_sptr_swigregister(PyObject *SWIGUNU
 
 SWIGINTERN PyObject *_wrap_Mapper_ATSC_make(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  int arg1 ;
+  size_t arg1 ;
   int arg2 ;
   int arg3 ;
-  int val1 ;
+  size_t val1 ;
   int ecode1 = 0 ;
   int val2 ;
   int ecode2 = 0 ;
@@ -46384,11 +46384,11 @@ SWIGINTERN PyObject *_wrap_Mapper_ATSC_make(PyObject *SWIGUNUSEDPARM(self), PyOb
   gr::mack_sdr_rossi::Mapper_ATSC::sptr result;
   
   if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOO:Mapper_ATSC_make",kwnames,&obj0,&obj1,&obj2)) SWIG_fail;
-  ecode1 = SWIG_AsVal_int(obj0, &val1);
+  ecode1 = SWIG_AsVal_size_t(obj0, &val1);
   if (!SWIG_IsOK(ecode1)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "Mapper_ATSC_make" "', argument " "1"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "Mapper_ATSC_make" "', argument " "1"" of type '" "size_t""'");
   } 
-  arg1 = static_cast< int >(val1);
+  arg1 = static_cast< size_t >(val1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
     SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Mapper_ATSC_make" "', argument " "2"" of type '" "int""'");
@@ -46613,12 +46613,12 @@ fail:
 SWIGINTERN PyObject *_wrap_Mapper_ATSC_sptr_make(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
   boost::shared_ptr< gr::mack_sdr_rossi::Mapper_ATSC > *arg1 = (boost::shared_ptr< gr::mack_sdr_rossi::Mapper_ATSC > *) 0 ;
-  int arg2 ;
+  size_t arg2 ;
   int arg3 ;
   int arg4 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
-  int val2 ;
+  size_t val2 ;
   int ecode2 = 0 ;
   int val3 ;
   int ecode3 = 0 ;
@@ -46639,11 +46639,11 @@ SWIGINTERN PyObject *_wrap_Mapper_ATSC_sptr_make(PyObject *SWIGUNUSEDPARM(self),
     SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "Mapper_ATSC_sptr_make" "', argument " "1"" of type '" "boost::shared_ptr< gr::mack_sdr_rossi::Mapper_ATSC > *""'"); 
   }
   arg1 = reinterpret_cast< boost::shared_ptr< gr::mack_sdr_rossi::Mapper_ATSC > * >(argp1);
-  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  ecode2 = SWIG_AsVal_size_t(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Mapper_ATSC_sptr_make" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "Mapper_ATSC_sptr_make" "', argument " "2"" of type '" "size_t""'");
   } 
-  arg2 = static_cast< int >(val2);
+  arg2 = static_cast< size_t >(val2);
   ecode3 = SWIG_AsVal_int(obj2, &val3);
   if (!SWIG_IsOK(ecode3)) {
     SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "Mapper_ATSC_sptr_make" "', argument " "3"" of type '" "int""'");
@@ -50896,7 +50896,7 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"Parity_interleaver_ATSC_sptr_message_ports_out", _wrap_Parity_interleaver_ATSC_sptr_message_ports_out, METH_VARARGS, (char *)"Parity_interleaver_ATSC_sptr_message_ports_out(Parity_interleaver_ATSC_sptr self) -> swig_int_ptr"},
 	 { (char *)"Parity_interleaver_ATSC_sptr_message_subscribers", (PyCFunction) _wrap_Parity_interleaver_ATSC_sptr_message_subscribers, METH_VARARGS | METH_KEYWORDS, (char *)"Parity_interleaver_ATSC_sptr_message_subscribers(Parity_interleaver_ATSC_sptr self, swig_int_ptr which_port) -> swig_int_ptr"},
 	 { (char *)"Parity_interleaver_ATSC_sptr_swigregister", Parity_interleaver_ATSC_sptr_swigregister, METH_VARARGS, NULL},
-	 { (char *)"Mapper_ATSC_make", (PyCFunction) _wrap_Mapper_ATSC_make, METH_VARARGS | METH_KEYWORDS, (char *)"Mapper_ATSC_make(int N_ldpc, int Rate, int Mod_size) -> Mapper_ATSC_sptr"},
+	 { (char *)"Mapper_ATSC_make", (PyCFunction) _wrap_Mapper_ATSC_make, METH_VARARGS | METH_KEYWORDS, (char *)"Mapper_ATSC_make(size_t N_ldpc, int Rate, int Mod_size) -> Mapper_ATSC_sptr"},
 	 { (char *)"delete_Mapper_ATSC", _wrap_delete_Mapper_ATSC, METH_VARARGS, (char *)"delete_Mapper_ATSC(Mapper_ATSC self)"},
 	 { (char *)"Mapper_ATSC_swigregister", Mapper_ATSC_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_Mapper_ATSC_sptr", _wrap_new_Mapper_ATSC_sptr, METH_VARARGS, (char *)"\n"
@@ -50905,7 +50905,7 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { (char *)"Mapper_ATSC_sptr___deref__", _wrap_Mapper_ATSC_sptr___deref__, METH_VARARGS, (char *)"Mapper_ATSC_sptr___deref__(Mapper_ATSC_sptr self) -> Mapper_ATSC"},
 	 { (char *)"delete_Mapper_ATSC_sptr", _wrap_delete_Mapper_ATSC_sptr, METH_VARARGS, (char *)"delete_Mapper_ATSC_sptr(Mapper_ATSC_sptr self)"},
-	 { (char *)"Mapper_ATSC_sptr_make", (PyCFunction) _wrap_Mapper_ATSC_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"Mapper_ATSC_sptr_make(Mapper_ATSC_sptr self, int N_ldpc, int Rate, int Mod_size) -> Mapper_ATSC_sptr"},
+	 { (char *)"Mapper_ATSC_sptr_make", (PyCFunction) _wrap_Mapper_ATSC_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"Mapper_ATSC_sptr_make(Mapper_ATSC_sptr self, size_t N_ldpc, int Rate, int Mod_size) -> Mapper_ATSC_sptr"},
 	 { (char *)"Mapper_ATSC_sptr_history", _wrap_Mapper_ATSC_sptr_history, METH_VARARGS, (char *)"Mapper_ATSC_sptr_history(Mapper_ATSC_sptr self) -> unsigned int"},
 	 { (char *)"Mapper_ATSC_sptr_declare_sample_delay", _wrap_Mapper_ATSC_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"
 		"declare_sample_delay(int which, int delay)\n"

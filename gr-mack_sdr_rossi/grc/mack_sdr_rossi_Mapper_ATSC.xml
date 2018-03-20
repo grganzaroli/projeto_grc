@@ -7,7 +7,7 @@
   <param>
     <name>N_ldpc</name>
     <key>N_ldpc</key>
-    <type>int</type>
+    <type>raw</type>
   </param>
   <param>
     <name>Rate</name>

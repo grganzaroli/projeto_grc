@@ -33,7 +33,7 @@ namespace gr {
       // Nothing to declare in this block.
 
      public:
-      Mapper_ATSC_impl(int N_ldpc, int Rate, int Mod_size);
+      Mapper_ATSC_impl(size_t N_ldpc, int Rate, int Mod_size);
       ~Mapper_ATSC_impl();
 
       // Where all the action really happens

@@ -46,7 +46,7 @@ namespace gr {
        * class. mack_sdr_rossi::Mapper_ATSC::make is the public interface for
        * creating new instances.
        */
-      static sptr make(int N_ldpc, int Rate, int Mod_size);
+      static sptr make(size_t N_ldpc, int Rate, int Mod_size);
     };
 
   } // namespace mack_sdr_rossi

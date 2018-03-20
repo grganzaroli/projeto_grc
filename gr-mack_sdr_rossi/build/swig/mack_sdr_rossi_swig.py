@@ -4115,7 +4115,7 @@ class Mapper_ATSC(object):
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
     def make(*args, **kwargs):
-        """make(int N_ldpc, int Rate, int Mod_size) -> Mapper_ATSC_sptr"""
+        """make(size_t N_ldpc, int Rate, int Mod_size) -> Mapper_ATSC_sptr"""
         return _mack_sdr_rossi_swig.Mapper_ATSC_make(*args, **kwargs)
 
     make = staticmethod(make)
@@ -4125,7 +4125,7 @@ Mapper_ATSC_swigregister = _mack_sdr_rossi_swig.Mapper_ATSC_swigregister
 Mapper_ATSC_swigregister(Mapper_ATSC)
 
 def Mapper_ATSC_make(*args, **kwargs):
-  """Mapper_ATSC_make(int N_ldpc, int Rate, int Mod_size) -> Mapper_ATSC_sptr"""
+  """Mapper_ATSC_make(size_t N_ldpc, int Rate, int Mod_size) -> Mapper_ATSC_sptr"""
   return _mack_sdr_rossi_swig.Mapper_ATSC_make(*args, **kwargs)
 
 class Mapper_ATSC_sptr(object):
@@ -4147,7 +4147,7 @@ class Mapper_ATSC_sptr(object):
     __swig_destroy__ = _mack_sdr_rossi_swig.delete_Mapper_ATSC_sptr
     __del__ = lambda self : None;
     def make(self, *args, **kwargs):
-        """make(Mapper_ATSC_sptr self, int N_ldpc, int Rate, int Mod_size) -> Mapper_ATSC_sptr"""
+        """make(Mapper_ATSC_sptr self, size_t N_ldpc, int Rate, int Mod_size) -> Mapper_ATSC_sptr"""
         return _mack_sdr_rossi_swig.Mapper_ATSC_sptr_make(self, *args, **kwargs)
 
     def history(self):

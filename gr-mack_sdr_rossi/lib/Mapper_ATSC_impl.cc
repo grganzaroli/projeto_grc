@@ -29,7 +29,7 @@ namespace gr {
   namespace mack_sdr_rossi {
 
     Mapper_ATSC::sptr
-    Mapper_ATSC::make(int N_ldpc, int Rate, int Mod_size)
+    Mapper_ATSC::make(size_t N_ldpc, int Rate, int Mod_size)
     {
       return gnuradio::get_initial_sptr
         (new Mapper_ATSC_impl(N_ldpc, Rate, Mod_size));
@@ -38,13 +38,14 @@ namespace gr {
     /*
      * The private constructor
      */
-    Mapper_ATSC_impl::Mapper_ATSC_impl(int N_ldpc, int Rate, int Mod_size)
+    Mapper_ATSC_impl::Mapper_ATSC_impl(size_t N_ldpc, int Rate, int Mod_size)
       : gr::block("Mapper_ATSC",
               gr::io_signature::make(1, 1, sizeof(unsigned char)),
               gr::io_signature::make(1, 1, sizeof(gr_complex)))
     {
       s_in = N_ldpc;
-      mapper.init(N_ldpc, Mod_size, Rate, 0.1);
+      mapper.init(s_in, Mod_size, Rate, 0.1);
+      printf("MAPPER INIT\n");
     }
 
     /*
@@ -84,6 +85,7 @@ namespace gr {
         in += 1;
         out += 1;
       }
+      
       // Tell runtime system how many input items we consumed on
       // each input stream.
       consume_each (noutput_items);

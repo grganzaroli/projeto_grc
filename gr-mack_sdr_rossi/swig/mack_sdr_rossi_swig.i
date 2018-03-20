@@ -56,5 +56,6 @@ GR_SWIG_BLOCK_MAGIC2(mack_sdr_rossi, Block_interleaver_ATSC);
 GR_SWIG_BLOCK_MAGIC2(mack_sdr_rossi, Group_interleaver_ATSC);
 %include "mack_sdr_rossi/Parity_interleaver_ATSC.h"
 GR_SWIG_BLOCK_MAGIC2(mack_sdr_rossi, Parity_interleaver_ATSC);
+
 %include "mack_sdr_rossi/Mapper_ATSC.h"
 GR_SWIG_BLOCK_MAGIC2(mack_sdr_rossi, Mapper_ATSC);
