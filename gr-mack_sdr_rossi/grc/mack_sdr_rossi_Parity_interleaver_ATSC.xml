@@ -1,0 +1,25 @@
+<block>
+  <name>Parity interleaver atsc</name>
+  <key>mack_sdr_rossi_Parity_interleaver_ATSC</key>
+  <category>[MACK_SDR_ROSSI]</category>
+  <import>import mack_sdr_rossi</import>
+  <make>mack_sdr_rossi.Parity_interleaver_ATSC($Size, $Rate)</make>
+  <param>
+    <name>Size</name>
+    <key>Size</key>
+    <type>raw</type>
+  </param>
+  <param>
+    <name>Rate</name>
+    <key>Rate</key>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+  </source>
+</block>

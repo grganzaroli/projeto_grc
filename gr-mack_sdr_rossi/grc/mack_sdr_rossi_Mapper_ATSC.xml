@@ -1,0 +1,30 @@
+<block>
+  <name>Mapper atsc</name>
+  <key>mack_sdr_rossi_Mapper_ATSC</key>
+  <category>[MACK_SDR_ROSSI]</category>
+  <import>import mack_sdr_rossi</import>
+  <make>mack_sdr_rossi.Mapper_ATSC($N_ldpc, $Rate, $Mod_size)</make>
+  <param>
+    <name>N_ldpc</name>
+    <key>N_ldpc</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Rate</name>
+    <key>Rate</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Mod_size</name>
+    <key>Mod_size</key>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>complex</type>
+  </source>
+</block>

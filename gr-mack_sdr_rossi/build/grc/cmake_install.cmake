@@ -39,7 +39,7 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_str_to_vec.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_BCH_decoder_ATSC.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_Demapper_ATSC.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_Parity_deinterleaver_ATSC.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_Block_deinterleaver_ATSC.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_Group_deinterleaver_ATSC.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_LDPC_decoder_ATSC.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_LDPC_decoder_hard_ATSC.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_BCH_encoder_ATSC.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_LDPC_encoder_ATSC.xml")
+   "/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_str_to_vec.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_BCH_decoder_ATSC.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_Demapper_ATSC.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_Parity_deinterleaver_ATSC.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_Block_deinterleaver_ATSC.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_Group_deinterleaver_ATSC.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_LDPC_decoder_ATSC.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_LDPC_decoder_hard_ATSC.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_BCH_encoder_ATSC.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_LDPC_encoder_ATSC.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_Block_interleaver_ATSC.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_Group_interleaver_ATSC.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_Parity_interleaver_ATSC.xml;/usr/local/share/gnuradio/grc/blocks/mack_sdr_rossi_Mapper_ATSC.xml")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
@@ -57,6 +57,10 @@ file(INSTALL DESTINATION "/usr/local/share/gnuradio/grc/blocks" TYPE FILE FILES
     "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/grc/mack_sdr_rossi_LDPC_decoder_hard_ATSC.xml"
     "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/grc/mack_sdr_rossi_BCH_encoder_ATSC.xml"
     "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/grc/mack_sdr_rossi_LDPC_encoder_ATSC.xml"
+    "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/grc/mack_sdr_rossi_Block_interleaver_ATSC.xml"
+    "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/grc/mack_sdr_rossi_Group_interleaver_ATSC.xml"
+    "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/grc/mack_sdr_rossi_Parity_interleaver_ATSC.xml"
+    "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/grc/mack_sdr_rossi_Mapper_ATSC.xml"
     )
 endif()
 

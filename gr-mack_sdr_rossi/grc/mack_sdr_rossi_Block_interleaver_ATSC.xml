@@ -1,0 +1,32 @@
+<block>
+  <name>Block interleaver atsc</name>
+  <key>mack_sdr_rossi_Block_interleaver_ATSC</key>
+  <category>[MACK_SDR_ROSSI]</category>
+  <import>import mack_sdr_rossi</import>
+  <make>mack_sdr_rossi.Block_interleaver_ATSC($Size, $Rate, $Mod)</make>
+  <param>
+    <name>Size</name>
+    <key>Size</key>
+    <type>raw</type>
+  </param>
+  <param>
+    <name>Rate</name>
+    <key>Rate</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Mod</name>
+    <key>Mod</key>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>byte</type>
+    <vlen>$Size</vlen>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>byte</type>
+    <vlen>$Size</vlen>
+  </source>
+</block>

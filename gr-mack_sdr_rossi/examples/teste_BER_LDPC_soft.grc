@@ -864,11 +864,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>True</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(360, 124)</value>
+      <value>(368, 124)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1794,12 +1794,6 @@
   <connection>
     <source_block_id>ldpc_enc_0</source_block_id>
     <sink_block_id>blocks_char_to_float_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>ldpc_enc_0</source_block_id>
-    <sink_block_id>blocks_file_sink_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>

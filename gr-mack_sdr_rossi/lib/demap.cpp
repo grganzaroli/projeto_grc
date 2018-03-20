@@ -1310,9 +1310,10 @@ void demap::demapper_hard(const gr_complex *i, unsigned char *o)
 	}
 }
 
-void demap::mapper(const char *i, gr_complex *o)
+void demap::mapper(const unsigned char *i, gr_complex *o)
 {
-  for(int ii = 0; ii < size; ii++) //cada simbolo recebido
+  //printf("ok\n");
+  for(int ii = 0; ii < 1; ii++) //cada simbolo recebido
 	{
     o[ii].real() = tabela[(int)i[ii]].real();
     o[ii].imag() = tabela[(int)i[ii]].imag();

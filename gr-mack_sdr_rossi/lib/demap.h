@@ -22,7 +22,7 @@ private:
 public:
 	void init(int s, int ms, int r, float v); //inicializa variavais
 
-	void mapper(const char *i, gr_complex *o); //faz o mapeamento
+	void mapper(const unsigned char *i, gr_complex *o); //faz o mapeamento
 
 	void demapper_soft(const gr_complex *i, float *o); // faz o demap de i em o (LLR)
 	void demapper_hard(const gr_complex *i, unsigned char *o); // faz o demap de i em o (bit)

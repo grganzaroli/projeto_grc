@@ -249,6 +249,57 @@
     </param>
   </block>
   <block>
+    <key>bl_inter</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(712, 396)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>bl_inter_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>mod</key>
+      <value>mod</value>
+    </param>
+    <param>
+      <key>r</key>
+      <value>r</value>
+    </param>
+    <param>
+      <key>n</key>
+      <value>n</value>
+    </param>
+  </block>
+  <block>
     <key>blks2_error_rate</key>
     <param>
       <key>bits_per_symbol</key>
@@ -272,7 +323,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(376, 412)</value>
+      <value>(376, 548)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -319,7 +370,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(696, 532)</value>
+      <value>(696, 668)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -370,7 +421,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(896, 548)</value>
+      <value>(896, 684)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -464,7 +515,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(208, 444)</value>
+      <value>(208, 580)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -507,11 +558,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(256, 292)</value>
+      <value>(336, 292)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -558,11 +609,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(648, 292)</value>
+      <value>(728, 292)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -613,7 +664,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(464, 532)</value>
+      <value>(464, 668)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -622,6 +673,57 @@
     <param>
       <key>id</key>
       <value>group_deinter_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>mod</key>
+      <value>mod</value>
+    </param>
+    <param>
+      <key>r</key>
+      <value>r</value>
+    </param>
+    <param>
+      <key>n</key>
+      <value>n</value>
+    </param>
+  </block>
+  <block>
+    <key>gw_inter</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(496, 396)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>gw_inter_0</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -660,11 +762,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(440, 276)</value>
+      <value>(520, 276)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -696,6 +798,53 @@
     </param>
   </block>
   <block>
+    <key>par_inter</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(320, 404)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>par_inter_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>r</key>
+      <value>r</value>
+    </param>
+    <param>
+      <key>n</key>
+      <value>n</value>
+    </param>
+  </block>
+  <block>
     <key>parity_deinter</key>
     <param>
       <key>alias</key>
@@ -715,7 +864,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(256, 540)</value>
+      <value>(256, 676)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -770,7 +919,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(624, 412)</value>
+      <value>(624, 548)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -1372,7 +1521,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(208, 628)</value>
+      <value>(208, 764)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -1718,6 +1867,18 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
+    <source_block_id>analog_random_source_x_0</source_block_id>
+    <sink_block_id>par_inter_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>bl_inter_0</source_block_id>
+    <sink_block_id>blocks_char_to_float_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
     <source_block_id>blks2_error_rate_0</source_block_id>
     <sink_block_id>qtgui_number_sink_0</sink_block_id>
     <source_key>0</source_key>
@@ -1766,8 +1927,20 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
+    <source_block_id>gw_inter_0</source_block_id>
+    <sink_block_id>bl_inter_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
     <source_block_id>mack_sdr_interleaver_atsc_0</source_block_id>
     <sink_block_id>blocks_vector_to_stream_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>par_inter_0</source_block_id>
+    <sink_block_id>gw_inter_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>

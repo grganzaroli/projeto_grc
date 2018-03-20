@@ -1847,9 +1847,12 @@ void ldpc::init(unsigned short N, unsigned short K)
 	FILE *f = fopen("matriz_C.txt", "w");
 	for (unsigned short j = 0; j < (n-k); j++)
 	{
-	for (unsigned short i = 0; i < (n-k); i++)
+	for (unsigned short i = 0; i < (k+1); i++)
 	{
-		fprintf(f, "%i,", C[j][i]);
+		if(C[j][i] != 65535)
+			fprintf(f, "%i,", C[j][i]);
+		else
+			break;
 	}
 	fprintf(f, "\n");
 	}
@@ -2326,6 +2329,10 @@ void ldpc::free_soft()
 
 bool ldpc::encode(const unsigned char *u, unsigned char *v)
 {
+	//u[k]
+	//v[n]
+	//C[n-k][k+1], max = n (ou k se ignorar o ultimo valor)
+
 	//zerar v
 	for(int i = 0; i < n; i++)
 		v[i] = 0;
@@ -2339,10 +2346,12 @@ bool ldpc::encode(const unsigned char *u, unsigned char *v)
 	//calcular paridade
 	for(int i = k; i < n; i++)
 	{
-		for(int j = j; j < k+1; j++)
+		for(int j = 0; j < k+1; j++)
 		{	
-			if(C[i-k][j] != 65535)
+			if(C[i-k][j] < k)
+			{
 				v[i] = v[i]^u[C[i-k][j]];
+			}
 			else
 				break;
 		}

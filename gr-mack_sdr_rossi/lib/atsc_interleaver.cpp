@@ -1448,17 +1448,11 @@ void atsc_interleaver::parity_deinter(const float *U, float *lambda)
 
 void atsc_interleaver::group_inter(const unsigned char *GI_in, unsigned char *GI_out)
 {
-	int tab_size;
-	if(n_ldpc == 16200)
-		tab_size = 45;
-	else if(n_ldpc == 64800)
-		tab_size = 180;
-
 	for(int i = 0; i < tab_size; i++)
 	{
 		for(int j = 0; j < 360; j++)
 		{
-			GI_out[j+360*i] = GI_in[j+360*tab[i]];
+			GI_out[j+360*i] = GI_in[j+360*tabela[i]];
 		}
 	}
 }
