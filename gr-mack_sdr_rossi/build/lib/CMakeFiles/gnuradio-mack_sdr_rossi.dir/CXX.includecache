@@ -281,6 +281,8 @@ mack_sdr_rossi/Mapper_ATSC.h
 -
 demap.h
 /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h
+cmath
+-
 
 /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Parity_deinterleaver_ATSC_impl.cc
 config.h

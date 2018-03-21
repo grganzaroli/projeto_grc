@@ -1318,3 +1318,20 @@ void demap::mapper(const unsigned char *i, gr_complex *o)
     o[ii].imag() = tabela[(int)i[ii]].imag();
   }
 }
+
+void demap::pack_bits(const unsigned char *pack_in, unsigned char *pack_out, int n_bits)
+{
+  int index_pack_out = 0, aux_index = 0, aux = 0;
+  for(int i = 0; i < size; i++) //cada simbolo recebido
+	{
+    aux_index = i%n_bits;
+    aux = aux + pack_in[i]*pow(2, aux_index);
+    if(aux_index == n_bits-1)
+    {
+      pack_out[index_pack_out] = aux;
+      aux = 0;
+      index_pack_out++;
+      printf("%i\n",pack_out[index_pack_out]);
+    }
+  }
+}

@@ -44,6 +44,7 @@ namespace gr {
               gr::io_signature::make(1, 1, sizeof(gr_complex)))
     {
       s_in = N_ldpc;
+      m_size = Mod_size;
       mapper.init(s_in, Mod_size, Rate, 0.1);
       printf("MAPPER INIT\n");
     }

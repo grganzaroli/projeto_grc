@@ -22,6 +22,8 @@ private:
 public:
 	void init(int s, int ms, int r, float v); //inicializa variavais
 
+	void pack_bits(const unsigned char *pack_in, unsigned char *pack_out, int n_bits); //empacota n_bits de pack_in em pack_out
+
 	void mapper(const unsigned char *i, gr_complex *o); //faz o mapeamento
 
 	void demapper_soft(const gr_complex *i, float *o); // faz o demap de i em o (LLR)

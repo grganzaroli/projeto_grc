@@ -23,6 +23,7 @@
 
 #include <mack_sdr_rossi/Mapper_ATSC.h>
 #include "demap.h"
+#include <cmath>
 
 namespace gr {
   namespace mack_sdr_rossi {
@@ -48,7 +49,7 @@ namespace gr {
 
       void MAP(const unsigned char *in, gr_complex *out);
 
-      int s_in;
+      int s_in, m_size;
     };
 
   } // namespace mack_sdr_rossi
