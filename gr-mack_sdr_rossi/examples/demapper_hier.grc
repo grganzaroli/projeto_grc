@@ -132,7 +132,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>int(1*math.sqrt(m)*size_in)</value>
+      <value>int(1*math.log(m)/math.log(2)*size_in)</value>
     </param>
   </block>
   <block>

@@ -5,7 +5,7 @@ var classbch =
     [ "decode", "classbch.html#a32a740263dea90c6996e697105467293", null ],
     [ "det", "classbch.html#a585b514a8eb123f005907a51397e4e24", null ],
     [ "det_gf", "classbch.html#a0a6c69671af01a8f35f4a56c237ecf48", null ],
-    [ "encode", "classbch.html#a155974b364651c47b3b7e6b33fdf1e90", null ],
+    [ "encode", "classbch.html#addbc735bd4ae209ad6172b9c5ff33dfa", null ],
     [ "init", "classbch.html#a64fb3d92fb4666a1af5db913426e5300", null ],
     [ "set_pol_ger", "classbch.html#a82f75ce75ca22c3447b8b75900e9fa34", null ],
     [ "set_pol_prim", "classbch.html#a536ef1ba37921f3a29776e5a8a43ccd8", null ],

@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC__impl" kind="class" prot="public">
+    <compoundname>gr::mack_sdr_rossi::LDPC_encoder_ATSC_impl</compoundname>
+    <basecompoundref refid="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC" prot="public" virt="non-virtual">gr::mack_sdr_rossi::LDPC_encoder_ATSC</basecompoundref>
+    <includes refid="LDPC__encoder__ATSC__impl_8h" local="no">LDPC_encoder_ATSC_impl.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC__impl_1a0e5355d84584e91e2d8b25f1f6109061" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::mack_sdr_rossi::LDPC_encoder_ATSC_impl::N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_encoder_ATSC_impl.h" line="51" column="1" bodyfile="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_encoder_ATSC_impl.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC__impl_1a6963732a63ae7ec72cf55fa418dd0ede" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::mack_sdr_rossi::LDPC_encoder_ATSC_impl::K</definition>
+        <argsstring></argsstring>
+        <name>K</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_encoder_ATSC_impl.h" line="52" column="1" bodyfile="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_encoder_ATSC_impl.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC__impl_1a3d88d2af77f95cc7b95faee5eee11470" prot="public" static="no" mutable="no">
+        <type><ref refid="classldpc" kindref="compound">ldpc</ref></type>
+        <definition>ldpc gr::mack_sdr_rossi::LDPC_encoder_ATSC_impl::encoder</definition>
+        <argsstring></argsstring>
+        <name>encoder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_encoder_ATSC_impl.h" line="54" column="1" bodyfile="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_encoder_ATSC_impl.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC__impl_1a92568a79e94363722827edd14c58bb9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::mack_sdr_rossi::LDPC_encoder_ATSC_impl::LDPC_encoder_ATSC_impl</definition>
+        <argsstring>(size_t K_ldpc, size_t N_ldpc, int rate)</argsstring>
+        <name>LDPC_encoder_ATSC_impl</name>
+        <param>
+          <type>size_t</type>
+          <declname>K_ldpc</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>N_ldpc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_encoder_ATSC_impl.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC__impl_1ac6b41eb8916c4987c6882ff80a9e7c7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::mack_sdr_rossi::LDPC_encoder_ATSC_impl::~LDPC_encoder_ATSC_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~LDPC_encoder_ATSC_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_encoder_ATSC_impl.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC__impl_1a6bbbb8f83092b0a533d6430bb4c76839" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::mack_sdr_rossi::LDPC_encoder_ATSC_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_encoder_ATSC_impl.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC__impl_1ad4d4f464616407c3a61cc0c6f6692092" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::mack_sdr_rossi::LDPC_encoder_ATSC_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_encoder_ATSC_impl.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC__impl_1a0d6e47747cfd3d5d65abf8c3dfe5f397" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::mack_sdr_rossi::LDPC_encoder_ATSC_impl::encoder_LDPC</definition>
+        <argsstring>(const unsigned char *in, unsigned char *out)</argsstring>
+        <name>encoder_LDPC</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_encoder_ATSC_impl.h" line="48" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="122">
+        <label>gr::mack_sdr_rossi::LDPC_encoder_ATSC</label>
+        <link refid="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC"/>
+        <childnode refid="123" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="121">
+        <label>gr::mack_sdr_rossi::LDPC_encoder_ATSC_impl</label>
+        <link refid="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC__impl"/>
+        <childnode refid="122" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>gr::block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="125">
+        <label>gr::mack_sdr_rossi::LDPC_encoder_ATSC</label>
+        <link refid="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC"/>
+        <childnode refid="126" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="124">
+        <label>gr::mack_sdr_rossi::LDPC_encoder_ATSC_impl</label>
+        <link refid="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC__impl"/>
+        <childnode refid="125" relation="public-inheritance">
+        </childnode>
+        <childnode refid="127" relation="usage">
+          <edgelabel>encoder</edgelabel>
+        </childnode>
+      </node>
+      <node id="127">
+        <label>ldpc</label>
+        <link refid="classldpc"/>
+      </node>
+      <node id="126">
+        <label>gr::block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_encoder_ATSC_impl.h" line="31" column="1" bodyfile="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_encoder_ATSC_impl.h" bodystart="30" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC__impl_1a3d88d2af77f95cc7b95faee5eee11470" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_encoder_ATSC_impl</scope><name>encoder</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC__impl_1a0d6e47747cfd3d5d65abf8c3dfe5f397" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_encoder_ATSC_impl</scope><name>encoder_LDPC</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC__impl_1a6bbbb8f83092b0a533d6430bb4c76839" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_encoder_ATSC_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC__impl_1ad4d4f464616407c3a61cc0c6f6692092" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_encoder_ATSC_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC__impl_1a6963732a63ae7ec72cf55fa418dd0ede" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_encoder_ATSC_impl</scope><name>K</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC__impl_1a92568a79e94363722827edd14c58bb9f" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_encoder_ATSC_impl</scope><name>LDPC_encoder_ATSC_impl</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC_1a42baa79b7608224fe3c33a3d6c58ac78" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_encoder_ATSC_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC__impl_1a0e5355d84584e91e2d8b25f1f6109061" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_encoder_ATSC_impl</scope><name>N</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC_1a7b89afe96173d04649b8c94912a036d5" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_encoder_ATSC_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC__impl_1ac6b41eb8916c4987c6882ff80a9e7c7f" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::LDPC_encoder_ATSC_impl</scope><name>~LDPC_encoder_ATSC_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

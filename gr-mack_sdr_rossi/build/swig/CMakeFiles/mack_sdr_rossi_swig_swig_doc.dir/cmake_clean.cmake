@@ -1,4 +1,4 @@
-file(REMOVE_RECURSE
+FILE(REMOVE_RECURSE
   "mack_sdr_rossi_swigPYTHON_wrap.cxx"
   "mack_sdr_rossi_swig.py"
   "CMakeFiles/mack_sdr_rossi_swig_swig_doc"
@@ -7,6 +7,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang )
-  include(CMakeFiles/mack_sdr_rossi_swig_swig_doc.dir/cmake_clean_${lang}.cmake OPTIONAL)
-endforeach()
+FOREACH(lang)
+  INCLUDE(CMakeFiles/mack_sdr_rossi_swig_swig_doc.dir/cmake_clean_${lang}.cmake OPTIONAL)
+ENDFOREACH(lang)

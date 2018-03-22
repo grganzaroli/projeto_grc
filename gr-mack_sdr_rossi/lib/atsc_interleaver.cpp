@@ -1837,9 +1837,9 @@ void atsc_interleaver::block_inter_tipo_A(const unsigned char *BI_in, unsigned c
 
 void atsc_interleaver::block_deinter_tipo_A(const float *BDI_in, float *BDI_out, int rows_p1, int rows_p2, int col)
 {
-	unsigned char **bl_deintera = new unsigned char*[col];
+	float **bl_deintera = new float*[col];
 	for(int i = 0; i < col; i++)
-		bl_deintera[i] = new unsigned char[rows_p1+rows_p2];
+		bl_deintera[i] = new float[rows_p1+rows_p2];
 
 	//write
 	//pt1
@@ -1925,9 +1925,9 @@ void atsc_interleaver::block_inter_tipo_B(const unsigned char *BI_in, unsigned c
 
 void atsc_interleaver::block_deinter_tipo_B(const float *BDI_in, float *BDI_out, int n_p1, int n_p2, int nqcb)
 {
-	unsigned char **bl_deinterb = new unsigned char*[360];
+	float **bl_deinterb = new float*[360];
 	for(int i = 0; i < 360; i++)
-		bl_deinterb[i] = new unsigned char[nqcb];
+		bl_deinterb[i] = new float[nqcb];
 	
 	for(int k = 0; k < n_p1; k+=(nqcb*360))
 	{

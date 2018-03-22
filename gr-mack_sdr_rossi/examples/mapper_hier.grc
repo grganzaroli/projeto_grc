@@ -140,7 +140,7 @@
     </param>
     <param>
       <key>k</key>
-      <value>int(math.sqrt(m))</value>
+      <value>int(math.log(m)/math.log(2))</value>
     </param>
     <param>
       <key>maxoutbuf</key>

@@ -1,79 +1,72 @@
-# Install script for directory: /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib
+# Install script for directory: /home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib
 
 # Set the install prefix
-if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
-endif()
-string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
+IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
+  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
+STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
 # Set the install configuration name.
-if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
-  if(BUILD_TYPE)
-    string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
+IF(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
+  IF(BUILD_TYPE)
+    STRING(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
-  else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
-  endif()
-  message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
-endif()
+  ELSE(BUILD_TYPE)
+    SET(CMAKE_INSTALL_CONFIG_NAME "Release")
+  ENDIF(BUILD_TYPE)
+  MESSAGE(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
+ENDIF(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
 
 # Set the component getting installed.
-if(NOT CMAKE_INSTALL_COMPONENT)
-  if(COMPONENT)
-    message(STATUS "Install component: \"${COMPONENT}\"")
-    set(CMAKE_INSTALL_COMPONENT "${COMPONENT}")
-  else()
-    set(CMAKE_INSTALL_COMPONENT)
-  endif()
-endif()
+IF(NOT CMAKE_INSTALL_COMPONENT)
+  IF(COMPONENT)
+    MESSAGE(STATUS "Install component: \"${COMPONENT}\"")
+    SET(CMAKE_INSTALL_COMPONENT "${COMPONENT}")
+  ELSE(COMPONENT)
+    SET(CMAKE_INSTALL_COMPONENT)
+  ENDIF(COMPONENT)
+ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
-if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
-endif()
+IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
+  SET(CMAKE_INSTALL_SO_NO_EXE "1")
+ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
-# Is this installation the result of a crosscompile?
-if(NOT DEFINED CMAKE_CROSSCOMPILING)
-  set(CMAKE_CROSSCOMPILING "FALSE")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmack_sdr_rossi_runtimex" OR NOT CMAKE_INSTALL_COMPONENT)
-  foreach(file
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "mack_sdr_rossi_runtime")
+  FOREACH(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-mack_sdr_rossi-1.0.0git.so"
       )
-    if(EXISTS "${file}" AND
+    IF(EXISTS "${file}" AND
        NOT IS_SYMLINK "${file}")
-      file(RPATH_CHECK
+      FILE(RPATH_CHECK
            FILE "${file}"
            RPATH "")
-    endif()
-  endforeach()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0"
-    "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib/libgnuradio-mack_sdr_rossi-1.0.0git.so"
+    ENDIF()
+  ENDFOREACH()
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
+    "/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0"
+    "/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib/libgnuradio-mack_sdr_rossi-1.0.0git.so"
     )
-  foreach(file
+  FOREACH(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0.0.0"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libgnuradio-mack_sdr_rossi-1.0.0git.so"
       )
-    if(EXISTS "${file}" AND
+    IF(EXISTS "${file}" AND
        NOT IS_SYMLINK "${file}")
-      file(RPATH_CHANGE
-           FILE "${file}"
-           OLD_RPATH "/usr/local/lib:"
-           NEW_RPATH "")
-      if(CMAKE_INSTALL_DO_STRIP)
-        execute_process(COMMAND "/usr/bin/strip" "${file}")
-      endif()
-    endif()
-  endforeach()
-endif()
+      FILE(RPATH_REMOVE
+           FILE "${file}")
+      IF(CMAKE_INSTALL_DO_STRIP)
+        EXECUTE_PROCESS(COMMAND "/usr/bin/strip" "${file}")
+      ENDIF(CMAKE_INSTALL_DO_STRIP)
+    ENDIF()
+  ENDFOREACH()
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "mack_sdr_rossi_runtime")
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xmack_sdr_rossi_runtimex" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES
-    "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib/libgnuradio-mack_sdr_rossi.so"
-    "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0"
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "mack_sdr_rossi_runtime")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES
+    "/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib/libgnuradio-mack_sdr_rossi.so"
+    "/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/lib/libgnuradio-mack_sdr_rossi-1.0.0git.so.0"
     )
-endif()
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "mack_sdr_rossi_runtime")
 

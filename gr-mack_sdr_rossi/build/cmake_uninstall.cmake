@@ -1,16 +1,16 @@
 # http://www.vtk.org/Wiki/CMake_FAQ#Can_I_do_.22make_uninstall.22_with_CMake.3F
 
-IF(NOT EXISTS "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/install_manifest.txt")
-  MESSAGE(FATAL_ERROR "Cannot find install manifest: \"/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/install_manifest.txt\"")
-ENDIF(NOT EXISTS "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/install_manifest.txt")
+IF(NOT EXISTS "/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/install_manifest.txt")
+  MESSAGE(FATAL_ERROR "Cannot find install manifest: \"/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/install_manifest.txt\"")
+ENDIF(NOT EXISTS "/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/install_manifest.txt")
 
-FILE(READ "/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/install_manifest.txt" files)
+FILE(READ "/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/install_manifest.txt" files)
 STRING(REGEX REPLACE "\n" ";" files "${files}")
 FOREACH(file ${files})
   MESSAGE(STATUS "Uninstalling \"$ENV{DESTDIR}${file}\"")
   IF(EXISTS "$ENV{DESTDIR}${file}")
     EXEC_PROGRAM(
-      "/usr/local/bin/cmake" ARGS "-E remove \"$ENV{DESTDIR}${file}\""
+      "/usr/bin/cmake" ARGS "-E remove \"$ENV{DESTDIR}${file}\""
       OUTPUT_VARIABLE rm_out
       RETURN_VALUE rm_retval
       )
@@ -19,7 +19,7 @@ FOREACH(file ${files})
     ENDIF(NOT "${rm_retval}" STREQUAL 0)
   ELSEIF(IS_SYMLINK "$ENV{DESTDIR}${file}")
     EXEC_PROGRAM(
-      "/usr/local/bin/cmake" ARGS "-E remove \"$ENV{DESTDIR}${file}\""
+      "/usr/bin/cmake" ARGS "-E remove \"$ENV{DESTDIR}${file}\""
       OUTPUT_VARIABLE rm_out
       RETURN_VALUE rm_retval
       )

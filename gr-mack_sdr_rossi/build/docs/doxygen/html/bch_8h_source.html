@@ -59,8 +59,8 @@ $(document).ready(function(){initNavTree('bch_8h_source.html','');});
 <div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="classbch.html">    4</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbch.html">bch</a></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        <span class="keywordtype">int</span> n; <span class="comment">//quantidade de bits de entrada</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        <span class="keywordtype">int</span> k; <span class="comment">//quantidade de bits de saída</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        <span class="keywordtype">int</span> n; <span class="comment">//quantidade de bits mensagem+paridade</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        <span class="keywordtype">int</span> k; <span class="comment">//quantidade de bits de mensagem</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <span class="keywordtype">int</span> t; <span class="comment">//capacidade de correção de erros</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="keywordtype">int</span> m; <span class="comment">//ordem do decodificador</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keywordtype">int</span> n_extension; <span class="comment">//numero de zeros a adicionar ao inicio da palavra-codigo recebida para obter n+n_extension = (2^m)-1</span></div>
@@ -81,7 +81,7 @@ $(document).ready(function(){initNavTree('bch_8h_source.html','');});
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classbch.html#abbb56f91e3153f1ff9fb1137cd950886">calc_gf</a>(); <span class="comment">// calculo do campo de galois</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classbch.html#a527e44b67fd36c511aa10c04a6eec375">calc_tab_inv</a>(); <span class="comment">// calculo da tabela inversa</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classbch.html#a155974b364651c47b3b7e6b33fdf1e90">encode</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *u, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *v); <span class="comment">// codifica u[k] em v[n+n_extension] (nao funciona direito)</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classbch.html#addbc735bd4ae209ad6172b9c5ff33dfa">encode</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *u, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *v); <span class="comment">// codifica u[k] em v[n+n_extension] </span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classbch.html#a32a740263dea90c6996e697105467293">decode</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *rr, <span class="keywordtype">int</span> &amp;n_err); <span class="comment">//decodifica [r] e retorna sucessso (true) ou fracasso (false) na decodificação</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classbch.html#a4ce993751f305c1bd56da194028cf6b5">tab_mult</a>(<span class="keywordtype">int</span> multi1, <span class="keywordtype">int</span> multi2);</div>
@@ -95,10 +95,10 @@ $(document).ready(function(){initNavTree('bch_8h_source.html','');});
 <div class="ttc" id="classbch_html_abbb56f91e3153f1ff9fb1137cd950886"><div class="ttname"><a href="classbch.html#abbb56f91e3153f1ff9fb1137cd950886">bch::calc_gf</a></div><div class="ttdeci">void calc_gf()</div></div>
 <div class="ttc" id="classbch_html_a0a6c69671af01a8f35f4a56c237ecf48"><div class="ttname"><a href="classbch.html#a0a6c69671af01a8f35f4a56c237ecf48">bch::det_gf</a></div><div class="ttdeci">int det_gf(int **MAT, int size)</div></div>
 <div class="ttc" id="classbch_html_a82f75ce75ca22c3447b8b75900e9fa34"><div class="ttname"><a href="classbch.html#a82f75ce75ca22c3447b8b75900e9fa34">bch::set_pol_ger</a></div><div class="ttdeci">void set_pol_ger(unsigned char *p_ger)</div></div>
-<div class="ttc" id="classbch_html_a155974b364651c47b3b7e6b33fdf1e90"><div class="ttname"><a href="classbch.html#a155974b364651c47b3b7e6b33fdf1e90">bch::encode</a></div><div class="ttdeci">void encode(unsigned char *u, unsigned char *v)</div></div>
 <div class="ttc" id="classbch_html_a536ef1ba37921f3a29776e5a8a43ccd8"><div class="ttname"><a href="classbch.html#a536ef1ba37921f3a29776e5a8a43ccd8">bch::set_pol_prim</a></div><div class="ttdeci">void set_pol_prim(unsigned char *p_prim)</div></div>
 <div class="ttc" id="classbch_html"><div class="ttname"><a href="classbch.html">bch</a></div><div class="ttdef"><b>Definition:</b> bch.h:4</div></div>
 <div class="ttc" id="classbch_html_a585b514a8eb123f005907a51397e4e24"><div class="ttname"><a href="classbch.html#a585b514a8eb123f005907a51397e4e24">bch::det</a></div><div class="ttdeci">int det(int **MAT, int size)</div></div>
+<div class="ttc" id="classbch_html_addbc735bd4ae209ad6172b9c5ff33dfa"><div class="ttname"><a href="classbch.html#addbc735bd4ae209ad6172b9c5ff33dfa">bch::encode</a></div><div class="ttdeci">void encode(const unsigned char *u, unsigned char *v)</div></div>
 <div class="ttc" id="classbch_html_a32a740263dea90c6996e697105467293"><div class="ttname"><a href="classbch.html#a32a740263dea90c6996e697105467293">bch::decode</a></div><div class="ttdeci">bool decode(unsigned char *rr, int &amp;n_err)</div></div>
 <div class="ttc" id="classbch_html_a4ce993751f305c1bd56da194028cf6b5"><div class="ttname"><a href="classbch.html#a4ce993751f305c1bd56da194028cf6b5">bch::tab_mult</a></div><div class="ttdeci">int tab_mult(int multi1, int multi2)</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('bch_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="bch_8h.html">bch.h</a></li>
-    <li class="footer">Generated on Fri Mar 16 2018 11:30:37 for GNU Radio&#39;s MACK_SDR_ROSSI Package by
+    <li class="footer">Generated on Thu Mar 22 2018 13:44:54 for GNU Radio&#39;s MACK_SDR_ROSSI Package by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

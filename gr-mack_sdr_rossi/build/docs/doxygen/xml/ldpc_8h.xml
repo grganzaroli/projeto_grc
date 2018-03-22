@@ -4,22 +4,29 @@
     <compoundname>ldpc.h</compoundname>
     <includedby refid="LDPC__decoder__ATSC__impl_8h" local="yes">LDPC_decoder_ATSC_impl.h</includedby>
     <includedby refid="LDPC__decoder__hard__ATSC__impl_8h" local="yes">LDPC_decoder_hard_ATSC_impl.h</includedby>
+    <includedby refid="LDPC__encoder__ATSC__impl_8h" local="yes">LDPC_encoder_ATSC_impl.h</includedby>
     <invincdepgraph>
-      <node id="88">
+      <node id="145">
+        <label>ldpc.h</label>
+        <link refid="ldpc.h"/>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+      </node>
+      <node id="146">
         <label>LDPC_decoder_ATSC_impl.h</label>
         <link refid="LDPC__decoder__ATSC__impl_8h"/>
       </node>
-      <node id="89">
+      <node id="147">
         <label>LDPC_decoder_hard_ATSC_impl.h</label>
         <link refid="LDPC__decoder__hard__ATSC__impl_8h"/>
       </node>
-      <node id="87">
-        <label>ldpc.h</label>
-        <link refid="ldpc.h"/>
-        <childnode refid="88" relation="include">
-        </childnode>
-        <childnode refid="89" relation="include">
-        </childnode>
+      <node id="148">
+        <label>LDPC_encoder_ATSC_impl.h</label>
+        <link refid="LDPC__encoder__ATSC__impl_8h"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classldpc" prot="public">ldpc</innerclass>
@@ -27,6 +34,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h"/>
+    <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h"/>
   </compounddef>
 </doxygen>

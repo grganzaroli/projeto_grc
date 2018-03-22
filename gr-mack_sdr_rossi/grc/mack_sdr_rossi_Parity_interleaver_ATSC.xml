@@ -17,9 +17,11 @@
   <sink>
     <name>in</name>
     <type>byte</type>
+    <vlen>$Size</vlen>
   </sink>
   <source>
     <name>out</name>
     <type>byte</type>
+    <vlen>$Size</vlen>
   </source>
 </block>

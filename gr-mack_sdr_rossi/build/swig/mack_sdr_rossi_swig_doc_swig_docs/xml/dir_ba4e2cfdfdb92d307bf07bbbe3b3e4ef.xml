@@ -1,20 +1,26 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
   <compounddef id="dir_ba4e2cfdfdb92d307bf07bbbe3b3e4ef" kind="dir">
-    <compoundname>/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi</compoundname>
+    <compoundname>/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi</compoundname>
     <innerfile refid="api_8h">api.h</innerfile>
     <innerfile refid="BCH__decoder__ATSC_8h">BCH_decoder_ATSC.h</innerfile>
+    <innerfile refid="BCH__encoder__ATSC_8h">BCH_encoder_ATSC.h</innerfile>
     <innerfile refid="Block__deinterleaver__ATSC_8h">Block_deinterleaver_ATSC.h</innerfile>
+    <innerfile refid="Block__interleaver__ATSC_8h">Block_interleaver_ATSC.h</innerfile>
     <innerfile refid="Demapper__ATSC_8h">Demapper_ATSC.h</innerfile>
     <innerfile refid="Group__deinterleaver__ATSC_8h">Group_deinterleaver_ATSC.h</innerfile>
+    <innerfile refid="Group__interleaver__ATSC_8h">Group_interleaver_ATSC.h</innerfile>
     <innerfile refid="LDPC__decoder__ATSC_8h">LDPC_decoder_ATSC.h</innerfile>
     <innerfile refid="LDPC__decoder__hard__ATSC_8h">LDPC_decoder_hard_ATSC.h</innerfile>
+    <innerfile refid="LDPC__encoder__ATSC_8h">LDPC_encoder_ATSC.h</innerfile>
+    <innerfile refid="Mapper__ATSC_8h">Mapper_ATSC.h</innerfile>
     <innerfile refid="Parity__deinterleaver__ATSC_8h">Parity_deinterleaver_ATSC.h</innerfile>
+    <innerfile refid="Parity__interleaver__ATSC_8h">Parity_interleaver_ATSC.h</innerfile>
     <innerfile refid="str__to__vec_8h">str_to_vec.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/"/>
+    <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/"/>
   </compounddef>
 </doxygen>

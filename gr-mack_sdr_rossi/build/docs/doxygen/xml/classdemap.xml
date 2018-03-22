@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="10" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" bodystart="10" bodyend="-1"/>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="10" column="1" bodyfile="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" bodystart="10" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdemap_1af6b3963e28c3a0c0f1255e510d9c1cb7" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="11" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" bodystart="11" bodyend="-1"/>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="11" column="1" bodyfile="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" bodystart="11" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdemap_1ae343922c57d2af560914a66ef9a318ed" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="12" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" bodystart="12" bodyend="-1"/>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="12" column="1" bodyfile="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" bodystart="12" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdemap_1ac15baf28caae079a72113d443b1b1e22" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="13" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" bodystart="13" bodyend="-1"/>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="13" column="1" bodyfile="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" bodystart="13" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdemap_1ab130e0cd7722b18c5071ed9ffc237ae5" prot="private" static="no" mutable="no">
         <type>float</type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="14" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" bodystart="14" bodyend="-1"/>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="14" column="1" bodyfile="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" bodystart="14" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdemap_1a111ebb3b0c7e5d31b7e9def5cfb7b74d" prot="private" static="no" mutable="no">
         <type>gr_complex *</type>
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="15" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" bodystart="15" bodyend="-1"/>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="15" column="1" bodyfile="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdemap_1a83e86bd5b29b68901015070878c072f6" prot="private" static="no" mutable="no">
         <type>gr_complex</type>
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="16" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" bodystart="16" bodyend="-1"/>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="16" column="1" bodyfile="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdemap_1a15079c81e4723e18df6564bcc7f10c81" prot="private" static="no" mutable="no">
         <type>float</type>
@@ -106,7 +106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="17" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" bodystart="17" bodyend="-1"/>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="17" column="1" bodyfile="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdemap_1a4ba737fe913e83b0d9fbc346857fdd92" prot="private" static="no" mutable="no">
         <type>float *</type>
@@ -119,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="18" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" bodystart="18" bodyend="-1"/>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="18" column="1" bodyfile="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdemap_1abd49c740ff0304bfdd7b33592a8d2f30" prot="private" static="no" mutable="no">
         <type>float *</type>
@@ -132,7 +132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="19" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" bodystart="19" bodyend="-1"/>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="19" column="1" bodyfile="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classdemap_1a537174563c69e22780cf27f083b14591" prot="private" static="no" mutable="no">
         <type>float *</type>
@@ -145,7 +145,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="20" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" bodystart="20" bodyend="-1"/>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="20" column="1" bodyfile="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" bodystart="20" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -176,7 +176,53 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="23" column="1"/>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdemap_1a88eb03315d99b234452a6b4a0aa65b65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void demap::pack_bits</definition>
+        <argsstring>(const unsigned char *pack_in, unsigned char *pack_out, int n_bits)</argsstring>
+        <name>pack_bits</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>pack_in</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>pack_out</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_bits</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classdemap_1abbc3d10b8a5b0ba33df77a1f1bc3c96d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void demap::mapper</definition>
+        <argsstring>(const unsigned char *i, gr_complex *o)</argsstring>
+        <name>mapper</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>gr_complex *</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="27" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdemap_1abf35aad64d58d29ccd75bfe4b550b47e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -197,7 +243,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="25" column="1"/>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="29" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classdemap_1a3eaceaf28bbd76e9e81d38c2c596531d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -218,14 +264,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="26" column="1"/>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="30" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="8" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" bodystart="7" bodyend="28"/>
+    <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" line="8" column="1" bodyfile="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/demap.h" bodystart="7" bodyend="32"/>
     <listofallmembers>
       <member refid="classdemap_1a537174563c69e22780cf27f083b14591" prot="private" virt="non-virtual"><scope>demap</scope><name>aux</name></member>
       <member refid="classdemap_1abd49c740ff0304bfdd7b33592a8d2f30" prot="private" virt="non-virtual"><scope>demap</scope><name>aux_i</name></member>
@@ -235,7 +281,9 @@
       <member refid="classdemap_1abf35aad64d58d29ccd75bfe4b550b47e" prot="public" virt="non-virtual"><scope>demap</scope><name>demapper_soft</name></member>
       <member refid="classdemap_1a27bd2ddd4d9aa7fccbbb1fb0de84b5c9" prot="public" virt="non-virtual"><scope>demap</scope><name>init</name></member>
       <member refid="classdemap_1ac15baf28caae079a72113d443b1b1e22" prot="private" virt="non-virtual"><scope>demap</scope><name>M</name></member>
+      <member refid="classdemap_1abbc3d10b8a5b0ba33df77a1f1bc3c96d" prot="public" virt="non-virtual"><scope>demap</scope><name>mapper</name></member>
       <member refid="classdemap_1af6b3963e28c3a0c0f1255e510d9c1cb7" prot="private" virt="non-virtual"><scope>demap</scope><name>mod_size</name></member>
+      <member refid="classdemap_1a88eb03315d99b234452a6b4a0aa65b65" prot="public" virt="non-virtual"><scope>demap</scope><name>pack_bits</name></member>
       <member refid="classdemap_1ae343922c57d2af560914a66ef9a318ed" prot="private" virt="non-virtual"><scope>demap</scope><name>rate</name></member>
       <member refid="classdemap_1a811008a38493e4f999c7f753fe1a0e35" prot="private" virt="non-virtual"><scope>demap</scope><name>size</name></member>
       <member refid="classdemap_1a111ebb3b0c7e5d31b7e9def5cfb7b74d" prot="private" virt="non-virtual"><scope>demap</scope><name>tab</name></member>

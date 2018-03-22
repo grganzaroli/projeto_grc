@@ -120,6 +120,33 @@
     </param>
     <param>
       <key>_coordinate</key>
+      <value>(512, 20)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>n_bits</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>int(math.log(mod)/math.log(2))</value>
+    </param>
+  </block>
+  <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
       <value>(304, 12)</value>
     </param>
     <param>
@@ -323,7 +350,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -453,112 +480,6 @@
     </param>
   </block>
   <block>
-    <key>blocks_file_sink</key>
-    <param>
-      <key>append</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>file</key>
-      <value>mapper.bin</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(832, 76)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>blocks_file_sink_0</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>complex</value>
-    </param>
-    <param>
-      <key>unbuffered</key>
-      <value>False</value>
-    </param>
-    <param>
-      <key>vlen</key>
-      <value>1</value>
-    </param>
-  </block>
-  <block>
-    <key>blocks_file_source</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>file</key>
-      <value>mapper.bin</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(320, 252)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>blocks_file_source_0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>complex</value>
-    </param>
-    <param>
-      <key>repeat</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>vlen</key>
-      <value>1</value>
-    </param>
-  </block>
-  <block>
     <key>blocks_float_to_char</key>
     <param>
       <key>alias</key>
@@ -574,7 +495,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -606,49 +527,6 @@
     </param>
   </block>
   <block>
-    <key>blocks_pack_k_bits_bb</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(344, 420)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>blocks_pack_k_bits_bb_0</value>
-    </param>
-    <param>
-      <key>k</key>
-      <value>int(math.sqrt(mod))</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-  </block>
-  <block>
     <key>blocks_threshold_ff</key>
     <param>
       <key>alias</key>
@@ -664,7 +542,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -719,7 +597,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(160, 172)</value>
+      <value>(256, 324)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -770,7 +648,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -837,7 +715,7 @@
     </param>
   </block>
   <block>
-    <key>mack_sdr_mapper_atsc</key>
+    <key>mapper_atsc</key>
     <param>
       <key>alias</key>
       <value></value>
@@ -852,11 +730,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>True</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(328, 156)</value>
+      <value>(240, 192)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -864,11 +742,7 @@
     </param>
     <param>
       <key>id</key>
-      <value>mack_sdr_mapper_atsc_0</value>
-    </param>
-    <param>
-      <key>M</key>
-      <value>mod</value>
+      <value>mapper_atsc_0</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -879,11 +753,15 @@
       <value>0</value>
     </param>
     <param>
-      <key>rate</key>
+      <key>m</key>
+      <value>mod</value>
+    </param>
+    <param>
+      <key>r</key>
       <value>rate</value>
     </param>
     <param>
-      <key>size</key>
+      <key>n</key>
       <value>size</value>
     </param>
   </block>
@@ -1258,7 +1136,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1469,7 +1347,7 @@
     <key>qtgui_time_sink_x</key>
     <param>
       <key>autoscale</key>
-      <value>False</value>
+      <value>True</value>
     </param>
     <param>
       <key>axislabels</key>
@@ -1497,7 +1375,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>0</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1773,7 +1651,7 @@
     </param>
     <param>
       <key>size</key>
-      <value>1024</value>
+      <value>(n_bits)*100</value>
     </param>
     <param>
       <key>srate</key>
@@ -2136,7 +2014,7 @@
     </param>
     <param>
       <key>size</key>
-      <value>1024</value>
+      <value>n_bits*100</value>
     </param>
     <param>
       <key>srate</key>
@@ -2211,19 +2089,13 @@
   </connection>
   <connection>
     <source_block_id>analog_random_source_x_0</source_block_id>
-    <sink_block_id>blocks_pack_k_bits_bb_0</sink_block_id>
+    <sink_block_id>blocks_throttle_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
     <source_block_id>blks2_error_rate_0</source_block_id>
     <sink_block_id>qtgui_number_sink_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_add_xx_0</source_block_id>
-    <sink_block_id>blocks_file_sink_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -2246,22 +2118,10 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>blocks_file_source_0</source_block_id>
-    <sink_block_id>blocks_add_xx_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>1</sink_key>
-  </connection>
-  <connection>
     <source_block_id>blocks_float_to_char_0</source_block_id>
     <sink_block_id>blks2_error_rate_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>1</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_pack_k_bits_bb_0</source_block_id>
-    <sink_block_id>blocks_throttle_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
   </connection>
   <connection>
     <source_block_id>blocks_threshold_ff_0</source_block_id>
@@ -2270,8 +2130,14 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
+    <source_block_id>blocks_threshold_ff_0</source_block_id>
+    <sink_block_id>qtgui_time_sink_x_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
     <source_block_id>blocks_throttle_0</source_block_id>
-    <sink_block_id>mack_sdr_mapper_atsc_0</sink_block_id>
+    <sink_block_id>mapper_atsc_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -2282,13 +2148,7 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>demapper_atsc_0</source_block_id>
-    <sink_block_id>qtgui_time_sink_x_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>mack_sdr_mapper_atsc_0</source_block_id>
+    <source_block_id>mapper_atsc_0</source_block_id>
     <sink_block_id>blocks_add_xx_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>1</sink_key>

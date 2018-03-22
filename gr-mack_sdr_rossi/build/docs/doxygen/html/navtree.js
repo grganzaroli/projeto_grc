@@ -25,7 +25,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"BCH__decoder__ATSC_8h.html"
+"BCH__decoder__ATSC_8h.html",
+"classgr_1_1mack__sdr__rossi_1_1str__to__vec.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

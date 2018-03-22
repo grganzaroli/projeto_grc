@@ -63,11 +63,11 @@ $(document).ready(function(){initNavTree('demap_8h_source.html','');});
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="keywordtype">int</span> size; <span class="comment">//tamanho do frame</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keywordtype">int</span> mod_size; <span class="comment">//modula��o</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keywordtype">int</span> rate; <span class="comment">//taxa de codifica��o</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keywordtype">int</span> mod_size; <span class="comment">//modulacao</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keywordtype">int</span> rate; <span class="comment">//taxa de codificacao</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keywordtype">int</span> M; <span class="comment">//bits por simbolo</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordtype">float</span> D[2]; <span class="comment">//distancia bit 0 e bit 1</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        gr_complex *tab; <span class="comment">//tabela dos pontos da modu�la��o</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        gr_complex *tab; <span class="comment">//tabela dos pontos da modulacao</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        gr_complex tabela[4096];</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordtype">float</span> var; <span class="comment">//variancia do ruido</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordtype">float</span> *aux_r; <span class="comment">//aux real</span></div>
@@ -77,13 +77,19 @@ $(document).ready(function(){initNavTree('demap_8h_source.html','');});
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classdemap.html#a27bd2ddd4d9aa7fccbbb1fb0de84b5c9">init</a>(<span class="keywordtype">int</span> s, <span class="keywordtype">int</span> ms, <span class="keywordtype">int</span> r, <span class="keywordtype">float</span> v); <span class="comment">//inicializa variavais</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classdemap.html#abf35aad64d58d29ccd75bfe4b550b47e">demapper_soft</a>(<span class="keyword">const</span> gr_complex *i, <span class="keywordtype">float</span> *o); <span class="comment">// faz o demap de i em o (LLR)</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classdemap.html#a3eaceaf28bbd76e9e81d38c2c596531d">demapper_hard</a>(<span class="keyword">const</span> gr_complex *i, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *o); <span class="comment">// faz o demap de i em o (bit)</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classdemap.html#a88eb03315d99b234452a6b4a0aa65b65">pack_bits</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *pack_in, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *pack_out, <span class="keywordtype">int</span> n_bits); <span class="comment">//empacota n_bits de pack_in em pack_out</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classdemap.html#abbc3d10b8a5b0ba33df77a1f1bc3c96d">mapper</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *i, gr_complex *o); <span class="comment">//faz o mapeamento</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classdemap.html#abf35aad64d58d29ccd75bfe4b550b47e">demapper_soft</a>(<span class="keyword">const</span> gr_complex *i, <span class="keywordtype">float</span> *o); <span class="comment">// faz o demap de i em o (LLR)</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classdemap.html#a3eaceaf28bbd76e9e81d38c2c596531d">demapper_hard</a>(<span class="keyword">const</span> gr_complex *i, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *o); <span class="comment">// faz o demap de i em o (bit)</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classdemap_html_abbc3d10b8a5b0ba33df77a1f1bc3c96d"><div class="ttname"><a href="classdemap.html#abbc3d10b8a5b0ba33df77a1f1bc3c96d">demap::mapper</a></div><div class="ttdeci">void mapper(const unsigned char *i, gr_complex *o)</div></div>
 <div class="ttc" id="classdemap_html_a3eaceaf28bbd76e9e81d38c2c596531d"><div class="ttname"><a href="classdemap.html#a3eaceaf28bbd76e9e81d38c2c596531d">demap::demapper_hard</a></div><div class="ttdeci">void demapper_hard(const gr_complex *i, unsigned char *o)</div></div>
+<div class="ttc" id="classdemap_html_a88eb03315d99b234452a6b4a0aa65b65"><div class="ttname"><a href="classdemap.html#a88eb03315d99b234452a6b4a0aa65b65">demap::pack_bits</a></div><div class="ttdeci">void pack_bits(const unsigned char *pack_in, unsigned char *pack_out, int n_bits)</div></div>
 <div class="ttc" id="classdemap_html"><div class="ttname"><a href="classdemap.html">demap</a></div><div class="ttdef"><b>Definition:</b> demap.h:7</div></div>
 <div class="ttc" id="classdemap_html_a27bd2ddd4d9aa7fccbbb1fb0de84b5c9"><div class="ttname"><a href="classdemap.html#a27bd2ddd4d9aa7fccbbb1fb0de84b5c9">demap::init</a></div><div class="ttdeci">void init(int s, int ms, int r, float v)</div></div>
 <div class="ttc" id="classdemap_html_abf35aad64d58d29ccd75bfe4b550b47e"><div class="ttname"><a href="classdemap.html#abf35aad64d58d29ccd75bfe4b550b47e">demap::demapper_soft</a></div><div class="ttdeci">void demapper_soft(const gr_complex *i, float *o)</div></div>
@@ -93,7 +99,7 @@ $(document).ready(function(){initNavTree('demap_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="demap_8h.html">demap.h</a></li>
-    <li class="footer">Generated on Fri Mar 16 2018 11:30:37 for GNU Radio&#39;s MACK_SDR_ROSSI Package by
+    <li class="footer">Generated on Thu Mar 22 2018 13:44:54 for GNU Radio&#39;s MACK_SDR_ROSSI Package by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -3,31 +3,38 @@
   <compounddef id="BCH__decoder__ATSC__impl_8h" kind="file">
     <compoundname>BCH_decoder_ATSC_impl.h</compoundname>
     <includes refid="BCH__decoder__ATSC_8h" local="no">mack_sdr_rossi/BCH_decoder_ATSC.h</includes>
+    <includes refid="bch_8h" local="yes">bch.h</includes>
     <incdepgraph>
-      <node id="35">
-        <label>gnuradio/attributes.h</label>
-      </node>
-      <node id="34">
-        <label>mack_sdr_rossi/api.h</label>
-        <link refid="api_8h"/>
-        <childnode refid="35" relation="include">
-        </childnode>
-      </node>
-      <node id="36">
-        <label>gnuradio/block.h</label>
-      </node>
-      <node id="33">
-        <label>mack_sdr_rossi/BCH_decoder_ATSC.h</label>
-        <link refid="BCH__decoder__ATSC_8h"/>
-        <childnode refid="34" relation="include">
-        </childnode>
-        <childnode refid="36" relation="include">
-        </childnode>
-      </node>
-      <node id="32">
+      <node id="49">
         <label>BCH_decoder_ATSC_impl.h</label>
         <link refid="BCH_decoder_ATSC_impl.h"/>
-        <childnode refid="33" relation="include">
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="51">
+        <label>mack_sdr_rossi/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>bch.h</label>
+        <link refid="bch_8h"/>
+      </node>
+      <node id="53">
+        <label>gnuradio/block.h</label>
+      </node>
+      <node id="50">
+        <label>mack_sdr_rossi/BCH_decoder_ATSC.h</label>
+        <link refid="BCH__decoder__ATSC_8h"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -38,6 +45,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_decoder_ATSC_impl.h"/>
+    <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_decoder_ATSC_impl.h"/>
   </compounddef>
 </doxygen>

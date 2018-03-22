@@ -11,7 +11,7 @@ void demap::init(int s, int ms, int r, float v)
 	size = s;
 	mod_size = ms;
 	rate = r;
-	M = sqrt(mod_size);
+	M = log2(mod_size);
 	var = v;
 
 	aux_r = new float[mod_size]; //aux real

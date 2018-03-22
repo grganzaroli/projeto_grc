@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC__impl" kind="class" prot="public">
+    <compoundname>gr::mack_sdr_rossi::Group_interleaver_ATSC_impl</compoundname>
+    <basecompoundref refid="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC" prot="public" virt="non-virtual">gr::mack_sdr_rossi::Group_interleaver_ATSC</basecompoundref>
+    <includes refid="Group__interleaver__ATSC__impl_8h" local="no">Group_interleaver_ATSC_impl.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC__impl_1ace7921760708387c2b1d793e40620e58" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::mack_sdr_rossi::Group_interleaver_ATSC_impl::nldpc</definition>
+        <argsstring></argsstring>
+        <name>nldpc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Group_interleaver_ATSC_impl.h" line="47" column="1" bodyfile="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Group_interleaver_ATSC_impl.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC__impl_1a528eaafe37e3a01b01e033bff44d1a95" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::mack_sdr_rossi::Group_interleaver_ATSC_impl::rate</definition>
+        <argsstring></argsstring>
+        <name>rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Group_interleaver_ATSC_impl.h" line="47" column="1" bodyfile="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Group_interleaver_ATSC_impl.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC__impl_1a14f93781970a926d72da0ea989944cdc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::mack_sdr_rossi::Group_interleaver_ATSC_impl::mod_size</definition>
+        <argsstring></argsstring>
+        <name>mod_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Group_interleaver_ATSC_impl.h" line="47" column="1" bodyfile="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Group_interleaver_ATSC_impl.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC__impl_1a966a72bd946baf60025699cd53f8a3d9" prot="public" static="no" mutable="no">
+        <type><ref refid="classatsc__interleaver" kindref="compound">atsc_interleaver</ref></type>
+        <definition>atsc_interleaver gr::mack_sdr_rossi::Group_interleaver_ATSC_impl::interleaver</definition>
+        <argsstring></argsstring>
+        <name>interleaver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Group_interleaver_ATSC_impl.h" line="49" column="1" bodyfile="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Group_interleaver_ATSC_impl.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC__impl_1aa54cf60dad466f01590c3c5a411b770e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::mack_sdr_rossi::Group_interleaver_ATSC_impl::Group_interleaver_ATSC_impl</definition>
+        <argsstring>(size_t Size, int Rate, int Mod)</argsstring>
+        <name>Group_interleaver_ATSC_impl</name>
+        <param>
+          <type>size_t</type>
+          <declname>Size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Rate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Group_interleaver_ATSC_impl.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC__impl_1a6825625c96e25f63b0daaa246689506e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::mack_sdr_rossi::Group_interleaver_ATSC_impl::~Group_interleaver_ATSC_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~Group_interleaver_ATSC_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Group_interleaver_ATSC_impl.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC__impl_1a00bc6147c2396d38b5388dc47046c48c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::mack_sdr_rossi::Group_interleaver_ATSC_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Group_interleaver_ATSC_impl.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC__impl_1ad9aec5ddc5e312e264b5951c2f6d9a4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::mack_sdr_rossi::Group_interleaver_ATSC_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Group_interleaver_ATSC_impl.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC__impl_1aed346c6f97b687abd632f9f3ccb20b04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::mack_sdr_rossi::Group_interleaver_ATSC_impl::GWI</definition>
+        <argsstring>(const unsigned char *in, unsigned char *out)</argsstring>
+        <name>GWI</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Group_interleaver_ATSC_impl.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="84">
+        <label>gr::mack_sdr_rossi::Group_interleaver_ATSC</label>
+        <link refid="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC"/>
+        <childnode refid="85" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>block</label>
+      </node>
+      <node id="83">
+        <label>gr::mack_sdr_rossi::Group_interleaver_ATSC_impl</label>
+        <link refid="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC__impl"/>
+        <childnode refid="84" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="87">
+        <label>gr::mack_sdr_rossi::Group_interleaver_ATSC</label>
+        <link refid="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC"/>
+        <childnode refid="88" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>atsc_interleaver</label>
+        <link refid="classatsc__interleaver"/>
+      </node>
+      <node id="88">
+        <label>block</label>
+      </node>
+      <node id="86">
+        <label>gr::mack_sdr_rossi::Group_interleaver_ATSC_impl</label>
+        <link refid="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC__impl"/>
+        <childnode refid="87" relation="public-inheritance">
+        </childnode>
+        <childnode refid="89" relation="usage">
+          <edgelabel>interleaver</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Group_interleaver_ATSC_impl.h" line="31" column="1" bodyfile="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Group_interleaver_ATSC_impl.h" bodystart="30" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC__impl_1a00bc6147c2396d38b5388dc47046c48c" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Group_interleaver_ATSC_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC__impl_1ad9aec5ddc5e312e264b5951c2f6d9a4c" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Group_interleaver_ATSC_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC__impl_1aa54cf60dad466f01590c3c5a411b770e" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Group_interleaver_ATSC_impl</scope><name>Group_interleaver_ATSC_impl</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC__impl_1aed346c6f97b687abd632f9f3ccb20b04" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Group_interleaver_ATSC_impl</scope><name>GWI</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC__impl_1a966a72bd946baf60025699cd53f8a3d9" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Group_interleaver_ATSC_impl</scope><name>interleaver</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC_1ae73092c13f5bc656a01bab84389c866a" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Group_interleaver_ATSC_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC__impl_1a14f93781970a926d72da0ea989944cdc" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Group_interleaver_ATSC_impl</scope><name>mod_size</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC__impl_1ace7921760708387c2b1d793e40620e58" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Group_interleaver_ATSC_impl</scope><name>nldpc</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC__impl_1a528eaafe37e3a01b01e033bff44d1a95" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Group_interleaver_ATSC_impl</scope><name>rate</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC_1aed28baf2bab900ff218fa49705bbda98" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Group_interleaver_ATSC_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC__impl_1a6825625c96e25f63b0daaa246689506e" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Group_interleaver_ATSC_impl</scope><name>~Group_interleaver_ATSC_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

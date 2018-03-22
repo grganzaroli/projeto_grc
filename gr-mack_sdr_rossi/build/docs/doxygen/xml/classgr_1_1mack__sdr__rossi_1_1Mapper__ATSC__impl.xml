@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1mack__sdr__rossi_1_1Mapper__ATSC__impl" kind="class" prot="public">
+    <compoundname>gr::mack_sdr_rossi::Mapper_ATSC_impl</compoundname>
+    <basecompoundref refid="classgr_1_1mack__sdr__rossi_1_1Mapper__ATSC" prot="public" virt="non-virtual">gr::mack_sdr_rossi::Mapper_ATSC</basecompoundref>
+    <includes refid="Mapper__ATSC__impl_8h" local="no">Mapper_ATSC_impl.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgr_1_1mack__sdr__rossi_1_1Mapper__ATSC__impl_1aaf39225688d841dfac3c8a3efde3c485" prot="public" static="no" mutable="no">
+        <type><ref refid="classdemap" kindref="compound">demap</ref></type>
+        <definition>demap gr::mack_sdr_rossi::Mapper_ATSC_impl::mapper</definition>
+        <argsstring></argsstring>
+        <name>mapper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Mapper_ATSC_impl.h" line="48" column="1" bodyfile="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Mapper_ATSC_impl.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1mack__sdr__rossi_1_1Mapper__ATSC__impl_1a564f4e4b6d28582dea4ea483940f5a69" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::mack_sdr_rossi::Mapper_ATSC_impl::s_in</definition>
+        <argsstring></argsstring>
+        <name>s_in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Mapper_ATSC_impl.h" line="52" column="1" bodyfile="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Mapper_ATSC_impl.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1mack__sdr__rossi_1_1Mapper__ATSC__impl_1a7e46fed7b33a08bdaf749a1a4ce64ad2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::mack_sdr_rossi::Mapper_ATSC_impl::m_size</definition>
+        <argsstring></argsstring>
+        <name>m_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Mapper_ATSC_impl.h" line="52" column="1" bodyfile="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Mapper_ATSC_impl.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1Mapper__ATSC__impl_1a91fd40b9bf736bc58663ba41664768a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::mack_sdr_rossi::Mapper_ATSC_impl::Mapper_ATSC_impl</definition>
+        <argsstring>(size_t N_ldpc, int Rate, int Mod_size)</argsstring>
+        <name>Mapper_ATSC_impl</name>
+        <param>
+          <type>size_t</type>
+          <declname>N_ldpc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Rate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Mod_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Mapper_ATSC_impl.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1Mapper__ATSC__impl_1afd913f31a552b7d7e6b4f4b73f526e13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::mack_sdr_rossi::Mapper_ATSC_impl::~Mapper_ATSC_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~Mapper_ATSC_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Mapper_ATSC_impl.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1Mapper__ATSC__impl_1ab441ae3eef112b659784be1893be2741" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::mack_sdr_rossi::Mapper_ATSC_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Mapper_ATSC_impl.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1Mapper__ATSC__impl_1a929d1c75aa981ec6ce47055f746d60e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::mack_sdr_rossi::Mapper_ATSC_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Mapper_ATSC_impl.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1Mapper__ATSC__impl_1a993376abbe343afcc587a3e31e74627a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::mack_sdr_rossi::Mapper_ATSC_impl::MAP</definition>
+        <argsstring>(const unsigned char *in, gr_complex *out)</argsstring>
+        <name>MAP</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>gr_complex *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Mapper_ATSC_impl.h" line="50" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="135">
+        <label>block</label>
+      </node>
+      <node id="133">
+        <label>gr::mack_sdr_rossi::Mapper_ATSC_impl</label>
+        <link refid="classgr_1_1mack__sdr__rossi_1_1Mapper__ATSC__impl"/>
+        <childnode refid="134" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>gr::mack_sdr_rossi::Mapper_ATSC</label>
+        <link refid="classgr_1_1mack__sdr__rossi_1_1Mapper__ATSC"/>
+        <childnode refid="135" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="139">
+        <label>demap</label>
+        <link refid="classdemap"/>
+      </node>
+      <node id="138">
+        <label>block</label>
+      </node>
+      <node id="136">
+        <label>gr::mack_sdr_rossi::Mapper_ATSC_impl</label>
+        <link refid="classgr_1_1mack__sdr__rossi_1_1Mapper__ATSC__impl"/>
+        <childnode refid="137" relation="public-inheritance">
+        </childnode>
+        <childnode refid="139" relation="usage">
+          <edgelabel>mapper</edgelabel>
+        </childnode>
+      </node>
+      <node id="137">
+        <label>gr::mack_sdr_rossi::Mapper_ATSC</label>
+        <link refid="classgr_1_1mack__sdr__rossi_1_1Mapper__ATSC"/>
+        <childnode refid="138" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Mapper_ATSC_impl.h" line="32" column="1" bodyfile="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Mapper_ATSC_impl.h" bodystart="31" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Mapper__ATSC__impl_1ab441ae3eef112b659784be1893be2741" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Mapper_ATSC_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Mapper__ATSC__impl_1a929d1c75aa981ec6ce47055f746d60e0" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Mapper_ATSC_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Mapper__ATSC__impl_1a7e46fed7b33a08bdaf749a1a4ce64ad2" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Mapper_ATSC_impl</scope><name>m_size</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Mapper__ATSC_1aa888cef8c5b144be472ae4f6ff8f9809" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Mapper_ATSC_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Mapper__ATSC__impl_1a993376abbe343afcc587a3e31e74627a" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Mapper_ATSC_impl</scope><name>MAP</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Mapper__ATSC__impl_1aaf39225688d841dfac3c8a3efde3c485" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Mapper_ATSC_impl</scope><name>mapper</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Mapper__ATSC__impl_1a91fd40b9bf736bc58663ba41664768a2" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Mapper_ATSC_impl</scope><name>Mapper_ATSC_impl</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Mapper__ATSC__impl_1a564f4e4b6d28582dea4ea483940f5a69" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Mapper_ATSC_impl</scope><name>s_in</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Mapper__ATSC_1ae8ff0ffed60558b4f2d0a072b6dde894" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Mapper_ATSC_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Mapper__ATSC__impl_1afd913f31a552b7d7e6b4f4b73f526e13" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Mapper_ATSC_impl</scope><name>~Mapper_ATSC_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

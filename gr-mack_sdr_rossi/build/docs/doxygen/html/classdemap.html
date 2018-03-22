@@ -63,6 +63,10 @@ $(document).ready(function(){initNavTree('classdemap.html','');});
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a27bd2ddd4d9aa7fccbbb1fb0de84b5c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdemap.html#a27bd2ddd4d9aa7fccbbb1fb0de84b5c9">init</a> (int s, int ms, int r, float v)</td></tr>
 <tr class="separator:a27bd2ddd4d9aa7fccbbb1fb0de84b5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88eb03315d99b234452a6b4a0aa65b65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdemap.html#a88eb03315d99b234452a6b4a0aa65b65">pack_bits</a> (const unsigned char *pack_in, unsigned char *pack_out, int n_bits)</td></tr>
+<tr class="separator:a88eb03315d99b234452a6b4a0aa65b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbc3d10b8a5b0ba33df77a1f1bc3c96d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdemap.html#abbc3d10b8a5b0ba33df77a1f1bc3c96d">mapper</a> (const unsigned char *i, gr_complex *o)</td></tr>
+<tr class="separator:abbc3d10b8a5b0ba33df77a1f1bc3c96d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf35aad64d58d29ccd75bfe4b550b47e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdemap.html#abf35aad64d58d29ccd75bfe4b550b47e">demapper_soft</a> (const gr_complex *i, float *o)</td></tr>
 <tr class="separator:abf35aad64d58d29ccd75bfe4b550b47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eaceaf28bbd76e9e81d38c2c596531d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdemap.html#a3eaceaf28bbd76e9e81d38c2c596531d">demapper_hard</a> (const gr_complex *i, unsigned char *o)</td></tr>
@@ -159,6 +163,64 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="abbc3d10b8a5b0ba33df77a1f1bc3c96d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void demap::mapper </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">gr_complex *&#160;</td>
+          <td class="paramname"><em>o</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a88eb03315d99b234452a6b4a0aa65b65"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void demap::pack_bits </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned char *&#160;</td>
+          <td class="paramname"><em>pack_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>pack_out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n_bits</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="demap_8h_source.html">demap.h</a></li>
 </ul>
@@ -168,7 +230,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classdemap.html">demap</a></li>
-    <li class="footer">Generated on Fri Mar 16 2018 11:30:37 for GNU Radio&#39;s MACK_SDR_ROSSI Package by
+    <li class="footer">Generated on Thu Mar 22 2018 13:44:54 for GNU Radio&#39;s MACK_SDR_ROSSI Package by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
