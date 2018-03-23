@@ -932,19 +932,19 @@ void atsc_interleaver::set(int N_ldpc, int Rate, int Mod_size)
 				switch (rate) 
 				{
 					case 2:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_QPSK_64k_02_15;
 					break;
 					case 3:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_QPSK_64k_03_15;
 					break;
 					case 4:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_QPSK_64k_04_15;
 					break;
 					case 5:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_QPSK_64k_05_15;
 					break;
 					case 6:
@@ -952,7 +952,7 @@ void atsc_interleaver::set(int N_ldpc, int Rate, int Mod_size)
 						tab = permutation_QPSK_64k_06_15;
 					break;
 					case 7:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_QPSK_64k_07_15;
 					break;
 					case 8:
@@ -989,20 +989,20 @@ void atsc_interleaver::set(int N_ldpc, int Rate, int Mod_size)
 				switch (rate) 
 				{
 					case 2:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_16QAM_64k_02_15;
 					break;
 					case 3:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_16QAM_64k_03_15;
 					break;
 					case 4:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_16QAM_64k_04_15;
 					break;
 					case 5:
 						interleaver_type = true; // block interleaver type B
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_16QAM_64k_05_15;
 					break;
 					case 6:
@@ -1010,7 +1010,7 @@ void atsc_interleaver::set(int N_ldpc, int Rate, int Mod_size)
 						tab = permutation_16QAM_64k_06_15;
 					break;
 					case 7:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_16QAM_64k_07_15;
 					break;
 					case 8:
@@ -1049,19 +1049,19 @@ void atsc_interleaver::set(int N_ldpc, int Rate, int Mod_size)
 				switch (rate) 
 				{
 					case 2:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_64QAM_64k_02_15;
 					break;
 					case 3:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_64QAM_64k_03_15;
 					break;
 					case 4:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_64QAM_64k_04_15;
 					break;
 					case 5:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_64QAM_64k_05_15;
 					break;
 					case 6:
@@ -1070,7 +1070,7 @@ void atsc_interleaver::set(int N_ldpc, int Rate, int Mod_size)
 					break;
 					case 7:
 						interleaver_type = true; // block interleaver type B
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_64QAM_64k_07_15;
 					break;
 					case 8:
@@ -1110,20 +1110,20 @@ void atsc_interleaver::set(int N_ldpc, int Rate, int Mod_size)
 				switch (rate) 
 				{
 					case 2:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_256QAM_64k_02_15;
 					break;
 					case 3:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_256QAM_64k_03_15;
 					break;
 					case 4:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_256QAM_64k_04_15;
 					break;
 					case 5:
 						interleaver_type = true; // block interleaver type B
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_256QAM_64k_05_15;
 					break;
 					case 6:
@@ -1133,7 +1133,7 @@ void atsc_interleaver::set(int N_ldpc, int Rate, int Mod_size)
 					break;
 					case 7:
 						interleaver_type = true; // block interleaver type B
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_256QAM_64k_07_15;
 					break;
 					case 8:
@@ -1182,54 +1182,54 @@ void atsc_interleaver::set(int N_ldpc, int Rate, int Mod_size)
 				switch (rate) 
 				{
 					case 2:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_QPSK_16k_02_15;
 					break;
 					case 3:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_QPSK_16k_03_15;
 					break;
 					case 4:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_QPSK_16k_04_15;
 					break;
 					case 5:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_QPSK_16k_05_15;
 					break;
 					case 6:
 						interleaver_type = true; // block interleaver type B
-						q_ldpc = 108;
+						q_ldpc = 27;
 						tab = permutation_QPSK_16k_06_15;
 					break;
 					case 7:
 						interleaver_type = true; // block interleaver type B
-						q_ldpc = 60;
+						q_ldpc = 24;
 						tab = permutation_QPSK_16k_07_15;
 					break;
 					case 8:
-						q_ldpc = 84;
+						q_ldpc = 21;
 						tab = permutation_QPSK_16k_08_15;
 					break;
 					case 9:
 						interleaver_type = true; // block interleaver type B
-						q_ldpc = 72;
+						q_ldpc = 18;
 						tab = permutation_QPSK_16k_09_15;
 					break;
 					case 10:
-						q_ldpc = 60;
+						q_ldpc = 15;
 						tab = permutation_QPSK_16k_10_15;
 					break;
 					case 11:
-						q_ldpc = 48;
+						q_ldpc = 12;
 						tab = permutation_QPSK_16k_11_15;
 					break;
 					case 12:
-						q_ldpc = 36;
+						q_ldpc = 9;
 						tab = permutation_QPSK_16k_12_15;
 					break;
 					case 13:
-						q_ldpc = 24;
+						q_ldpc = 6;
 						tab = permutation_QPSK_16k_13_15;
 					break;
 					default:
@@ -1242,56 +1242,56 @@ void atsc_interleaver::set(int N_ldpc, int Rate, int Mod_size)
 				switch (rate) 
 				{
 					case 2:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_16QAM_16k_02_15;
 					break;
 					case 3:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_16QAM_16k_03_15;
 					break;
 					case 4:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_16QAM_16k_04_15;
 					break;
 					case 5:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_16QAM_16k_05_15;
 					break;
 					case 6:
 						interleaver_type = true; // block interleaver type B
-						q_ldpc = 108;
+						q_ldpc = 27;
 						tab = permutation_16QAM_16k_06_15;
 					break;
 					case 7:
 						interleaver_type = true; // block interleaver type B
-						q_ldpc = 60;
+						q_ldpc = 24;
 						tab = permutation_16QAM_16k_07_15;
 					break;
 					case 8:
-						q_ldpc = 84;
+						q_ldpc = 21;
 						tab = permutation_16QAM_16k_08_15;
 					break;
 					case 9:
 						interleaver_type = true; // block interleaver type B
-						q_ldpc = 72;
+						q_ldpc = 18;
 						tab = permutation_16QAM_16k_09_15;
 					break;
 					case 10:
-						q_ldpc = 60;
+						q_ldpc = 15;
 						tab = permutation_16QAM_16k_10_15;
 					break;
 					case 11:
 						interleaver_type = true; // block interleaver type B
-						q_ldpc = 48;
+						q_ldpc = 12;
 						tab = permutation_16QAM_16k_11_15;
 					break;
 					case 12:
-						q_ldpc = 36;
+						q_ldpc = 9;
 						tab = permutation_16QAM_16k_12_15;
 					break;
 					case 13:
 						interleaver_type = true; // block interleaver type B
-						q_ldpc = 24;
+						q_ldpc = 6;
 						tab = permutation_16QAM_16k_13_15;
 					break;
 					default:
@@ -1304,54 +1304,54 @@ void atsc_interleaver::set(int N_ldpc, int Rate, int Mod_size)
 				switch (rate) 
 				{
 					case 2:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_64QAM_16k_02_15;
 					break;
 					case 3:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_64QAM_16k_03_15;
 					break;
 					case 4:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_64QAM_16k_04_15;
 					break;
 					case 5:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_64QAM_16k_05_15;
 					break;
 					case 6:
 						interleaver_type = true; // block interleaver type B
-						q_ldpc = 108;
+						q_ldpc = 27;
 						tab = permutation_64QAM_16k_06_15;
 					break;
 					case 7:
 						interleaver_type = true; // block interleaver type B
-						q_ldpc = 60;
+						q_ldpc = 24;
 						tab = permutation_64QAM_16k_07_15;
 					break;
 					case 8:
-						q_ldpc = 84;
+						q_ldpc = 21;
 						tab = permutation_64QAM_16k_08_15;
 					break;
 					case 9:
 						interleaver_type = true; // block interleaver type B
-						q_ldpc = 72;
+						q_ldpc = 18;
 						tab = permutation_64QAM_16k_09_15;
 					break;
 					case 10:
-						q_ldpc = 60;
+						q_ldpc = 15;
 						tab = permutation_64QAM_16k_10_15;
 					break;
 					case 11:
-						q_ldpc = 48;
+						q_ldpc = 12;
 						tab = permutation_64QAM_16k_11_15;
 					break;
 					case 12:
-						q_ldpc = 36;
+						q_ldpc = 9;
 						tab = permutation_64QAM_16k_12_15;
 					break;
 					case 13:
-						q_ldpc = 24;
+						q_ldpc = 6;
 						tab = permutation_64QAM_16k_13_15;
 					break;
 					default:
@@ -1364,53 +1364,53 @@ void atsc_interleaver::set(int N_ldpc, int Rate, int Mod_size)
 				switch (rate) 
 				{
 					case 2:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_256QAM_16k_02_15;
 					break;
 					case 3:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_256QAM_16k_03_15;
 					break;
 					case 4:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_256QAM_16k_04_15;
 					break;
 					case 5:
-						q_ldpc = 60;
+						q_ldpc = 0;
 						tab = permutation_256QAM_16k_05_15;
 					break;
 					case 6:
 						interleaver_type = true; // block interleaver type B
-						q_ldpc = 108;
+						q_ldpc = 27;
 						tab = permutation_256QAM_16k_06_15;
 					break;
 					case 7:
-						q_ldpc = 60;
+						q_ldpc = 24;
 						tab = permutation_256QAM_16k_07_15;
 					break;
 					case 8:
-						q_ldpc = 84;
+						q_ldpc = 21;
 						tab = permutation_256QAM_16k_08_15;
 					break;
 					case 9:
-						q_ldpc = 72;
+						q_ldpc = 18;
 						tab = permutation_256QAM_16k_09_15;
 					break;
 					case 10:
-						q_ldpc = 60;
+						q_ldpc = 15;
 						tab = permutation_256QAM_16k_10_15;
 					break;
 					case 11:
 						interleaver_type = true; // block interleaver type B
-						q_ldpc = 48;
+						q_ldpc = 12;
 						tab = permutation_256QAM_16k_11_15;
 					break;
 					case 12:
-						q_ldpc = 36;
+						q_ldpc = 9;
 						tab = permutation_256QAM_16k_12_15;
 					break;
 					case 13:
-						q_ldpc = 24;
+						q_ldpc = 6;
 						tab = permutation_256QAM_16k_13_15;
 					break;
 					default:
