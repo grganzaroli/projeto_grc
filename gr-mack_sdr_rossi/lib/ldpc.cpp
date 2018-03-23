@@ -20,7 +20,6 @@ void ldpc::init(unsigned short N, unsigned short K)
 	unsigned short tab[156][32]; //tabela (tamanho maximo)
 	unsigned short n_col, n_lin;
 
-	unsigned short el_C = 11; // numero maximo de 1s por check node
 	unsigned short **C_i; // matriz de troca de bits, que será calculada
 	unsigned short *INDX_i; // indices para calcular a matriz C_i, numero de troca de bits por linha
 	unsigned short *aux_indx; // indice auxiliar para calcular C
@@ -1522,6 +1521,10 @@ void ldpc::init(unsigned short N, unsigned short K)
 				tipo = false;
 				n_lin = 29;
 				n_col = 20;
+				M1 = 1800;
+				M2 = 54360;
+				Q1 = 5;
+				Q2 = 151;
 				for(unsigned short i = 0; i < n_lin;  i++)
 					for(unsigned short j = 0; j < n_col; j++)
 						tab[i][j] = n_ldpc_tab_2_15[i][j];
@@ -1530,6 +1533,10 @@ void ldpc::init(unsigned short N, unsigned short K)
 				tipo = false;
 				n_lin = 41;
 				n_col = 15;
+				M1 = 1800;
+				M2 = 50040;
+				Q1 = 5;
+				Q2 = 139;
 				for(unsigned short i = 0; i < n_lin;  i++)
 					for(unsigned short j = 0; j < n_col; j++)
 						tab[i][j] = n_ldpc_tab_3_15[i][j];
@@ -1538,6 +1545,10 @@ void ldpc::init(unsigned short N, unsigned short K)
 				tipo = false;
 				n_lin = 53;
 				n_col = 13;
+				M1 = 1800;
+				M2 = 45720;
+				Q1 = 5;
+				Q2 = 127;
 				for(unsigned short i = 0; i < n_lin;  i++)
 					for(unsigned short j = 0; j < n_col; j++)
 						tab[i][j] = n_ldpc_tab_4_15[i][j];
@@ -1546,6 +1557,10 @@ void ldpc::init(unsigned short N, unsigned short K)
 				tipo = false;
 				n_lin = 64;
 				n_col = 11;
+				M1 = 1440;
+				M2 = 41760;
+				Q1 = 4;
+				Q2 = 116;
 				for(unsigned short i = 0; i < n_lin;  i++)
 					for(unsigned short j = 0; j < n_col; j++)
 						tab[i][j] = n_ldpc_tab_5_15[i][j];
@@ -1563,6 +1578,10 @@ void ldpc::init(unsigned short N, unsigned short K)
 				tipo = false;
 				n_lin = 87;
 				n_col = 9;
+				M1 = 1080;
+				M2 = 33480;
+				Q1 = 3;
+				Q2 = 93;
 				for(unsigned short i = 0; i < n_lin;  i++)
 					for(unsigned short j = 0; j < n_col; j++)
 						tab[i][j] = n_ldpc_tab_7_15[i][j];
@@ -1631,6 +1650,10 @@ void ldpc::init(unsigned short N, unsigned short K)
 				tipo = false;
 				n_lin = 15;
 				n_col = 7;
+				M1 = 3240;
+				M2 = 10800;
+				Q1 = 9;
+				Q2 = 30;
 				for(unsigned short i = 0; i < n_lin;  i++)
 					for(unsigned short j = 0; j < n_col; j++)
 						tab[i][j] = s_ldpc_tab_2_15[i][j];
@@ -1639,6 +1662,10 @@ void ldpc::init(unsigned short N, unsigned short K)
 				tipo = false;
 				n_lin = 12;
 				n_col = 11;
+				M1 = 1080;
+				M2 = 11880;
+				Q1 = 3;
+				Q2 = 33;
 				for(unsigned short i = 0; i < n_lin;  i++)
 					for(unsigned short j = 0; j < n_col; j++)
 						tab[i][j] = s_ldpc_tab_3_15[i][j];
@@ -1647,6 +1674,10 @@ void ldpc::init(unsigned short N, unsigned short K)
 				tipo = false;
 				n_lin = 15;
 				n_col = 10;
+				M1 = 1080;
+				M2 = 10800;
+				Q1 = 3;
+				Q2 = 30;
 				for(unsigned short i = 0; i < n_lin;  i++)
 					for(unsigned short j = 0; j < n_col; j++)
 						tab[i][j] = s_ldpc_tab_4_15[i][j];
@@ -1655,6 +1686,10 @@ void ldpc::init(unsigned short N, unsigned short K)
 				tipo = false;
 				n_lin = 17;
 				n_col = 10;
+				M1 = 720;
+				M2 = 10080;
+				Q1 = 2;
+				Q2 = 28;
 				for(unsigned short i = 0; i < n_lin;  i++)
 					for(unsigned short j = 0; j < n_col; j++)
 						tab[i][j] = s_ldpc_tab_5_15[i][j];
@@ -1747,7 +1782,7 @@ void ldpc::init(unsigned short N, unsigned short K)
 
 	C_i = new unsigned short*[n-k]; //matriz C_i
 	for(unsigned short i = 0; i < (n-k); i++)
-		C_i[i] = new unsigned short[el_C];
+		C_i[i] = new unsigned short[k+1];
 
 	INDX = new unsigned short[n-k]; //vetor INDX
 
@@ -1755,13 +1790,13 @@ void ldpc::init(unsigned short N, unsigned short K)
 	aux_indx = new unsigned short[n-k]; //vetor aux_indx
 
 	unsigned short count = 0;
-	if(tipo)
+	if(tipo) //TIPO B
 	{
 		for (unsigned short j = 0; j < (n-k); j++)
 		{
-			for (unsigned short i = 0; i < el_C; i++)
+			for (unsigned short i = 0; i < (k+1); i++)
 			{
-				C_i[j][i] =65535;
+				C_i[j][i] = 65535;
 			}
 			for (unsigned short i = 0; i < (k+1); i++)
 			{
@@ -1776,7 +1811,7 @@ void ldpc::init(unsigned short N, unsigned short K)
 		{
 			for (unsigned short kkk = 0; kkk < 360; kkk++) //elementos
 			{
-				for (unsigned short i = 0; i < n_col; i++) //elementos em uma linha, LDPC 16200
+				for (unsigned short i = 0; i < n_col; i++) //elementos em uma linha
 				{
 					if(tab[j][i] != 65535)
 					{
@@ -1798,27 +1833,137 @@ void ldpc::init(unsigned short N, unsigned short K)
 			{
 				if(C_i[j][aux_indx[j]] == i)
 				{
-				bit = bit^1;
-				aux_indx[j]++;
+					bit = bit^1;
+					aux_indx[j]++;
 				}
 
 				if(bit == 1)
 				{
-				C[j][INDX[j]] = i;
-				INDX[j]++;
+					C[j][INDX[j]] = i;
+					INDX[j]++;
 				}
 			}
 		}
 
+		//matriz diagonal pra decodificação
 		for (unsigned short i = 0; i < (n-k); i++)
 		{
 			C[i][INDX[i]] = i+k;
 			INDX[i]++;
 		}
 	}
-	else
+	else //TIPO A
 	{
-		printf("AINDA NÃO IMPLEMENTADO\n");	
+		printf("LDPC TIPO A EM FASE DE TESTES\n");
+
+		for (unsigned short j = 0; j < (n-k); j++)
+		{
+			for (unsigned short i = 0; i < (k+1); i++)
+			{
+				C_i[j][i] = 65535;
+			}
+			for (unsigned short i = 0; i < (k+1); i++)
+			{
+				C[j][i] = 65535;
+			}
+			INDX_i[j] = 0;
+			INDX[j] = 0;
+			aux_indx[j] = 0;
+		}
+		
+		for (unsigned short j = 0; j < n_lin; j++) //numero de linhas
+		{
+			for (unsigned short kkk = 0; kkk < 360; kkk++) //elementos
+			{
+				for (unsigned short i = 0; i < n_col; i++) //elementos em uma linha
+				{
+					if(tab[j][i] != 65535)
+					{
+						if(tab[j][i] < M1)
+						{
+							C_i[(tab[j][i]+kkk*Q1)%M1][INDX_i[(tab[j][i]+kkk*Q1)%M1]] = count;
+							INDX_i[(tab[j][i]+kkk*Q1)%M1] += 1;
+						}
+						else
+						{
+							C_i[M1+(tab[j][i]-M1+kkk*Q2)%M2][INDX_i[M1+(tab[j][i]-M1+kkk*Q2)%M2]] = count;
+							INDX_i[M1+(tab[j][i]-M1+kkk*Q2)%M2] += 1;
+						}
+					}
+				}
+				count++;
+			}
+		}
+
+		unsigned short bit; //se inverteu para 0 ou 1
+
+		for(unsigned short i = 0; i < k; i++) // para cada i
+		{
+			bit = 0;
+			for(unsigned short j = 0; j < M1; j++) //para cada p até M1
+			{
+				if(C_i[j][aux_indx[j]] == i)
+				{
+					bit = bit^1;
+					aux_indx[j]++;
+				}
+
+				if(bit == 1)
+				{
+					C[j][INDX[j]] = i;
+					INDX[j]++;
+				}
+			}
+		}
+
+		//copiar p de M1 em diante
+		for(int i = M1; i < (n-k); i++)
+		{
+			for(int j = 0; j < INDX_i[i]; j++)
+			{
+				C[i][j] = C_i[i][j];
+				INDX[i]++;
+			}
+		}
+
+		for(int i = 0; i < (n-k); i++)
+			for(int j = 0; j < k+1; j++)
+				C_i[i][j] = C[i][j];
+
+		//primeira permutação
+		for(int s = 0; s < 360; s ++)
+		{
+			for(int t = 0; t < Q1; t++)
+			{
+				for(int i = 0; i < INDX[Q1*s+t]; i++) //todos os itens 
+				{
+					C[360*t+s][i] = C_i[Q1*s+t][i];
+				}
+			}
+		}
+
+		for(int i = 0; i < (n-k); i++)
+			for(int j = 0; j < k+1; j++)
+				C_i[i][j] = C[i][j];
+
+		//segunda permutação
+		for(int s = 0; s < 360; s ++)
+		{
+			for(int t = 0; t < Q2; t++)
+			{
+				for(int i = 0; i < INDX[M1+Q2*s+t]; i++) //todos os itens 
+				{
+					C[M1+360*t+s][i] = C_i[M1+Q2*s+t][i];
+				}
+			}
+		}
+
+		//matriz identidade pra decodificação
+		for (unsigned short i = 0; i < (n-k); i++)
+		{
+			C[i][INDX[i]] = i+k;
+			INDX[i]++;
+		}
 	}
 
 	/*
@@ -1834,16 +1979,16 @@ void ldpc::init(unsigned short N, unsigned short K)
 	fclose(F);
 	printf("OK matriz_C_i\n");
 	*/
-	/*
+	
 	FILE *G = fopen("vetor_INDX_i.txt", "w");
 	for (unsigned short j = 0; j < (n-k); j++)
 	{
-	fprintf(G, "%i,", INDX_i[j]);
+	fprintf(G, "%i\n", INDX_i[j]);
 	}
 	fclose(G);
 	printf("OK vetor_INDX_i\n");
-	*/
-	/*
+	
+	
 	FILE *f = fopen("matriz_C.txt", "w");
 	for (unsigned short j = 0; j < (n-k); j++)
 	{
@@ -1858,12 +2003,12 @@ void ldpc::init(unsigned short N, unsigned short K)
 	}
 	fclose(f);
 	printf("OK matriz_C\n");
-	*/
+	
 	/*
 	FILE *g = fopen("vetor_INDX.txt", "w");
 	for (unsigned short j = 0; j < (n-k); j++)
 	{
-	fprintf(g, "%i,", INDX[j]);
+	fprintf(g, "%i\n", INDX[j]);
 	}
 	fclose(g);
 	printf("OK vetor_INDX\n");

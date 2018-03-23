@@ -9,6 +9,10 @@ private:
 	unsigned short r; //code rate
 	unsigned short max_it; //numero de iterações
 	unsigned short Q_ldpc; //constante que vem da norma
+	unsigned short M1; //constante da norma para LDPC tipo A
+	unsigned short M2; //constante da norma para LDPC tipo A
+	unsigned short Q1; //constante da norma para LDPC tipo A
+	unsigned short Q2; //constante da norma para LDPC tipo A
 	bool tipo; //false = tipo A, true = tipo B
 
 	unsigned short **C; // matriz de check nodes
