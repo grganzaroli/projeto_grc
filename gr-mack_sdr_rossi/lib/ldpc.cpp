@@ -1790,7 +1790,7 @@ void ldpc::init(unsigned short N, unsigned short K)
 	aux_indx = new unsigned short[n-k]; //vetor aux_indx
 
 	unsigned short count = 0;
-	if(tipo) //TIPO B
+	if(tipo) //TIPO B - MATRIZ TIPO IRA (IRREGULAR REPEAT ACCUMULATE)
 	{
 		for (unsigned short j = 0; j < (n-k); j++)
 		{
@@ -1819,6 +1819,8 @@ void ldpc::init(unsigned short N, unsigned short K)
 
 						INDX_i[(tab[j][i]+kkk*Q_ldpc)%(n-k)] += 1;
 					}
+					else //chegou ao fim da linha
+						break;
 				}
 				count++;
 			}
@@ -1852,7 +1854,7 @@ void ldpc::init(unsigned short N, unsigned short K)
 			INDX[i]++;
 		}
 	}
-	else //TIPO A
+	else //TIPO A - MATRIZ TIPO MET (MULTI-EDGE TYPE)
 	{
 		printf("LDPC TIPO A EM FASE DE TESTES\n");
 
@@ -1890,6 +1892,8 @@ void ldpc::init(unsigned short N, unsigned short K)
 							INDX_i[M1+(tab[j][i]-M1+kkk*Q2)%M2] += 1;
 						}
 					}
+					else //chegou ao fim da linha
+						break;
 				}
 				count++;
 			}
@@ -1922,39 +1926,42 @@ void ldpc::init(unsigned short N, unsigned short K)
 			for(int j = 0; j < INDX_i[i]; j++)
 			{
 				C[i][j] = C_i[i][j];
-				INDX[i]++;
 			}
+			INDX[i] = INDX_i[i];
 		}
 
 		for(int i = 0; i < (n-k); i++)
-			for(int j = 0; j < k+1; j++)
+		{
+			for(int j = 0; j < INDX[i]; j++)
+			{
 				C_i[i][j] = C[i][j];
+			}
+			INDX_i[i] = INDX[i];
+		}
 
 		//primeira permutação
 		for(int s = 0; s < 360; s ++)
 		{
 			for(int t = 0; t < Q1; t++)
 			{
-				for(int i = 0; i < INDX[Q1*s+t]; i++) //todos os itens 
+				for(int i = 0; i < INDX_i[Q1*s+t]; i++) //todos os itens 
 				{
-					C[360*t+s][i] = C_i[Q1*s+t][i];
+					C[360*t+s][i] = C_i[Q1*s+t][i];	
 				}
+				INDX[360*t+s] = INDX_i[Q1*s+t]; //permutar indices também
 			}
 		}
-
-		for(int i = 0; i < (n-k); i++)
-			for(int j = 0; j < k+1; j++)
-				C_i[i][j] = C[i][j];
 
 		//segunda permutação
 		for(int s = 0; s < 360; s ++)
 		{
 			for(int t = 0; t < Q2; t++)
 			{
-				for(int i = 0; i < INDX[M1+Q2*s+t]; i++) //todos os itens 
+				for(int i = 0; i < INDX_i[M1+Q2*s+t]; i++) //todos os itens 
 				{
 					C[M1+360*t+s][i] = C_i[M1+Q2*s+t][i];
 				}
+				INDX[M1+360*t+s] = INDX_i[M1+Q2*s+t]; //permutar indices também
 			}
 		}
 
@@ -1970,16 +1977,19 @@ void ldpc::init(unsigned short N, unsigned short K)
 	FILE *F = fopen("matriz_C_i.txt", "w");
 	for (unsigned short j = 0; j < (n-k); j++)
 	{
-	for (unsigned short i = 0; i < el_C; i++)
-	{
-		fprintf(F, "%i,", C_i[j][i]);
-	}
-	fprintf(F, "\n");
+		for (unsigned short i = 0; i < (k+1); i++)
+		{
+			if(C_i[j][i] != 65535)
+				fprintf(F, "%i,", C_i[j][i]);
+			else
+				break;
+		}
+		fprintf(F, "\n");
 	}
 	fclose(F);
 	printf("OK matriz_C_i\n");
 	*/
-	
+	/*
 	FILE *G = fopen("vetor_INDX_i.txt", "w");
 	for (unsigned short j = 0; j < (n-k); j++)
 	{
@@ -1987,32 +1997,32 @@ void ldpc::init(unsigned short N, unsigned short K)
 	}
 	fclose(G);
 	printf("OK vetor_INDX_i\n");
-	
+	*/
 	
 	FILE *f = fopen("matriz_C.txt", "w");
 	for (unsigned short j = 0; j < (n-k); j++)
 	{
-	for (unsigned short i = 0; i < (k+1); i++)
-	{
-		if(C[j][i] != 65535)
-			fprintf(f, "%i,", C[j][i]);
-		else
-			break;
-	}
-	fprintf(f, "\n");
+		for (unsigned short i = 0; i < (k+1); i++)
+		{
+			if(C[j][i] != 65535)
+				fprintf(f, "%i,", C[j][i]);
+			else
+				break;
+		}
+		fprintf(f, "\n");
 	}
 	fclose(f);
 	printf("OK matriz_C\n");
 	
-	/*
+	
 	FILE *g = fopen("vetor_INDX.txt", "w");
 	for (unsigned short j = 0; j < (n-k); j++)
 	{
-	fprintf(g, "%i\n", INDX[j]);
+		fprintf(g, "%i\n", INDX[j]);
 	}
 	fclose(g);
 	printf("OK vetor_INDX\n");
-	*/
+	
 
 	//deletar variaveis que nao vou usar mais 
 	delete[] INDX_i;
@@ -2493,7 +2503,7 @@ bool ldpc::encode(const unsigned char *u, unsigned char *v)
 	{
 		for(int j = 0; j < k+1; j++)
 		{	
-			if(C[i-k][j] < k)
+			if(j < INDX[i-k]-1)
 			{
 				v[i] = v[i]^u[C[i-k][j]];
 			}

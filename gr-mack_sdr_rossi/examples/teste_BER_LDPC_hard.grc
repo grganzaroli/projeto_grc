@@ -1991,11 +1991,11 @@
     </param>
     <param>
       <key>ymax</key>
-      <value>1.5</value>
+      <value>1.1</value>
     </param>
     <param>
       <key>ymin</key>
-      <value>-0.5</value>
+      <value>-0.1</value>
     </param>
   </block>
   <connection>

@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Top Block
-# Generated: Fri Mar 23 15:29:11 2018
+# Generated: Sat Mar 24 15:07:43 2018
 ##################################################
 
 if __name__ == '__main__':
@@ -78,7 +78,7 @@ class top_block(gr.top_block, Qt.QWidget):
         	1 #number of inputs
         )
         self.qtgui_time_sink_x_0_0.set_update_time(0.10)
-        self.qtgui_time_sink_x_0_0.set_y_axis(-0.5, 1.5)
+        self.qtgui_time_sink_x_0_0.set_y_axis(-0.1, 1.1)
         
         self.qtgui_time_sink_x_0_0.set_y_label('Amplitude', "")
         
