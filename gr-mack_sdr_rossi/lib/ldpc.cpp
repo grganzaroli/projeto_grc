@@ -1939,6 +1939,16 @@ void ldpc::init(unsigned short N, unsigned short K)
 			INDX_i[i] = INDX[i];
 		}
 
+		//zerar C e INDX para fazer as permutações
+		for (unsigned short j = 0; j < (n-k); j++)
+		{
+			for (unsigned short i = 0; i < (k+1); i++)
+			{
+				C[j][i] = 65535;
+			}
+			INDX[j] = 0;
+		}
+
 		//primeira permutação
 		for(int s = 0; s < 360; s ++)
 		{
