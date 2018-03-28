@@ -172,6 +172,10 @@
     <member refid="classldpc_1ac8d72813aa2ca4cbeed3e23c0fb78579" kind="variable"><name>r</name></member>
     <member refid="classldpc_1a804c2ae201c22ecd5b63f2d55bbcf0a7" kind="variable"><name>max_it</name></member>
     <member refid="classldpc_1a293e1b6b140ea8f183ff368259ac5d6c" kind="variable"><name>Q_ldpc</name></member>
+    <member refid="classldpc_1a4dbabf5e80862a05703412e0b60469d0" kind="variable"><name>M1</name></member>
+    <member refid="classldpc_1aed43cf04dd4bda6ca7466665e58fc5df" kind="variable"><name>M2</name></member>
+    <member refid="classldpc_1a339640dfc3087db971ad664dda2b41b3" kind="variable"><name>Q1</name></member>
+    <member refid="classldpc_1a00367c75b7211b6c6e4a849c02ab6875" kind="variable"><name>Q2</name></member>
     <member refid="classldpc_1a5f73f1273d81b6376b1a5349038b10d9" kind="variable"><name>tipo</name></member>
     <member refid="classldpc_1a34ca9fc6db1f58f155776f2d35046a28" kind="variable"><name>C</name></member>
     <member refid="classldpc_1a98791547e407cbfd418f3197b6d4f2b2" kind="variable"><name>INDX</name></member>

@@ -69,6 +69,58 @@
         </inbodydescription>
         <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="11" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="11" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classldpc_1a4dbabf5e80862a05703412e0b60469d0" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short ldpc::M1</definition>
+        <argsstring></argsstring>
+        <name>M1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="12" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classldpc_1aed43cf04dd4bda6ca7466665e58fc5df" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short ldpc::M2</definition>
+        <argsstring></argsstring>
+        <name>M2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="13" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classldpc_1a339640dfc3087db971ad664dda2b41b3" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short ldpc::Q1</definition>
+        <argsstring></argsstring>
+        <name>Q1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="14" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classldpc_1a00367c75b7211b6c6e4a849c02ab6875" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short ldpc::Q2</definition>
+        <argsstring></argsstring>
+        <name>Q2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="15" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="classldpc_1a5f73f1273d81b6376b1a5349038b10d9" prot="private" static="no" mutable="no">
         <type>bool</type>
         <definition>bool ldpc::tipo</definition>
@@ -80,7 +132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="12" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="12" bodyend="-1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="16" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classldpc_1a34ca9fc6db1f58f155776f2d35046a28" prot="private" static="no" mutable="no">
         <type>unsigned short **</type>
@@ -93,7 +145,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="14" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="14" bodyend="-1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="18" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classldpc_1a98791547e407cbfd418f3197b6d4f2b2" prot="private" static="no" mutable="no">
         <type>unsigned short *</type>
@@ -106,7 +158,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="15" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="15" bodyend="-1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="19" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classldpc_1aec87f31d14f4b753aacdc7a161a68bdf" prot="private" static="no" mutable="no">
         <type>unsigned short **</type>
@@ -119,7 +171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="17" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="17" bodyend="-1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="21" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="21" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classldpc_1a9f8ccbd8b63c2a3b2415d9cca5d37f01" prot="private" static="no" mutable="no">
         <type>unsigned char *</type>
@@ -132,7 +184,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="18" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="18" bodyend="-1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="22" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="22" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classldpc_1ac2c77e5eca11a7fcea5059f852ac4e87" prot="private" static="no" mutable="no">
         <type>double *</type>
@@ -145,7 +197,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="19" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="19" bodyend="-1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="23" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="23" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classldpc_1acad95cfa7eeadf86d6e09b9853fa55a4" prot="private" static="no" mutable="no">
         <type>unsigned char *</type>
@@ -158,7 +210,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="20" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="20" bodyend="-1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="24" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="24" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classldpc_1a33bbd20098606a714bec5c7592a38dd7" prot="private" static="no" mutable="no">
         <type>unsigned short *</type>
@@ -171,7 +223,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="22" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="22" bodyend="-1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="26" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="26" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classldpc_1a7efcad72b02daaed8310e4153830a882" prot="private" static="no" mutable="no">
         <type>double **</type>
@@ -184,7 +236,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="23" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="23" bodyend="-1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="27" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classldpc_1addd0eb62799370949f46fc1cc1cf1153" prot="private" static="no" mutable="no">
         <type>double **</type>
@@ -197,7 +249,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="24" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="24" bodyend="-1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="28" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="28" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -220,7 +272,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="27" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="31" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classldpc_1a81effac3dcd3610d1b5f2e4ad4730b7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -237,7 +289,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="29" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="33" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classldpc_1a489b8b0089beef16e3d6036d3f72166b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -250,7 +302,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="31" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="35" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classldpc_1a1fc8f9f71d56b7373f79502543c2e97b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -263,7 +315,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="32" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="36" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classldpc_1adc49a3a62b0d8ea901902a2a3baf3e79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -276,7 +328,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="34" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="38" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classldpc_1a83660ea2a18770709784433fff86973f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -289,7 +341,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="35" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="39" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classldpc_1ac2f11ab5008c9124e532addd86733e25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -310,7 +362,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="37" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="41" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classldpc_1a4bcfe86356f8c05e5f70369ca8725cb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -331,7 +383,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="38" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="42" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classldpc_1a0cd7aebaa397679688c537db3917cfda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -352,14 +404,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="40" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="44" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="5" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="4" bodyend="42"/>
+    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" line="5" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/ldpc.h" bodystart="4" bodyend="46"/>
     <listofallmembers>
       <member refid="classldpc_1a489b8b0089beef16e3d6036d3f72166b" prot="public" virt="non-virtual"><scope>ldpc</scope><name>alocar_hard</name></member>
       <member refid="classldpc_1a1fc8f9f71d56b7373f79502543c2e97b" prot="public" virt="non-virtual"><scope>ldpc</scope><name>alocar_soft</name></member>
@@ -375,10 +427,14 @@
       <member refid="classldpc_1afb0df351c480cb869e0aa58945a92e1d" prot="public" virt="non-virtual"><scope>ldpc</scope><name>init</name></member>
       <member refid="classldpc_1af5a97c1d02c280cef1a7e8fe1d95d340" prot="private" virt="non-virtual"><scope>ldpc</scope><name>k</name></member>
       <member refid="classldpc_1ac2c77e5eca11a7fcea5059f852ac4e87" prot="private" virt="non-virtual"><scope>ldpc</scope><name>LLR_aux</name></member>
+      <member refid="classldpc_1a4dbabf5e80862a05703412e0b60469d0" prot="private" virt="non-virtual"><scope>ldpc</scope><name>M1</name></member>
+      <member refid="classldpc_1aed43cf04dd4bda6ca7466665e58fc5df" prot="private" virt="non-virtual"><scope>ldpc</scope><name>M2</name></member>
       <member refid="classldpc_1a804c2ae201c22ecd5b63f2d55bbcf0a7" prot="private" virt="non-virtual"><scope>ldpc</scope><name>max_it</name></member>
       <member refid="classldpc_1af51f4e5f37f82404bf081101c3c45fda" prot="private" virt="non-virtual"><scope>ldpc</scope><name>n</name></member>
       <member refid="classldpc_1a33bbd20098606a714bec5c7592a38dd7" prot="private" virt="non-virtual"><scope>ldpc</scope><name>p_erros</name></member>
       <member refid="classldpc_1addd0eb62799370949f46fc1cc1cf1153" prot="private" virt="non-virtual"><scope>ldpc</scope><name>Q</name></member>
+      <member refid="classldpc_1a339640dfc3087db971ad664dda2b41b3" prot="private" virt="non-virtual"><scope>ldpc</scope><name>Q1</name></member>
+      <member refid="classldpc_1a00367c75b7211b6c6e4a849c02ab6875" prot="private" virt="non-virtual"><scope>ldpc</scope><name>Q2</name></member>
       <member refid="classldpc_1a293e1b6b140ea8f183ff368259ac5d6c" prot="private" virt="non-virtual"><scope>ldpc</scope><name>Q_ldpc</name></member>
       <member refid="classldpc_1a7efcad72b02daaed8310e4153830a882" prot="private" virt="non-virtual"><scope>ldpc</scope><name>R</name></member>
       <member refid="classldpc_1ac8d72813aa2ca4cbeed3e23c0fb78579" prot="private" virt="non-virtual"><scope>ldpc</scope><name>r</name></member>

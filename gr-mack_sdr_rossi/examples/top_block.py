@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Top Block
-# Generated: Tue Mar 27 12:26:11 2018
+# Generated: Wed Mar 28 14:47:06 2018
 ##################################################
 
 if __name__ == '__main__':
@@ -249,11 +249,8 @@ class top_block(gr.top_block, Qt.QWidget):
             r=rate,
             size_in=1,
         )
-        self.blocks_throttle_0 = blocks.throttle(gr.sizeof_char*1, samp_rate,True)
         self.blocks_threshold_ff_0 = blocks.threshold_ff(0, 0, 0)
         self.blocks_float_to_char_0 = blocks.float_to_char(1, 1)
-        self.blocks_file_sink_0 = blocks.file_sink(gr.sizeof_gr_complex*1, 'mapper.bin', False)
-        self.blocks_file_sink_0.set_unbuffered(False)
         self.blocks_char_to_float_0 = blocks.char_to_float(1, 1)
         self.blocks_add_xx_0 = blocks.add_vcc(1)
         self.blks2_error_rate_0 = grc_blks2.error_rate(
@@ -268,17 +265,15 @@ class top_block(gr.top_block, Qt.QWidget):
         # Connections
         ##################################################
         self.connect((self.analog_noise_source_x_0, 0), (self.blocks_add_xx_0, 0))    
+        self.connect((self.analog_random_source_x_0, 0), (self.blks2_error_rate_0, 0))    
         self.connect((self.analog_random_source_x_0, 0), (self.blocks_char_to_float_0, 0))    
-        self.connect((self.analog_random_source_x_0, 0), (self.blocks_throttle_0, 0))    
+        self.connect((self.analog_random_source_x_0, 0), (self.mapper_atsc_0, 0))    
         self.connect((self.blks2_error_rate_0, 0), (self.qtgui_number_sink_0, 0))    
-        self.connect((self.blocks_add_xx_0, 0), (self.blocks_file_sink_0, 0))    
         self.connect((self.blocks_add_xx_0, 0), (self.demapper_atsc_0, 0))    
         self.connect((self.blocks_add_xx_0, 0), (self.qtgui_const_sink_x_0, 0))    
         self.connect((self.blocks_char_to_float_0, 0), (self.qtgui_time_sink_x_0_0, 0))    
         self.connect((self.blocks_float_to_char_0, 0), (self.blks2_error_rate_0, 1))    
         self.connect((self.blocks_threshold_ff_0, 0), (self.blocks_float_to_char_0, 0))    
-        self.connect((self.blocks_throttle_0, 0), (self.blks2_error_rate_0, 0))    
-        self.connect((self.blocks_throttle_0, 0), (self.mapper_atsc_0, 0))    
         self.connect((self.demapper_atsc_0, 0), (self.blocks_threshold_ff_0, 0))    
         self.connect((self.demapper_atsc_0, 0), (self.qtgui_time_sink_x_0, 0))    
         self.connect((self.mapper_atsc_0, 0), (self.blocks_add_xx_0, 1))    
@@ -302,7 +297,6 @@ class top_block(gr.top_block, Qt.QWidget):
         self.samp_rate = samp_rate
         self.qtgui_time_sink_x_0_0.set_samp_rate(self.samp_rate)
         self.qtgui_time_sink_x_0.set_samp_rate(self.samp_rate)
-        self.blocks_throttle_0.set_sample_rate(self.samp_rate)
 
     def get_rate(self):
         return self.rate

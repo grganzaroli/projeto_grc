@@ -28,28 +28,28 @@ The C compiler identification is GNU, found in "/home/rossi/Desktop/GitHub/proje
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_faa38/fast"
-/usr/bin/make -f CMakeFiles/cmTC_faa38.dir/build.make CMakeFiles/cmTC_faa38.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_e34dc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e34dc.dir/build.make CMakeFiles/cmTC_e34dc.dir/build
 make[1]: Entering directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_faa38.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_faa38.dir/testCXXCompiler.cxx.o -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_faa38
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_faa38.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_faa38.dir/testCXXCompiler.cxx.o  -o cmTC_faa38 
+Building CXX object CMakeFiles/cmTC_e34dc.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_e34dc.dir/testCXXCompiler.cxx.o -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_e34dc
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e34dc.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_e34dc.dir/testCXXCompiler.cxx.o  -o cmTC_e34dc 
 make[1]: Leaving directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_02155/fast"
-/usr/bin/make -f CMakeFiles/cmTC_02155.dir/build.make CMakeFiles/cmTC_02155.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_92b7c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_92b7c.dir/build.make CMakeFiles/cmTC_92b7c.dir/build
 make[1]: Entering directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_02155.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_02155.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_02155
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02155.dir/link.txt --verbose=1
-/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_02155.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_02155 
+Building CXX object CMakeFiles/cmTC_92b7c.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_92b7c.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_92b7c
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92b7c.dir/link.txt --verbose=1
+/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_92b7c.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_92b7c 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
@@ -59,8 +59,8 @@ Thread model: posix
 gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.4) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_02155' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_02155 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_02155.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_92b7c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_92b7c /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_92b7c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
 make[1]: Leaving directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
 
 
@@ -68,14 +68,14 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_02155/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_02155.dir/build.make CMakeFiles/cmTC_02155.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_92b7c/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_92b7c.dir/build.make CMakeFiles/cmTC_92b7c.dir/build]
   ignore line: [make[1]: Entering directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_02155.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_02155.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_02155]
-  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02155.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_02155.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_02155 ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_92b7c.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_92b7c.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_92b7c]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92b7c.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_92b7c.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_92b7c ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
@@ -85,8 +85,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.4) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_02155' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_02155 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_02155.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_92b7c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_92b7c /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_92b7c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
     arg [--sysroot=/] ==> ignore
     arg [--build-id] ==> ignore
@@ -100,7 +100,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_02155] ==> ignore
+    arg [cmTC_92b7c] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
@@ -112,7 +112,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
-    arg [CMakeFiles/cmTC_02155.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_92b7c.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -140,14 +140,14 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++1y] compiler features compiled with the following output:
 Change Dir: /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_57c6e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_57c6e.dir/build.make CMakeFiles/cmTC_57c6e.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_00bb5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_00bb5.dir/build.make CMakeFiles/cmTC_00bb5.dir/build
 make[1]: Entering directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_57c6e.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1y -o CMakeFiles/cmTC_57c6e.dir/feature_tests.cxx.o -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_57c6e
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57c6e.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_57c6e.dir/feature_tests.cxx.o  -o cmTC_57c6e 
+Building CXX object CMakeFiles/cmTC_00bb5.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1y -o CMakeFiles/cmTC_00bb5.dir/feature_tests.cxx.o -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_00bb5
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00bb5.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_00bb5.dir/feature_tests.cxx.o  -o cmTC_00bb5 
 make[1]: Leaving directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
 
 
@@ -213,14 +213,14 @@ make[1]: Leaving directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_r
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_70b06/fast"
-/usr/bin/make -f CMakeFiles/cmTC_70b06.dir/build.make CMakeFiles/cmTC_70b06.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_98523/fast"
+/usr/bin/make -f CMakeFiles/cmTC_98523.dir/build.make CMakeFiles/cmTC_98523.dir/build
 make[1]: Entering directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_70b06.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_70b06.dir/feature_tests.cxx.o -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_70b06
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70b06.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_70b06.dir/feature_tests.cxx.o  -o cmTC_70b06 
+Building CXX object CMakeFiles/cmTC_98523.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_98523.dir/feature_tests.cxx.o -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_98523
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98523.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_98523.dir/feature_tests.cxx.o  -o cmTC_98523 
 make[1]: Leaving directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
 
 
@@ -286,14 +286,14 @@ make[1]: Leaving directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_r
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_0b11e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_0b11e.dir/build.make CMakeFiles/cmTC_0b11e.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_7502a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7502a.dir/build.make CMakeFiles/cmTC_7502a.dir/build
 make[1]: Entering directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_0b11e.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_0b11e.dir/feature_tests.cxx.o -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_0b11e
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0b11e.dir/link.txt --verbose=1
-/usr/bin/c++       -rdynamic CMakeFiles/cmTC_0b11e.dir/feature_tests.cxx.o  -o cmTC_0b11e 
+Building CXX object CMakeFiles/cmTC_7502a.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_7502a.dir/feature_tests.cxx.o -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_7502a
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7502a.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_7502a.dir/feature_tests.cxx.o  -o cmTC_7502a 
 make[1]: Leaving directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
 
 
@@ -357,28 +357,28 @@ make[1]: Leaving directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_r
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e8d6c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e8d6c.dir/build.make CMakeFiles/cmTC_e8d6c.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_f07c1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f07c1.dir/build.make CMakeFiles/cmTC_f07c1.dir/build
 make[1]: Entering directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e8d6c.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_e8d6c.dir/testCCompiler.c.o   -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_e8d6c
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8d6c.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_e8d6c.dir/testCCompiler.c.o  -o cmTC_e8d6c 
+Building C object CMakeFiles/cmTC_f07c1.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_f07c1.dir/testCCompiler.c.o   -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_f07c1
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f07c1.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f07c1.dir/testCCompiler.c.o  -o cmTC_f07c1 
 make[1]: Leaving directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_092b7/fast"
-/usr/bin/make -f CMakeFiles/cmTC_092b7.dir/build.make CMakeFiles/cmTC_092b7.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_73639/fast"
+/usr/bin/make -f CMakeFiles/cmTC_73639.dir/build.make CMakeFiles/cmTC_73639.dir/build
 make[1]: Entering directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_092b7.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_092b7.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.10/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_092b7
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_092b7.dir/link.txt --verbose=1
-/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_092b7.dir/CMakeCCompilerABI.c.o  -o cmTC_092b7 
+Building C object CMakeFiles/cmTC_73639.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_73639.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.10/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_73639
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_73639.dir/link.txt --verbose=1
+/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_73639.dir/CMakeCCompilerABI.c.o  -o cmTC_73639 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
@@ -388,8 +388,8 @@ Thread model: posix
 gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.4) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_092b7' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_092b7 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_092b7.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_73639' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_73639 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_73639.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
 make[1]: Leaving directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
 
 
@@ -397,14 +397,14 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_092b7/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_092b7.dir/build.make CMakeFiles/cmTC_092b7.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_73639/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_73639.dir/build.make CMakeFiles/cmTC_73639.dir/build]
   ignore line: [make[1]: Entering directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_092b7.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_092b7.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_092b7]
-  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_092b7.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_092b7.dir/CMakeCCompilerABI.c.o  -o cmTC_092b7 ]
+  ignore line: [Building C object CMakeFiles/cmTC_73639.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_73639.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_73639]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_73639.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_73639.dir/CMakeCCompilerABI.c.o  -o cmTC_73639 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
@@ -414,8 +414,8 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.4) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_092b7' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_092b7 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_092b7.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_73639' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_73639 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTC_73639.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
     arg [--sysroot=/] ==> ignore
     arg [--build-id] ==> ignore
@@ -429,7 +429,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_092b7] ==> ignore
+    arg [cmTC_73639] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
@@ -441,7 +441,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
-    arg [CMakeFiles/cmTC_092b7.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_73639.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -471,14 +471,14 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e00aa/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e00aa.dir/build.make CMakeFiles/cmTC_e00aa.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_146f7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_146f7.dir/build.make CMakeFiles/cmTC_146f7.dir/build
 make[1]: Entering directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e00aa.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_e00aa.dir/feature_tests.c.o   -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_e00aa
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e00aa.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_e00aa.dir/feature_tests.c.o  -o cmTC_e00aa 
+Building C object CMakeFiles/cmTC_146f7.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_146f7.dir/feature_tests.c.o   -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_146f7
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_146f7.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_146f7.dir/feature_tests.c.o  -o cmTC_146f7 
 make[1]: Leaving directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
 
 
@@ -491,14 +491,14 @@ make[1]: Leaving directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_r
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_dd8de/fast"
-/usr/bin/make -f CMakeFiles/cmTC_dd8de.dir/build.make CMakeFiles/cmTC_dd8de.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_5dc46/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5dc46.dir/build.make CMakeFiles/cmTC_5dc46.dir/build
 make[1]: Entering directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_dd8de.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_dd8de.dir/feature_tests.c.o   -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_dd8de
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd8de.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_dd8de.dir/feature_tests.c.o  -o cmTC_dd8de 
+Building C object CMakeFiles/cmTC_5dc46.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_5dc46.dir/feature_tests.c.o   -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_5dc46
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5dc46.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_5dc46.dir/feature_tests.c.o  -o cmTC_5dc46 
 make[1]: Leaving directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
 
 
@@ -511,14 +511,14 @@ make[1]: Leaving directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_r
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c2fe8/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c2fe8.dir/build.make CMakeFiles/cmTC_c2fe8.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_b7798/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b7798.dir/build.make CMakeFiles/cmTC_b7798.dir/build
 make[1]: Entering directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c2fe8.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_c2fe8.dir/feature_tests.c.o   -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_c2fe8
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2fe8.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_c2fe8.dir/feature_tests.c.o  -o cmTC_c2fe8 
+Building C object CMakeFiles/cmTC_b7798.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_b7798.dir/feature_tests.c.o   -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_b7798
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7798.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_b7798.dir/feature_tests.c.o  -o cmTC_b7798 
 make[1]: Leaving directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
 
 
@@ -529,84 +529,84 @@ make[1]: Leaving directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_r
 Determining if the include file sys/types.h exists passed with the following output:
 Change Dir: /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_89102/fast"
-/usr/bin/make -f CMakeFiles/cmTC_89102.dir/build.make CMakeFiles/cmTC_89102.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_4dc2c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4dc2c.dir/build.make CMakeFiles/cmTC_4dc2c.dir/build
 make[1]: Entering directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_89102.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_89102.dir/CheckIncludeFile.c.o   -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_89102
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89102.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_89102.dir/CheckIncludeFile.c.o  -o cmTC_89102 
+Building C object CMakeFiles/cmTC_4dc2c.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_4dc2c.dir/CheckIncludeFile.c.o   -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_4dc2c
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4dc2c.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_4dc2c.dir/CheckIncludeFile.c.o  -o cmTC_4dc2c 
 make[1]: Leaving directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the include file stdint.h exists passed with the following output:
 Change Dir: /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8edef/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8edef.dir/build.make CMakeFiles/cmTC_8edef.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_75536/fast"
+/usr/bin/make -f CMakeFiles/cmTC_75536.dir/build.make CMakeFiles/cmTC_75536.dir/build
 make[1]: Entering directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8edef.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_8edef.dir/CheckIncludeFile.c.o   -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_8edef
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8edef.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_8edef.dir/CheckIncludeFile.c.o  -o cmTC_8edef 
+Building C object CMakeFiles/cmTC_75536.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_75536.dir/CheckIncludeFile.c.o   -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_75536
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_75536.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_75536.dir/CheckIncludeFile.c.o  -o cmTC_75536 
 make[1]: Leaving directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the include file stddef.h exists passed with the following output:
 Change Dir: /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_b66e6/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b66e6.dir/build.make CMakeFiles/cmTC_b66e6.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_bdb89/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bdb89.dir/build.make CMakeFiles/cmTC_bdb89.dir/build
 make[1]: Entering directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b66e6.dir/CheckIncludeFile.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_b66e6.dir/CheckIncludeFile.c.o   -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_b66e6
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b66e6.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_b66e6.dir/CheckIncludeFile.c.o  -o cmTC_b66e6 
+Building C object CMakeFiles/cmTC_bdb89.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_bdb89.dir/CheckIncludeFile.c.o   -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_bdb89
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bdb89.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_bdb89.dir/CheckIncludeFile.c.o  -o cmTC_bdb89 
 make[1]: Leaving directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
 
 
 Determining size of size_t passed with the following output:
 Change Dir: /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ad5dc/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ad5dc.dir/build.make CMakeFiles/cmTC_ad5dc.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_902ed/fast"
+/usr/bin/make -f CMakeFiles/cmTC_902ed.dir/build.make CMakeFiles/cmTC_902ed.dir/build
 make[1]: Entering directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ad5dc.dir/SIZEOF_SIZE_T.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_ad5dc.dir/SIZEOF_SIZE_T.c.o   -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CheckTypeSize/SIZEOF_SIZE_T.c
-Linking C executable cmTC_ad5dc
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad5dc.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_ad5dc.dir/SIZEOF_SIZE_T.c.o  -o cmTC_ad5dc 
+Building C object CMakeFiles/cmTC_902ed.dir/SIZEOF_SIZE_T.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_902ed.dir/SIZEOF_SIZE_T.c.o   -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CheckTypeSize/SIZEOF_SIZE_T.c
+Linking C executable cmTC_902ed
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_902ed.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_902ed.dir/SIZEOF_SIZE_T.c.o  -o cmTC_902ed 
 make[1]: Leaving directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
 
 
 Determining size of unsigned int passed with the following output:
 Change Dir: /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_17a8e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_17a8e.dir/build.make CMakeFiles/cmTC_17a8e.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_82f4a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_82f4a.dir/build.make CMakeFiles/cmTC_82f4a.dir/build
 make[1]: Entering directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_17a8e.dir/SIZEOF_UINT.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_17a8e.dir/SIZEOF_UINT.c.o   -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT.c
-Linking C executable cmTC_17a8e
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17a8e.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_17a8e.dir/SIZEOF_UINT.c.o  -o cmTC_17a8e 
+Building C object CMakeFiles/cmTC_82f4a.dir/SIZEOF_UINT.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_82f4a.dir/SIZEOF_UINT.c.o   -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CheckTypeSize/SIZEOF_UINT.c
+Linking C executable cmTC_82f4a
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82f4a.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_82f4a.dir/SIZEOF_UINT.c.o  -o cmTC_82f4a 
 make[1]: Leaving directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
 
 
 Performing C++ SOURCE FILE Test HAVE_WNO_UNUSED_BUT_SET_VARIABLE succeeded with the following output:
 Change Dir: /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a4b8c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a4b8c.dir/build.make CMakeFiles/cmTC_a4b8c.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_5d226/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5d226.dir/build.make CMakeFiles/cmTC_5d226.dir/build
 make[1]: Entering directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_a4b8c.dir/src.cxx.o
-/usr/bin/c++    -DHAVE_WNO_UNUSED_BUT_SET_VARIABLE   -Wno-unused-but-set-variable -o CMakeFiles/cmTC_a4b8c.dir/src.cxx.o -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_a4b8c
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4b8c.dir/link.txt --verbose=1
-/usr/bin/c++   -DHAVE_WNO_UNUSED_BUT_SET_VARIABLE    -rdynamic CMakeFiles/cmTC_a4b8c.dir/src.cxx.o  -o cmTC_a4b8c 
+Building CXX object CMakeFiles/cmTC_5d226.dir/src.cxx.o
+/usr/bin/c++    -DHAVE_WNO_UNUSED_BUT_SET_VARIABLE   -Wno-unused-but-set-variable -o CMakeFiles/cmTC_5d226.dir/src.cxx.o -c /home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_5d226
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5d226.dir/link.txt --verbose=1
+/usr/bin/c++   -DHAVE_WNO_UNUSED_BUT_SET_VARIABLE    -rdynamic CMakeFiles/cmTC_5d226.dir/src.cxx.o  -o cmTC_5d226 
 make[1]: Leaving directory `/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/build/CMakeFiles/CMakeTmp'
 
 Source file was:
