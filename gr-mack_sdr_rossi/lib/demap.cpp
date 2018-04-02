@@ -1235,9 +1235,10 @@ void demap::demapper_soft(const gr_complex *i, float *o)
 			aux_i[j] = i[ii].imag() - tabela[j].imag();
 		}
 
-		//dist. euclidiana
+		//dist. euclidiana ao quadrado
 		for(int j = 0; j < mod_size; j++) //cada simbolo possivel
-			aux[j] = sqrt(aux_r[j]*aux_r[j] + aux_i[j]*aux_i[j]);
+			aux[j] = aux_r[j]*aux_r[j] + aux_i[j]*aux_i[j]; 
+      //aux[j] = sqrt(aux_r[j]*aux_r[j] + aux_i[j]*aux_i[j]);
 
 		//printf("\nreal = %lf, imag = %lf\n", i[ii].real(), i[ii].imag());
 
