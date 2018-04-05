@@ -5,9 +5,13 @@
     <includes refid="Group__deinterleaver__ATSC_8h" local="no">mack_sdr_rossi/Group_deinterleaver_ATSC.h</includes>
     <includes refid="atsc__interleaver_8h" local="yes">atsc_interleaver.h</includes>
     <incdepgraph>
-      <node id="129">
-        <label>atsc_interleaver.h</label>
-        <link refid="atsc__interleaver_8h"/>
+      <node id="125">
+        <label>mack_sdr_rossi/Group_deinterleaver_ATSC.h</label>
+        <link refid="Group__deinterleaver__ATSC_8h"/>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
       </node>
       <node id="124">
         <label>Group_deinterleaver_ATSC_impl.h</label>
@@ -15,14 +19,6 @@
         <childnode refid="125" relation="include">
         </childnode>
         <childnode refid="129" relation="include">
-        </childnode>
-      </node>
-      <node id="125">
-        <label>mack_sdr_rossi/Group_deinterleaver_ATSC.h</label>
-        <link refid="Group__deinterleaver__ATSC_8h"/>
-        <childnode refid="126" relation="include">
-        </childnode>
-        <childnode refid="128" relation="include">
         </childnode>
       </node>
       <node id="127">
@@ -37,6 +33,10 @@
       <node id="128">
         <label>gnuradio/block.h</label>
       </node>
+      <node id="129">
+        <label>atsc_interleaver.h</label>
+        <link refid="atsc__interleaver_8h"/>
+      </node>
     </incdepgraph>
     <innerclass refid="classgr_1_1mack__sdr__rossi_1_1Group__deinterleaver__ATSC__impl" prot="public">gr::mack_sdr_rossi::Group_deinterleaver_ATSC_impl</innerclass>
     <innernamespace refid="namespacegr">gr</innernamespace>
@@ -45,6 +45,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Group_deinterleaver_ATSC_impl.h"/>
+    <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Group_deinterleaver_ATSC_impl.h"/>
   </compounddef>
 </doxygen>

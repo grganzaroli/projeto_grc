@@ -93,8 +93,8 @@
   </compound>
   <compound refid="str__to__vec_8h" kind="file"><name>str_to_vec.h</name>
   </compound>
-  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include</name>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include</name>
   </compound>
-  <compound refid="dir_ba4e2cfdfdb92d307bf07bbbe3b3e4ef" kind="dir"><name>/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi</name>
+  <compound refid="dir_ba4e2cfdfdb92d307bf07bbbe3b3e4ef" kind="dir"><name>/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi</name>
   </compound>
 </doxygenindex>

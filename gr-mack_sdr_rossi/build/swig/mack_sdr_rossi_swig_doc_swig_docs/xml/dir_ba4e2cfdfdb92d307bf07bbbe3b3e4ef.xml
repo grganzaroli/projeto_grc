@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
   <compounddef id="dir_ba4e2cfdfdb92d307bf07bbbe3b3e4ef" kind="dir">
-    <compoundname>/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi</compoundname>
+    <compoundname>/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi</compoundname>
     <innerfile refid="api_8h">api.h</innerfile>
     <innerfile refid="BCH__decoder__ATSC_8h">BCH_decoder_ATSC.h</innerfile>
     <innerfile refid="BCH__encoder__ATSC_8h">BCH_encoder_ATSC.h</innerfile>
@@ -21,6 +21,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/"/>
+    <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/"/>
   </compounddef>
 </doxygen>

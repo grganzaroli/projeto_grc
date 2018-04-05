@@ -4,6 +4,12 @@
     <compoundname>str_to_vec_impl.h</compoundname>
     <includes refid="str__to__vec_8h" local="no">mack_sdr_rossi/str_to_vec.h</includes>
     <incdepgraph>
+      <node id="238">
+        <label>str_to_vec_impl.h</label>
+        <link refid="str_to_vec_impl.h"/>
+        <childnode refid="239" relation="include">
+        </childnode>
+      </node>
       <node id="241">
         <label>gnuradio/attributes.h</label>
       </node>
@@ -24,12 +30,6 @@
         <childnode refid="242" relation="include">
         </childnode>
       </node>
-      <node id="238">
-        <label>str_to_vec_impl.h</label>
-        <link refid="str_to_vec_impl.h"/>
-        <childnode refid="239" relation="include">
-        </childnode>
-      </node>
     </incdepgraph>
     <innerclass refid="classgr_1_1mack__sdr__rossi_1_1str__to__vec__impl" prot="public">gr::mack_sdr_rossi::str_to_vec_impl</innerclass>
     <innernamespace refid="namespacegr">gr</innernamespace>
@@ -38,6 +38,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/str_to_vec_impl.h"/>
+    <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/str_to_vec_impl.h"/>
   </compounddef>
 </doxygen>

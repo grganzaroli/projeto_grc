@@ -28,15 +28,15 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
+      <node id="48">
+        <label>BCH_decoder_ATSC_impl.h</label>
+        <link refid="BCH__decoder__ATSC__impl_8h"/>
+      </node>
       <node id="47">
         <label>BCH_decoder_ATSC.h</label>
         <link refid="BCH_decoder_ATSC.h"/>
         <childnode refid="48" relation="include">
         </childnode>
-      </node>
-      <node id="48">
-        <label>BCH_decoder_ATSC_impl.h</label>
-        <link refid="BCH__decoder__ATSC__impl_8h"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC" prot="public">gr::mack_sdr_rossi::BCH_decoder_ATSC</innerclass>
@@ -46,6 +46,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/BCH_decoder_ATSC.h"/>
+    <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/BCH_decoder_ATSC.h"/>
   </compounddef>
 </doxygen>

@@ -9,18 +9,18 @@
       <node id="221">
         <label>gnuradio/attributes.h</label>
       </node>
+      <node id="220">
+        <label>mack_sdr_rossi/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="221" relation="include">
+        </childnode>
+      </node>
       <node id="219">
         <label>Parity_interleaver_ATSC.h</label>
         <link refid="Parity_interleaver_ATSC.h"/>
         <childnode refid="220" relation="include">
         </childnode>
         <childnode refid="222" relation="include">
-        </childnode>
-      </node>
-      <node id="220">
-        <label>mack_sdr_rossi/api.h</label>
-        <link refid="api_8h"/>
-        <childnode refid="221" relation="include">
         </childnode>
       </node>
       <node id="222">
@@ -46,6 +46,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/Parity_interleaver_ATSC.h"/>
+    <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/Parity_interleaver_ATSC.h"/>
   </compounddef>
 </doxygen>

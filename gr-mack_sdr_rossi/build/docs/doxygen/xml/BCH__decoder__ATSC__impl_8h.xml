@@ -5,18 +5,26 @@
     <includes refid="BCH__decoder__ATSC_8h" local="no">mack_sdr_rossi/BCH_decoder_ATSC.h</includes>
     <includes refid="bch_8h" local="yes">bch.h</includes>
     <incdepgraph>
+      <node id="49">
+        <label>BCH_decoder_ATSC_impl.h</label>
+        <link refid="BCH_decoder_ATSC_impl.h"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
       <node id="52">
         <label>gnuradio/attributes.h</label>
-      </node>
-      <node id="54">
-        <label>bch.h</label>
-        <link refid="bch_8h"/>
       </node>
       <node id="51">
         <label>mack_sdr_rossi/api.h</label>
         <link refid="api_8h"/>
         <childnode refid="52" relation="include">
         </childnode>
+      </node>
+      <node id="54">
+        <label>bch.h</label>
+        <link refid="bch_8h"/>
       </node>
       <node id="53">
         <label>gnuradio/block.h</label>
@@ -29,14 +37,6 @@
         <childnode refid="53" relation="include">
         </childnode>
       </node>
-      <node id="49">
-        <label>BCH_decoder_ATSC_impl.h</label>
-        <link refid="BCH_decoder_ATSC_impl.h"/>
-        <childnode refid="50" relation="include">
-        </childnode>
-        <childnode refid="54" relation="include">
-        </childnode>
-      </node>
     </incdepgraph>
     <innerclass refid="classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl" prot="public">gr::mack_sdr_rossi::BCH_decoder_ATSC_impl</innerclass>
     <innernamespace refid="namespacegr">gr</innernamespace>
@@ -45,6 +45,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_decoder_ATSC_impl.h"/>
+    <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/BCH_decoder_ATSC_impl.h"/>
   </compounddef>
 </doxygen>

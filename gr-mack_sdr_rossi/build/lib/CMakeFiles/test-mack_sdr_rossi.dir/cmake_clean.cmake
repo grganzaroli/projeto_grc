@@ -1,4 +1,4 @@
-file(REMOVE_RECURSE
+FILE(REMOVE_RECURSE
   "CMakeFiles/test-mack_sdr_rossi.dir/test_mack_sdr_rossi.cc.o"
   "CMakeFiles/test-mack_sdr_rossi.dir/qa_mack_sdr_rossi.cc.o"
   "test-mack_sdr_rossi.pdb"
@@ -6,6 +6,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang CXX)
-  include(CMakeFiles/test-mack_sdr_rossi.dir/cmake_clean_${lang}.cmake OPTIONAL)
-endforeach()
+FOREACH(lang CXX)
+  INCLUDE(CMakeFiles/test-mack_sdr_rossi.dir/cmake_clean_${lang}.cmake OPTIONAL)
+ENDFOREACH(lang)

@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Top Block
-# Generated: Mon Apr  2 15:22:17 2018
+# Generated: Thu Apr  5 17:24:43 2018
 ##################################################
 
 if __name__ == '__main__':
@@ -32,6 +32,7 @@ from gnuradio.filter import firdes
 from mapper_atsc import mapper_atsc  # grc-generated hier_block
 from optparse import OptionParser
 import math
+import numpy
 import sip
 
 
@@ -65,14 +66,14 @@ class top_block(gr.top_block, Qt.QWidget):
         ##################################################
         self.size = size = 64800
         self.samp_rate = samp_rate = 32000
-        self.rate = rate = 10
-        self.mod = mod = 64
+        self.rate = rate = 6
+        self.mod = mod = 1024
 
         ##################################################
         # Blocks
         ##################################################
         self.qtgui_time_sink_x_0 = qtgui.time_sink_f(
-        	90, #size
+        	900, #size
         	samp_rate, #samp_rate
         	'DEMAPPER OUT', #name
         	1 #number of inputs
@@ -118,6 +119,47 @@ class top_block(gr.top_block, Qt.QWidget):
         
         self._qtgui_time_sink_x_0_win = sip.wrapinstance(self.qtgui_time_sink_x_0.pyqwidget(), Qt.QWidget)
         self.top_layout.addWidget(self._qtgui_time_sink_x_0_win)
+        self.qtgui_const_sink_x_0 = qtgui.const_sink_c(
+        	1024, #size
+        	"", #name
+        	1 #number of inputs
+        )
+        self.qtgui_const_sink_x_0.set_update_time(0.10)
+        self.qtgui_const_sink_x_0.set_y_axis(-2, 2)
+        self.qtgui_const_sink_x_0.set_x_axis(-2, 2)
+        self.qtgui_const_sink_x_0.set_trigger_mode(qtgui.TRIG_MODE_FREE, qtgui.TRIG_SLOPE_POS, 0.0, 0, "")
+        self.qtgui_const_sink_x_0.enable_autoscale(False)
+        self.qtgui_const_sink_x_0.enable_grid(False)
+        self.qtgui_const_sink_x_0.enable_axis_labels(True)
+        
+        if not True:
+          self.qtgui_const_sink_x_0.disable_legend()
+        
+        labels = ['', '', '', '', '',
+                  '', '', '', '', '']
+        widths = [1, 1, 1, 1, 1,
+                  1, 1, 1, 1, 1]
+        colors = ["blue", "red", "red", "red", "red",
+                  "red", "red", "red", "red", "red"]
+        styles = [0, 0, 0, 0, 0,
+                  0, 0, 0, 0, 0]
+        markers = [0, 0, 0, 0, 0,
+                   0, 0, 0, 0, 0]
+        alphas = [1.0, 1.0, 1.0, 1.0, 1.0,
+                  1.0, 1.0, 1.0, 1.0, 1.0]
+        for i in xrange(1):
+            if len(labels[i]) == 0:
+                self.qtgui_const_sink_x_0.set_line_label(i, "Data {0}".format(i))
+            else:
+                self.qtgui_const_sink_x_0.set_line_label(i, labels[i])
+            self.qtgui_const_sink_x_0.set_line_width(i, widths[i])
+            self.qtgui_const_sink_x_0.set_line_color(i, colors[i])
+            self.qtgui_const_sink_x_0.set_line_style(i, styles[i])
+            self.qtgui_const_sink_x_0.set_line_marker(i, markers[i])
+            self.qtgui_const_sink_x_0.set_line_alpha(i, alphas[i])
+        
+        self._qtgui_const_sink_x_0_win = sip.wrapinstance(self.qtgui_const_sink_x_0.pyqwidget(), Qt.QWidget)
+        self.top_layout.addWidget(self._qtgui_const_sink_x_0_win)
         self.mapper_atsc_0 = mapper_atsc(
             m=mod,
             n=size,
@@ -128,18 +170,17 @@ class top_block(gr.top_block, Qt.QWidget):
             r=rate,
             size_in=1,
         )
-        self.blocks_vector_source_x_0 = blocks.vector_source_b((0,1,1,1,0,1,0,0,0,0,0,0,1,1,1,1,1,1), True, 1, [])
-        self.blocks_throttle_0 = blocks.throttle(gr.sizeof_char*1, samp_rate,True)
         self.blocks_add_xx_0 = blocks.add_vcc(1)
+        self.analog_random_source_x_0 = blocks.vector_source_b(map(int, numpy.random.randint(0, 2, 1000000)), True)
         self.analog_noise_source_x_0 = analog.noise_source_c(analog.GR_GAUSSIAN, 0.0, 0)
 
         ##################################################
         # Connections
         ##################################################
         self.connect((self.analog_noise_source_x_0, 0), (self.blocks_add_xx_0, 0))    
+        self.connect((self.analog_random_source_x_0, 0), (self.mapper_atsc_0, 0))    
         self.connect((self.blocks_add_xx_0, 0), (self.demapper_atsc_0, 0))    
-        self.connect((self.blocks_throttle_0, 0), (self.mapper_atsc_0, 0))    
-        self.connect((self.blocks_vector_source_x_0, 0), (self.blocks_throttle_0, 0))    
+        self.connect((self.blocks_add_xx_0, 0), (self.qtgui_const_sink_x_0, 0))    
         self.connect((self.demapper_atsc_0, 0), (self.qtgui_time_sink_x_0, 0))    
         self.connect((self.mapper_atsc_0, 0), (self.blocks_add_xx_0, 1))    
 
@@ -161,7 +202,6 @@ class top_block(gr.top_block, Qt.QWidget):
     def set_samp_rate(self, samp_rate):
         self.samp_rate = samp_rate
         self.qtgui_time_sink_x_0.set_samp_rate(self.samp_rate)
-        self.blocks_throttle_0.set_sample_rate(self.samp_rate)
 
     def get_rate(self):
         return self.rate
