@@ -1856,7 +1856,7 @@ void ldpc::init(unsigned short N, unsigned short K)
 	}
 	else //TIPO A - MATRIZ TIPO MET (MULTI-EDGE TYPE)
 	{
-		printf("LDPC TIPO A EM FASE DE TESTES\n");
+		//printf("LDPC TIPO A EM FASE DE TESTES\n");
 
 		for (unsigned short j = 0; j < (n-k); j++)
 		{
