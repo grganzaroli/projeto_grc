@@ -38,7 +38,9 @@ public:
 	void free_hard();//desalocação de variáveis para hard_decision
 	void free_soft();//desalocação de variáveis para soft_decision
 
-	bool decode_hard(const unsigned char *r, unsigned char *u); //decodifica [r] em [u] -> hard-decision
+	bool decode_hard(const unsigned char *r, unsigned char *u); //decodifica [r] em [u] -> hard-decision - voto majoritário
+	bool decode_hard2(const unsigned char *r, unsigned char *u); //decodifica [r] em [u] -> hard-decision - maior numero de erros, inverte todos
+	bool decode_hard3(const unsigned char *r, unsigned char *u); //decodifica [r] em [u] -> hard-decision - maior numero de erros, inverte 1 por vez
 	bool decode_soft(const float *r, unsigned char *u); //decodifica [r] em [u] -> soft-decision
 
 	bool encode(const unsigned char *u, unsigned char *v); //codifica [u] em [v]
