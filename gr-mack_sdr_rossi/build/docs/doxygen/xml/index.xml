@@ -193,6 +193,9 @@
     <member refid="classldpc_1adc49a3a62b0d8ea901902a2a3baf3e79" kind="function"><name>free_hard</name></member>
     <member refid="classldpc_1a83660ea2a18770709784433fff86973f" kind="function"><name>free_soft</name></member>
     <member refid="classldpc_1ac2f11ab5008c9124e532addd86733e25" kind="function"><name>decode_hard</name></member>
+    <member refid="classldpc_1aaa086191505c6aea6df955d235f43d64" kind="function"><name>decode_hard2</name></member>
+    <member refid="classldpc_1a5ff37d977c5d8686eabe89e5bb7faa6d" kind="function"><name>decode_hard3</name></member>
+    <member refid="classldpc_1a367a5ed9c7a395ea127e1506bac42205" kind="function"><name>decode_hard4</name></member>
     <member refid="classldpc_1a4bcfe86356f8c05e5f70369ca8725cb5" kind="function"><name>decode_soft</name></member>
     <member refid="classldpc_1a0cd7aebaa397679688c537db3917cfda" kind="function"><name>encode</name></member>
   </compound>

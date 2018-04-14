@@ -1,0 +1,32 @@
+<block>
+  <name>Bit deinterleaver atsc</name>
+  <key>mack_sdr_rossi_Bit_deinterleaver_ATSC</key>
+  <category>[MACK_SDR_ROSSI]</category>
+  <import>import mack_sdr_rossi</import>
+  <make>mack_sdr_rossi.Bit_deinterleaver_ATSC($ldpc_size, $rate, $mod)</make>
+  <param>
+    <name>Ldpc_size</name>
+    <key>ldpc_size</key>
+    <type>raw</type>
+  </param>
+  <param>
+    <name>Rate</name>
+    <key>rate</key>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Mod</name>
+    <key>mod</key>
+    <type>int</type>
+  </param>
+  <sink>
+    <name>in</name>
+    <type>float</type>
+    <vlen>$ldpc_size</vlen>
+  </sink>
+  <source>
+    <name>out</name>
+    <type>float</type>
+    <vlen>$ldpc_size</vlen>
+  </source>
+</block>

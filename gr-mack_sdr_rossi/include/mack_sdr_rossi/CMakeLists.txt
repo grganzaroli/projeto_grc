@@ -35,5 +35,7 @@ install(FILES
     Block_interleaver_ATSC.h
     Group_interleaver_ATSC.h
     Parity_interleaver_ATSC.h
-    Mapper_ATSC.h DESTINATION include/mack_sdr_rossi
+    Mapper_ATSC.h
+    Bit_interleaver_ATSC.h
+    Bit_deinterleaver_ATSC.h DESTINATION include/mack_sdr_rossi
 )

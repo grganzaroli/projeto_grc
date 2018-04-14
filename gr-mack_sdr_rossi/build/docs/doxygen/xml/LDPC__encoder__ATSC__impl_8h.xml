@@ -5,10 +5,6 @@
     <includes refid="LDPC__encoder__ATSC_8h" local="no">mack_sdr_rossi/LDPC_encoder_ATSC.h</includes>
     <includes refid="ldpc_8h" local="yes">ldpc.h</includes>
     <incdepgraph>
-      <node id="186">
-        <label>ldpc.h</label>
-        <link refid="ldpc_8h"/>
-      </node>
       <node id="184">
         <label>gnuradio/attributes.h</label>
       </node>
@@ -16,14 +12,6 @@
         <label>mack_sdr_rossi/api.h</label>
         <link refid="api_8h"/>
         <childnode refid="184" relation="include">
-        </childnode>
-      </node>
-      <node id="182">
-        <label>mack_sdr_rossi/LDPC_encoder_ATSC.h</label>
-        <link refid="LDPC__encoder__ATSC_8h"/>
-        <childnode refid="183" relation="include">
-        </childnode>
-        <childnode refid="185" relation="include">
         </childnode>
       </node>
       <node id="185">
@@ -37,6 +25,18 @@
         <childnode refid="186" relation="include">
         </childnode>
       </node>
+      <node id="186">
+        <label>ldpc.h</label>
+        <link refid="ldpc_8h"/>
+      </node>
+      <node id="182">
+        <label>mack_sdr_rossi/LDPC_encoder_ATSC.h</label>
+        <link refid="LDPC__encoder__ATSC_8h"/>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+      </node>
     </incdepgraph>
     <innerclass refid="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC__impl" prot="public">gr::mack_sdr_rossi::LDPC_encoder_ATSC_impl</innerclass>
     <innernamespace refid="namespacegr">gr</innernamespace>
@@ -45,6 +45,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_encoder_ATSC_impl.h"/>
+    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/LDPC_encoder_ATSC_impl.h"/>
   </compounddef>
 </doxygen>

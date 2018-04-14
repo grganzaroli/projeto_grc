@@ -22,6 +22,8 @@
 #include "mack_sdr_rossi/Group_interleaver_ATSC.h"
 #include "mack_sdr_rossi/Parity_interleaver_ATSC.h"
 #include "mack_sdr_rossi/Mapper_ATSC.h"
+#include "mack_sdr_rossi/Bit_interleaver_ATSC.h"
+#include "mack_sdr_rossi/Bit_deinterleaver_ATSC.h"
 %}
 
 
@@ -59,3 +61,7 @@ GR_SWIG_BLOCK_MAGIC2(mack_sdr_rossi, Parity_interleaver_ATSC);
 
 %include "mack_sdr_rossi/Mapper_ATSC.h"
 GR_SWIG_BLOCK_MAGIC2(mack_sdr_rossi, Mapper_ATSC);
+%include "mack_sdr_rossi/Bit_interleaver_ATSC.h"
+GR_SWIG_BLOCK_MAGIC2(mack_sdr_rossi, Bit_interleaver_ATSC);
+%include "mack_sdr_rossi/Bit_deinterleaver_ATSC.h"
+GR_SWIG_BLOCK_MAGIC2(mack_sdr_rossi, Bit_deinterleaver_ATSC);

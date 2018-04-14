@@ -30,5 +30,7 @@ install(FILES
     mack_sdr_rossi_Block_interleaver_ATSC.xml
     mack_sdr_rossi_Group_interleaver_ATSC.xml
     mack_sdr_rossi_Parity_interleaver_ATSC.xml
-    mack_sdr_rossi_Mapper_ATSC.xml DESTINATION /usr/local/share/gnuradio/grc/blocks
+    mack_sdr_rossi_Mapper_ATSC.xml
+    mack_sdr_rossi_Bit_interleaver_ATSC.xml
+    mack_sdr_rossi_Bit_deinterleaver_ATSC.xml DESTINATION /usr/local/share/gnuradio/grc/blocks
 )
