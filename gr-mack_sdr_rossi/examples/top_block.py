@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Top Block
-# Generated: Sat Apr 28 15:14:11 2018
+# Generated: Sat Apr 28 15:30:00 2018
 ##################################################
 
 if __name__ == '__main__':
@@ -33,6 +33,7 @@ from grc_gnuradio import blks2 as grc_blks2
 from mapper_atsc import mapper_atsc  # grc-generated hier_block
 from optparse import OptionParser
 import math
+import numpy
 import sip
 
 
@@ -67,7 +68,7 @@ class top_block(gr.top_block, Qt.QWidget):
         self.size = size = 64800
         self.samp_rate = samp_rate = 32000
         self.rate = rate = 10
-        self.mod = mod = 1024
+        self.mod = mod = 4096
 
         ##################################################
         # Blocks
@@ -201,7 +202,6 @@ class top_block(gr.top_block, Qt.QWidget):
             r=rate,
             size_in=1,
         )
-        self.blocks_vector_source_x_0_0 = blocks.vector_source_b((1, 1), True, 1, [])
         self.blocks_threshold_ff_0 = blocks.threshold_ff(0, 0, 0)
         self.blocks_float_to_char_0 = blocks.float_to_char(1, 1)
         self.blocks_add_xx_0 = blocks.add_vcc(1)
@@ -210,19 +210,20 @@ class top_block(gr.top_block, Qt.QWidget):
         	win_size=1000000,
         	bits_per_symbol=1,
         )
+        self.analog_random_source_x_0 = blocks.vector_source_b(map(int, numpy.random.randint(0, 2, 1000000)), True)
         self.analog_noise_source_x_0 = analog.noise_source_c(analog.GR_GAUSSIAN, 0.0, 0)
 
         ##################################################
         # Connections
         ##################################################
         self.connect((self.analog_noise_source_x_0, 0), (self.blocks_add_xx_0, 0))    
+        self.connect((self.analog_random_source_x_0, 0), (self.blks2_error_rate_0, 0))    
+        self.connect((self.analog_random_source_x_0, 0), (self.mapper_atsc_0, 0))    
         self.connect((self.blks2_error_rate_0, 0), (self.qtgui_number_sink_0, 0))    
         self.connect((self.blocks_add_xx_0, 0), (self.demapper_atsc_0, 0))    
         self.connect((self.blocks_add_xx_0, 0), (self.qtgui_const_sink_x_0, 0))    
         self.connect((self.blocks_float_to_char_0, 0), (self.blks2_error_rate_0, 1))    
         self.connect((self.blocks_threshold_ff_0, 0), (self.blocks_float_to_char_0, 0))    
-        self.connect((self.blocks_vector_source_x_0_0, 0), (self.blks2_error_rate_0, 0))    
-        self.connect((self.blocks_vector_source_x_0_0, 0), (self.mapper_atsc_0, 0))    
         self.connect((self.demapper_atsc_0, 0), (self.blocks_threshold_ff_0, 0))    
         self.connect((self.demapper_atsc_0, 0), (self.qtgui_time_sink_x_0, 0))    
         self.connect((self.mapper_atsc_0, 0), (self.blocks_add_xx_0, 1))    
