@@ -222,7 +222,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>64</value>
+      <value>1024</value>
     </param>
   </block>
   <block>

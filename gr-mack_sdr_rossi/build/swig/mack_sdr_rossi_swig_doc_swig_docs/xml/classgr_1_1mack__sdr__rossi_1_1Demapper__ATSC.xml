@@ -59,24 +59,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="16">
+      <node id="24">
         <label>gr::mack_sdr_rossi::Demapper_ATSC</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC"/>
-        <childnode refid="17" relation="public-inheritance">
+        <childnode refid="25" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="17">
+      <node id="25">
         <label>block</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="18">
+      <node id="26">
         <label>gr::mack_sdr_rossi::Demapper_ATSC</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC"/>
-        <childnode refid="19" relation="public-inheritance">
+        <childnode refid="27" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="19">
+      <node id="27">
         <label>block</label>
       </node>
     </collaborationgraph>

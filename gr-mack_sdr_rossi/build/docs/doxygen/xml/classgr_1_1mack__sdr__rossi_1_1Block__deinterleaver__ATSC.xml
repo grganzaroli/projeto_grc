@@ -52,30 +52,30 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="28">
+      <node id="52">
         <label>gr::mack_sdr_rossi::Block_deinterleaver_ATSC</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1Block__deinterleaver__ATSC"/>
-        <childnode refid="29" relation="public-inheritance">
+        <childnode refid="53" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="29">
+      <node id="53">
         <label>block</label>
       </node>
-      <node id="30">
+      <node id="54">
         <label>gr::mack_sdr_rossi::Block_deinterleaver_ATSC_impl</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1Block__deinterleaver__ATSC__impl"/>
-        <childnode refid="28" relation="public-inheritance">
+        <childnode refid="52" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="31">
+      <node id="55">
         <label>gr::mack_sdr_rossi::Block_deinterleaver_ATSC</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1Block__deinterleaver__ATSC"/>
-        <childnode refid="32" relation="public-inheritance">
+        <childnode refid="56" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="32">
+      <node id="56">
         <label>block</label>
       </node>
     </collaborationgraph>

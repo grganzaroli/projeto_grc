@@ -8,6 +8,14 @@
     <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__encoder__ATSC_1a2f606a046188ee17ef22a442ec18fb96" kind="typedef"><name>sptr</name></member>
     <member refid="classgr_1_1mack__sdr__rossi_1_1BCH__encoder__ATSC_1a148df777c6c7a3edb1585d6e7e1969b0" kind="function"><name>make</name></member>
   </compound>
+  <compound refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC" kind="class"><name>gr::mack_sdr_rossi::Bit_deinterleaver_ATSC</name>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC_1a5bde8656ab87f961bcb5f51331f77118" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC_1a382fcf3546903b45b207fad34c4f45fb" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1mack__sdr__rossi_1_1Bit__interleaver__ATSC" kind="class"><name>gr::mack_sdr_rossi::Bit_interleaver_ATSC</name>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1Bit__interleaver__ATSC_1a2b24c82fcb7ae84c3601e970a285f723" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1mack__sdr__rossi_1_1Bit__interleaver__ATSC_1aab711b6c2f8349e190e11afaac262b2b" kind="function"><name>make</name></member>
+  </compound>
   <compound refid="classgr_1_1mack__sdr__rossi_1_1Block__deinterleaver__ATSC" kind="class"><name>gr::mack_sdr_rossi::Block_deinterleaver_ATSC</name>
     <member refid="classgr_1_1mack__sdr__rossi_1_1Block__deinterleaver__ATSC_1ac3127644ee74b2ff2678321ae39708ac" kind="typedef"><name>sptr</name></member>
     <member refid="classgr_1_1mack__sdr__rossi_1_1Block__deinterleaver__ATSC_1a6221baa921a2de1ed58f5d7c5053a042" kind="function"><name>make</name></member>
@@ -68,6 +76,10 @@
   <compound refid="BCH__decoder__ATSC_8h" kind="file"><name>BCH_decoder_ATSC.h</name>
   </compound>
   <compound refid="BCH__encoder__ATSC_8h" kind="file"><name>BCH_encoder_ATSC.h</name>
+  </compound>
+  <compound refid="Bit__deinterleaver__ATSC_8h" kind="file"><name>Bit_deinterleaver_ATSC.h</name>
+  </compound>
+  <compound refid="Bit__interleaver__ATSC_8h" kind="file"><name>Bit_interleaver_ATSC.h</name>
   </compound>
   <compound refid="Block__deinterleaver__ATSC_8h" kind="file"><name>Block_deinterleaver_ATSC.h</name>
   </compound>

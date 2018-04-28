@@ -24,6 +24,22 @@ To avoid accidental use of raw pointers, mack_sdr_rossi::BCH_encoder_ATSC's cons
 
 Params: (K, N)"
 
+%feature("docstring") gr::mack_sdr_rossi::Bit_deinterleaver_ATSC "<+description of block+>"
+
+%feature("docstring") gr::mack_sdr_rossi::Bit_deinterleaver_ATSC::make "Return a shared_ptr to a new instance of mack_sdr_rossi::Bit_deinterleaver_ATSC.
+
+To avoid accidental use of raw pointers, mack_sdr_rossi::Bit_deinterleaver_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Bit_deinterleaver_ATSC::make is the public interface for creating new instances.
+
+Params: (ldpc_size, rate, mod)"
+
+%feature("docstring") gr::mack_sdr_rossi::Bit_interleaver_ATSC "<+description of block+>"
+
+%feature("docstring") gr::mack_sdr_rossi::Bit_interleaver_ATSC::make "Return a shared_ptr to a new instance of mack_sdr_rossi::Bit_interleaver_ATSC.
+
+To avoid accidental use of raw pointers, mack_sdr_rossi::Bit_interleaver_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Bit_interleaver_ATSC::make is the public interface for creating new instances.
+
+Params: (ldpc_size, rate, mod)"
+
 %feature("docstring") gr::mack_sdr_rossi::Block_deinterleaver_ATSC "<+description of block+>"
 
 %feature("docstring") gr::mack_sdr_rossi::Block_deinterleaver_ATSC::make "Return a shared_ptr to a new instance of mack_sdr_rossi::Block_deinterleaver_ATSC.

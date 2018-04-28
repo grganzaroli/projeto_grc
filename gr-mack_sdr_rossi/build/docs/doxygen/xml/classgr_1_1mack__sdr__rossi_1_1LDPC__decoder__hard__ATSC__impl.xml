@@ -157,42 +157,42 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="111">
+      <node id="135">
         <label>block</label>
       </node>
-      <node id="110">
+      <node id="134">
         <label>gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC"/>
-        <childnode refid="111" relation="public-inheritance">
+        <childnode refid="135" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="109">
+      <node id="133">
         <label>gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC_impl</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl"/>
-        <childnode refid="110" relation="public-inheritance">
+        <childnode refid="134" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="114">
+      <node id="138">
         <label>block</label>
       </node>
-      <node id="113">
+      <node id="137">
         <label>gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC"/>
-        <childnode refid="114" relation="public-inheritance">
+        <childnode refid="138" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="115">
+      <node id="139">
         <label>ldpc</label>
         <link refid="classldpc"/>
       </node>
-      <node id="112">
+      <node id="136">
         <label>gr::mack_sdr_rossi::LDPC_decoder_hard_ATSC_impl</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1LDPC__decoder__hard__ATSC__impl"/>
-        <childnode refid="113" relation="public-inheritance">
+        <childnode refid="137" relation="public-inheritance">
         </childnode>
-        <childnode refid="115" relation="usage">
+        <childnode refid="139" relation="usage">
           <edgelabel>decoder</edgelabel>
         </childnode>
       </node>

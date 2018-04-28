@@ -169,43 +169,43 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="59">
+      <node id="83">
         <label>gr::mack_sdr_rossi::Demapper_ATSC_impl</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl"/>
-        <childnode refid="60" relation="public-inheritance">
+        <childnode refid="84" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="60">
+      <node id="84">
         <label>gr::mack_sdr_rossi::Demapper_ATSC</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC"/>
-        <childnode refid="61" relation="public-inheritance">
+        <childnode refid="85" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="61">
+      <node id="85">
         <label>block</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="62">
+      <node id="86">
         <label>gr::mack_sdr_rossi::Demapper_ATSC_impl</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl"/>
-        <childnode refid="63" relation="public-inheritance">
+        <childnode refid="87" relation="public-inheritance">
         </childnode>
-        <childnode refid="65" relation="usage">
+        <childnode refid="89" relation="usage">
           <edgelabel>demapper</edgelabel>
         </childnode>
       </node>
-      <node id="63">
+      <node id="87">
         <label>gr::mack_sdr_rossi::Demapper_ATSC</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC"/>
-        <childnode refid="64" relation="public-inheritance">
+        <childnode refid="88" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="65">
+      <node id="89">
         <label>demap</label>
         <link refid="classdemap"/>
       </node>
-      <node id="64">
+      <node id="88">
         <label>block</label>
       </node>
     </collaborationgraph>

@@ -2,6 +2,8 @@ var namespacegr_1_1mack__sdr__rossi =
 [
     [ "BCH_decoder_ATSC", "classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC.html", "classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC" ],
     [ "BCH_encoder_ATSC", "classgr_1_1mack__sdr__rossi_1_1BCH__encoder__ATSC.html", "classgr_1_1mack__sdr__rossi_1_1BCH__encoder__ATSC" ],
+    [ "Bit_deinterleaver_ATSC", "classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC.html", "classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC" ],
+    [ "Bit_interleaver_ATSC", "classgr_1_1mack__sdr__rossi_1_1Bit__interleaver__ATSC.html", "classgr_1_1mack__sdr__rossi_1_1Bit__interleaver__ATSC" ],
     [ "Block_deinterleaver_ATSC", "classgr_1_1mack__sdr__rossi_1_1Block__deinterleaver__ATSC.html", "classgr_1_1mack__sdr__rossi_1_1Block__deinterleaver__ATSC" ],
     [ "Block_interleaver_ATSC", "classgr_1_1mack__sdr__rossi_1_1Block__interleaver__ATSC.html", "classgr_1_1mack__sdr__rossi_1_1Block__interleaver__ATSC" ],
     [ "Demapper_ATSC", "classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC.html", "classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC" ],
@@ -16,6 +18,8 @@ var namespacegr_1_1mack__sdr__rossi =
     [ "str_to_vec", "classgr_1_1mack__sdr__rossi_1_1str__to__vec.html", "classgr_1_1mack__sdr__rossi_1_1str__to__vec" ],
     [ "BCH_decoder_ATSC_impl", "classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl.html", "classgr_1_1mack__sdr__rossi_1_1BCH__decoder__ATSC__impl" ],
     [ "BCH_encoder_ATSC_impl", "classgr_1_1mack__sdr__rossi_1_1BCH__encoder__ATSC__impl.html", "classgr_1_1mack__sdr__rossi_1_1BCH__encoder__ATSC__impl" ],
+    [ "Bit_deinterleaver_ATSC_impl", "classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl.html", "classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl" ],
+    [ "Bit_interleaver_ATSC_impl", "classgr_1_1mack__sdr__rossi_1_1Bit__interleaver__ATSC__impl.html", "classgr_1_1mack__sdr__rossi_1_1Bit__interleaver__ATSC__impl" ],
     [ "Block_deinterleaver_ATSC_impl", "classgr_1_1mack__sdr__rossi_1_1Block__deinterleaver__ATSC__impl.html", "classgr_1_1mack__sdr__rossi_1_1Block__deinterleaver__ATSC__impl" ],
     [ "Block_interleaver_ATSC_impl", "classgr_1_1mack__sdr__rossi_1_1Block__interleaver__ATSC__impl.html", "classgr_1_1mack__sdr__rossi_1_1Block__interleaver__ATSC__impl" ],
     [ "Demapper_ATSC_impl", "classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl.html", "classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl" ],

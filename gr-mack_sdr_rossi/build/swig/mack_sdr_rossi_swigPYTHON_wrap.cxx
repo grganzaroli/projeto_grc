@@ -57469,7 +57469,15 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"Mapper_ATSC_sptr_message_ports_out", _wrap_Mapper_ATSC_sptr_message_ports_out, METH_VARARGS, (char *)"Mapper_ATSC_sptr_message_ports_out(Mapper_ATSC_sptr self) -> swig_int_ptr"},
 	 { (char *)"Mapper_ATSC_sptr_message_subscribers", (PyCFunction) _wrap_Mapper_ATSC_sptr_message_subscribers, METH_VARARGS | METH_KEYWORDS, (char *)"Mapper_ATSC_sptr_message_subscribers(Mapper_ATSC_sptr self, swig_int_ptr which_port) -> swig_int_ptr"},
 	 { (char *)"Mapper_ATSC_sptr_swigregister", Mapper_ATSC_sptr_swigregister, METH_VARARGS, NULL},
-	 { (char *)"Bit_interleaver_ATSC_make", (PyCFunction) _wrap_Bit_interleaver_ATSC_make, METH_VARARGS | METH_KEYWORDS, (char *)"Bit_interleaver_ATSC_make(size_t ldpc_size, int rate, int mod) -> Bit_interleaver_ATSC_sptr"},
+	 { (char *)"Bit_interleaver_ATSC_make", (PyCFunction) _wrap_Bit_interleaver_ATSC_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"Bit_interleaver_ATSC_make(size_t ldpc_size, int rate, int mod) -> Bit_interleaver_ATSC_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of mack_sdr_rossi::Bit_interleaver_ATSC.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, mack_sdr_rossi::Bit_interleaver_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Bit_interleaver_ATSC::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (ldpc_size, rate, mod)\n"
+		""},
 	 { (char *)"delete_Bit_interleaver_ATSC", _wrap_delete_Bit_interleaver_ATSC, METH_VARARGS, (char *)"delete_Bit_interleaver_ATSC(Bit_interleaver_ATSC self)"},
 	 { (char *)"Bit_interleaver_ATSC_swigregister", Bit_interleaver_ATSC_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_Bit_interleaver_ATSC_sptr", _wrap_new_Bit_interleaver_ATSC_sptr, METH_VARARGS, (char *)"\n"
@@ -57478,7 +57486,15 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { (char *)"Bit_interleaver_ATSC_sptr___deref__", _wrap_Bit_interleaver_ATSC_sptr___deref__, METH_VARARGS, (char *)"Bit_interleaver_ATSC_sptr___deref__(Bit_interleaver_ATSC_sptr self) -> Bit_interleaver_ATSC"},
 	 { (char *)"delete_Bit_interleaver_ATSC_sptr", _wrap_delete_Bit_interleaver_ATSC_sptr, METH_VARARGS, (char *)"delete_Bit_interleaver_ATSC_sptr(Bit_interleaver_ATSC_sptr self)"},
-	 { (char *)"Bit_interleaver_ATSC_sptr_make", (PyCFunction) _wrap_Bit_interleaver_ATSC_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"Bit_interleaver_ATSC_sptr_make(Bit_interleaver_ATSC_sptr self, size_t ldpc_size, int rate, int mod) -> Bit_interleaver_ATSC_sptr"},
+	 { (char *)"Bit_interleaver_ATSC_sptr_make", (PyCFunction) _wrap_Bit_interleaver_ATSC_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"Bit_interleaver_ATSC_sptr_make(Bit_interleaver_ATSC_sptr self, size_t ldpc_size, int rate, int mod) -> Bit_interleaver_ATSC_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of mack_sdr_rossi::Bit_interleaver_ATSC.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, mack_sdr_rossi::Bit_interleaver_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Bit_interleaver_ATSC::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (ldpc_size, rate, mod)\n"
+		""},
 	 { (char *)"Bit_interleaver_ATSC_sptr_history", _wrap_Bit_interleaver_ATSC_sptr_history, METH_VARARGS, (char *)"Bit_interleaver_ATSC_sptr_history(Bit_interleaver_ATSC_sptr self) -> unsigned int"},
 	 { (char *)"Bit_interleaver_ATSC_sptr_declare_sample_delay", _wrap_Bit_interleaver_ATSC_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"
 		"declare_sample_delay(int which, int delay)\n"
@@ -57562,7 +57578,15 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"Bit_interleaver_ATSC_sptr_message_ports_out", _wrap_Bit_interleaver_ATSC_sptr_message_ports_out, METH_VARARGS, (char *)"Bit_interleaver_ATSC_sptr_message_ports_out(Bit_interleaver_ATSC_sptr self) -> swig_int_ptr"},
 	 { (char *)"Bit_interleaver_ATSC_sptr_message_subscribers", (PyCFunction) _wrap_Bit_interleaver_ATSC_sptr_message_subscribers, METH_VARARGS | METH_KEYWORDS, (char *)"Bit_interleaver_ATSC_sptr_message_subscribers(Bit_interleaver_ATSC_sptr self, swig_int_ptr which_port) -> swig_int_ptr"},
 	 { (char *)"Bit_interleaver_ATSC_sptr_swigregister", Bit_interleaver_ATSC_sptr_swigregister, METH_VARARGS, NULL},
-	 { (char *)"Bit_deinterleaver_ATSC_make", (PyCFunction) _wrap_Bit_deinterleaver_ATSC_make, METH_VARARGS | METH_KEYWORDS, (char *)"Bit_deinterleaver_ATSC_make(size_t ldpc_size, int rate, int mod) -> Bit_deinterleaver_ATSC_sptr"},
+	 { (char *)"Bit_deinterleaver_ATSC_make", (PyCFunction) _wrap_Bit_deinterleaver_ATSC_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"Bit_deinterleaver_ATSC_make(size_t ldpc_size, int rate, int mod) -> Bit_deinterleaver_ATSC_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of mack_sdr_rossi::Bit_deinterleaver_ATSC.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, mack_sdr_rossi::Bit_deinterleaver_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Bit_deinterleaver_ATSC::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (ldpc_size, rate, mod)\n"
+		""},
 	 { (char *)"delete_Bit_deinterleaver_ATSC", _wrap_delete_Bit_deinterleaver_ATSC, METH_VARARGS, (char *)"delete_Bit_deinterleaver_ATSC(Bit_deinterleaver_ATSC self)"},
 	 { (char *)"Bit_deinterleaver_ATSC_swigregister", Bit_deinterleaver_ATSC_swigregister, METH_VARARGS, NULL},
 	 { (char *)"new_Bit_deinterleaver_ATSC_sptr", _wrap_new_Bit_deinterleaver_ATSC_sptr, METH_VARARGS, (char *)"\n"
@@ -57571,7 +57595,15 @@ static PyMethodDef SwigMethods[] = {
 		""},
 	 { (char *)"Bit_deinterleaver_ATSC_sptr___deref__", _wrap_Bit_deinterleaver_ATSC_sptr___deref__, METH_VARARGS, (char *)"Bit_deinterleaver_ATSC_sptr___deref__(Bit_deinterleaver_ATSC_sptr self) -> Bit_deinterleaver_ATSC"},
 	 { (char *)"delete_Bit_deinterleaver_ATSC_sptr", _wrap_delete_Bit_deinterleaver_ATSC_sptr, METH_VARARGS, (char *)"delete_Bit_deinterleaver_ATSC_sptr(Bit_deinterleaver_ATSC_sptr self)"},
-	 { (char *)"Bit_deinterleaver_ATSC_sptr_make", (PyCFunction) _wrap_Bit_deinterleaver_ATSC_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"Bit_deinterleaver_ATSC_sptr_make(Bit_deinterleaver_ATSC_sptr self, size_t ldpc_size, int rate, int mod) -> Bit_deinterleaver_ATSC_sptr"},
+	 { (char *)"Bit_deinterleaver_ATSC_sptr_make", (PyCFunction) _wrap_Bit_deinterleaver_ATSC_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"Bit_deinterleaver_ATSC_sptr_make(Bit_deinterleaver_ATSC_sptr self, size_t ldpc_size, int rate, int mod) -> Bit_deinterleaver_ATSC_sptr\n"
+		"\n"
+		"Return a shared_ptr to a new instance of mack_sdr_rossi::Bit_deinterleaver_ATSC.\n"
+		"\n"
+		"To avoid accidental use of raw pointers, mack_sdr_rossi::Bit_deinterleaver_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Bit_deinterleaver_ATSC::make is the public interface for creating new instances.\n"
+		"\n"
+		"Params: (ldpc_size, rate, mod)\n"
+		""},
 	 { (char *)"Bit_deinterleaver_ATSC_sptr_history", _wrap_Bit_deinterleaver_ATSC_sptr_history, METH_VARARGS, (char *)"Bit_deinterleaver_ATSC_sptr_history(Bit_deinterleaver_ATSC_sptr self) -> unsigned int"},
 	 { (char *)"Bit_deinterleaver_ATSC_sptr_declare_sample_delay", _wrap_Bit_deinterleaver_ATSC_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"
 		"declare_sample_delay(int which, int delay)\n"

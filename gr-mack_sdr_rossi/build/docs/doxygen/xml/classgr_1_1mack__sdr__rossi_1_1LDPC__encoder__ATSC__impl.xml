@@ -161,43 +161,43 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="122">
+      <node id="146">
         <label>gr::mack_sdr_rossi::LDPC_encoder_ATSC</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC"/>
-        <childnode refid="123" relation="public-inheritance">
+        <childnode refid="147" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="121">
+      <node id="145">
         <label>gr::mack_sdr_rossi::LDPC_encoder_ATSC_impl</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC__impl"/>
-        <childnode refid="122" relation="public-inheritance">
+        <childnode refid="146" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="123">
+      <node id="147">
         <label>gr::block</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="125">
+      <node id="149">
         <label>gr::mack_sdr_rossi::LDPC_encoder_ATSC</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC"/>
-        <childnode refid="126" relation="public-inheritance">
+        <childnode refid="150" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="124">
+      <node id="148">
         <label>gr::mack_sdr_rossi::LDPC_encoder_ATSC_impl</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC__impl"/>
-        <childnode refid="125" relation="public-inheritance">
+        <childnode refid="149" relation="public-inheritance">
         </childnode>
-        <childnode refid="127" relation="usage">
+        <childnode refid="151" relation="usage">
           <edgelabel>encoder</edgelabel>
         </childnode>
       </node>
-      <node id="127">
+      <node id="151">
         <label>ldpc</label>
         <link refid="classldpc"/>
       </node>
-      <node id="126">
+      <node id="150">
         <label>gr::block</label>
       </node>
     </collaborationgraph>

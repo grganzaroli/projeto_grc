@@ -60,30 +60,30 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="56">
+      <node id="80">
         <label>gr::mack_sdr_rossi::Demapper_ATSC_impl</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC__impl"/>
-        <childnode refid="54" relation="public-inheritance">
+        <childnode refid="78" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="54">
+      <node id="78">
         <label>gr::mack_sdr_rossi::Demapper_ATSC</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC"/>
-        <childnode refid="55" relation="public-inheritance">
+        <childnode refid="79" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="55">
+      <node id="79">
         <label>block</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="57">
+      <node id="81">
         <label>gr::mack_sdr_rossi::Demapper_ATSC</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1Demapper__ATSC"/>
-        <childnode refid="58" relation="public-inheritance">
+        <childnode refid="82" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="58">
+      <node id="82">
         <label>block</label>
       </node>
     </collaborationgraph>

@@ -5,6 +5,8 @@
     <innerfile refid="api_8h">api.h</innerfile>
     <innerfile refid="BCH__decoder__ATSC_8h">BCH_decoder_ATSC.h</innerfile>
     <innerfile refid="BCH__encoder__ATSC_8h">BCH_encoder_ATSC.h</innerfile>
+    <innerfile refid="Bit__deinterleaver__ATSC_8h">Bit_deinterleaver_ATSC.h</innerfile>
+    <innerfile refid="Bit__interleaver__ATSC_8h">Bit_interleaver_ATSC.h</innerfile>
     <innerfile refid="Block__deinterleaver__ATSC_8h">Block_deinterleaver_ATSC.h</innerfile>
     <innerfile refid="Block__interleaver__ATSC_8h">Block_interleaver_ATSC.h</innerfile>
     <innerfile refid="Demapper__ATSC_8h">Demapper_ATSC.h</innerfile>
