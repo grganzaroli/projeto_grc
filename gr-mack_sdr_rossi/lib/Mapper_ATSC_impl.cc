@@ -40,12 +40,13 @@ namespace gr {
      */
     Mapper_ATSC_impl::Mapper_ATSC_impl(size_t N_ldpc, int Rate, int Mod_size)
       : gr::block("Mapper_ATSC",
-              gr::io_signature::make(1, 1, sizeof(unsigned char)),
+              gr::io_signature::make(1, 1, sizeof(unsigned char)*(N_ldpc)),
               gr::io_signature::make(1, 1, sizeof(gr_complex)))
     {
       s_in = N_ldpc;
       m_size = Mod_size;
       mapper.init(s_in, Mod_size, Rate, 0.1);
+      in_packed = new unsigned short[(int)N_ldpc/mapper.get_M()];
       printf("MAPPER INIT\n");
     }
 
@@ -64,7 +65,12 @@ namespace gr {
 
     void Mapper_ATSC_impl::MAP(const unsigned char *in, gr_complex *out)
     {
-      mapper.mapper(in, out);
+      pack(in_packed, in, s_in, mapper.get_M());
+      mapper.mapper(in_packed, out);
+
+      //printf("%i%i%i%i%i%i%i%i%i%i%i%i - %i\n", in[0], in[1], in[2], in[3], in[4], in[5], in[6], in[7], in[8], in[9], in[10], in[11], in_packed[0]); //4096
+      //printf("%i%i%i%i%i%i%i%i%i%i - %i\n", in[0], in[1], in[2], in[3], in[4], in[5], in[6], in[7], in[8], in[9], in_packed[0]); //1024
+      //printf("%i%i%i%i%i%i - %i\n", in[0], in[1], in[2], in[3], in[4], in[5], in_packed[0]); //64
     }
 
     int
@@ -83,7 +89,7 @@ namespace gr {
         MAP(in, &*out);
         
         //Incremento dos ponteiros para o GRC
-        in += 1;
+        in += s_in;
         out += 1;
       }
       

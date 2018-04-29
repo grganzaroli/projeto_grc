@@ -22,6 +22,7 @@
   <sink>
     <name>in</name>
     <type>byte</type>
+    <vlen>$(N_ldpc)</vlen>
   </sink>
   <source>
     <name>out</name>

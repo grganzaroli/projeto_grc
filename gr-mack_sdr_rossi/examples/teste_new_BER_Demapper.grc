@@ -105,7 +105,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>4096</value>
+      <value>1024</value>
     </param>
   </block>
   <block>
@@ -965,6 +965,10 @@
   <block>
     <key>mapper_atsc</key>
     <param>
+      <key>n</key>
+      <value>int(math.log(mod)/math.log(2))</value>
+    </param>
+    <param>
       <key>alias</key>
       <value></value>
     </param>
@@ -978,11 +982,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>True</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(696, 276)</value>
+      <value>(568, 276)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1007,10 +1011,6 @@
     <param>
       <key>r</key>
       <value>rate</value>
-    </param>
-    <param>
-      <key>n</key>
-      <value>size</value>
     </param>
   </block>
   <block>

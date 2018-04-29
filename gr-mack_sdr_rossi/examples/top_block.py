@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Top Block
-# Generated: Sat Apr 28 15:30:00 2018
+# Generated: Sun Apr 29 14:13:08 2018
 ##################################################
 
 if __name__ == '__main__':
@@ -68,7 +68,7 @@ class top_block(gr.top_block, Qt.QWidget):
         self.size = size = 64800
         self.samp_rate = samp_rate = 32000
         self.rate = rate = 10
-        self.mod = mod = 4096
+        self.mod = mod = 1024
 
         ##################################################
         # Blocks
@@ -194,7 +194,7 @@ class top_block(gr.top_block, Qt.QWidget):
         self.top_layout.addWidget(self._qtgui_const_sink_x_0_win)
         self.mapper_atsc_0 = mapper_atsc(
             m=mod,
-            n=size,
+            n=int(math.log(mod)/math.log(2)),
             r=rate,
         )
         self.demapper_atsc_0 = demapper_atsc(
@@ -238,7 +238,6 @@ class top_block(gr.top_block, Qt.QWidget):
 
     def set_size(self, size):
         self.size = size
-        self.mapper_atsc_0.set_n(self.size)
 
     def get_samp_rate(self):
         return self.samp_rate
@@ -261,6 +260,7 @@ class top_block(gr.top_block, Qt.QWidget):
     def set_mod(self, mod):
         self.mod = mod
         self.mapper_atsc_0.set_m(self.mod)
+        self.mapper_atsc_0.set_n(int(math.log(self.mod)/math.log(2)))
         self.demapper_atsc_0.set_m(self.mod)
 
 

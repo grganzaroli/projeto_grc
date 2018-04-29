@@ -2652,7 +2652,7 @@ void demap::demapper_hard(const gr_complex *i, unsigned char *o)
 	}
 }
 
-void demap::mapper(const unsigned char *i, gr_complex *o)
+void demap::mapper(const unsigned short *i, gr_complex *o)
 {
   for(int ii = 0; ii < 1; ii++) //cada simbolo recebido
 	{
@@ -2662,19 +2662,30 @@ void demap::mapper(const unsigned char *i, gr_complex *o)
   }
 }
 
-void demap::pack_bits(const unsigned char *pack_in, unsigned char *pack_out, int n_bits)
+int demap::get_M()
 {
-  int index_pack_out = 0, aux_index = 0, aux = 0;
-  for(int i = 0; i < size; i++) //cada simbolo recebido
-	{
-    aux_index = i%n_bits;
-    aux = aux + pack_in[i]*pow(2, aux_index);
-    if(aux_index == n_bits-1)
+  return M;
+}
+
+void pack(unsigned short *bytes, const unsigned char *bits, int nbytes, int d_k)
+{
+  for(int i = 0; i < 1; i++) 
+  {
+    bytes[i] = 0x00;
+    for(unsigned int j = 0; j < d_k; j++) 
     {
-      pack_out[index_pack_out] = aux;
-      aux = 0;
-      index_pack_out++;
-      printf("%i\n",pack_out[index_pack_out]);
+      bytes[i] |= (0x01 & bits[i*d_k+j])<<(d_k-j-1);
     }
+  }
+}
+
+void unpack(unsigned short *bits, const unsigned char *bytes, int nbytes, int d_k)
+{
+  int n = 0;
+  for(int i = 0; i < nbytes; i++) 
+  {
+    unsigned int t = bytes[i];
+    for(int j = d_k - 1; j >= 0; j--)
+      bits[n++] = (t >> j) & 0x01;
   }
 }
