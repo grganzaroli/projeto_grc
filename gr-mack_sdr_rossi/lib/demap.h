@@ -27,7 +27,7 @@ public:
 	int get_M(); //retorna o valor de M
 
 	void demapper_soft(const gr_complex *i, float *o); // faz o demap de i em o (LLR)
-	void demapper_hard(const gr_complex *i, unsigned char *o); // faz o demap de i em o (bit)
+	void demapper_hard(const gr_complex *i, unsigned short *o); // faz o demap de i em o (bit)
 
 };
 

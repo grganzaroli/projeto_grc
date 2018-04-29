@@ -1667,17 +1667,17 @@ void demap::init(int s, int ms, int r, float v)
       for(int i = 0; i < 64; i++)
       {
         if(i < 32)
-          y_to_u_4096[i] += 32;
+          y_to_u_4096[i] += 1;
         if((i >= 16)&&(i < 48))
-          y_to_u_4096[i] += 16;
+          y_to_u_4096[i] += 2;
         if((i%32 > 7)&&(i%32 < 24))
           y_to_u_4096[i] += 4;
         if((i%16 > 3)&&(i%16 < 12))
-          y_to_u_4096[i] += 4;
+          y_to_u_4096[i] += 8;
         if((i%8 > 1)&&(i%8 < 6))
-          y_to_u_4096[i] += 2;
+          y_to_u_4096[i] += 16;
          if((i%4 > 0)&&(i%4 < 3))
-          y_to_u_4096[i] += 1;
+          y_to_u_4096[i] += 32;
 
           u_to_y_4096[(int)y_to_u_4096[i]] = i;
       }
@@ -2618,7 +2618,7 @@ void demap::demapper_soft(const gr_complex *i, float *o)
 	}
 }
 
-void demap::demapper_hard(const gr_complex *i, unsigned char *o)
+void demap::demapper_hard(const gr_complex *i, unsigned short *o)
 {
 
 	for(int ii = 0; ii < size; ii++) //cada simbolo recebido
