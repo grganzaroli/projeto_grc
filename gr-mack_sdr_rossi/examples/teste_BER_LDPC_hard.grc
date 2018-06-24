@@ -105,7 +105,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>16200</value>
+      <value>64800</value>
     </param>
   </block>
   <block>
@@ -132,7 +132,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>12</value>
+      <value>10</value>
     </param>
   </block>
   <block>
@@ -924,7 +924,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>0</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -952,6 +952,53 @@
     </param>
     <param>
       <key>n</key>
+      <value>n</value>
+    </param>
+  </block>
+  <block>
+    <key>mack_sdr_ldpc_encoder</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(576, 236)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>mack_sdr_ldpc_encoder_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>rate</key>
+      <value>r</value>
+    </param>
+    <param>
+      <key>size</key>
       <value>n</value>
     </param>
   </block>
@@ -2047,6 +2094,12 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
+    <source_block_id>blocks_throttle_0</source_block_id>
+    <sink_block_id>mack_sdr_ldpc_encoder_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
     <source_block_id>blocks_vector_source_x_0</source_block_id>
     <sink_block_id>blocks_throttle_0</sink_block_id>
     <source_key>0</source_key>
@@ -2103,6 +2156,12 @@
   <connection>
     <source_block_id>ldpc_enc_0</source_block_id>
     <sink_block_id>blocks_file_sink_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>mack_sdr_ldpc_encoder_0</source_block_id>
+    <sink_block_id>blocks_char_to_float_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
