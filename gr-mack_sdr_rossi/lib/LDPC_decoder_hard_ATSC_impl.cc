@@ -75,7 +75,8 @@ namespace gr {
     //ESCREVER FUNÇÃO AQUI
     void LDPC_decoder_hard_ATSC_impl::decoder_LDPC_hard(const unsigned char *in, unsigned char *out)
     {	
-      decoder.decode_hard(in, out);
+      //decoder.decode_hard(in, out);
+      decoder.decode_hard2(in, out);
     }
 
     int

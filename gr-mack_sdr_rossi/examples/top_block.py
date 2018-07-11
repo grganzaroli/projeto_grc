@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Top Block
-# Generated: Sun Jun 24 11:39:52 2018
+# Generated: Mon Jul  9 11:44:00 2018
 ##################################################
 
 if __name__ == '__main__':
@@ -31,8 +31,8 @@ from gnuradio.filter import firdes
 from gnuradio.qtgui import Range, RangeWidget
 from grc_gnuradio import blks2 as grc_blks2
 from ldpc_dec_soft import ldpc_dec_soft  # grc-generated hier_block
-from ldpc_enc import ldpc_enc  # grc-generated hier_block
 from optparse import OptionParser
+import mack_sdr
 import mapper
 import math
 import sip
@@ -68,7 +68,7 @@ class top_block(gr.top_block, Qt.QWidget):
         ##################################################
         self.samp_rate = samp_rate = 32000
         self.r = r = 10
-        self.n = n = 16200
+        self.n = n = 64800
         self.mult = mult = 100
         self.SNR = SNR = 20
 
@@ -205,10 +205,7 @@ class top_block(gr.top_block, Qt.QWidget):
         self.top_layout.addWidget(self._qtgui_number_sink_0_win)
         self.mapper_prbs_source_b_0 = mapper.prbs_source_b("PRBS7", 108000)
         self.mapper_prbs_sink_b_0 = mapper.prbs_sink_b("PRBS7", 108000)
-        self.ldpc_enc_0 = ldpc_enc(
-            n=n,
-            r=r,
-        )
+        self.mack_sdr_ldpc_encoder_0 = mack_sdr.ldpc_encoder(n, r)
         self.ldpc_dec_soft_0 = ldpc_dec_soft(
             n=n,
             r=r,
@@ -243,9 +240,9 @@ class top_block(gr.top_block, Qt.QWidget):
         self.connect((self.ldpc_dec_soft_0, 0), (self.blks2_error_rate_0, 1))    
         self.connect((self.ldpc_dec_soft_0, 0), (self.blocks_char_to_float_0_0, 0))    
         self.connect((self.ldpc_dec_soft_0, 0), (self.mapper_prbs_sink_b_0, 0))    
-        self.connect((self.ldpc_enc_0, 0), (self.blocks_char_to_float_0, 0))    
+        self.connect((self.mack_sdr_ldpc_encoder_0, 0), (self.blocks_char_to_float_0, 0))    
         self.connect((self.mapper_prbs_source_b_0, 0), (self.blks2_error_rate_0, 0))    
-        self.connect((self.mapper_prbs_source_b_0, 0), (self.ldpc_enc_0, 0))    
+        self.connect((self.mapper_prbs_source_b_0, 0), (self.mack_sdr_ldpc_encoder_0, 0))    
 
     def closeEvent(self, event):
         self.settings = Qt.QSettings("GNU Radio", "top_block")
@@ -266,7 +263,6 @@ class top_block(gr.top_block, Qt.QWidget):
 
     def set_r(self, r):
         self.r = r
-        self.ldpc_enc_0.set_r(self.r)
         self.ldpc_dec_soft_0.set_r(self.r)
 
     def get_n(self):
@@ -274,7 +270,6 @@ class top_block(gr.top_block, Qt.QWidget):
 
     def set_n(self, n):
         self.n = n
-        self.ldpc_enc_0.set_n(self.n)
         self.ldpc_dec_soft_0.set_n(self.n)
 
     def get_mult(self):

@@ -75,7 +75,7 @@ namespace gr {
     //ESCREVER FUNÇÃO AQUI
     void LDPC_decoder_ATSC_impl::decoder_LDPC(const float *in, unsigned char *out)
     {	
-      decoder.decode_soft(in, out);
+      decoder.decode_soft_new(in, out);
     }
 
     int
