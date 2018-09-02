@@ -50,6 +50,8 @@ namespace gr {
       void MAP(const unsigned char *in, gr_complex *out);
 
       int s_in, m_size;
+      unsigned short *in_packed;
+
     };
 
   } // namespace mack_sdr_rossi

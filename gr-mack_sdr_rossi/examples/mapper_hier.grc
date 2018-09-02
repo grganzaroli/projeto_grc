@@ -109,7 +109,7 @@
     </param>
   </block>
   <block>
-    <key>blocks_pack_k_bits_bb</key>
+    <key>blocks_stream_to_vector</key>
     <param>
       <key>alias</key>
       <value></value>
@@ -124,11 +124,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>1</value>
+      <value>True</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(416, 300)</value>
+      <value>(400, 300)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -136,11 +136,11 @@
     </param>
     <param>
       <key>id</key>
-      <value>blocks_pack_k_bits_bb_0</value>
+      <value>blocks_stream_to_vector_0</value>
     </param>
     <param>
-      <key>k</key>
-      <value>int(math.log(m)/math.log(2))</value>
+      <key>type</key>
+      <value>byte</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -149,6 +149,14 @@
     <param>
       <key>minoutbuf</key>
       <value>0</value>
+    </param>
+    <param>
+      <key>num_items</key>
+      <value>n</value>
+    </param>
+    <param>
+      <key>vlen</key>
+      <value>1</value>
     </param>
   </block>
   <block>
@@ -222,7 +230,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>64</value>
+      <value>1024</value>
     </param>
   </block>
   <block>
@@ -304,7 +312,7 @@
     </param>
     <param>
       <key>label</key>
-      <value>Size</value>
+      <value>Bits/Símbolo</value>
     </param>
     <param>
       <key>short_id</key>
@@ -316,7 +324,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>64800</value>
+      <value>10</value>
     </param>
   </block>
   <block>
@@ -449,7 +457,7 @@
     </param>
   </block>
   <connection>
-    <source_block_id>blocks_pack_k_bits_bb_0</source_block_id>
+    <source_block_id>blocks_stream_to_vector_0</source_block_id>
     <sink_block_id>mack_sdr_rossi_Mapper_ATSC_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
@@ -462,7 +470,7 @@
   </connection>
   <connection>
     <source_block_id>pad_source_0</source_block_id>
-    <sink_block_id>blocks_pack_k_bits_bb_0</sink_block_id>
+    <sink_block_id>blocks_stream_to_vector_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>

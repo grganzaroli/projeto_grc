@@ -7,7 +7,7 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
         [ "Typedefs", "functions_type.html", null ]
@@ -26,7 +26,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "BCH__decoder__ATSC_8h.html",
-"classgr_1_1mack__sdr__rossi_1_1str__to__vec.html"
+"classgr_1_1mack__sdr__rossi_1_1LDPC__encoder__ATSC__impl.html#a6963732a63ae7ec72cf55fa418dd0ede"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

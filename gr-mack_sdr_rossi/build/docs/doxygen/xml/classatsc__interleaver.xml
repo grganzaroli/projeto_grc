@@ -169,6 +169,27 @@
         </inbodydescription>
         <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" line="20" column="1"/>
       </memberdef>
+      <memberdef kind="function" id="classatsc__interleaver_1a464fd30054ec87621ff14cf62f817e59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atsc_interleaver::parity_inter</definition>
+        <argsstring>(const float *lambda, float *U)</argsstring>
+        <name>parity_inter</name>
+        <param>
+          <type>const float *</type>
+          <declname>lambda</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>U</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" line="21" column="1"/>
+      </memberdef>
       <memberdef kind="function" id="classatsc__interleaver_1ad09cd85b1934f5b0b37bdf201b723145" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void atsc_interleaver::parity_deinter</definition>
@@ -188,7 +209,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" line="21" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" line="22" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__interleaver_1a16d73c5a157d1fd69a23acee62fc38e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -209,7 +230,28 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" line="23" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classatsc__interleaver_1a0bab5115eb254e052a8222d1a6976f69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atsc_interleaver::group_inter</definition>
+        <argsstring>(const float *GI_in, float *GI_out)</argsstring>
+        <name>group_inter</name>
+        <param>
+          <type>const float *</type>
+          <declname>GI_in</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>GI_out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" line="25" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__interleaver_1ae343fcf7b1f51518737cdb6379077fba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -230,7 +272,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" line="24" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" line="26" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__interleaver_1a13d9a80d6ec013db9ab531629c6ca41b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -251,7 +293,28 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" line="26" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classatsc__interleaver_1ab3fc8d9a7875ad23d513295c7049ddbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atsc_interleaver::block_inter</definition>
+        <argsstring>(const float *BI_in, float *BI_out)</argsstring>
+        <name>block_inter</name>
+        <param>
+          <type>const float *</type>
+          <declname>BI_in</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>BI_out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" line="29" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__interleaver_1a5f419844ac5d51663b19ccc737edefba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -272,7 +335,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" line="27" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" line="30" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__interleaver_1abf1f58e0d395c4b13a088bddcff1d466" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -305,7 +368,40 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" line="29" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classatsc__interleaver_1a100eaadaaf2ccc2e937e57a0eff260c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atsc_interleaver::block_inter_tipo_A</definition>
+        <argsstring>(const float *BI_in, float *BI_out, int rows_p1, int rows_p2, int col)</argsstring>
+        <name>block_inter_tipo_A</name>
+        <param>
+          <type>const float *</type>
+          <declname>BI_in</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>BI_out</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rows_p1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rows_p2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" line="33" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__interleaver_1a85485bce6e3dfc4e16312255ac97e4cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -338,7 +434,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" line="30" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" line="34" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__interleaver_1a420f3a63f5017d64583252352e8616eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -371,7 +467,40 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" line="32" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classatsc__interleaver_1a404f8d78cf11296bb637197bb487f738" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atsc_interleaver::block_inter_tipo_B</definition>
+        <argsstring>(const float *BI_in, float *BI_out, int n_p1, int n_p2, int nqcb)</argsstring>
+        <name>block_inter_tipo_B</name>
+        <param>
+          <type>const float *</type>
+          <declname>BI_in</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>BI_out</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_p1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_p2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nqcb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" line="37" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classatsc__interleaver_1a44030c0a815d990ed93ed827ed061166" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -404,29 +533,34 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" line="33" column="1"/>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" line="38" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" line="5" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" bodystart="4" bodyend="34"/>
+    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" line="5" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/atsc_interleaver.h" bodystart="4" bodyend="39"/>
     <listofallmembers>
       <member refid="classatsc__interleaver_1a5f419844ac5d51663b19ccc737edefba" prot="public" virt="non-virtual"><scope>atsc_interleaver</scope><name>block_deinter</name></member>
       <member refid="classatsc__interleaver_1a85485bce6e3dfc4e16312255ac97e4cf" prot="public" virt="non-virtual"><scope>atsc_interleaver</scope><name>block_deinter_tipo_A</name></member>
       <member refid="classatsc__interleaver_1a44030c0a815d990ed93ed827ed061166" prot="public" virt="non-virtual"><scope>atsc_interleaver</scope><name>block_deinter_tipo_B</name></member>
       <member refid="classatsc__interleaver_1a13d9a80d6ec013db9ab531629c6ca41b" prot="public" virt="non-virtual"><scope>atsc_interleaver</scope><name>block_inter</name></member>
+      <member refid="classatsc__interleaver_1ab3fc8d9a7875ad23d513295c7049ddbc" prot="public" virt="non-virtual"><scope>atsc_interleaver</scope><name>block_inter</name></member>
       <member refid="classatsc__interleaver_1abf1f58e0d395c4b13a088bddcff1d466" prot="public" virt="non-virtual"><scope>atsc_interleaver</scope><name>block_inter_tipo_A</name></member>
+      <member refid="classatsc__interleaver_1a100eaadaaf2ccc2e937e57a0eff260c9" prot="public" virt="non-virtual"><scope>atsc_interleaver</scope><name>block_inter_tipo_A</name></member>
       <member refid="classatsc__interleaver_1a420f3a63f5017d64583252352e8616eb" prot="public" virt="non-virtual"><scope>atsc_interleaver</scope><name>block_inter_tipo_B</name></member>
+      <member refid="classatsc__interleaver_1a404f8d78cf11296bb637197bb487f738" prot="public" virt="non-virtual"><scope>atsc_interleaver</scope><name>block_inter_tipo_B</name></member>
       <member refid="classatsc__interleaver_1ae343fcf7b1f51518737cdb6379077fba" prot="public" virt="non-virtual"><scope>atsc_interleaver</scope><name>group_deinter</name></member>
       <member refid="classatsc__interleaver_1a16d73c5a157d1fd69a23acee62fc38e2" prot="public" virt="non-virtual"><scope>atsc_interleaver</scope><name>group_inter</name></member>
+      <member refid="classatsc__interleaver_1a0bab5115eb254e052a8222d1a6976f69" prot="public" virt="non-virtual"><scope>atsc_interleaver</scope><name>group_inter</name></member>
       <member refid="classatsc__interleaver_1aab1475a2af8ceb03a14181db6afb2be5" prot="private" virt="non-virtual"><scope>atsc_interleaver</scope><name>interleaver_type</name></member>
       <member refid="classatsc__interleaver_1ad8b8b73f5190c829e64db6b74877017c" prot="private" virt="non-virtual"><scope>atsc_interleaver</scope><name>mod_size</name></member>
       <member refid="classatsc__interleaver_1a5450111437c7b0b3dfdbbf5fe1d22b1a" prot="private" virt="non-virtual"><scope>atsc_interleaver</scope><name>n_bch</name></member>
       <member refid="classatsc__interleaver_1a0f743eb73edb0a2cd41ac7acb5b2c540" prot="private" virt="non-virtual"><scope>atsc_interleaver</scope><name>n_ldpc</name></member>
       <member refid="classatsc__interleaver_1ad09cd85b1934f5b0b37bdf201b723145" prot="public" virt="non-virtual"><scope>atsc_interleaver</scope><name>parity_deinter</name></member>
       <member refid="classatsc__interleaver_1acfed302fad416e70bae2cf35837227fa" prot="public" virt="non-virtual"><scope>atsc_interleaver</scope><name>parity_inter</name></member>
+      <member refid="classatsc__interleaver_1a464fd30054ec87621ff14cf62f817e59" prot="public" virt="non-virtual"><scope>atsc_interleaver</scope><name>parity_inter</name></member>
       <member refid="classatsc__interleaver_1ae2b5381490f7bb6fcc8a70ecc5c78f15" prot="private" virt="non-virtual"><scope>atsc_interleaver</scope><name>q_ldpc</name></member>
       <member refid="classatsc__interleaver_1a68f69ccb7f3957007e58c4f0ab5fe4cc" prot="private" virt="non-virtual"><scope>atsc_interleaver</scope><name>rate</name></member>
       <member refid="classatsc__interleaver_1aac788d5a47dd52084f88c85417e064b1" prot="public" virt="non-virtual"><scope>atsc_interleaver</scope><name>set</name></member>

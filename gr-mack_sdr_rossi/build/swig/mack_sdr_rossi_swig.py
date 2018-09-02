@@ -4548,12 +4548,20 @@ Mapper_ATSC_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), se
 Mapper_ATSC = Mapper_ATSC.make;
 
 class Bit_interleaver_ATSC(object):
-    """Proxy of C++ gr::mack_sdr_rossi::Bit_interleaver_ATSC class"""
+    """<+description of block+>"""
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
     def make(*args, **kwargs):
-        """make(size_t ldpc_size, int rate, int mod) -> Bit_interleaver_ATSC_sptr"""
+        """
+        make(size_t ldpc_size, int rate, int mod) -> Bit_interleaver_ATSC_sptr
+
+        Return a shared_ptr to a new instance of mack_sdr_rossi::Bit_interleaver_ATSC.
+
+        To avoid accidental use of raw pointers, mack_sdr_rossi::Bit_interleaver_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Bit_interleaver_ATSC::make is the public interface for creating new instances.
+
+        Params: (ldpc_size, rate, mod)
+        """
         return _mack_sdr_rossi_swig.Bit_interleaver_ATSC_make(*args, **kwargs)
 
     make = staticmethod(make)
@@ -4563,7 +4571,15 @@ Bit_interleaver_ATSC_swigregister = _mack_sdr_rossi_swig.Bit_interleaver_ATSC_sw
 Bit_interleaver_ATSC_swigregister(Bit_interleaver_ATSC)
 
 def Bit_interleaver_ATSC_make(*args, **kwargs):
-  """Bit_interleaver_ATSC_make(size_t ldpc_size, int rate, int mod) -> Bit_interleaver_ATSC_sptr"""
+  """
+    Bit_interleaver_ATSC_make(size_t ldpc_size, int rate, int mod) -> Bit_interleaver_ATSC_sptr
+
+    Return a shared_ptr to a new instance of mack_sdr_rossi::Bit_interleaver_ATSC.
+
+    To avoid accidental use of raw pointers, mack_sdr_rossi::Bit_interleaver_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Bit_interleaver_ATSC::make is the public interface for creating new instances.
+
+    Params: (ldpc_size, rate, mod)
+    """
   return _mack_sdr_rossi_swig.Bit_interleaver_ATSC_make(*args, **kwargs)
 
 class Bit_interleaver_ATSC_sptr(object):
@@ -4585,7 +4601,15 @@ class Bit_interleaver_ATSC_sptr(object):
     __swig_destroy__ = _mack_sdr_rossi_swig.delete_Bit_interleaver_ATSC_sptr
     __del__ = lambda self : None;
     def make(self, *args, **kwargs):
-        """make(Bit_interleaver_ATSC_sptr self, size_t ldpc_size, int rate, int mod) -> Bit_interleaver_ATSC_sptr"""
+        """
+        make(Bit_interleaver_ATSC_sptr self, size_t ldpc_size, int rate, int mod) -> Bit_interleaver_ATSC_sptr
+
+        Return a shared_ptr to a new instance of mack_sdr_rossi::Bit_interleaver_ATSC.
+
+        To avoid accidental use of raw pointers, mack_sdr_rossi::Bit_interleaver_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Bit_interleaver_ATSC::make is the public interface for creating new instances.
+
+        Params: (ldpc_size, rate, mod)
+        """
         return _mack_sdr_rossi_swig.Bit_interleaver_ATSC_sptr_make(self, *args, **kwargs)
 
     def history(self):
@@ -4842,12 +4866,20 @@ Bit_interleaver_ATSC_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.n
 Bit_interleaver_ATSC = Bit_interleaver_ATSC.make;
 
 class Bit_deinterleaver_ATSC(object):
-    """Proxy of C++ gr::mack_sdr_rossi::Bit_deinterleaver_ATSC class"""
+    """<+description of block+>"""
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     def __init__(self, *args, **kwargs): raise AttributeError("No constructor defined")
     __repr__ = _swig_repr
     def make(*args, **kwargs):
-        """make(size_t ldpc_size, int rate, int mod) -> Bit_deinterleaver_ATSC_sptr"""
+        """
+        make(size_t ldpc_size, int rate, int mod) -> Bit_deinterleaver_ATSC_sptr
+
+        Return a shared_ptr to a new instance of mack_sdr_rossi::Bit_deinterleaver_ATSC.
+
+        To avoid accidental use of raw pointers, mack_sdr_rossi::Bit_deinterleaver_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Bit_deinterleaver_ATSC::make is the public interface for creating new instances.
+
+        Params: (ldpc_size, rate, mod)
+        """
         return _mack_sdr_rossi_swig.Bit_deinterleaver_ATSC_make(*args, **kwargs)
 
     make = staticmethod(make)
@@ -4857,7 +4889,15 @@ Bit_deinterleaver_ATSC_swigregister = _mack_sdr_rossi_swig.Bit_deinterleaver_ATS
 Bit_deinterleaver_ATSC_swigregister(Bit_deinterleaver_ATSC)
 
 def Bit_deinterleaver_ATSC_make(*args, **kwargs):
-  """Bit_deinterleaver_ATSC_make(size_t ldpc_size, int rate, int mod) -> Bit_deinterleaver_ATSC_sptr"""
+  """
+    Bit_deinterleaver_ATSC_make(size_t ldpc_size, int rate, int mod) -> Bit_deinterleaver_ATSC_sptr
+
+    Return a shared_ptr to a new instance of mack_sdr_rossi::Bit_deinterleaver_ATSC.
+
+    To avoid accidental use of raw pointers, mack_sdr_rossi::Bit_deinterleaver_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Bit_deinterleaver_ATSC::make is the public interface for creating new instances.
+
+    Params: (ldpc_size, rate, mod)
+    """
   return _mack_sdr_rossi_swig.Bit_deinterleaver_ATSC_make(*args, **kwargs)
 
 class Bit_deinterleaver_ATSC_sptr(object):
@@ -4879,7 +4919,15 @@ class Bit_deinterleaver_ATSC_sptr(object):
     __swig_destroy__ = _mack_sdr_rossi_swig.delete_Bit_deinterleaver_ATSC_sptr
     __del__ = lambda self : None;
     def make(self, *args, **kwargs):
-        """make(Bit_deinterleaver_ATSC_sptr self, size_t ldpc_size, int rate, int mod) -> Bit_deinterleaver_ATSC_sptr"""
+        """
+        make(Bit_deinterleaver_ATSC_sptr self, size_t ldpc_size, int rate, int mod) -> Bit_deinterleaver_ATSC_sptr
+
+        Return a shared_ptr to a new instance of mack_sdr_rossi::Bit_deinterleaver_ATSC.
+
+        To avoid accidental use of raw pointers, mack_sdr_rossi::Bit_deinterleaver_ATSC's constructor is in a private implementation class. mack_sdr_rossi::Bit_deinterleaver_ATSC::make is the public interface for creating new instances.
+
+        Params: (ldpc_size, rate, mod)
+        """
         return _mack_sdr_rossi_swig.Bit_deinterleaver_ATSC_sptr_make(self, *args, **kwargs)
 
     def history(self):

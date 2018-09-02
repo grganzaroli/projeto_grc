@@ -51,24 +51,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="24">
+      <node id="32">
         <label>gr::mack_sdr_rossi::Group_interleaver_ATSC</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC"/>
-        <childnode refid="25" relation="public-inheritance">
+        <childnode refid="33" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="25">
+      <node id="33">
         <label>block</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="26">
+      <node id="34">
         <label>gr::mack_sdr_rossi::Group_interleaver_ATSC</label>
         <link refid="classgr_1_1mack__sdr__rossi_1_1Group__interleaver__ATSC"/>
-        <childnode refid="27" relation="public-inheritance">
+        <childnode refid="35" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="27">
+      <node id="35">
         <label>block</label>
       </node>
     </collaborationgraph>

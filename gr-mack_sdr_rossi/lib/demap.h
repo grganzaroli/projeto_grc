@@ -22,13 +22,16 @@ private:
 public:
 	void init(int s, int ms, int r, float v); //inicializa variavais
 
-	void pack_bits(const unsigned char *pack_in, unsigned char *pack_out, int n_bits); //empacota n_bits de pack_in em pack_out
+	void mapper(const unsigned short *i, gr_complex *o); //faz o mapeamento
 
-	void mapper(const unsigned char *i, gr_complex *o); //faz o mapeamento
+	int get_M(); //retorna o valor de M
 
 	void demapper_soft(const gr_complex *i, float *o); // faz o demap de i em o (LLR)
-	void demapper_hard(const gr_complex *i, unsigned char *o); // faz o demap de i em o (bit)
+	void demapper_hard(const gr_complex *i, unsigned short *o); // faz o demap de i em o (bit)
 
 };
+
+void pack(unsigned short *bytes, const unsigned char *bits, int nbytes, int d_k);
+void unpack(unsigned short *bits, const unsigned char *bytes, int nbytes, int d_k);
 
 #endif

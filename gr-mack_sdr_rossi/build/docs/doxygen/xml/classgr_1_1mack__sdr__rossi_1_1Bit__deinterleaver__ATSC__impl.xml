@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl" kind="class" prot="public">
+    <compoundname>gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl</compoundname>
+    <basecompoundref refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC" prot="public" virt="non-virtual">gr::mack_sdr_rossi::Bit_deinterleaver_ATSC</basecompoundref>
+    <includes refid="Bit__deinterleaver__ATSC__impl_8h" local="no">Bit_deinterleaver_ATSC_impl.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl_1a99f29682bf78b1edb7a58646fc4808dd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl::Nldpc</definition>
+        <argsstring></argsstring>
+        <name>Nldpc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Bit_deinterleaver_ATSC_impl.h" line="47" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Bit_deinterleaver_ATSC_impl.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl_1a0ee656377b8ef9c0ed63002e35a95314" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl::Rate</definition>
+        <argsstring></argsstring>
+        <name>Rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Bit_deinterleaver_ATSC_impl.h" line="47" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Bit_deinterleaver_ATSC_impl.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl_1acab981e4b35934821370cdc03d79f240" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl::Mod_size</definition>
+        <argsstring></argsstring>
+        <name>Mod_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Bit_deinterleaver_ATSC_impl.h" line="47" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Bit_deinterleaver_ATSC_impl.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl_1a0dc3a458d0a8e8115b499ce04e56a035" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl::tab[64800]</definition>
+        <argsstring>[64800]</argsstring>
+        <name>tab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Bit_deinterleaver_ATSC_impl.h" line="48" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Bit_deinterleaver_ATSC_impl.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl_1a81309004ecf8d43370a1eb807a03a91d" prot="public" static="no" mutable="no">
+        <type><ref refid="classatsc__interleaver" kindref="compound">atsc_interleaver</ref></type>
+        <definition>atsc_interleaver gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl::deinterleaver</definition>
+        <argsstring></argsstring>
+        <name>deinterleaver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Bit_deinterleaver_ATSC_impl.h" line="50" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Bit_deinterleaver_ATSC_impl.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl_1a44c3cd74490664030eff58f83cac5f15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl::Bit_deinterleaver_ATSC_impl</definition>
+        <argsstring>(size_t ldpc_size, int rate, int mod)</argsstring>
+        <name>Bit_deinterleaver_ATSC_impl</name>
+        <param>
+          <type>size_t</type>
+          <declname>ldpc_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Bit_deinterleaver_ATSC_impl.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl_1ae3684f524ab47ad3cb022601da57f8b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl::~Bit_deinterleaver_ATSC_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~Bit_deinterleaver_ATSC_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Bit_deinterleaver_ATSC_impl.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl_1a9d05eee925b1f31761a6dc19f9d24d31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Bit_deinterleaver_ATSC_impl.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl_1adf746eaad6edf3fe538c7c3654549481" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Bit_deinterleaver_ATSC_impl.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl_1a085927e6be6d48c439deaa2a36e7d218" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl::Bit_deinterleaver</definition>
+        <argsstring>(const float *in, float *out)</argsstring>
+        <name>Bit_deinterleaver</name>
+        <param>
+          <type>const float *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Bit_deinterleaver_ATSC_impl.h" line="52" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="33">
+        <label>gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl</label>
+        <link refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>block</label>
+      </node>
+      <node id="34">
+        <label>gr::mack_sdr_rossi::Bit_deinterleaver_ATSC</label>
+        <link refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="36">
+        <label>gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl</label>
+        <link refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+        <childnode refid="39" relation="usage">
+          <edgelabel>deinterleaver</edgelabel>
+        </childnode>
+      </node>
+      <node id="39">
+        <label>atsc_interleaver</label>
+        <link refid="classatsc__interleaver"/>
+      </node>
+      <node id="38">
+        <label>block</label>
+      </node>
+      <node id="37">
+        <label>gr::mack_sdr_rossi::Bit_deinterleaver_ATSC</label>
+        <link refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC"/>
+        <childnode refid="38" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Bit_deinterleaver_ATSC_impl.h" line="31" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/lib/Bit_deinterleaver_ATSC_impl.h" bodystart="30" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl_1a085927e6be6d48c439deaa2a36e7d218" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl</scope><name>Bit_deinterleaver</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl_1a44c3cd74490664030eff58f83cac5f15" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl</scope><name>Bit_deinterleaver_ATSC_impl</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl_1a81309004ecf8d43370a1eb807a03a91d" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl</scope><name>deinterleaver</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl_1a9d05eee925b1f31761a6dc19f9d24d31" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl_1adf746eaad6edf3fe538c7c3654549481" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC_1a382fcf3546903b45b207fad34c4f45fb" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl_1acab981e4b35934821370cdc03d79f240" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl</scope><name>Mod_size</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl_1a99f29682bf78b1edb7a58646fc4808dd" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl</scope><name>Nldpc</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl_1a0ee656377b8ef9c0ed63002e35a95314" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl</scope><name>Rate</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC_1a5bde8656ab87f961bcb5f51331f77118" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl_1a0dc3a458d0a8e8115b499ce04e56a035" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl</scope><name>tab</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl_1ae3684f524ab47ad3cb022601da57f8b7" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl</scope><name>~Bit_deinterleaver_ATSC_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

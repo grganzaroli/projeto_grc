@@ -291,7 +291,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>2</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -338,7 +338,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>2</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -385,7 +385,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>2</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -487,7 +487,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>2</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -781,7 +781,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>2</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -832,7 +832,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>2</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1042,6 +1042,10 @@
   <block>
     <key>mapper_atsc</key>
     <param>
+      <key>n</key>
+      <value>n_ldpc</value>
+    </param>
+    <param>
       <key>alias</key>
       <value></value>
     </param>
@@ -1085,10 +1089,6 @@
       <key>r</key>
       <value>r</value>
     </param>
-    <param>
-      <key>n</key>
-      <value>n_ldpc</value>
-    </param>
   </block>
   <block>
     <key>par_inter</key>
@@ -1106,7 +1106,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>2</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1153,7 +1153,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>2</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>

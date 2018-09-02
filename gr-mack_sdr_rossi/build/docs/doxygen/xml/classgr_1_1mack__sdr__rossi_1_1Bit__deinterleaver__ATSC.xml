@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC" kind="class" prot="public">
+    <compoundname>gr::mack_sdr_rossi::Bit_deinterleaver_ATSC</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl" prot="public" virt="non-virtual">gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl</derivedcompoundref>
+    <includes refid="Bit__deinterleaver__ATSC_8h" local="no">Bit_deinterleaver_ATSC.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC_1a5bde8656ab87f961bcb5f51331f77118" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC" kindref="compound">Bit_deinterleaver_ATSC</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;Bit_deinterleaver_ATSC&gt; gr::mack_sdr_rossi::Bit_deinterleaver_ATSC::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/Bit_deinterleaver_ATSC.h" line="39" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/Bit_deinterleaver_ATSC.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC_1a382fcf3546903b45b207fad34c4f45fb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC_1a5bde8656ab87f961bcb5f51331f77118" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::mack_sdr_rossi::Bit_deinterleaver_ATSC::make</definition>
+        <argsstring>(size_t ldpc_size, int rate, int mod)</argsstring>
+        <name>make</name>
+        <param>
+          <type>size_t</type>
+          <declname>ldpc_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC" kindref="compound">mack_sdr_rossi::Bit_deinterleaver_ATSC</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC" kindref="compound">mack_sdr_rossi::Bit_deinterleaver_ATSC</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC_1a382fcf3546903b45b207fad34c4f45fb" kindref="member">mack_sdr_rossi::Bit_deinterleaver_ATSC::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/Bit_deinterleaver_ATSC.h" line="49" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="30">
+        <label>gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl</label>
+        <link refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>block</label>
+      </node>
+      <node id="28">
+        <label>gr::mack_sdr_rossi::Bit_deinterleaver_ATSC</label>
+        <link refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="32">
+        <label>block</label>
+      </node>
+      <node id="31">
+        <label>gr::mack_sdr_rossi::Bit_deinterleaver_ATSC</label>
+        <link refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/Bit_deinterleaver_ATSC.h" line="37" column="1" bodyfile="/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/Bit_deinterleaver_ATSC.h" bodystart="36" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC_1a382fcf3546903b45b207fad34c4f45fb" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Bit_deinterleaver_ATSC</scope><name>make</name></member>
+      <member refid="classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC_1a5bde8656ab87f961bcb5f51331f77118" prot="public" virt="non-virtual"><scope>gr::mack_sdr_rossi::Bit_deinterleaver_ATSC</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

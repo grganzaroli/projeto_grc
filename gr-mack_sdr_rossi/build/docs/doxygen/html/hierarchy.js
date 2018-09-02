@@ -9,6 +9,12 @@ var hierarchy =
       [ "gr::mack_sdr_rossi::BCH_encoder_ATSC", "classgr_1_1mack__sdr__rossi_1_1BCH__encoder__ATSC.html", [
         [ "gr::mack_sdr_rossi::BCH_encoder_ATSC_impl", "classgr_1_1mack__sdr__rossi_1_1BCH__encoder__ATSC__impl.html", null ]
       ] ],
+      [ "gr::mack_sdr_rossi::Bit_deinterleaver_ATSC", "classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC.html", [
+        [ "gr::mack_sdr_rossi::Bit_deinterleaver_ATSC_impl", "classgr_1_1mack__sdr__rossi_1_1Bit__deinterleaver__ATSC__impl.html", null ]
+      ] ],
+      [ "gr::mack_sdr_rossi::Bit_interleaver_ATSC", "classgr_1_1mack__sdr__rossi_1_1Bit__interleaver__ATSC.html", [
+        [ "gr::mack_sdr_rossi::Bit_interleaver_ATSC_impl", "classgr_1_1mack__sdr__rossi_1_1Bit__interleaver__ATSC__impl.html", null ]
+      ] ],
       [ "gr::mack_sdr_rossi::Block_deinterleaver_ATSC", "classgr_1_1mack__sdr__rossi_1_1Block__deinterleaver__ATSC.html", [
         [ "gr::mack_sdr_rossi::Block_deinterleaver_ATSC_impl", "classgr_1_1mack__sdr__rossi_1_1Block__deinterleaver__ATSC__impl.html", null ]
       ] ],

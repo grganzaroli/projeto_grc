@@ -5,24 +5,24 @@
     <includes refid="api_8h" local="no">mack_sdr_rossi/api.h</includes>
     <includes local="no">gnuradio/block.h</includes>
     <incdepgraph>
-      <node id="19">
+      <node id="21">
         <label>gnuradio/attributes.h</label>
       </node>
-      <node id="18">
+      <node id="20">
         <label>mack_sdr_rossi/api.h</label>
         <link refid="api_8h"/>
-        <childnode refid="19" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
       </node>
-      <node id="20">
+      <node id="22">
         <label>gnuradio/block.h</label>
       </node>
-      <node id="17">
+      <node id="19">
         <label>/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/BCH_decoder_ATSC.h</label>
         <link refid="BCH_decoder_ATSC.h"/>
-        <childnode refid="18" relation="include">
-        </childnode>
         <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
         </childnode>
       </node>
     </incdepgraph>

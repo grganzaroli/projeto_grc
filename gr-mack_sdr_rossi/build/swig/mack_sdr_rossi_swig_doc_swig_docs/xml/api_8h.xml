@@ -5,6 +5,8 @@
     <includes local="no">gnuradio/attributes.h</includes>
     <includedby refid="BCH__decoder__ATSC_8h" local="no">/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/BCH_decoder_ATSC.h</includedby>
     <includedby refid="BCH__encoder__ATSC_8h" local="no">/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/BCH_encoder_ATSC.h</includedby>
+    <includedby refid="Bit__deinterleaver__ATSC_8h" local="no">/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/Bit_deinterleaver_ATSC.h</includedby>
+    <includedby refid="Bit__interleaver__ATSC_8h" local="no">/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/Bit_interleaver_ATSC.h</includedby>
     <includedby refid="Block__deinterleaver__ATSC_8h" local="no">/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/Block_deinterleaver_ATSC.h</includedby>
     <includedby refid="Block__interleaver__ATSC_8h" local="no">/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/Block_interleaver_ATSC.h</includedby>
     <includedby refid="Demapper__ATSC_8h" local="no">/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/Demapper_ATSC.h</includedby>
@@ -29,35 +31,39 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="11">
+      <node id="13">
         <label>/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/LDPC_decoder_hard_ATSC.h</label>
         <link refid="LDPC__decoder__hard__ATSC_8h"/>
       </node>
-      <node id="9">
+      <node id="11">
         <label>/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/Group_interleaver_ATSC.h</label>
         <link refid="Group__interleaver__ATSC_8h"/>
       </node>
-      <node id="8">
+      <node id="10">
         <label>/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/Group_deinterleaver_ATSC.h</label>
         <link refid="Group__deinterleaver__ATSC_8h"/>
       </node>
-      <node id="14">
+      <node id="16">
         <label>/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/Parity_deinterleaver_ATSC.h</label>
         <link refid="Parity__deinterleaver__ATSC_8h"/>
       </node>
-      <node id="6">
+      <node id="8">
         <label>/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/Block_interleaver_ATSC.h</label>
         <link refid="Block__interleaver__ATSC_8h"/>
       </node>
-      <node id="10">
+      <node id="12">
         <label>/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/LDPC_decoder_ATSC.h</label>
         <link refid="LDPC__decoder__ATSC_8h"/>
       </node>
-      <node id="13">
+      <node id="6">
+        <label>/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/Bit_interleaver_ATSC.h</label>
+        <link refid="Bit__interleaver__ATSC_8h"/>
+      </node>
+      <node id="15">
         <label>/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/Mapper_ATSC.h</label>
         <link refid="Mapper__ATSC_8h"/>
       </node>
-      <node id="15">
+      <node id="17">
         <label>/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/Parity_interleaver_ATSC.h</label>
         <link refid="Parity__interleaver__ATSC_8h"/>
       </node>
@@ -92,12 +98,20 @@
         </childnode>
         <childnode refid="16" relation="include">
         </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/Bit_deinterleaver_ATSC.h</label>
+        <link refid="Bit__deinterleaver__ATSC_8h"/>
       </node>
       <node id="4">
         <label>/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/BCH_encoder_ATSC.h</label>
         <link refid="BCH__encoder__ATSC_8h"/>
       </node>
-      <node id="16">
+      <node id="18">
         <label>/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/str_to_vec.h</label>
         <link refid="str__to__vec_8h"/>
       </node>
@@ -105,15 +119,15 @@
         <label>/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/BCH_decoder_ATSC.h</label>
         <link refid="BCH__decoder__ATSC_8h"/>
       </node>
-      <node id="5">
+      <node id="7">
         <label>/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/Block_deinterleaver_ATSC.h</label>
         <link refid="Block__deinterleaver__ATSC_8h"/>
       </node>
-      <node id="7">
+      <node id="9">
         <label>/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/Demapper_ATSC.h</label>
         <link refid="Demapper__ATSC_8h"/>
       </node>
-      <node id="12">
+      <node id="14">
         <label>/home/rossi/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/include/mack_sdr_rossi/LDPC_encoder_ATSC.h</label>
         <link refid="LDPC__encoder__ATSC_8h"/>
       </node>
