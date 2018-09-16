@@ -2354,15 +2354,22 @@ end:
 	//printf("ITERACOES = %i\n ", I);
 
 	//r_aux é a mensagem corrigida, u é a saída, sem os bits de paridade
-	for(unsigned short i = 0; i < k; i++)
-	{
-		u[i] = r_aux[i];
-	}
-
 	if(status)
+	{
+		for(unsigned short i = 0; i < k; i++)
+		{
+			u[i] = r_aux[i];
+		}
 		return true;
+	}
 	else
+	{
+		for(unsigned short i = 0; i < k; i++)
+		{
+			u[i] = r[i];
+		}
 		return false;
+	}
 }
 
 bool ldpc::decode_hard3(const unsigned char *r,unsigned char *u)
