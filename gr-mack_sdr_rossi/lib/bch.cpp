@@ -299,34 +299,45 @@ void bch::encode(const unsigned char *u, unsigned char *v)
 
 bool bch::decode(unsigned char *rr, int &n_err)
 {
-	int *r;
-	r = new int[n+n_extension]; //r a ser processado
+	//int *r;
+	const int n_plus_n_extension = n+n_extension;
+	//r = new int[n+n_extension]; //r a ser processado
+	int r[n_plus_n_extension];
 
-	int *pos_err;
-	pos_err = new int[t]; //posições dos erros
+	//int *pos_err;
+	const int constT = t;
+	//pos_err = new int[t]; //posições dos erros
+	int pos_err[constT];
 
-	int *sindrome;
-	sindrome = new int[2*t+1]; //sindrome da palavra recebida
+	//int *sindrome;
+	//sindrome = new int[2*t+1]; //sindrome da palavra recebida
+	int sindrome[2*constT+1];
 
-	int **S = new int*[t]; //matriz sindrome (https://en.wikipedia.org/wiki/BCH_code#Peterson%E2%80%93Gorenstein%E2%80%93Zierler_algorithm)
-	for(int i = 0; i < t; i++)
-		S[i] = new int[t+1];
+	//int **S = new int*[t]; //matriz sindrome (https://en.wikipedia.org/wiki/BCH_code#Peterson%E2%80%93Gorenstein%E2%80%93Zierler_algorithm)
+	//for(int i = 0; i < t; i++)
+	//	S[i] = new int[t+1];
+	const int constT_plus_1 = t+1;
+	int S[constT][constT_plus_1];
 
-	int **A = new int*[t]; //matriz sindrome (https://www.ece.uvic.ca/~agullive/decodingbch405-511-2016.pdf)
-	for(int i = 0; i < t; i++)
-		A[i] = new int[t];
+	//int **A = new int*[t]; //matriz sindrome (https://www.ece.uvic.ca/~agullive/decodingbch405-511-2016.pdf)
+	//for(int i = 0; i < t; i++)
+	//	A[i] = new int[t];
+	int A[constT][constT];
 
-	int *LAMBDA; //vetor lambda
-	LAMBDA = new int[t+1]; 
+	//int *LAMBDA; //vetor lambda
+	//LAMBDA = new int[t+1]; 
+	int LAMBDA[constT_plus_1];
 
 	int lamb = 0; //lambda com alpha substituido
 	int inv_S_i_i; //inverso de S[i][i]
 
-	unsigned char *aux_r; //auxiliar para calcular r no metodo de gauss
-	aux_r = new unsigned char[n+n_extension]; 
+	//unsigned char *aux_r; //auxiliar para calcular r no metodo de gauss
+	//aux_r = new unsigned char[n+n_extension]; 
+	unsigned char aux_r[n_plus_n_extension];
 
-	unsigned char *err; //vetor de erros
-	err = new unsigned char[n+n_extension]; 
+	//unsigned char *err; //vetor de erros
+	//err = new unsigned char[n+n_extension]; 
+	unsigned char err[n_plus_n_extension];
 
 	//setar variáveis
 
@@ -386,24 +397,24 @@ bool bch::decode(unsigned char *rr, int &n_err)
 	{
 		//printf("SINAL RECEBIDO OK\n"); // ------------ FIM ------------
 
-		delete [] sindrome;
+		// delete [] sindrome;
 
-		for (int i = 0; i < t; ++i)
-			delete [] S[i];
-		delete [] S;
+		// for (int i = 0; i < t; ++i)
+		// 	delete [] S[i];
+		// delete [] S;
 
-		for (int i = 0; i < t; ++i)
-			delete [] A[i];
-		delete [] A;
+		// for (int i = 0; i < t; ++i)
+		// 	delete [] A[i];
+		// delete [] A;
 
-		delete [] LAMBDA;
+		// delete [] LAMBDA;
 
-		delete [] aux_r;
+		// delete [] aux_r;
 
-		delete [] err;
+		// delete [] err;
 
-		for(int i = 0; i < n; i++)
-			rr[i] = r[i];
+		// for(int i = 0; i < n; i++)
+		// 	rr[i] = r[i];
 
 		n_err = 0;
 
@@ -514,9 +525,9 @@ bool bch::decode(unsigned char *rr, int &n_err)
 	}
 
 
-	for (int i = 0; i < t; ++i)
-		delete [] SS[i];
-	delete [] SS;
+	// for (int i = 0; i < t; ++i)
+	// 	delete [] SS[i];
+	// delete [] SS;
 
 	//---------------------------------------------------------------- RESOLVER AS EQUAÇÕES (GAUSS)
 
@@ -673,23 +684,23 @@ bool bch::decode(unsigned char *rr, int &n_err)
 
 	if(aux_s == 1)
 	{
-		printf("%i ERROS, SINAL CORRIGIDO\n", A_size); // ------------ FIM ------------
+		//printf("%i ERROS, SINAL CORRIGIDO\n", A_size); // ------------ FIM ------------
 
-		delete [] sindrome;
+		// delete [] sindrome;
 
-		for (int i = 0; i < t; ++i)
-			delete [] S[i];
-		delete [] S;
+		// for (int i = 0; i < t; ++i)
+		// 	delete [] S[i];
+		// delete [] S;
 
-		for (int i = 0; i < t; ++i)
-			delete [] A[i];
-		delete [] A;
+		// for (int i = 0; i < t; ++i)
+		// 	delete [] A[i];
+		// delete [] A;
 
-		delete [] LAMBDA;
+		// delete [] LAMBDA;
 
-		delete [] aux_r;
+		// delete [] aux_r;
 
-		delete [] err;
+		// delete [] err;
 
 		for(int i = 0; i < n; i++)
 			rr[i] = r[i];
@@ -706,23 +717,23 @@ bool bch::decode(unsigned char *rr, int &n_err)
 	}
 	else
 	{
-		printf("SINDROMES != 0, SINAL NAO CORRIGIDO\n"); // ------------ FIM ------------
+		//printf("SINDROMES != 0, SINAL NAO CORRIGIDO\n"); // ------------ FIM ------------
 
-		delete [] sindrome;
+		// delete [] sindrome;
 
-		for (int i = 0; i < t; ++i)
-			delete [] S[i];
-		delete [] S;
+		// for (int i = 0; i < t; ++i)
+		// 	delete [] S[i];
+		// delete [] S;
 
-		for (int i = 0; i < t; ++i)
-			delete [] A[i];
-		delete [] A;
+		// for (int i = 0; i < t; ++i)
+		// 	delete [] A[i];
+		// delete [] A;
 
-		delete [] LAMBDA;
+		// delete [] LAMBDA;
 
-		delete [] aux_r;
+		// delete [] aux_r;
 
-		delete [] err;
+		// delete [] err;
 
 		return false;
 	}
