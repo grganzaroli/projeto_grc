@@ -1,0 +1,75 @@
+Numero de erros = 118156988
+Total de bits = 902400008
+BER = 0
+Calculado entre PN.ts e PN_error_validation_1.bin
+
+Numero de erros = 93878403
+Total de bits = 902400008
+BER = 0
+Calculado entre PN.ts e PN_error_validation_2.bin
+
+Numero de erros = 71198673
+Total de bits = 902400008
+BER = 0
+Calculado entre PN.ts e PN_error_validation_3.bin
+
+Numero de erros = 50988080
+Total de bits = 902400008
+BER = 0
+Calculado entre PN.ts e PN_error_validation_4.bin
+
+Numero de erros = 33999806
+Total de bits = 902400008
+BER = 0
+Calculado entre PN.ts e PN_error_validation_5.bin
+
+Numero de erros = 20767165
+Total de bits = 902400008
+BER = 0
+Calculado entre PN.ts e PN_error_validation_6.bin
+
+Numero de erros = 11357509
+Total de bits = 902400008
+BER = 0
+Calculado entre PN.ts e PN_error_validation_7.bin
+
+Numero de erros = 5416650
+Total de bits = 902400008
+BER = 0
+Calculado entre PN.ts e PN_error_validation_8.bin
+
+Numero de erros = 2176534
+Total de bits = 902400008
+BER = 0
+Calculado entre PN.ts e PN_error_validation_9.bin
+
+Numero de erros = 706100
+Total de bits = 902400008
+BER = 0
+Calculado entre PN.ts e PN_error_validation_10.bin
+
+Numero de erros = 175424
+Total de bits = 902400008
+BER = 0
+Calculado entre PN.ts e PN_error_validation_11.bin
+
+Numero de erros = 30984
+Total de bits = 902400008
+BER = 0
+Calculado entre PN.ts e PN_error_validation_12.bin
+
+Numero de erros = 3588
+Total de bits = 902400008
+BER = 0
+Calculado entre PN.ts e PN_error_validation_13.bin
+
+Numero de erros = 240
+Total de bits = 902400008
+BER = 0
+Calculado entre PN.ts e PN_error_validation_14.bin
+
+Numero de erros = 7
+Total de bits = 902400008
+BER = 0
+Calculado entre PN.ts e PN_error_validation_15.bin
+
