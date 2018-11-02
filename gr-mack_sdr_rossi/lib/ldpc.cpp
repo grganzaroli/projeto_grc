@@ -3304,7 +3304,7 @@ bool ldpc::encode(const unsigned char *u, unsigned char *v)
 	//calcular paridade
 	for(int i = k; i < n; i++)
 	{
-		for(int j = 0; j < 50; j++)
+		for(int j = 0; j < 100; j++)
 		{	
 			if(C[i-k][j] < k) //bits de informação
 			{
