@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Ldpc Decoder2
-# Generated: Fri Oct 26 19:01:06 2018
+# Generated: Fri Nov  2 11:48:56 2018
 ##################################################
 
 if __name__ == '__main__':
@@ -68,14 +68,14 @@ class LDPC_Decoder2(gr.top_block, Qt.QWidget):
         # Variables
         ##################################################
         self.samp_rate = samp_rate = 32000
-        self.r = r = 10
+        self.r = r = 7
         self.n = n = 64800
-        self.EsN0_dB = EsN0_dB = 2
+        self.EsN0_dB = EsN0_dB = 50
 
         ##################################################
         # Blocks
         ##################################################
-        self._EsN0_dB_range = Range(-50, 50, 1, 2, 200)
+        self._EsN0_dB_range = Range(-50, 50, 1, 50, 200)
         self._EsN0_dB_win = RangeWidget(self._EsN0_dB_range, self.set_EsN0_dB, "EsN0_dB", "counter_slider", float)
         self.top_layout.addWidget(self._EsN0_dB_win)
         self.qtgui_number_sink_0 = qtgui.number_sink(
@@ -119,8 +119,8 @@ class LDPC_Decoder2(gr.top_block, Qt.QWidget):
             r=r,
         )
         self.ldpc_dec_soft_0 = ldpc_dec_soft(
-            n=64800,
-            r=10,
+            n=n,
+            r=r,
         )
         self.demapper_atsc_0 = demapper_atsc(
             m=4,
@@ -174,6 +174,7 @@ class LDPC_Decoder2(gr.top_block, Qt.QWidget):
         self.r = r
         self.mapper_atsc_0.set_r(self.r)
         self.ldpc_enc_0.set_r(self.r)
+        self.ldpc_dec_soft_0.set_r(self.r)
         self.demapper_atsc_0.set_r(self.r)
 
     def get_n(self):
@@ -182,6 +183,7 @@ class LDPC_Decoder2(gr.top_block, Qt.QWidget):
     def set_n(self, n):
         self.n = n
         self.ldpc_enc_0.set_n(self.n)
+        self.ldpc_dec_soft_0.set_n(self.n)
 
     def get_EsN0_dB(self):
         return self.EsN0_dB

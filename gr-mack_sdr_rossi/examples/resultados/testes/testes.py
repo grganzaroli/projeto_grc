@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: Testes
-# Generated: Thu Nov  1 11:27:43 2018
+# Generated: Fri Nov  2 11:43:05 2018
 ##################################################
 
 if __name__ == '__main__':
@@ -33,7 +33,6 @@ from gnuradio.eng_option import eng_option
 from gnuradio.filter import firdes
 from gnuradio.qtgui import Range, RangeWidget
 from grc_gnuradio import blks2 as grc_blks2
-from ldpc_dec import ldpc_dec  # grc-generated hier_block
 from ldpc_enc import ldpc_enc  # grc-generated hier_block
 from mapper_atsc import mapper_atsc  # grc-generated hier_block
 from optparse import OptionParser
@@ -73,12 +72,12 @@ class testes(gr.top_block, Qt.QWidget):
         self.samp_rate = samp_rate = 32000
         self.r = r = 10
         self.n = n = 64800
-        self.EsN0_dB = EsN0_dB = 9
+        self.EsN0_dB = EsN0_dB = 50
 
         ##################################################
         # Blocks
         ##################################################
-        self._EsN0_dB_range = Range(-50, 50, 1, 9, 200)
+        self._EsN0_dB_range = Range(-50, 50, 1, 50, 200)
         self._EsN0_dB_win = RangeWidget(self._EsN0_dB_range, self.set_EsN0_dB, "EsN0_dB", "counter_slider", float)
         self.top_layout.addWidget(self._EsN0_dB_win)
         self.qtgui_number_sink_0 = qtgui.number_sink(
@@ -117,16 +116,6 @@ class testes(gr.top_block, Qt.QWidget):
             n=2,
             r=r,
         )
-        self.mack_sdr_rossi_Bit_interleaver_ATSC_0 = mack_sdr_rossi.Bit_interleaver_ATSC(n, r, 4)
-        self.mack_sdr_rossi_Bit_deinterleaver_ATSC_0 = mack_sdr_rossi.Bit_deinterleaver_ATSC(n, r, 4)
-        self.ldpc_enc_0 = ldpc_enc(
-            n=n,
-            r=r,
-        )
-        self.ldpc_dec_0 = ldpc_dec(
-            n=n,
-            r=r,
-        )
         self.demapper_atsc_0 = demapper_atsc(
             m=4,
             r=r,
@@ -138,22 +127,13 @@ class testes(gr.top_block, Qt.QWidget):
         self.blocks_stream_to_vector_0_0 = blocks.stream_to_vector(gr.sizeof_float*1, n)
         self.blocks_stream_to_vector_0 = blocks.stream_to_vector(gr.sizeof_char*1, n)
         self.blocks_pack_k_bits_bb_0 = blocks.pack_k_bits_bb(8)
-        self.blocks_file_source_0 = blocks.file_source(gr.sizeof_char*1, '/home/aluno/Desktop/GitHub/projeto_grc/gr-mack_sdr_rossi/examples/resultados/complete_setup/PN.ts', False)
-        self.blocks_file_sink_0 = blocks.file_sink(gr.sizeof_char*1, 'teste_completo.bin', False)
-        self.blocks_file_sink_0.set_unbuffered(False)
+        self.blocks_float_to_char_0 = blocks.float_to_char(1, 1)
+        self.blocks_file_source_0 = blocks.file_source(gr.sizeof_char*1, '/home/rossi/PN.ts', False)
         self.blocks_add_xx_0 = blocks.add_vcc(1)
         self.blks2_error_rate_0 = grc_blks2.error_rate(
         	type='BER',
         	win_size=1000000000,
         	bits_per_symbol=8,
-        )
-        self.bch_enc_0 = bch_enc(
-            fec=r,
-            size=n,
-        )
-        self.bch_dec_0 = bch_dec(
-            fec=10,
-            size=64800,
         )
         self.analog_noise_source_x_0_0 = analog.noise_source_c(analog.GR_GAUSSIAN, math.sqrt(1/math.pow(10.0,(EsN0_dB/10.0))), 0)
 
@@ -161,24 +141,18 @@ class testes(gr.top_block, Qt.QWidget):
         # Connections
         ##################################################
         self.connect((self.analog_noise_source_x_0_0, 0), (self.blocks_add_xx_0, 0))    
-        self.connect((self.bch_dec_0, 0), (self.blocks_pack_k_bits_bb_0, 0))    
-        self.connect((self.bch_enc_0, 0), (self.ldpc_enc_0, 0))    
         self.connect((self.blks2_error_rate_0, 0), (self.qtgui_number_sink_0, 0))    
         self.connect((self.blocks_add_xx_0, 0), (self.demapper_atsc_0, 0))    
         self.connect((self.blocks_file_source_0, 0), (self.blks2_error_rate_0, 0))    
         self.connect((self.blocks_file_source_0, 0), (self.blocks_unpack_k_bits_bb_0, 0))    
+        self.connect((self.blocks_float_to_char_0, 0), (self.blocks_pack_k_bits_bb_0, 0))    
         self.connect((self.blocks_pack_k_bits_bb_0, 0), (self.blks2_error_rate_0, 1))    
-        self.connect((self.blocks_pack_k_bits_bb_0, 0), (self.blocks_file_sink_0, 0))    
-        self.connect((self.blocks_stream_to_vector_0, 0), (self.mack_sdr_rossi_Bit_interleaver_ATSC_0, 0))    
-        self.connect((self.blocks_stream_to_vector_0_0, 0), (self.mack_sdr_rossi_Bit_deinterleaver_ATSC_0, 0))    
-        self.connect((self.blocks_unpack_k_bits_bb_0, 0), (self.bch_enc_0, 0))    
+        self.connect((self.blocks_stream_to_vector_0, 0), (self.blocks_vector_to_stream_0, 0))    
+        self.connect((self.blocks_stream_to_vector_0_0, 0), (self.blocks_vector_to_stream_0_0, 0))    
+        self.connect((self.blocks_unpack_k_bits_bb_0, 0), (self.blocks_stream_to_vector_0, 0))    
         self.connect((self.blocks_vector_to_stream_0, 0), (self.mapper_atsc_0, 0))    
-        self.connect((self.blocks_vector_to_stream_0_0, 0), (self.ldpc_dec_0, 0))    
+        self.connect((self.blocks_vector_to_stream_0_0, 0), (self.blocks_float_to_char_0, 0))    
         self.connect((self.demapper_atsc_0, 0), (self.blocks_stream_to_vector_0_0, 0))    
-        self.connect((self.ldpc_dec_0, 0), (self.bch_dec_0, 0))    
-        self.connect((self.ldpc_enc_0, 0), (self.blocks_stream_to_vector_0, 0))    
-        self.connect((self.mack_sdr_rossi_Bit_deinterleaver_ATSC_0, 0), (self.blocks_vector_to_stream_0_0, 0))    
-        self.connect((self.mack_sdr_rossi_Bit_interleaver_ATSC_0, 0), (self.blocks_vector_to_stream_0, 0))    
         self.connect((self.mapper_atsc_0, 0), (self.blocks_add_xx_0, 1))    
 
     def closeEvent(self, event):
@@ -198,19 +172,13 @@ class testes(gr.top_block, Qt.QWidget):
     def set_r(self, r):
         self.r = r
         self.mapper_atsc_0.set_r(self.r)
-        self.ldpc_enc_0.set_r(self.r)
-        self.ldpc_dec_0.set_r(self.r)
         self.demapper_atsc_0.set_r(self.r)
-        self.bch_enc_0.set_fec(self.r)
 
     def get_n(self):
         return self.n
 
     def set_n(self, n):
         self.n = n
-        self.ldpc_enc_0.set_n(self.n)
-        self.ldpc_dec_0.set_n(self.n)
-        self.bch_enc_0.set_size(self.n)
 
     def get_EsN0_dB(self):
         return self.EsN0_dB

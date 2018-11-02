@@ -89,7 +89,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>12</value>
+      <value>50</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -278,6 +278,100 @@
     <param>
       <key>seed</key>
       <value>0</value>
+    </param>
+  </block>
+  <block>
+    <key>bch_dec</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(448, 484)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>180</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>bch_dec_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>fec</key>
+      <value>r</value>
+    </param>
+    <param>
+      <key>size</key>
+      <value>n</value>
+    </param>
+  </block>
+  <block>
+    <key>bch_enc</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(448, 164)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>bch_enc_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>fec</key>
+      <value>r</value>
+    </param>
+    <param>
+      <key>size</key>
+      <value>n</value>
     </param>
   </block>
   <block>
@@ -489,53 +583,6 @@
     </param>
   </block>
   <block>
-    <key>blocks_float_to_char</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(224, 668)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>180</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>blocks_float_to_char_0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>scale</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>vlen</key>
-      <value>64800</value>
-    </param>
-  </block>
-  <block>
     <key>blocks_pack_k_bits_bb</key>
     <param>
       <key>alias</key>
@@ -594,11 +641,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(336, 244)</value>
+      <value>(432, 268)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -622,7 +669,7 @@
     </param>
     <param>
       <key>num_items</key>
-      <value>43008</value>
+      <value>n</value>
     </param>
     <param>
       <key>vlen</key>
@@ -645,11 +692,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(832, 596)</value>
+      <value>(632, 492)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -673,58 +720,7 @@
     </param>
     <param>
       <key>num_items</key>
-      <value>64800</value>
-    </param>
-    <param>
-      <key>vlen</key>
-      <value>1</value>
-    </param>
-  </block>
-  <block>
-    <key>blocks_stream_to_vector</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(400, 676)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>180</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>blocks_stream_to_vector_0_0_0</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>float</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>num_items</key>
-      <value>64800</value>
+      <value>n</value>
     </param>
     <param>
       <key>vlen</key>
@@ -747,11 +743,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(576, 660)</value>
+      <value>(472, 596)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -841,7 +837,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -869,7 +865,7 @@
     </param>
     <param>
       <key>num_items</key>
-      <value>64800</value>
+      <value>n</value>
     </param>
     <param>
       <key>vlen</key>
@@ -892,62 +888,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(432, 492)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>180</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>blocks_vector_to_stream_0_0</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>byte</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>num_items</key>
-      <value>43008</value>
-    </param>
-    <param>
-      <key>vlen</key>
       <value>1</value>
     </param>
-  </block>
-  <block>
-    <key>blocks_vector_to_stream</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
     <param>
       <key>_coordinate</key>
-      <value>(792, 788)</value>
+      <value>(640, 612)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -971,7 +916,7 @@
     </param>
     <param>
       <key>num_items</key>
-      <value>64800</value>
+      <value>n</value>
     </param>
     <param>
       <key>vlen</key>
@@ -998,7 +943,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(808, 484)</value>
+      <value>(792, 484)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1061,7 +1006,7 @@
     </param>
   </block>
   <block>
-    <key>mack_sdr_rossi_BCH_decoder_ATSC</key>
+    <key>ldpc_dec</key>
     <param>
       <key>alias</key>
       <value></value>
@@ -1080,7 +1025,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(288, 564)</value>
+      <value>(232, 604)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1088,11 +1033,7 @@
     </param>
     <param>
       <key>id</key>
-      <value>mack_sdr_rossi_BCH_decoder_ATSC_0</value>
-    </param>
-    <param>
-      <key>K</key>
-      <value>43200-192</value>
+      <value>ldpc_dec_0</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -1103,12 +1044,16 @@
       <value>0</value>
     </param>
     <param>
-      <key>N</key>
-      <value>43200</value>
+      <key>r</key>
+      <value>r</value>
+    </param>
+    <param>
+      <key>n</key>
+      <value>n</value>
     </param>
   </block>
   <block>
-    <key>mack_sdr_rossi_BCH_encoder_ATSC</key>
+    <key>ldpc_enc</key>
     <param>
       <key>alias</key>
       <value></value>
@@ -1127,7 +1072,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(480, 148)</value>
+      <value>(608, 164)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1135,11 +1080,7 @@
     </param>
     <param>
       <key>id</key>
-      <value>mack_sdr_rossi_BCH_encoder_ATSC_0</value>
-    </param>
-    <param>
-      <key>K</key>
-      <value>43008</value>
+      <value>ldpc_enc_0</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -1150,8 +1091,12 @@
       <value>0</value>
     </param>
     <param>
-      <key>N</key>
-      <value>43200</value>
+      <key>r</key>
+      <value>r</value>
+    </param>
+    <param>
+      <key>n</key>
+      <value>n</value>
     </param>
   </block>
   <block>
@@ -1170,11 +1115,11 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(800, 676)</value>
+      <value>(816, 596)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1186,7 +1131,7 @@
     </param>
     <param>
       <key>ldpc_size</key>
-      <value>64800</value>
+      <value>n</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -1202,7 +1147,7 @@
     </param>
     <param>
       <key>rate</key>
-      <value>10</value>
+      <value>r</value>
     </param>
   </block>
   <block>
@@ -1221,7 +1166,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1254,104 +1199,6 @@
     <param>
       <key>rate</key>
       <value>r</value>
-    </param>
-  </block>
-  <block>
-    <key>mack_sdr_rossi_LDPC_decoder_hard_ATSC</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(464, 564)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>180</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>mack_sdr_rossi_LDPC_decoder_hard_ATSC_0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>N_in</key>
-      <value>64800</value>
-    </param>
-    <param>
-      <key>N_out</key>
-      <value>43200</value>
-    </param>
-  </block>
-  <block>
-    <key>mack_sdr_rossi_LDPC_encoder_ATSC</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(664, 140)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>mack_sdr_rossi_LDPC_encoder_ATSC_0</value>
-    </param>
-    <param>
-      <key>K_ldpc</key>
-      <value>43200</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>N_ldpc</key>
-      <value>64800</value>
-    </param>
-    <param>
-      <key>rate</key>
-      <value>10</value>
     </param>
   </block>
   <block>
@@ -1643,6 +1490,18 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
+    <source_block_id>bch_dec_0</source_block_id>
+    <sink_block_id>blocks_pack_k_bits_bb_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>bch_enc_0</source_block_id>
+    <sink_block_id>ldpc_enc_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
     <source_block_id>blks2_error_rate_0</source_block_id>
     <sink_block_id>qtgui_number_sink_0</sink_block_id>
     <source_key>0</source_key>
@@ -1667,12 +1526,6 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>blocks_float_to_char_0</source_block_id>
-    <sink_block_id>mack_sdr_rossi_LDPC_decoder_hard_ATSC_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
     <source_block_id>blocks_pack_k_bits_bb_0</source_block_id>
     <sink_block_id>blks2_error_rate_0</sink_block_id>
     <source_key>0</source_key>
@@ -1686,7 +1539,7 @@
   </connection>
   <connection>
     <source_block_id>blocks_stream_to_vector_0</source_block_id>
-    <sink_block_id>mack_sdr_rossi_BCH_encoder_ATSC_0</sink_block_id>
+    <sink_block_id>mack_sdr_rossi_Bit_interleaver_ATSC_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -1697,32 +1550,20 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>blocks_stream_to_vector_0_0_0</source_block_id>
-    <sink_block_id>blocks_float_to_char_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
     <source_block_id>blocks_threshold_ff_0_0</source_block_id>
-    <sink_block_id>blocks_stream_to_vector_0_0_0</sink_block_id>
+    <sink_block_id>ldpc_dec_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
     <source_block_id>blocks_unpack_k_bits_bb_0</source_block_id>
-    <sink_block_id>blocks_stream_to_vector_0</sink_block_id>
+    <sink_block_id>bch_enc_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
     <source_block_id>blocks_vector_to_stream_0</source_block_id>
     <sink_block_id>mapper_atsc_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_vector_to_stream_0_0</source_block_id>
-    <sink_block_id>blocks_pack_k_bits_bb_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -1739,14 +1580,14 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>mack_sdr_rossi_BCH_decoder_ATSC_0</source_block_id>
-    <sink_block_id>blocks_vector_to_stream_0_0</sink_block_id>
+    <source_block_id>ldpc_dec_0</source_block_id>
+    <sink_block_id>bch_dec_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>mack_sdr_rossi_BCH_encoder_ATSC_0</source_block_id>
-    <sink_block_id>mack_sdr_rossi_LDPC_encoder_ATSC_0</sink_block_id>
+    <source_block_id>ldpc_enc_0</source_block_id>
+    <sink_block_id>blocks_stream_to_vector_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -1759,18 +1600,6 @@
   <connection>
     <source_block_id>mack_sdr_rossi_Bit_interleaver_ATSC_0</source_block_id>
     <sink_block_id>blocks_vector_to_stream_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>mack_sdr_rossi_LDPC_decoder_hard_ATSC_0</source_block_id>
-    <sink_block_id>mack_sdr_rossi_BCH_decoder_ATSC_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>mack_sdr_rossi_LDPC_encoder_ATSC_0</source_block_id>
-    <sink_block_id>mack_sdr_rossi_Bit_interleaver_ATSC_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
